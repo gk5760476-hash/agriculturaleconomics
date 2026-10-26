@@ -316,7 +316,7 @@ function overview(el) {
       h("div", { class: "finding" }, h("h3", {}, "No sign that credit rises in the season after a drought."),
         h("p", {}, `Comparing districts in the same state and year (${d1.n} district-years, ${d1.districts} districts, ${d1.years}), a 20-point monsoon shortfall is associated with ${sign(d1.effect_of_20pt_shortfall_pct)}% agricultural credit the following March (90% interval ${sign(20 * d1.ci90_low)}% to ${sign(20 * d1.ci90_high)}%). This rules out the 3–5% rise found for all-India districts in 1993–2010 (De & Vij 2013).`)),
       h("div", { class: "finding" }, h("h3", {}, "In Bihar, credit is lower two to three years after a dry monsoon."),
-        h("p", {}, `Allowing for each district's own trend, a 20-point shortfall is followed by ${sign(20 * b2.coef)}% (two years on) and ${sign(20 * b3.coef)}% (three years on) credit; q-values ${fmt(b2.q_bh, 2)} and ${fmt(b3.q_bh, 2)}. Bihar had no state loan waiver, so write-offs do not explain it. The fall is in the number of borrowers, not loan size, and sits mainly in regional rural banks and rural branches; the monsoons after the credit date show no effect. Treat as suggestive: the estimate roughly halves once district trends are included, and it does not forecast district credit well.`)),
+        h("p", {}, `Allowing for each district's own trend, a 20-point shortfall is followed by ${sign(20 * b2.coef)}% (two years on) and ${sign(20 * b3.coef)}% (three years on) credit; q-values ${fmt(b2.q_bh, 2)} and ${fmt(b3.q_bh, 2)}. Bihar had no state loan waiver, so write-offs do not explain it. The fall is in the number of borrowers, not loan size, and sits mainly in regional rural banks and rural branches; the monsoons after the credit date show no effect. Treat as suggestive: the estimate shrinks by about 40% once district trends are included, and it does not forecast district credit well.`)),
       h("div", { class: "finding" }, h("h3", {}, "Maharashtra: no clear response."),
         h("p", {}, `No delayed fall. Before its 2017 waiver there is a hint of a small immediate rise (${sign(20 * m13.coef)}% per 20-point shortfall, q = ${fmt(m13.q_bh, 2)}) that does not survive correction for multiple tests.`)),
       h("div", { class: "finding" }, h("h3", {}, "State-level series are too short to decide."),
@@ -354,30 +354,99 @@ function agriPage(el) {
   el.append(h("h2", {}, "Weather and agriculture"), g, y, p);
 }
 
+// path of credit vs a normal-monsoon baseline: one line + 90% band per series
+function pathChart(host, { series, xLabels, unit, height = 220 }) {
+  const W = chartWidth(), H = height, m = { l: 44, r: 16, t: 12, b: 28 };
+  const vals = series.flatMap(sr => sr.points.flatMap(p => [p.lo, p.hi]));
+  let lo = Math.min(0, ...vals), hi = Math.max(0, ...vals); const pad = (hi - lo) * 0.08 || 1; lo -= pad; hi += pad;
+  const X = scale(0, xLabels.length - 1, m.l + 10, W - m.r - 10), Y = scale(lo, hi, H - m.b, m.t);
+  const svg = s("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": "Credit path versus a normal monsoon, " + unit });
+  const g = s("g", { class: "axis" }); svg.append(g);
+  for (const t of niceTicks(lo, hi, 4)) {
+    g.append(s("line", { x1: m.l, x2: W - m.r, y1: Y(t), y2: Y(t), stroke: t === 0 ? "var(--ink-2)" : "var(--grid)", "stroke-width": t === 0 ? 1.2 : 1 }));
+    const tx = s("text", { x: m.l - 6, y: Y(t) + 4, "text-anchor": "end" }); tx.textContent = (t > 0 ? "+" : "") + t; g.append(tx);
+  }
+  xLabels.forEach((l, i) => { const tx = s("text", { x: X(i), y: H - 8, "text-anchor": "middle" }); tx.textContent = l; g.append(tx); });
+  const zl = s("text", { x: X(0) + 8, y: Y(0) - 7, "text-anchor": "start", fill: "var(--ink-2)", "font-size": 11 }); zl.textContent = "0 = normal monsoon"; svg.append(zl);
+  for (const sr of series) {
+    const top = sr.points.map((p, i) => `${X(i)},${Y(p.hi)}`), bot = sr.points.map((p, i) => `${X(i)},${Y(p.lo)}`).reverse();
+    svg.append(s("polygon", { points: [...top, ...bot].join(" "), fill: sr.color, opacity: 0.14 }));
+    svg.append(s("path", { d: sr.points.map((p, i) => `${i ? "L" : "M"}${X(i)},${Y(p.est)}`).join(""), fill: "none", stroke: sr.color, "stroke-width": 2.2 }));
+    sr.points.forEach((p, i) => {
+      const c = s("circle", { cx: X(i), cy: Y(p.est), r: 4, fill: sr.color, stroke: "var(--surface)", "stroke-width": 2 });
+      c.addEventListener("pointermove", e => showTip(`<b>${sr.name} · ${xLabels[i]}</b><div>${sign(p.est)} ${unit}</div><div>90% range ${sign(p.lo)} to ${sign(p.hi)}</div>`, e, document.body));
+      c.addEventListener("pointerleave", hideTip); svg.append(c);
+    });
+  }
+  const box = h("div", { class: "chart" }); box.append(svg);
+  host.append(h("div", { class: "legend" }, series.map(sr => h("span", {}, h("span", { class: "swatch", style: `background:${sr.color}` }), sr.name)), h("span", {}, "band = 90% interval")), box);
+}
+
+// x'b and x'Vx for a scenario vector on the headline state model
+function stateScenario(region, shocks) {
+  const m = D.scenario[region];
+  const xb = x => x.reduce((a, v, i) => a + v * m.b[i], 0);
+  const xVx = x => Math.max(0, x.reduce((a, vi, i) => a + vi * x.reduce((b, vj, j) => b + vj * m.V[i][j], 0), 0));
+  const xe = m.terms.map(t => t === "const" ? 0 : (shocks[t] ?? 0));   // effect vs normal conditions
+  const xp = m.terms.map(t => t === "const" ? 1 : (shocks[t] ?? 0));   // prediction, no waiver year
+  const est = xb(xe), se = Math.sqrt(xVx(xe)), g = xb(xp), sePred = Math.sqrt(xVx(xp) + m.sigma2), t90 = m.t90;
+  const out = Object.entries(shocks).filter(([t, v]) => v && (v < m.range[t][0] || v > m.range[t][1])).map(([t]) => t);
+  return { est, lo: est - t90 * se, hi: est + t90 * se, growth: g, glo: g - t90 * sePred, ghi: g + t90 * sePred,
+           crore: est / 100 * m.credit_cr, outside: out, m };
+}
+
 function resultsPage(el) {
-  // scenario
-  const card = h("div", { class: "card" }, h("h3", {}, "What does a dry monsoon imply for district credit?"),
-    h("p", { class: "note" }, "Applies the district estimates to a monsoon departure you choose. Changes are relative to districts of the same state with a normal monsoon; ranges are 90% intervals."));
-  const sel = h("select", { "aria-label": "State" }, ["Bihar", "Maharashtra"].map(r => h("option", { value: r }, r)));
+  // scenario 1: district panel, both states, path over three years
+  const card = h("div", { class: "card" }, h("h3", {}, "What does a dry monsoon imply for credit? District estimates"),
+    h("p", { class: "note" }, "Applies the district-panel estimates to a monsoon departure you choose. Changes are relative to districts of the same state with a normal monsoon; bands are 90% intervals. ₹ crore = the % change applied to the state's latest direct farm credit."));
   const rng = h("input", { type: "range", min: -60, max: 40, step: 5, value: -20, "aria-label": "Monsoon departure, per cent" });
   const lab = h("b", {}, "−20%"); const out = h("div");
-  card.append(h("div", { class: "controls" }, h("label", {}, "State ", sel), h("label", {}, "Monsoon departure ", rng, " ", lab)), out);
-  const obs = D.district ? null : null;
+  card.append(h("div", { class: "controls" }, h("label", {}, "Monsoon departure ", rng, " ", lab)), out);
+  const STATES = ["Bihar", "Maharashtra"];
+  const LAGS = { Bihar: [["D8", "rain_shortfall_pct"], ["D15", "rain_shortfall_lag2_pct"], ["D15", "rain_shortfall_lag3_pct"]],
+                 Maharashtra: [["D9", "rain_shortfall_pct"], ["D11", "rain_shortfall_lag2_pct"], ["D11", "rain_shortfall_lag3_pct"]] };
+  const WHEN = ["Next March", "2 years on", "3 years on"];
   const render = () => {
-    const dep = +rng.value, sf = -dep, st = sel.value; lab.textContent = sign(dep, 0) + "%";
-    const imm = dc(st === "Bihar" ? "D8" : "D9", "rain_shortfall_pct");
-    const lines = [["Next March (1 year)", imm]];
-    if (st === "Bihar") lines.push(["2 years later", dc("D15", "rain_shortfall_lag2_pct")], ["3 years later", dc("D15", "rain_shortfall_lag3_pct")]);
-    else lines.push(["2 years later", dc("D11", "rain_shortfall_lag2_pct")], ["3 years later", dc("D11", "rain_shortfall_lag3_pct")]);
-    const rows = lines.map(([when, c]) => { const a = c.coef * sf, b1 = c.ci90_low * sf, b2 = c.ci90_high * sf;
-      return { when, est: a, lo: Math.min(b1, b2), hi: Math.max(b1, b2), p: c.p_wild, cls: c.classification }; });
-    out.replaceChildren(h("div", { class: "result" }, `${st}, monsoon ${sign(dep, 0)}%: credit ${sign(rows[0].est)}% next March (range ${sign(rows[0].lo)} to ${sign(rows[0].hi)}).`),
-      h("table", {}, h("thead", {}, h("tr", {}, h("th", {}, "When"), h("th", { class: "num" }, "Credit change %"), h("th", { class: "num" }, "90% range"), h("th", {}, "Evidence"))),
-        h("tbody", {}, rows.map(r => h("tr", {}, h("td", {}, r.when), h("td", { class: "num" }, sign(r.est)), h("td", { class: "num" }, `${sign(r.lo)} to ${sign(r.hi)}`), h("td", {}, r.cls === "inconclusive" ? "inconclusive" : `${r.cls} (p ${fmt(r.p, 3)})`))))),
-      dep < -50 || dep > 35 ? h("div", { class: "warn" }, "Outside most of the observed district range — treat as extrapolation.") : "",
-      h("p", { class: "note", style: "margin-top:8px" }, st === "Bihar" ? "Lagged rows use the specification with district trends (D15)." : "Lagged rows use D11 (no district trends)."));
+    const dep = +rng.value, sf = -dep; lab.textContent = sign(dep, 0) + "%";
+    const res = Object.fromEntries(STATES.map(st => [st, LAGS[st].map(([sp, t]) => { const c = dc(sp, t), a = c.coef * sf, b1 = c.ci90_low * sf, b2 = c.ci90_high * sf;
+      return { est: a, lo: Math.min(b1, b2), hi: Math.max(b1, b2), p: c.p_wild, cls: c.classification }; })]));
+    const lv = D.district_levels;
+    const outside = STATES.filter(st => sf < lv[st].shortfall_range[0] || sf > lv[st].shortfall_range[1]);
+    const head = st => { const r = res[st][st === "Bihar" ? 2 : 0]; return `${st}: ${sign(r.est)}% ${st === "Bihar" ? "three years on" : "next March"} (${sign(r.lo)} to ${sign(r.hi)})`; };
+    const pc = h("div");
+    out.replaceChildren(h("div", { class: "result" }, `Monsoon ${sign(dep, 0)}% → ${head("Bihar")}; ${head("Maharashtra")}.`), pc,
+      h("div", { class: "tbl-wrap" }, h("table", {}, h("thead", {}, h("tr", {}, h("th", {}, "When"), STATES.flatMap(st => [h("th", { class: "num" }, `${st} %`), h("th", { class: "num" }, "90% range"), h("th", { class: "num" }, "₹ crore")]))),
+        h("tbody", {}, WHEN.map((w, i) => h("tr", {}, h("td", {}, w), STATES.flatMap(st => { const r = res[st][i];
+          return [h("td", { class: "num" }, sign(r.est) + (r.cls === "inconclusive" ? "" : " *")), h("td", { class: "num" }, `${sign(r.lo)} to ${sign(r.hi)}`), h("td", { class: "num" }, sign(r.est / 100 * lv[st].direct_cr, 0))]; })))))),
+      outside.length ? h("div", { class: "warn" }, `Outside the district departures observed in ${outside.join(" and ")} since 2009 — treat as extrapolation.`) : "",
+      h("p", { class: "note", style: "margin-top:8px" }, `* significant at 10% (wild bootstrap). Bihar lags use district trends (D15); Maharashtra lags use D11. ₹ crore on direct credit of March ${lv.Bihar.year}: Bihar ${crore(lv.Bihar.direct_cr)}, Maharashtra ${crore(lv.Maharashtra.direct_cr)}.`));
+    pathChart(pc, { unit: "% credit vs normal monsoon", xLabels: ["Monsoon", ...WHEN],
+      series: STATES.map(st => ({ name: st, color: COLOR[st], points: [{ est: 0, lo: 0, hi: 0 }, ...res[st]] })) });
   };
-  rng.oninput = render; sel.onchange = render; render();
+  rng.oninput = render; render();
+
+  // scenario 2: state time series (M4), all three regions, three shocks
+  const card2 = h("div", { class: "card" }, h("h3", {}, "Compare regions: weather, yield and price shocks together"),
+    h("p", { class: "note" }, "Headline state model (M4, ~20 years per region). Effect = change in next year's real credit growth versus normal conditions; the 90% interval reflects estimation uncertainty, the prediction interval adds the year-to-year noise in credit growth. No estimate here is robust — read as illustration."));
+  const ctl = (label, min, max, val, unit) => { const i = h("input", { type: "range", min, max, step: 5, value: val, "aria-label": label }); const b = h("b", {}); return { i, b, el: h("label", {}, label + " ", i, " ", b), unit }; };
+  const cR = ctl("Monsoon departure", -60, 40, -20), cY = ctl("Yield below trend", -20, 30, 0), cP = ctl("Real crop-price fall", -20, 30, 0);
+  const out2 = h("div");
+  card2.append(h("div", { class: "controls" }, cR.el, cY.el, cP.el), out2);
+  const render2 = () => {
+    const dep = +cR.i.value, ys = +cY.i.value, pf = +cP.i.value;
+    cR.b.textContent = sign(dep, 0) + "%"; cY.b.textContent = sign(ys, 0) + "%"; cP.b.textContent = sign(pf, 0) + "%";
+    const shocks = { rain_shortfall_pct: -dep, yield_shortfall_pct: ys, price_fall_pct: pf };
+    const res = REG.map(r => ({ r, ...stateScenario(r, shocks) }));
+    const NAMES = { rain_shortfall_pct: "monsoon", yield_shortfall_pct: "yield", price_fall_pct: "price" };
+    const outside = res.filter(x => x.outside.length).map(x => `${x.r} (${x.outside.map(t => NAMES[t]).join(", ")})`);
+    out2.replaceChildren(
+      h("div", { class: "tbl-wrap" }, h("table", {}, h("thead", {}, h("tr", {}, ["Region", "Effect on real credit growth (pp)", "90% interval", "Predicted growth next year (%)", "90% prediction interval", "≈ ₹ crore vs normal"].map((t, i) => h("th", { class: i ? "num" : "" }, t)))),
+        h("tbody", {}, res.map(x => h("tr", {}, h("td", {}, x.r), h("td", { class: "num" }, sign(x.est)), h("td", { class: "num" }, `${sign(x.lo)} to ${sign(x.hi)}`),
+          h("td", { class: "num" }, sign(x.growth)), h("td", { class: "num" }, `${sign(x.glo)} to ${sign(x.ghi)}`), h("td", { class: "num" }, sign(x.crore, 0))))))),
+      outside.length ? h("div", { class: "warn" }, `Outside the range seen in 2006–2025 for ${outside.join("; ")} — treat as extrapolation.`) : "",
+      h("p", { class: "note", style: "margin-top:8px" }, `Predicted growth = the model's prediction for a year with these shocks and no loan waiver (2006–2025 fit). ₹ crore = effect × the region's latest agricultural credit (March ${D.scenario["All-India"].credit_year}), an approximate first-year difference at current prices.`));
+  };
+  [cR, cY, cP].forEach(c => c.i.oninput = render2); render2();
 
   // district coefficient plot
   const dcard = h("div", { class: "card" }, h("h3", {}, "District panel: effect of a 20-point monsoon shortfall on credit"),
@@ -419,7 +488,22 @@ function resultsPage(el) {
       h("tbody", {}, D.fc_state.map(r => h("tr", {}, h("td", {}, r.region), h("td", {}, { naive_mean: "Naive: past average", naive_last: "Naive: last year", ar1: "Autoregressive", rain: "Monsoon t−1, t−2", full: "Monsoon + yield + price" }[r.model]),
         h("td", { class: "num" }, fmt(r.mae, 1)), h("td", { class: "num" }, fmt(r.mae_vs_naive_mean, 2)), h("td", { class: "num" }, `${r.wins_vs_naive_mean}/${r.n_forecasts}`), h("td", { class: "num" }, fmt(r.dm_p_vs_naive_mean, 2))))))),
     h("div", { class: "warn" }, `No model beats the naive forecast reliably. Ranking Bihar districts by their lagged shortfall gives a mean rank correlation of ${fmt(D.fc_district.reduce((a, r) => a + r.spearman_rank_corr, 0) / D.fc_district.length, 2)} with next year's credit growth — too weak to forecast with. The scenario tool above is descriptive, not a forecast.`));
-  el.append(h("h2", {}, "Econometric results"), card, dcard, ecard, kcard, scard, fcard,
+  // design-plan validation extras (plan s.5.4, s.8)
+  const tbl = (cols, rows) => h("div", { class: "tbl-wrap" }, h("table", {}, h("thead", {}, h("tr", {}, cols.map(([l, , n]) => h("th", { class: n ? "num" : "" }, l)))),
+    h("tbody", {}, rows.map(r => h("tr", {}, cols.map(([, f, n]) => h("td", { class: n ? "num" : "" }, f(r))))))));
+  const ho = D.fc_holdout, mean = k => ho.reduce((a, r) => a + r[k], 0) / ho.length;
+  const SHOCK_OF = { R9: "drought_flag_75lpa", R10: "drought_flag_70lpa", R11: "spi_drought_flag", R12: "rain_spi_shortfall", R13: "rain_shortfall_pct", R14: "rain_shortfall_pct" };
+  const plan = D.state_coefs.filter(r => SHOCK_OF[r.spec] === r.term || (["R13", "R14"].includes(r.spec) && ["yield_shortfall_pct", "price_fall_pct"].includes(r.term)));
+  const vcard = h("div", { class: "card" }, h("h3", {}, "More validation from the design plan"),
+    h("p", { class: "note" }, `Leave-one-drought-out: each drought credit year is predicted from all other years. Mean absolute error over ${ho.length} held-out years: naive ${fmt(mean("abs_err_naive_mean"))} pp, monsoon model ${fmt(mean("abs_err_rain"))} pp, full model ${fmt(mean("abs_err_full"))} pp — no consistent gain.`),
+    tbl([["Region", r => r.region], ["Held-out credit year", r => r.held_out_year], ["Monsoon", r => sign(r.monsoon_departure_pct, 0) + "%", 1], ["Actual growth", r => sign(r.actual), 1],
+      ["Naive", r => sign(r.naive_mean), 1], ["Monsoon model", r => sign(r.rain), 1], ["Full model", r => sign(r.full), 1]], ho),
+    h("p", { class: "note", style: "margin-top:12px" }, "Alternative drought definitions and controls (headline M4 otherwise unchanged). Specifications with fewer than 3 drought years are not estimated (see model_skipped.csv)."),
+    tbl([["Spec", r => r.spec], ["Change", r => r.question], ["Region", r => r.region], ["Shock", r => r.term.replace(/_pct$/, "").replace(/_/g, " ")],
+      ["Coef", r => sign(r.coef, 2), 1], ["90% interval", r => `${sign(r.ci90_low, 2)} to ${sign(r.ci90_high, 2)}`, 1], ["p (wild)", r => fmt(r.p_wild, 3), 1], ["Reading", r => r.classification]], plan),
+    h("p", { class: "note", style: "margin-top:12px" }, "Unit-root tests on the model series (2006–2025). ADF: H0 unit root; KPSS: H0 stationary. KPSS p-values are capped at 0.10 by its lookup table. Low power at n = 20."),
+    tbl([["Region", r => r.region], ["Series", r => r.label], ["ADF p", r => fmt(r.adf_p, 3), 1], ["KPSS p", r => (r.kpss_p >= 0.1 ? "≥ " : "") + fmt(r.kpss_p, 3), 1], ["Reading", r => r.verdict]], D.unit_root));
+  el.append(h("h2", {}, "Econometric results"), card, card2, dcard, ecard, kcard, scard, fcard, vcard,
     h("div", { class: "card" }, h("h3", {}, "How to read these"), h("p", { class: "note" },
       "Positive = credit higher after worse conditions (countercyclical); negative = credit lower (procyclical). Estimates are conditional associations. The district design compares districts of the same state in the same year, so state policy, prices and inflation cancel out; rainfall differences between neighbouring districts are plausibly unrelated to bank behaviour, but the mechanism (less lending vs less demand vs restructuring) is not identified.")));
 }

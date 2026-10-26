@@ -45,7 +45,8 @@ MIN_EVENTS = 3  # refuse a binary shock indicator with fewer events than this
 
 ADVERSE_SHOCKS = {"rain_shortfall_pct", "rain_deficit_pct", "rain_excess_pct", "drought_flag",
                   "yield_shortfall_pct", "price_fall_pct", "rain_shortfall_lag2_pct", "rain_shortfall_lag3_pct",
-                  "rain_shortfall_lead_placebo_pct", "rain_standardised_shortfall"}
+                  "rain_shortfall_lead_placebo_pct", "rain_standardised_shortfall",
+                  "drought_flag_75lpa", "drought_flag_70lpa", "spi_drought_flag", "rain_spi_shortfall"}
 
 
 @dataclass(frozen=True)
@@ -89,6 +90,20 @@ SPECS = [
          sample="loan_waiver_year == 0", robustness_of="M3"),
     Spec("R8", "Post-2010 sample (DBIE credit only)", ("rain_shortfall_pct", "yield_shortfall_pct", "price_fall_pct", "loan_waiver_year"),
          sample="year >= 2011", robustness_of="M4"),
+    # --- design-plan robustness (plan s.4, s.5.4), added 2026-10-26 after the headline results were known
+    Spec("R9", "Drought = rainfall below 75% of normal", ("drought_flag_75lpa", "yield_shortfall_pct", "price_fall_pct", "loan_waiver_year"),
+         robustness_of="M4"),
+    Spec("R10", "Drought = rainfall below 70% of normal", ("drought_flag_70lpa", "yield_shortfall_pct", "price_fall_pct", "loan_waiver_year"),
+         robustness_of="M4"),
+    Spec("R11", "Drought = SPI <= -1", ("spi_drought_flag", "yield_shortfall_pct", "price_fall_pct", "loan_waiver_year"),
+         robustness_of="M4"),
+    Spec("R12", "Continuous SPI instead of % departure", ("rain_spi_shortfall", "yield_shortfall_pct", "price_fall_pct", "loan_waiver_year"),
+         robustness_of="M4"),
+    Spec("R13", "Control: real non-agricultural credit growth (2011-2026)",
+         ("rain_shortfall_pct", "yield_shortfall_pct", "price_fall_pct", "loan_waiver_year", "nonagri_real_growth_pct"), robustness_of="M4"),
+    Spec("R14", "Control: real GSDP growth (states, 2013-2025)",
+         ("rain_shortfall_pct", "yield_shortfall_pct", "price_fall_pct", "loan_waiver_year", "gsdp_real_growth_pct"),
+         regions=("Bihar", "Maharashtra"), robustness_of="M4"),
 ]
 
 
@@ -285,6 +300,8 @@ def main():
     summary(coefs).to_csv(REPORTS / "tables" / "cyclicality_summary.csv", index=False)
     pd.DataFrame(res.diag).to_csv(REPORTS / "tables" / "model_diagnostics.csv", index=False)
     pd.DataFrame(res.skipped, columns=["spec", "region", "n", "k", "reason"]).to_csv(REPORTS / "tables" / "model_skipped.csv", index=False)
+    from diagnostics import unit_root_tests
+    unit_root_tests(shocks[shocks.year.between(2006, 2025)]).to_csv(REPORTS / "tables" / "unit_root_tests.csv", index=False)
 
     import statsmodels, scipy
     run_id = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")

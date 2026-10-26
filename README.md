@@ -38,7 +38,9 @@ Or all stages in order: `.venv\Scripts\python.exe src\run_pipeline.py [--skip-in
 | `src/district_panel.py` | 71-district panel, district + state×year fixed effects (De & Vij design); concordance in `data/metadata/district_concordance.csv` |
 | `src/early_warning.py`, `config/project_config.yaml` | Rules-based monitoring categories, thresholds, backtests |
 | `src/reporting.py`, `app/` | Builds the self-contained dashboard from saved outputs |
-| `tests/` | pytest suite (29 tests; see [TESTING.md](TESTING.md)) |
+| `tests/` | pytest suite (34 tests; see [TESTING.md](TESTING.md)) |
+| [docs/user_guide/USER_GUIDE.md](docs/user_guide/USER_GUIDE.md) | One-page dashboard guide with screenshots and worked scenarios |
+| `reports/paper/` | Term paper (PDF) |
 | `src/district_robustness.py`, `src/forecasting.py` | Pre-registered stress tests and mechanism split; out-of-sample forecast validation |
 | `src/run_pipeline.py` | Everything in order: `python src/run_pipeline.py [--skip-ingestion]` |
 | [METHODOLOGY.md](METHODOLOGY.md), [MODEL_CARD.md](MODEL_CARD.md) | Design, results, limitations, intended use |

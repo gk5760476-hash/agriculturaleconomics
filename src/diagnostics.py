@@ -6,10 +6,34 @@ from __future__ import annotations
 import warnings
 
 import numpy as np
+import pandas as pd
 import statsmodels.api as sm
 from statsmodels.stats.diagnostic import acorr_breusch_godfrey, het_breuschpagan
 from statsmodels.stats.outliers_influence import variance_inflation_factor
 from statsmodels.stats.stattools import jarque_bera
+from statsmodels.tsa.stattools import adfuller, kpss
+
+# series entering the state models (design plan s.8: ADF/KPSS before trusting time-series regressions)
+UNIT_ROOT_SERIES = {"credit_real_growth_pct": "Real credit growth (outcome)", "rain_shortfall_pct": "Monsoon shortfall",
+                    "yield_shortfall_pct": "Yield shortfall", "price_fall_pct": "Real crop-price fall"}
+
+
+def unit_root_tests(shocks: pd.DataFrame) -> pd.DataFrame:
+    """ADF (H0: unit root) and KPSS (H0: stationary), constant only, 1 lag - both have little power at n ~ 20.
+    A series is read as stationary when ADF rejects (p < 0.10) and KPSS does not."""
+    rows = []
+    for region, g in shocks.sort_values("year").groupby("region"):
+        for col, label in UNIT_ROOT_SERIES.items():
+            x = g[col].dropna().to_numpy(float)
+            with warnings.catch_warnings():
+                warnings.simplefilter("ignore")  # KPSS warns when p lies outside its lookup table
+                adf_p = float(adfuller(x, maxlag=1, autolag=None, regression="c")[1])
+                kpss_p = float(kpss(x, regression="c", nlags=1)[1])
+            verdict = ("stationary" if adf_p < 0.10 and kpss_p >= 0.10 else
+                       "unit root" if adf_p >= 0.10 and kpss_p < 0.10 else "ambiguous (low power)")
+            rows.append({"region": region, "series": col, "label": label, "n": len(x),
+                         "adf_p": adf_p, "kpss_p": kpss_p, "verdict": verdict})
+    return pd.DataFrame(rows)
 
 
 def diagnose(y, X, e, names, years) -> dict:

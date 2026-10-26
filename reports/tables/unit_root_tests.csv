@@ -1,0 +1,13 @@
+region,series,label,n,adf_p,kpss_p,verdict
+All-India,credit_real_growth_pct,Real credit growth (outcome),20,0.005515382371395514,0.01909706067946222,ambiguous (low power)
+All-India,rain_shortfall_pct,Monsoon shortfall,20,0.015633363758272862,0.1,stationary
+All-India,yield_shortfall_pct,Yield shortfall,20,0.0008975294437648215,0.1,stationary
+All-India,price_fall_pct,Real crop-price fall,20,2.6504848571157297e-07,0.1,stationary
+Bihar,credit_real_growth_pct,Real credit growth (outcome),20,1.7797201260524762e-05,0.02353320180289089,ambiguous (low power)
+Bihar,rain_shortfall_pct,Monsoon shortfall,20,0.0002743968366894094,0.1,stationary
+Bihar,yield_shortfall_pct,Yield shortfall,20,0.00037027599815414803,0.1,stationary
+Bihar,price_fall_pct,Real crop-price fall,20,2.181996113438302e-05,0.1,stationary
+Maharashtra,credit_real_growth_pct,Real credit growth (outcome),20,0.00381962093143612,0.1,stationary
+Maharashtra,rain_shortfall_pct,Monsoon shortfall,20,0.005704581698770658,0.1,stationary
+Maharashtra,yield_shortfall_pct,Yield shortfall,20,0.05128272071779737,0.1,stationary
+Maharashtra,price_fall_pct,Real crop-price fall,20,5.570220249306708e-10,0.1,stationary

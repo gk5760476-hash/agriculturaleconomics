@@ -38,6 +38,8 @@ Phases 1–7 of the master spec are built: data pipeline, shocks, state models, 
 
 Also done 2026-10-26: singular district-trend design fixed (D14/D15; estimates unchanged), every policy event cites an official source (Maharashtra GRs for EV-08/EV-12).
 
+Design-plan gaps closed 2026-10-26 (after an audit against the plan): alternative drought thresholds (75%/70% of normal) and SPI, non-agricultural-credit and GSDP controls (R9–R14), leave-one-drought-out and MAPE, ADF/KPSS unit-root tests, a three-region scenario tool with yield/price inputs, prediction intervals, ₹ crore and range warnings, a district path chart, and `docs/user_guide/USER_GUIDE.md`. None changes the conclusions.
+
 ## Optional extensions (not required for the paper)
 - State crop prices (Agmarknet) so price shocks differ by state
 - Splice agri GSVA back to 2004–2011 (base 2004-05 files already in `raw/state_handbook/`)

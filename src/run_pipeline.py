@@ -35,7 +35,8 @@ def stages(skip_ingestion: bool):
     yield "district robustness", district_robustness.run
     yield "early warning", lambda: (early_warning.backtest(early_warning.state_signals()),
                                     early_warning.backtest_district(), early_warning.district_signals())
-    yield "forecasting", lambda: (forecasting.score(forecasting.state_forecasts()), forecasting.district_ranking())
+    yield "forecasting", lambda: (forecasting.score(forecasting.state_forecasts()), forecasting.drought_holdout(),
+                                  forecasting.district_ranking())
     yield "dashboard", reporting.build
 
 

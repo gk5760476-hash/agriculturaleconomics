@@ -84,11 +84,41 @@ def score(f: pd.DataFrame) -> pd.DataFrame:
             dm_p = 2 * stats.t.sf(abs(d.mean() / (d.std(ddof=1) / np.sqrt(len(d)))), len(d) - 1) if m != "naive_mean" and d.std() > 0 else np.nan
             rows.append({"region": region, "model": m, "n_forecasts": len(g), "years": f"{g.year.min()}-{g.year.max()}",
                          "mae": np.abs(err).mean(), "rmse": np.sqrt((err ** 2).mean()),
+                         # design plan s.5.4 asks for MAPE; growth rates near zero inflate it, so MAE stays the headline
+                         "mape": 100 * (np.abs(err) / np.abs(g.actual)).mean(),
                          "mae_vs_naive_mean": np.abs(err).mean() / base.mean(),
                          "wins_vs_naive_mean": int((np.abs(err) < base).sum()), "dm_p_vs_naive_mean": dm_p,
                          "mae_drought_years": np.abs(err[g.drought_year]).mean() if g.drought_year.any() else np.nan})
     out = pd.DataFrame(rows)
     out.to_csv(REPORTS / "tables" / "forecast_state_scores.csv", index=False)
+    return out
+
+
+def drought_holdout() -> pd.DataFrame:
+    """Leave-one-drought-out (design plan s.5.4): fit on every other year, predict the held-out
+    drought credit year. Uses future years too, so it tests fit, not real-time forecasting."""
+    s = pd.read_csv(PROCESSED / "shocks_region_year.csv")
+    y = "credit_real_growth_pct"
+    rows = []
+    for region, years in DROUGHT_CREDIT_YEARS.items():
+        g = s[(s.region == region)].dropna(subset=[y])
+        for yr in years:
+            test = g[g.year == yr]
+            if test.empty:
+                continue
+            test, train = test.iloc[0], g[g.year != yr]
+            row = {"region": region, "held_out_year": yr, "monsoon_departure_pct": test.rain_departure_pct,
+                   "actual": test[y], "naive_mean": train[y].mean()}
+            for name, terms in STATE_MODELS.items():
+                if name == "ar1":
+                    continue
+                tr = train.dropna(subset=terms)
+                row[name] = _ols_predict(tr, test, terms, y) if not test[terms].isna().any() else np.nan
+            for m in ["naive_mean", "rain", "full"]:
+                row[f"abs_err_{m}"] = abs(row["actual"] - row[m])
+            rows.append(row)
+    out = pd.DataFrame(rows)
+    out.to_csv(REPORTS / "tables" / "forecast_drought_holdout.csv", index=False)
     return out
 
 
@@ -118,6 +148,7 @@ if __name__ == "__main__":
     pd.set_option("display.width", 250)
     f = state_forecasts()
     print(score(f).round(3).to_string(index=False))
+    print(drought_holdout().round(2).to_string(index=False))
     r = district_ranking()
     print(r.round(3).to_string(index=False))
     print("mean rank corr:", round(r.spearman_rank_corr.mean(), 3), " MAE model/naive:",

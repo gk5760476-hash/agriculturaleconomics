@@ -1,3 +1,10 @@
 spec,region,n,k,reason
 R5,Maharashtra,20,5,drought_flag has 1 event(s) (< 3)
 R5,All-India,20,4,drought_flag has no variation in this sample
+R9,Maharashtra,20,5,drought_flag_75lpa has 1 event(s) (< 3)
+R9,All-India,20,4,drought_flag_75lpa has no variation in this sample
+R10,Bihar,20,5,drought_flag_70lpa has 1 event(s) (< 3)
+R10,Maharashtra,20,4,drought_flag_70lpa has no variation in this sample
+R10,All-India,20,4,drought_flag_70lpa has no variation in this sample
+R11,Maharashtra,20,5,spi_drought_flag has 1 event(s) (< 3)
+R14,Maharashtra,13,6,only 7 residual degrees of freedom (< 8)

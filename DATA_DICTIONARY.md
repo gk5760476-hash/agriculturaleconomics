@@ -81,6 +81,28 @@ Concept: **stock outstanding at end-March**, scheduled commercial banks incl. RR
 
 One row per region × credit year *t*: every `credit_region_year` column; `monsoon_year` (= *t*−1) with `monsoon_*` rainfall columns; `crop_year` (*t*−1)–*t* with foodgrain columns; `agri_total_long_*` (from 2004); `macro_region_year` columns for FY (*t*−1)–*t*; `wpi_all_commodities_2011_12` (deflator) and `agri_total_long_real_cr_2011_12` (real credit, 2011-12 prices); `wpi_real_growth_<crop>_pct` for FY (*t*−1)–*t*; `loan_waiver_year`, `macro_shock_year` (0/1) with the event IDs. Missing inputs stay blank, never zero.
 
+## `shocks_region_year.csv` — built by `src/shock_indicators.py`
+
+One row per region × credit year *t* (2004–2026). Adverse shocks are signed so that larger = worse for farmers.
+
+| Column | Definition | Unit |
+|---|---|---|
+| rain_departure_pct, rain_shortfall_pct | JJAS departure of monsoon *t*−1 from the 1971–2020 mean; shortfall = −departure | % |
+| rain_deficit_pct, rain_excess_pct | max(0, shortfall), max(0, −shortfall) | % |
+| drought_flag, drought_flag_75lpa, drought_flag_70lpa | Departure ≤ −20% / ≤ −25% / ≤ −30% (below 80% / 75% / 70% of normal) | 0/1 |
+| excess_flag | Departure ≥ +20% | 0/1 |
+| rain_standardised_shortfall | −(JJAS total − 1971–2020 mean) ÷ 1971–2020 standard deviation | SD |
+| rain_spi_shortfall, spi_drought_flag | −SPI (gamma fit on 1971–2020 JJAS totals); flag = SPI ≤ −1 | SD, 0/1 |
+| rain_shortfall_lag2_pct, rain_shortfall_lead_placebo_pct | Shortfall of monsoon *t*−2, and of monsoon *t* (after the credit date — placebo) | % |
+| yield_deviation_pct, yield_shortfall_pct | 100 × residual of log foodgrain yield on a region linear trend; shortfall = −deviation | % |
+| crop_real_price_growth_pct, price_fall_pct | Area-weighted real WPI growth of the region's crops (2004–07 weights); fall = −growth | % |
+| credit_real_growth_pct, credit_nominal_growth_pct | Log growth × 100 of agricultural credit (real = deflated by all-commodities WPI) | % |
+| credit_direct_growth_pct, credit_direct_nonmetro_growth_pct | Same for direct and non-metro direct credit (2011 on) | % |
+| credit_real_growth_rel_allindia_pct, credit_real_growth_lag1_pct | Region minus All-India; previous year's real growth | pp, % |
+| nonagri_real_growth_pct | Real growth of non-agricultural SCB credit (control, 2011 on) | % |
+| gsdp_real_growth_pct | Growth of GSDP at constant 2011-12 prices (control, states, FY 2012-13 on) | % |
+| loan_waiver_year, macro_shock_year | Policy-event dummies (`data/raw/policy/policy_events.csv`) | 0/1 |
+
 ## Status vocabulary (`data_availability_matrix.csv`)
 
 `observed` — value present; `missing` — the source exists but has no value for that year; `not_collected` — no source has been obtained yet.

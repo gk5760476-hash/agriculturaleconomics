@@ -19,13 +19,16 @@ Coefficients with 90% intervals, wild-bootstrap p-values and BH q-values (`repor
 - Placebo (later monsoon): passes in the district panel (p = 0.41); **fails for Maharashtra in the state series (p = 0.035)**, a reminder that state-level estimates can be chance.
 - Early-warning backtest: no predictive skill (district lift 0.9–1.1; state precision 0.25–0.75 against a base rate of 0.5).
 - Out-of-sample credit-growth forecasts (2016–2025): no model beats the naive past-average forecast; shock models are 4–49% worse. **Do not use the scenario tool as a forecast.**
-- The Bihar lagged effect survives an event-study pre-trend check and two-way clustering, but roughly halves with district-specific trends.
+- The Bihar lagged effect survives an event-study pre-trend check and two-way clustering, but shrinks by about 40% with district-specific trends.
+- Leave-one-drought-out (8 drought years): full model MAE 5.4 pp vs naive 6.1 pp, closer in 6 of 8 years (not significant; uses later years). MAPE is reported but meaningless near zero growth.
+- Alternative drought definitions (75% / 70% of normal, SPI) and controls (non-agricultural credit, GSDP) leave every weather effect inconclusive. ADF/KPSS: shocks stationary; credit growth ambiguous for Bihar and All-India.
+- The state scenario tool's prediction intervals are 30–60 pp wide: they show how little a year's credit growth is pinned down by shocks.
 
 ## Known failure cases
 - Maharashtra state credit includes metro-booked lending (Mumbai), which swings by ₹ thousands of crore a year.
 - Loan-waiver years (2008; Maharashtra 2018 and 2020) produce large credit falls unrelated to new lending.
 - A Bihar rainfall deficit against the 1971–2020 normal is common in recent years, so Bihar is often on "Watch".
-- Scenarios beyond the observed district rainfall range are flagged as extrapolation.
+- Scenarios beyond the observed district rainfall range, or beyond a region's 2006–2025 monsoon, yield or price range in the state tool, are flagged as extrapolation (All-India never had a monsoon below −15% in that window).
 
 ## Human oversight
 A qualified analyst must review data quality, uncertainty and local context before any policy use. A flag means "verify on the ground", never "act".

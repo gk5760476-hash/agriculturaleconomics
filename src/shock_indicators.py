@@ -10,10 +10,17 @@ Definitions are fixed here, before estimation, and must not be tuned to results:
             rain_deficit_pct     = max(0, shortfall);  rain_excess_pct = max(0, -shortfall)
             drought_flag         = departure <= -20  (IMD 'deficient' or worse)
             excess_flag          = departure >= +20  (IMD 'excess' or more)
+            drought_flag_75lpa / _70lpa = rainfall below 75% / 70% of normal (departure <= -25 / -30)
+            rain_spi_shortfall   = -SPI: JJAS total through a gamma CDF fitted on 1971-2020, then
+                                   the standard-normal quantile; spi_drought_flag = SPI <= -1
+            (the last three were added from design plan s.4/s.5.4 after the headline results were known)
   production yield_shortfall_pct = -(100 x residual of log foodgrain yield on a
                                      region-specific linear trend), crop year (t-1)-t
   price     price_fall_pct       = -(area-weighted real WPI growth of the region's crops), FY (t-1)-t
             weights: mean crop area 2004-05..2006-07 (HBS Tables 67-70, 76-78), fixed
+  controls  nonagri_real_growth_pct = growth of non-agricultural SCB credit deflated by WPI (2011 on)
+            gsdp_real_growth_pct    = growth of GSDP at constant 2011-12 prices (states, FY 2012-13 on);
+                                      includes agriculture, so it can absorb part of a weather effect
 
 Usage:
     python -I src/shock_indicators.py
@@ -22,12 +29,16 @@ from __future__ import annotations
 
 import numpy as np
 import pandas as pd
+from scipy import stats
 
 from ingestion import INTERIM
 from transformations import PROCESSED, REGIONS
 
 DROUGHT_THRESHOLD = -20.0
 EXCESS_THRESHOLD = 20.0
+LPA_DROUGHT_THRESHOLDS = {"drought_flag_75lpa": -25.0, "drought_flag_70lpa": -30.0}
+SPI_NORMAL_YEARS = (1971, 2020)
+SPI_DROUGHT = -1.0
 PRICE_WEIGHT_YEARS = (2004, 2006)  # crop-year starts averaged for area weights
 
 # HBS area table -> WPI item(s) priced for that crop group (equal-weighted within group)
@@ -77,10 +88,23 @@ def yield_deviation(panel: pd.DataFrame) -> pd.Series:
     return out
 
 
+def monsoon_spi(rain: pd.DataFrame) -> pd.Series:
+    """SPI of the JJAS total per region x year (gamma fitted on the normal period, location fixed at 0)."""
+    out = {}
+    lo, hi = SPI_NORMAL_YEARS
+    for region, d in rain.groupby("region_id"):
+        a, _, scale = stats.gamma.fit(d.loc[d.year.between(lo, hi), "jjas_mm"], floc=0)
+        spi = stats.norm.ppf(stats.gamma.cdf(d.jjas_mm, a, scale=scale))
+        out.update({(region, y): v for y, v in zip(d.year, spi)})
+    return pd.Series(out)
+
+
 def build_shocks() -> pd.DataFrame:
     p = pd.read_csv(PROCESSED / "analysis_panel_state_year.csv").sort_values(["region", "year"])
     rain = pd.read_csv(PROCESSED / "rainfall_region_year.csv")
-    rain = rain[rain.district.isna()].set_index(["region_id", "year"]).jjas_departure_pct
+    rain = rain[rain.district.isna()]
+    spi = monsoon_spi(rain)
+    rain = rain.set_index(["region_id", "year"]).jjas_departure_pct
 
     s = p[["region", "year", "fiscal_year", "monsoon_year", "crop_year", "loan_waiver_year", "macro_shock_year"]].copy()
     dep = p.monsoon_jjas_departure_pct
@@ -90,7 +114,11 @@ def build_shocks() -> pd.DataFrame:
     s["rain_excess_pct"] = np.maximum(0, dep).where(dep.notna())
     s["drought_flag"] = (dep <= DROUGHT_THRESHOLD).astype(int).where(dep.notna())
     s["excess_flag"] = (dep >= EXCESS_THRESHOLD).astype(int).where(dep.notna())
+    for col, thr in LPA_DROUGHT_THRESHOLDS.items():
+        s[col] = (dep <= thr).astype(int).where(dep.notna())
     s["rain_standardised_shortfall"] = -p.monsoon_jjas_standardised_anomaly
+    s["rain_spi_shortfall"] = -pd.Series([spi.get((r, y), np.nan) for r, y in zip(p.region, p.monsoon_year)], index=p.index)
+    s["spi_drought_flag"] = (s.rain_spi_shortfall >= -SPI_DROUGHT).astype(int).where(s.rain_spi_shortfall.notna())
     # monsoon t-2 (one more lag) and monsoon t (after end-March t: placebo, must not matter)
     s["rain_shortfall_lag2_pct"] = -pd.Series([rain.get((r, y - 2), np.nan) for r, y in zip(p.region, p.year)], index=p.index)
     s["rain_shortfall_lead_placebo_pct"] = -pd.Series([rain.get((r, y), np.nan) for r, y in zip(p.region, p.year)], index=p.index)
@@ -114,6 +142,10 @@ def build_shocks() -> pd.DataFrame:
     ai = s[s.region == "All-India"].set_index("year").credit_real_growth_pct
     s["credit_real_growth_rel_allindia_pct"] = s.credit_real_growth_pct - s.year.map(ai)
     s["credit_real_growth_lag1_pct"] = s.groupby("region").credit_real_growth_pct.shift(1)
+    # controls (design plan s.4): banking development and the wider economy, same FY as the credit growth
+    nonagri_real = np.log(p.nonagri_outstanding_cr / p.wpi_all_commodities_2011_12)
+    s["nonagri_real_growth_pct"] = (100 * nonagri_real.groupby(level="region").diff()).reindex(key).to_numpy()
+    s["gsdp_real_growth_pct"] = (100 * np.log(p.gsdp_constant_2011_12_cr).groupby(level="region").diff()).reindex(key).to_numpy()
 
     s = s[s.year.between(2004, 2026)]
     s.to_csv(PROCESSED / "shocks_region_year.csv", index=False)
