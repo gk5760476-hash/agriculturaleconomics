@@ -33,8 +33,16 @@ Phases 1–7 of the master spec are built: data pipeline, shocks, state models, 
 | 1 | **Done** | Bihar lag survives event study (clean placebos) and two-way clustering; mechanism = fewer borrowers at RRBs and rural branches. `reports/tables/district_robustness.csv` |
 | 2 | **Done** | No model beats the naive forecast; district ranking weak (ρ = 0.16). `reports/tables/forecast_*.csv` |
 | 3 | **Done** (verified by hand 2026-10-26) | `data/metadata/manual_verification_checklist.csv`; Maharashtra waivers still lack GR numbers |
-| 4 | **Done except git** | `src/run_pipeline.py`, integration test (29 tests), CSV export, PRD / POLICY_FRAMEWORK / SECURITY_PRIVACY / TESTING / DEPLOYMENT. Git is not installed on this machine |
-| 5 | **Drafted** | Term paper doc: https://claude.ai/artifact/PEtRG5xh4X95DEstbkZjFh (open question: De & Vij 2013 publication venue) |
+| 4 | **Done** | `src/run_pipeline.py`, integration test (29 tests, runs on a scratch copy), CSV export, PRD / POLICY_FRAMEWORK / SECURITY_PRIVACY / TESTING / DEPLOYMENT; Git repo pushed to GitHub |
+| 5 | **Drafted, synced to final outputs** | Term paper doc: https://claude.ai/artifact/PEtRG5xh4X95DEstbkZjFh; PDF in `reports/paper/`. De & Vij (2013) = ISB working paper |
+
+Also done 2026-10-26: singular district-trend design fixed (D14/D15; estimates unchanged), every policy event cites an official source (Maharashtra GRs for EV-08/EV-12).
+
+## Optional extensions (not required for the paper)
+- State crop prices (Agmarknet) so price shocks differ by state
+- Splice agri GSVA back to 2004–2011 (base 2004-05 files already in `raw/state_handbook/`)
+- District trends in the mechanism specs K1–K8 (post-hoc, label as such)
+- Account-level overdue / KCC renewal data from NABARD or Bihar SLBC to test the repayment channel
 
 ## Pre-registered specifications for #1 (fixed 2026-10-26, before estimation)
 All: district + state×year fixed effects, 2010–2026, Mumbai excluded, Thane+Palghar merged; shortfall = −(monsoon departure); effects reported per 20-point shortfall.

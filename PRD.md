@@ -14,5 +14,5 @@ The requirements are in the project master documentation (spec s.14). This file 
 | FR-08 Provenance | Done | Source register, download manifest (SHA-256), cleaning log, model-run JSON |
 | FR-09 Export | Done | CSV download on every dashboard table; all tables in `reports/tables/` |
 | FR-10 Reproducibility | Done | `src/run_pipeline.py`, pinned `requirements.txt`, run JSON with versions and seed |
-| Version control (s.16.1) | **Pending** | Git not installed on this machine |
+| Version control (s.16.1) | Done | Git repository, pushed to [github.com/gk5760476-hash/agriculturaleconomics](https://github.com/gk5760476-hash/agriculturaleconomics); large raw files git-ignored (restore via `data/metadata/download_manifest.csv`) |
 | Out of scope (s.14.4) | Respected | No individual scoring, no automated decisions, no causal claims without identification |
