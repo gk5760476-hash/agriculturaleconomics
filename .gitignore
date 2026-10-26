@@ -1,0 +1,22 @@
+﻿.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+# local Claude Code / video-project tooling, not part of ACREWS
+.claude/
+.mcp.json
+skills-lock.json
+ethics/
+# third-party papers (copyright) - cited in the term paper's references instead
+docs/readings/
+# large raw inputs - restore from the Drive folder using data/metadata/download_manifest.csv
+data/raw/rainfall/
+data/raw/credit/
+data/raw/geo/
+data/interim/credit/
+# 21 MB, rebuilt by src/transformations.py
+data/processed/credit_state_year_detail.csv
+reports/model_runs/
+# page 1 is an RTI cover letter with a private individual's contact details - keep out of version control;
+# the MSP values are in des_msp_2004-05_to_2026-27_transcribed.csv
+data/raw/prices/msp/*.pdf

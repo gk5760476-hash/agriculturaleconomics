@@ -1,0 +1,72 @@
+state,district,assessed_monsoon,category,reason,monsoon_departure_pct,latest_credit_year,direct_credit_cr,direct_credit_growth_pct
+Bihar,Banka,2025,Normal monitoring,none,-17.523144717489338,2026,1018.5588,26.123315825981535
+Bihar,Begusarai,2025,Normal monitoring,none,19.17324527562416,2026,2864.8147,37.5304689534712
+Bihar,Khagaria,2025,Normal monitoring,none,-18.801138755464095,2026,1214.9369,37.98607069679463
+Bihar,Kishanganj,2025,Normal monitoring,none,-14.105529481907604,2026,1460.3421,19.652943279427973
+Bihar,Lakhisarai,2025,Normal monitoring,none,-15.210604630754283,2026,695.8777,40.23016007416413
+Bihar,Munger,2025,Normal monitoring,none,-15.152684552169777,2026,647.3691,45.26415998120956
+Bihar,Nalanda,2025,Normal monitoring,none,13.826251764665741,2026,1902.2738000000002,35.548419181317286
+Bihar,Araria,2025,Watch,monsoon 2025 departure -42%,-42.48914337622014,2026,1825.7350000000001,14.393147583747464
+Bihar,Bhagalpur,2025,Watch,monsoon 2025 departure -44%,-43.90410755109006,2026,1785.6326000000001,27.090004359781574
+Bihar,Bhojpur,2025,Watch,monsoon 2025 departure -24%,-23.545860181054845,2026,1326.3634,11.040035692367837
+Bihar,Buxar,2025,Watch,monsoon 2025 departure -21%,-21.34346877080225,2026,1010.7209,17.440610432595463
+Bihar,Gopalganj,2025,Watch,monsoon 2025 departure -44%,-43.644171124928555,2026,1754.1417,2.4687912296989225
+Bihar,Jamui,2025,Watch,monsoon 2025 departure -22%,-21.52804457753328,2026,1113.0498,38.518624537309734
+Bihar,Jehanabad,2025,Watch,monsoon 2025 departure -29%,-29.141927622624735,2026,549.5405,30.29165245335389
+Bihar,Katihar,2025,Watch,monsoon 2025 departure -36%,-36.40872979438574,2026,2153.2555,6.3426446252482265
+Bihar,Madhepura,2025,Watch,monsoon 2025 departure -37%,-36.62910741333886,2026,1374.1878000000002,11.715144377729189
+Bihar,Madhubani,2025,Watch,monsoon 2025 departure -45%,-44.76824566485851,2026,2054.9661,-2.35708197883082
+Bihar,Muzaffarpur,2025,Watch,monsoon 2025 departure -48%,-47.56774558017212,2026,3842.1765,12.886176213559793
+Bihar,Pashchim Champaran,2025,Watch,monsoon 2025 departure -41%,-40.553471271872624,2026,2432.6096,8.383968149643124
+Bihar,Purbi Champaran,2025,Watch,monsoon 2025 departure -43%,-43.18545588355098,2026,3599.467,12.248866679554908
+Bihar,Purnia,2025,Watch,monsoon 2025 departure -46%,-46.16763335617185,2026,2559.609,11.252671880613889
+Bihar,Saharsa,2025,Watch,monsoon 2025 departure -48%,-47.50278720802815,2026,1293.2667,12.457667648768734
+Bihar,Saran,2025,Watch,monsoon 2025 departure -32%,-32.48657640411668,2026,2093.7731,10.442409690924933
+Bihar,Sheikhpura,2025,Watch,monsoon 2025 departure -29%,-28.699870846936463,2026,508.0505,40.27797126711084
+Bihar,Sheohar,2025,Watch,monsoon 2025 departure -48%,-47.572487717763636,2026,490.5339,15.396453944415612
+Bihar,Sitamarhi,2025,Watch,monsoon 2025 departure -53%,-52.86432664687473,2026,1703.0324999999998,8.190847007745674
+Bihar,Siwan,2025,Watch,monsoon 2025 departure -28%,-28.102307546247225,2026,2497.8047,-13.831039655486506
+Bihar,Supaul,2025,Watch,monsoon 2025 departure -37%,-37.48805661007125,2026,1558.3835,11.244037189946653
+Bihar,Vaishali,2025,Watch,monsoon 2025 departure -32%,-31.572629548004763,2026,3457.5616,-33.64781160570749
+Bihar,Arwal,2025,Watch (lagged credit risk),"deficient monsoon in 2024, 2023 - Bihar credit has been lower 2-3 years after such shortfalls",-12.167434865467323,2026,323.9586,52.147431745721974
+Bihar,Aurangabad,2025,Watch (lagged credit risk),deficient monsoon in 2023 - Bihar credit has been lower 2-3 years after such shortfalls,-8.399883883568496,2026,1462.1705,31.591672161900078
+Bihar,Darbhanga,2025,Watch (lagged credit risk),"deficient monsoon in 2024, 2023 - Bihar credit has been lower 2-3 years after such shortfalls",-14.873563018869364,2026,1598.7059,-2.312019919569707
+Bihar,Gaya,2025,Watch (lagged credit risk),deficient monsoon in 2023 - Bihar credit has been lower 2-3 years after such shortfalls,2.125664278997751,2026,3071.4265,10.602570111738146
+Bihar,Kaimur (Bhabua),2025,Watch (lagged credit risk),deficient monsoon in 2023 - Bihar credit has been lower 2-3 years after such shortfalls,-13.491959269622793,2026,1056.9146,29.619209091931907
+Bihar,Nawada,2025,Watch (lagged credit risk),deficient monsoon in 2023 - Bihar credit has been lower 2-3 years after such shortfalls,-12.156409782488597,2026,1178.3382,34.47713883737072
+Bihar,Patna,2025,Watch (lagged credit risk),"deficient monsoon in 2024, 2023 - Bihar credit has been lower 2-3 years after such shortfalls",-10.67432705667679,2026,5288.9994,-13.109294007782864
+Bihar,Rohtas,2025,Watch (lagged credit risk),deficient monsoon in 2023 - Bihar credit has been lower 2-3 years after such shortfalls,-13.281423383159703,2026,1600.0825,24.3026715200873
+Bihar,Samastipur,2025,Watch (lagged credit risk),"deficient monsoon in 2024, 2023 - Bihar credit has been lower 2-3 years after such shortfalls",-19.47670357723814,2026,2718.8749000000003,32.408952191518324
+Maharashtra,Ahmednagar,2025,Normal monitoring,none,33.46754971232999,2026,10573.0606,15.964655953876331
+Maharashtra,Akola,2025,Normal monitoring,none,1.6947270770178748,2026,2451.6482,15.210678586261338
+Maharashtra,Amravati,2025,Normal monitoring,none,2.2490381823255787,2026,4112.9216,15.197182395742743
+Maharashtra,Aurangabad,2025,Normal monitoring,none,29.924245843137758,2026,7396.406,15.506734212769175
+Maharashtra,Beed,2025,Normal monitoring,none,46.522700186030455,2026,4914.0625,14.85194316698312
+Maharashtra,Bhandara,2025,Normal monitoring,none,2.5202893822156374,2026,786.7028,16.708878706118753
+Maharashtra,Buldhana,2025,Normal monitoring,none,16.66372651438854,2026,6234.5227,24.31346951708963
+Maharashtra,Chandrapur,2025,Normal monitoring,none,25.08619482852679,2026,1145.6709,11.550683240430317
+Maharashtra,Dhule,2025,Normal monitoring,none,24.25455299223257,2026,3066.4026,15.618447588648792
+Maharashtra,Gadchiroli,2025,Normal monitoring,none,15.26809150720175,2026,365.6546,12.312240630041515
+Maharashtra,Gondia,2025,Normal monitoring,none,6.5626335581595345,2026,852.9843,18.63286869199601
+Maharashtra,Hingoli,2025,Normal monitoring,none,8.630452116076109,2026,2352.4781,12.905382976499368
+Maharashtra,Jalgaon,2025,Normal monitoring,none,14.181979761152018,2026,6424.947700000001,19.578881192754125
+Maharashtra,Jalna,2025,Normal monitoring,none,14.891341382835598,2026,4738.4166,5.722825345742194
+Maharashtra,Kolhapur,2025,Normal monitoring,none,12.407938014201003,2026,5397.6536,15.218888484911872
+Maharashtra,Latur,2025,Normal monitoring,none,54.56853480194569,2026,4049.218,22.21942507572885
+Maharashtra,Nagpur,2025,Normal monitoring,none,11.750357070531388,2026,5086.7851,7.5297199068062355
+Maharashtra,Nanded,2025,Normal monitoring,none,43.02856007632605,2026,5926.3128,15.22552941886056
+Maharashtra,Nandurbar,2025,Normal monitoring,none,11.065559620096437,2026,1677.221,13.658666264991552
+Maharashtra,Nashik,2025,Normal monitoring,none,33.52289206316848,2026,11413.8382,11.905938922030373
+Maharashtra,Osmanabad,2025,Normal monitoring,none,60.28004124227118,2026,4197.2551,18.34247952829162
+Maharashtra,Parbhani,2025,Normal monitoring,none,35.22297954100105,2026,4511.3082,11.508233999427262
+Maharashtra,Pune,2025,Normal monitoring,none,-12.469173586487948,2026,16011.9651,15.768602433726983
+Maharashtra,Raigad,2025,Normal monitoring,none,13.004443985280444,2026,1837.0256,15.330121587664621
+Maharashtra,Ratnagiri,2025,Normal monitoring,none,18.228762107083266,2026,1982.4875,13.09495563064013
+Maharashtra,Sangli,2025,Normal monitoring,none,17.74004583826097,2026,5221.989,9.854548542416296
+Maharashtra,Sindhudurg,2025,Normal monitoring,none,15.692510498228415,2026,1027.2719,19.727536505832404
+Maharashtra,Solapur,2025,Normal monitoring,none,33.19769320462659,2026,11348.8524,10.574339417176247
+Maharashtra,Thane+Palghar,2025,Normal monitoring,none,33.57400456633559,2026,2048.1459,-13.853846161740876
+Maharashtra,Wardha,2025,Normal monitoring,none,20.719746376591548,2026,3726.3985000000002,-18.14595849416139
+Maharashtra,Washim,2025,Normal monitoring,none,28.942772495639765,2026,1971.039,14.390673717206255
+Maharashtra,Yavatmal,2025,Normal monitoring,none,27.182147055586825,2026,4144.4281,14.556799553429528
+Maharashtra,Satara,2025,Watch,monsoon 2025 departure -31%,-30.899492344810266,2026,4812.7053,20.0220218760968

@@ -1,0 +1,20 @@
+check,result,detail
+credit: unique district-level keys,PASS,"2,244,711 rows"
+credit: no negative values,PASS,
+credit: missing amount_outstanding,PASS,4 rows missing (not set to zero)
+credit: all-India totals reconcile to DBIE summary sheet,PASS,"2010=3345169.32, 2026=21434586.46"
+credit: years contiguous,PASS,2010-2026
+credit: matches prior panel.csv (agri direct),PASS,max abs diff 0.000000 Rs cr
+credit: direct + indirect = total agri,PASS,
+rainfall: no negative totals,PASS,
+rainfall: all-India JJAS normal close to IMD LPA (~870 mm),PASS,858.9 mm
+rainfall: year coverage complete,PASS,missing years: []
+rainfall: normal computed on full 1971-2020,PASS,50 of 50 years available
+rainfall: every district contains a grid-cell centre,WARN,"fallback (nearest cell): Maharashtra|Mumbai Suburban, Maharashtra|Mumbai"
+foodgrains: yield = production/area within 1%,PASS,max 0.24%
+foodgrains: no missing values for focus regions,PASS,
+credit: HBS Table 157 agrees with DBIE on overlap (<0.1%),PASS,max 0.003% over 48 region-years
+wpi: no missing spliced index 2004-05 onward,PASS,
+wpi: all-commodities = 100 in 2011-12,PASS,
+msp: non-decreasing within crop (transcription sanity),PASS,falls: 
+policy: every event has a source URL,PASS,no source: 

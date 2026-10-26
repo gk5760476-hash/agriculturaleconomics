@@ -1,0 +1,4 @@
+region,years,n,signals,target_events,hits,missed,false_alarms,hit_rate,false_alarm_rate,precision,base_rate,note
+All-India,2006-2025,20,4,10,3,7,1,0.3,0.1,0.75,0.5,target = real credit growth at t+1 below the region's median; signal = >=1 adverse agricultural indicator at t
+Bihar,2006-2025,20,11,10,7,3,4,0.7,0.4,0.6363636363636364,0.5,target = real credit growth at t+1 below the region's median; signal = >=1 adverse agricultural indicator at t
+Maharashtra,2006-2025,20,4,10,1,9,3,0.1,0.3,0.25,0.5,target = real credit growth at t+1 below the region's median; signal = >=1 adverse agricultural indicator at t

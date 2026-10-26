@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ACREWS Credit Monitor</title>
+<style>
+:root {
+  color-scheme: light;
+  --page: #f9f9f7; --surface: #fcfcfb; --ink: #0b0b0b; --ink-2: #52514e; --muted: #898781;
+  --grid: #e1e0d9; --axis: #c3c2b7; --border: rgba(11,11,11,0.10);
+  --s-bihar: #2a78d6; --s-maha: #eb6834; --s-india: #1baf7a;
+  --wet: #2a78d6; --dry: #e34948; --mid: #f0efec;
+  --good: #0ca30c; --warning: #fab219; --serious: #ec835a; --critical: #d03b3b;
+  --accent-wash: rgba(42,120,214,0.08);
+}
+@media (prefers-color-scheme: dark) {
+  :root:where(:not([data-theme="light"])) {
+    color-scheme: dark;
+    --page: #0d0d0d; --surface: #1a1a19; --ink: #f0efec; --ink-2: #c3c2b7; --muted: #898781;
+    --grid: #2c2c2a; --axis: #383835; --border: rgba(255,255,255,0.10);
+    --s-bihar: #3987e5; --s-maha: #d95926; --s-india: #199e70;
+    --wet: #3987e5; --dry: #e66767; --mid: #383835; --accent-wash: rgba(57,135,229,0.14);
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page: #0d0d0d; --surface: #1a1a19; --ink: #f0efec; --ink-2: #c3c2b7; --muted: #898781;
+  --grid: #2c2c2a; --axis: #383835; --border: rgba(255,255,255,0.10);
+  --s-bihar: #3987e5; --s-maha: #d95926; --s-india: #199e70;
+  --wet: #3987e5; --dry: #e66767; --mid: #383835; --accent-wash: rgba(57,135,229,0.14);
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--page); color: var(--ink);
+  font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+header { padding: 20px 16px 0; max-width: 1120px; margin: 0 auto; }
+h1 { font-size: 22px; margin: 0 0 2px; font-weight: 650; }
+.sub { color: var(--ink-2); margin: 0; font-size: 14px; }
+nav { display: flex; gap: 4px; overflow-x: auto; padding: 14px 16px 0; max-width: 1120px; margin: 0 auto;
+  border-bottom: 1px solid var(--grid); }
+nav button { background: none; border: 0; border-bottom: 2px solid transparent; color: var(--ink-2);
+  padding: 8px 10px; font: inherit; font-size: 14px; cursor: pointer; white-space: nowrap; }
+nav button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--ink); font-weight: 600; }
+nav button:focus-visible, .tbl-toggle:focus-visible, select:focus-visible, input:focus-visible { outline: 2px solid var(--s-bihar); outline-offset: 2px; }
+main { max-width: 1120px; margin: 0 auto; padding: 16px; }
+section[hidden] { display: none; }
+h2 { font-size: 18px; margin: 8px 0 12px; font-weight: 650; }
+h3 { font-size: 15px; margin: 0 0 2px; font-weight: 600; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px; margin-bottom: 16px; }
+.card .note { color: var(--ink-2); font-size: 13px; margin: 0 0 10px; }
+.grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+.tiles { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+.tile { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; }
+.tile .k { color: var(--ink-2); font-size: 13px; display: flex; align-items: center; gap: 6px; }
+.tile .v { font-size: 26px; font-weight: 650; margin-top: 2px; }
+.tile .d { color: var(--ink-2); font-size: 13px; }
+.swatch { width: 10px; height: 10px; border-radius: 2px; display: inline-block; flex: none; }
+.finding { border-left: 3px solid var(--ink); padding: 2px 0 2px 12px; margin: 0 0 12px; }
+.finding p { margin: 4px 0 0; color: var(--ink-2); }
+.legend { display: flex; flex-wrap: wrap; gap: 14px; font-size: 13px; color: var(--ink-2); margin: 0 0 6px; }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.chart { position: relative; width: 100%; }
+.chart svg { display: block; width: 100%; height: auto; overflow: visible; }
+.axis text, .tick { fill: var(--muted); font-size: 11px; font-variant-numeric: tabular-nums; }
+.tip { position: absolute; pointer-events: none; background: var(--surface); color: var(--ink);
+  border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; font-size: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12); white-space: nowrap; z-index: 5; display: none; }
+.tip b { font-weight: 600; }
+.tip .row { display: flex; align-items: center; gap: 6px; }
+.tbl-toggle { background: none; border: 1px solid var(--border); color: var(--ink-2); border-radius: 6px;
+  font: inherit; font-size: 12px; padding: 3px 8px; cursor: pointer; margin-top: 8px; }
+.tbl-wrap { overflow-x: auto; margin-top: 8px; }
+table { border-collapse: collapse; width: 100%; font-size: 13px; }
+th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--grid); vertical-align: top; }
+th { color: var(--ink-2); font-weight: 600; }
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+.status { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; white-space: nowrap; }
+.status svg { flex: none; }
+.controls { display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: center; margin-bottom: 12px; font-size: 14px; }
+select, input[type=range] { font: inherit; }
+select { background: var(--surface); color: var(--ink); border: 1px solid var(--axis); border-radius: 6px; padding: 4px 8px; }
+.result { font-size: 17px; margin: 6px 0; }
+.warn { border: 1px solid var(--warning); border-radius: 8px; padding: 8px 12px; font-size: 13px; color: var(--ink); margin-top: 8px; }
+.pill { font-size: 12px; color: var(--ink-2); border: 1px solid var(--border); border-radius: 999px; padding: 1px 8px; }
+details { margin-top: 8px; } summary { cursor: pointer; color: var(--ink-2); font-size: 13px; }
+footer { max-width: 1120px; margin: 0 auto; padding: 0 16px 24px; color: var(--muted); font-size: 12px; }
+.theme { float: right; background: none; border: 1px solid var(--border); color: var(--ink-2); border-radius: 6px; font: inherit; font-size: 12px; padding: 3px 8px; cursor: pointer; }
+@media (max-width: 520px) { .tile .v { font-size: 22px; } h1 { font-size: 19px; } }
+</style>
+</head>
+<body>
+<header>
+  <button class="theme" id="theme" type="button">Theme</button>
+  <h1>Agricultural Credit Monitor — Bihar, Maharashtra, All-India</h1>
+  <p class="sub">How formal bank credit to agriculture moves with monsoon, yield and crop-price shocks. Research prototype: associations, not causal proof.</p>
+</header>
+<nav role="tablist" id="tabs"></nav>
+<main id="main"></main>
+<footer id="foot"></footer>
+<div class="tip" id="tip" role="status"></div>
+
+<script>
+const D = /*__DATA__*/null;
+const REG = D.regions;
+const COLOR = { "Bihar": "var(--s-bihar)", "Maharashtra": "var(--s-maha)", "All-India": "var(--s-india)" };
+const $ = (s, el = document) => el.querySelector(s);
+const h = (tag, attrs = {}, ...kids) => {
+  const el = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) if (v !== null && v !== undefined) {
+    if (k === "html") el.innerHTML = v; else if (k.startsWith("on")) el.addEventListener(k.slice(2), v); else el.setAttribute(k, v);
+  }
+  for (const k of kids.flat()) if (k !== null && k !== undefined) el.append(k.nodeType ? k : document.createTextNode(k));
+  return el;
+};
+const NS = "http://www.w3.org/2000/svg";
+const s = (tag, attrs = {}) => { const el = document.createElementNS(NS, tag); for (const [k, v] of Object.entries(attrs)) el.setAttribute(k, v); return el; };
+const fmt = (v, d = 1) => v === null || v === undefined || Number.isNaN(v) ? "—" : (+v).toLocaleString("en-IN", { maximumFractionDigits: d, minimumFractionDigits: d });
+const sign = (v, d = 1) => v === null || v === undefined ? "—" : (v > 0 ? "+" : v < 0 ? "−" : "") + fmt(Math.abs(v), d);
+const crore = v => v === null ? "—" : "₹" + Math.round(v).toLocaleString("en-IN") + " cr";
+
+// ---------------------------------------------------------------- tooltip
+const tip = $("#tip");
+function showTip(html, evt, host) {
+  tip.innerHTML = html; tip.style.display = "block";
+  const r = host.getBoundingClientRect(), tw = tip.offsetWidth;
+  let x = evt.clientX - r.left + 14; if (x + tw > r.width) x = evt.clientX - r.left - tw - 14;
+  tip.style.left = (r.left + window.scrollX + Math.max(0, x)) + "px";
+  tip.style.top = (evt.clientY + window.scrollY - 10 - tip.offsetHeight) + "px";
+}
+const hideTip = () => tip.style.display = "none";
+
+// ---------------------------------------------------------------- CSV export (FR-09)
+function downloadCsv(table, name) {
+  const q = v => /[",\n]/.test(v) ? `"${v.replace(/"/g, '""')}"` : v;
+  const csv = [...table.querySelectorAll("tr")].map(tr => [...tr.children].map(c => q(c.textContent.trim().replace(/−/g, "-"))).join(",")).join("\n");
+  const a = h("a", { href: URL.createObjectURL(new Blob(["﻿" + csv], { type: "text/csv" })), download: name });
+  document.body.append(a); a.click(); a.remove();
+}
+// ---------------------------------------------------------------- table twin
+function tableTwin(cols, rows) {
+  const wrap = h("div", { class: "tbl-wrap", hidden: "" });
+  const t = h("table", {}, h("thead", {}, h("tr", {}, cols.map(c => h("th", { class: c.num ? "num" : "" }, c.label)))),
+    h("tbody", {}, rows.map(r => h("tr", {}, cols.map(c => h("td", { class: c.num ? "num" : "" }, c.f ? c.f(r) : (r[c.key] ?? "—")))))));
+  wrap.append(t);
+  const btn = h("button", { class: "tbl-toggle", type: "button", "aria-expanded": "false" }, "Show table");
+  btn.onclick = () => { const open = wrap.hidden; wrap.hidden = !open; btn.textContent = open ? "Hide table" : "Show table"; btn.setAttribute("aria-expanded", open); };
+  const dl = h("button", { class: "tbl-toggle", type: "button", style: "margin-left:6px" }, "Download CSV");
+  dl.onclick = () => downloadCsv(t, "acrews_table.csv");
+  return [h("div", {}, btn, dl), wrap];
+}
+
+// chart canvas = card content width, so 1 SVG unit = 1 CSS px and text keeps its size on every screen
+const chartWidth = (inGrid = false) => {
+  const main = ($("#main").clientWidth || 640) - 32;  // minus main padding
+  const cols = inGrid ? Math.max(1, Math.min(3, Math.floor((main + 16) / (300 + 16)))) : 1;  // mirrors .grid minmax(300px)
+  return Math.max(250, Math.min(1060, (main - 16 * (cols - 1)) / cols - 34));  // minus card padding + border
+};
+// ---------------------------------------------------------------- scales
+const scale = (d0, d1, r0, r1) => v => r0 + (v - d0) / (d1 - d0 || 1) * (r1 - r0);
+function niceTicks(lo, hi, n = 5) {
+  const step0 = (hi - lo) / n, mag = 10 ** Math.floor(Math.log10(step0)), f = step0 / mag;
+  const step = (f < 1.5 ? 1 : f < 3 ? 2 : f < 7 ? 5 : 10) * mag;
+  const out = []; for (let v = Math.ceil(lo / step) * step; v <= hi + 1e-9; v += step) out.push(+v.toFixed(10));
+  return out;
+}
+
+// ---------------------------------------------------------------- line chart (shared x, crosshair tooltip)
+function lineChart(host, { series, unit, yFmt = v => fmt(v, 0), height = 240, marks = [], inGrid = false }) {
+  const W = chartWidth(inGrid), H = height, m = { l: 44, r: 12, t: 10, b: 26 };
+  const xs = [...new Set(series.flatMap(sr => sr.points.map(p => p[0])))].sort((a, b) => a - b);
+  const ys = series.flatMap(sr => sr.points.map(p => p[1])).filter(v => v !== null);
+  let lo = Math.min(0, ...ys), hi = Math.max(0, ...ys); const pad = (hi - lo) * 0.06; lo -= pad; hi += pad;
+  const X = scale(xs[0], xs[xs.length - 1], m.l, W - m.r), Y = scale(lo, hi, H - m.b, m.t);
+  const svg = s("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": series.map(x => x.name).join(", ") + " — " + unit });
+  const g = s("g", { class: "axis" }); svg.append(g);
+  for (const t of niceTicks(lo, hi)) {
+    g.append(s("line", { x1: m.l, x2: W - m.r, y1: Y(t), y2: Y(t), stroke: t === 0 ? "var(--axis)" : "var(--grid)", "stroke-width": 1 }));
+    const tx = s("text", { x: m.l - 6, y: Y(t) + 4, "text-anchor": "end" }); tx.textContent = yFmt(t); g.append(tx);
+  }
+  const step = Math.ceil(xs.length / 8);
+  xs.forEach((x, i) => { if (i % step === 0 || i === xs.length - 1) { const tx = s("text", { x: X(x), y: H - 8, "text-anchor": "middle" }); tx.textContent = x; g.append(tx); } });
+  for (const mk of marks) { // shaded reference years (e.g. waiver years)
+    svg.append(s("rect", { x: X(mk) - 6, y: m.t, width: 12, height: H - m.t - m.b, fill: "var(--accent-wash)" }));
+  }
+  for (const sr of series) {
+    let d = "", pen = false;
+    for (const [x, y] of sr.points) { if (y === null) { pen = false; continue; } d += (pen ? "L" : "M") + X(x).toFixed(1) + "," + Y(y).toFixed(1); pen = true; }
+    svg.append(s("path", { d, fill: "none", stroke: sr.color, "stroke-width": 2, "stroke-linejoin": "round", "stroke-linecap": "round" }));
+    const last = [...sr.points].reverse().find(p => p[1] !== null);
+    if (last) svg.append(s("circle", { cx: X(last[0]), cy: Y(last[1]), r: 4, fill: sr.color, stroke: "var(--surface)", "stroke-width": 2 }));
+  }
+  const cross = s("line", { y1: m.t, y2: H - m.b, stroke: "var(--axis)", "stroke-width": 1, visibility: "hidden" }); svg.append(cross);
+  const dots = series.map(sr => { const c = s("circle", { r: 4, fill: sr.color, stroke: "var(--surface)", "stroke-width": 2, visibility: "hidden" }); svg.append(c); return c; });
+  const hit = s("rect", { x: m.l, y: 0, width: W - m.l - m.r, height: H, fill: "transparent" }); svg.append(hit);
+  const box = h("div", { class: "chart" }); box.append(svg);
+  const move = evt => {
+    const pt = svg.createSVGPoint(); pt.x = evt.clientX; pt.y = evt.clientY;
+    const p = pt.matrixTransform(svg.getScreenCTM().inverse());
+    const x = xs.reduce((a, b) => Math.abs(X(b) - p.x) < Math.abs(X(a) - p.x) ? b : a);
+    cross.setAttribute("x1", X(x)); cross.setAttribute("x2", X(x)); cross.setAttribute("visibility", "visible");
+    let html = `<b>${x}</b>`;
+    series.forEach((sr, i) => {
+      const v = sr.points.find(q => q[0] === x)?.[1] ?? null;
+      dots[i].setAttribute("visibility", v === null ? "hidden" : "visible");
+      if (v !== null) { dots[i].setAttribute("cx", X(x)); dots[i].setAttribute("cy", Y(v)); }
+      html += `<div class="row"><span class="swatch" style="background:${sr.color}"></span>${sr.name}: <b>${v === null ? "—" : yFmt(v)}</b></div>`;
+    });
+    showTip(html + `<div style="color:var(--muted)">${unit}</div>`, evt, document.body);
+  };
+  hit.addEventListener("pointermove", move);
+  hit.addEventListener("pointerleave", () => { hideTip(); cross.setAttribute("visibility", "hidden"); dots.forEach(d => d.setAttribute("visibility", "hidden")); });
+  const legend = series.length > 1 ? h("div", { class: "legend" }, series.map(sr => h("span", {}, h("span", { class: "swatch", style: `background:${sr.color}` }), sr.name))) : null;
+  const rows = xs.map(x => Object.fromEntries([["year", x], ...series.map(sr => [sr.name, sr.points.find(q => q[0] === x)?.[1] ?? null])]));
+  host.append(...[legend, box, ...tableTwin([{ key: "year", label: "Year" }, ...series.map(sr => ({ label: sr.name + " (" + unit + ")", num: true, f: r => r[sr.name] === null ? "—" : yFmt(r[sr.name]) }))], rows)].filter(Boolean));
+}
+
+// ---------------------------------------------------------------- diverging bars (rainfall departure)
+function departureBars(host, { points, threshold = -20, height = 200, name, inGrid = true }) {
+  const W = chartWidth(inGrid), H = height, m = { l: 40, r: 10, t: 10, b: 26 };
+  const ys = points.map(p => p[1]); const lo = Math.min(-45, ...ys) - 3, hi = Math.max(45, ...ys) + 3;
+  const X = scale(points[0][0] - 0.5, points[points.length - 1][0] + 0.5, m.l, W - m.r), Y = scale(lo, hi, H - m.b, m.t);
+  const bw = Math.max(2, (X(1) - X(0)) - 2);
+  const svg = s("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": `${name}: monsoon rainfall departure from normal, per cent` });
+  const g = s("g", { class: "axis" }); svg.append(g);
+  for (const t of niceTicks(lo, hi, 4)) {
+    g.append(s("line", { x1: m.l, x2: W - m.r, y1: Y(t), y2: Y(t), stroke: t === 0 ? "var(--axis)" : "var(--grid)" }));
+    const tx = s("text", { x: m.l - 6, y: Y(t) + 4, "text-anchor": "end" }); tx.textContent = (t > 0 ? "+" : "") + t + "%"; g.append(tx);
+  }
+  svg.append(s("line", { x1: m.l, x2: W - m.r, y1: Y(threshold), y2: Y(threshold), stroke: "var(--dry)", "stroke-width": 1, opacity: 0.6 }));
+  const lab = s("text", { x: W - m.r, y: Y(threshold) + 12, "text-anchor": "end", fill: "var(--ink-2)", "font-size": 11 }); lab.textContent = "deficient (−20%)"; svg.append(lab);
+  const step = Math.ceil(points.length / 9);
+  points.forEach(([x, y], i) => {
+    if (i % step === 0) { const tx = s("text", { x: X(x), y: H - 8, "text-anchor": "middle", class: "tick" }); tx.textContent = x; g.append(tx); }
+    if (y === null) return;
+    const y0 = Y(0), y1 = Y(y), top = Math.min(y0, y1), hgt = Math.max(1, Math.abs(y1 - y0));
+    const r = s("rect", { x: X(x) - bw / 2, y: top, width: bw, height: hgt, rx: Math.min(2, bw / 2), fill: y < 0 ? "var(--dry)" : "var(--wet)" });
+    const hitR = s("rect", { x: X(x) - Math.max(bw, 12) / 2, y: m.t, width: Math.max(bw, 12), height: H - m.t - m.b, fill: "transparent" });
+    hitR.addEventListener("pointermove", e => { r.setAttribute("opacity", 0.75); showTip(`<b>${name} · monsoon ${x}</b><div>${sign(y, 0)}% vs 1971–2020 normal</div>`, e, document.body); });
+    hitR.addEventListener("pointerleave", () => { r.removeAttribute("opacity"); hideTip(); });
+    svg.append(r, hitR);
+  });
+  const box = h("div", { class: "chart" }); box.append(svg);
+  const legend = h("div", { class: "legend" }, h("span", {}, h("span", { class: "swatch", style: "background:var(--dry)" }), "below normal"),
+    h("span", {}, h("span", { class: "swatch", style: "background:var(--wet)" }), "above normal"));
+  host.append(legend, box, ...tableTwin([{ key: "year", label: "Monsoon" }, { label: "Departure (%)", num: true, f: r => sign(r.v, 1) }], points.map(([year, v]) => ({ year, v }))));
+}
+
+// ---------------------------------------------------------------- coefficient plot
+function coefPlot(host, { rows, unit, height }) {
+  const W = chartWidth(), rowH = 30, m = { l: W < 520 ? 150 : 210, r: 16, t: 8, b: 30 }, H = height || m.t + m.b + rows.length * rowH;
+  const vals = rows.flatMap(r => [r.lo, r.hi]); const lo = Math.min(0, ...vals) * 1.08, hi = Math.max(0, ...vals) * 1.08;
+  const X = scale(lo, hi, m.l, W - m.r);
+  const svg = s("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": "Estimated effects with 90% intervals, " + unit });
+  const g = s("g", { class: "axis" }); svg.append(g);
+  for (const t of niceTicks(lo, hi, 6)) {
+    g.append(s("line", { x1: X(t), x2: X(t), y1: m.t, y2: H - m.b, stroke: t === 0 ? "var(--ink-2)" : "var(--grid)", "stroke-width": t === 0 ? 1.2 : 1 }));
+    const tx = s("text", { x: X(t), y: H - 12, "text-anchor": "middle" }); tx.textContent = (t > 0 ? "+" : "") + t; g.append(tx);
+  }
+  rows.forEach((r, i) => {
+    const y = m.t + rowH * i + rowH / 2;
+    const lab = s("text", { x: m.l - 10, y: y + 4, "text-anchor": "end", fill: "var(--ink)", "font-size": 12 }); lab.textContent = r.label; svg.append(lab);
+    svg.append(s("line", { x1: X(r.lo), x2: X(r.hi), y1: y, y2: y, stroke: r.color || "var(--ink-2)", "stroke-width": 2, "stroke-linecap": "round" }));
+    const filled = r.cls === "countercyclical" || r.cls === "procyclical";
+    const c = s("circle", { cx: X(r.est), cy: y, r: 5, fill: filled ? (r.color || "var(--ink)") : "var(--surface)", stroke: r.color || "var(--ink)", "stroke-width": 2 });
+    const hitR = s("rect", { x: m.l, y: y - rowH / 2, width: W - m.l - m.r, height: rowH, fill: "transparent" });
+    hitR.addEventListener("pointermove", e => showTip(`<b>${r.label}</b><div>Estimate ${sign(r.est)} (${unit})</div><div>90% interval ${sign(r.lo)} to ${sign(r.hi)}</div><div>wild-bootstrap p = ${fmt(r.p, 3)}${r.q !== null && r.q !== undefined ? ` · q = ${fmt(r.q, 3)}` : ""}</div><div>${r.cls || "control / not classified"}</div>`, e, document.body));
+    hitR.addEventListener("pointerleave", hideTip);
+    svg.append(c, hitR);
+  });
+  const box = h("div", { class: "chart" }); box.append(svg);
+  host.append(h("div", { class: "legend" }, h("span", {}, "● filled = significant at 10% (wild bootstrap)"), h("span", {}, "○ hollow = inconclusive"), h("span", {}, "line = 90% interval")),
+    box, ...tableTwin([{ key: "label", label: "Estimate" }, { label: "Effect", num: true, f: r => sign(r.est) }, { label: "90% low", num: true, f: r => sign(r.lo) },
+      { label: "90% high", num: true, f: r => sign(r.hi) }, { label: "p (wild)", num: true, f: r => fmt(r.p, 3) }, { label: "q (BH)", num: true, f: r => fmt(r.q, 3) }, { key: "cls", label: "Reading" }], rows));
+}
+
+// ---------------------------------------------------------------- status chips (icon + label, never colour alone)
+const STATUS = {
+  "Normal monitoring": { c: "var(--good)", icon: '<circle cx="7" cy="7" r="6"/><path d="M4 7l2 2 4-4" stroke="var(--surface)" stroke-width="1.8" fill="none"/>' },
+  "Watch": { c: "var(--warning)", icon: '<path d="M7 1l6 11H1z"/><path d="M7 5v3M7 10v.5" stroke="#0b0b0b" stroke-width="1.6"/>' },
+  "Watch (lagged credit risk)": { c: "var(--warning)", icon: '<path d="M7 1l6 11H1z"/><path d="M7 5v3M7 10v.5" stroke="#0b0b0b" stroke-width="1.6"/>' },
+  "Elevated concern": { c: "var(--critical)", icon: '<rect x="1" y="1" width="12" height="12" rx="3"/><path d="M7 3.5v4.5M7 10v.5" stroke="#fff" stroke-width="1.8"/>' },
+  "Data insufficient": { c: "var(--muted)", icon: '<circle cx="7" cy="7" r="6" fill="none" stroke-width="1.6"/><path d="M5 5.3a2 2 0 113 1.7c-.6.4-1 .8-1 1.5M7 10v.4" stroke-width="1.5" fill="none"/>' },
+};
+const status = cat => { const st = STATUS[cat] || STATUS["Data insufficient"];
+  return h("span", { class: "status", html: `<svg width="14" height="14" viewBox="0 0 14 14" fill="${st.c}" stroke="${st.c}" aria-hidden="true">${st.icon}</svg>${cat}` }); };
+
+// ---------------------------------------------------------------- data helpers
+const by = (arr, k, v) => arr.filter(r => r[k] === v);
+const latest = (arr, f) => arr.filter(f).sort((a, b) => b.year - a.year)[0];
+const dc = (spec, term) => D.district.find(r => r.spec === spec && r.term === term);
+
+// ---------------------------------------------------------------- pages
+const pages = [
+  ["overview", "Overview", overview], ["credit", "Credit trends", creditPage], ["agri", "Weather & agriculture", agriPage],
+  ["results", "Results", resultsPage], ["ew", "Early warning", ewPage], ["methods", "Data & methods", methodsPage],
+];
+
+function overview(el) {
+  const tiles = h("div", { class: "tiles" });
+  for (const r of REG) {
+    const c = latest(D.credit, x => x.region === r && x.agri_total_long_cr !== null);
+    tiles.append(h("div", { class: "tile" }, h("div", { class: "k" }, h("span", { class: "swatch", style: `background:${COLOR[r]}` }), `${r} · agri credit, Mar ${c.year}`),
+      h("div", { class: "v" }, crore(c.agri_total_long_cr)), h("div", { class: "d" }, `${sign(c.credit_real_growth_pct)}% real growth on the year`)));
+  }
+  const rainT = h("div", { class: "tiles" });
+  for (const r of REG) {
+    const x = latest(D.rain, q => q.region === r);
+    const ew = latest(D.ew_state, q => q.region === r && q.category !== "Data insufficient") || latest(D.ew_state, q => q.region === r);
+    rainT.append(h("div", { class: "tile" }, h("div", { class: "k" }, h("span", { class: "swatch", style: `background:${COLOR[r]}` }), `${r} · monsoon ${x.year}`),
+      h("div", { class: "v" }, sign(x.jjas_departure_pct, 0) + "%"), h("div", { class: "d" }, `${x.jjas_imd_category} · monitoring for ${ew.year}: `), status(ew.category)));
+  }
+  const d1 = dc("D1", "rain_shortfall_pct"), b2 = dc("D15", "rain_shortfall_lag2_pct"), b3 = dc("D15", "rain_shortfall_lag3_pct"), m13 = dc("D13", "rain_shortfall_pct");
+  const nState = D.summary.filter(r => r.classification !== "inconclusive").length;
+  el.append(
+    h("div", { class: "card" }, h("h2", {}, "What the data show"),
+      h("div", { class: "finding" }, h("h3", {}, "No sign that credit rises in the season after a drought."),
+        h("p", {}, `Comparing districts in the same state and year (${d1.n} district-years, ${d1.districts} districts, ${d1.years}), a 20-point monsoon shortfall is associated with ${sign(d1.effect_of_20pt_shortfall_pct)}% agricultural credit the following March (90% interval ${sign(20 * d1.ci90_low)}% to ${sign(20 * d1.ci90_high)}%). This rules out the 3–5% rise found for all-India districts in 1993–2010 (De & Vij 2013).`)),
+      h("div", { class: "finding" }, h("h3", {}, "In Bihar, credit is lower two to three years after a dry monsoon."),
+        h("p", {}, `Allowing for each district's own trend, a 20-point shortfall is followed by ${sign(20 * b2.coef)}% (two years on) and ${sign(20 * b3.coef)}% (three years on) credit; q-values ${fmt(b2.q_bh, 2)} and ${fmt(b3.q_bh, 2)}. Bihar had no state loan waiver, so write-offs do not explain it. The fall is in the number of borrowers, not loan size, and sits mainly in regional rural banks and rural branches; the monsoons after the credit date show no effect. Treat as suggestive: the estimate roughly halves once district trends are included, and it does not forecast district credit well.`)),
+      h("div", { class: "finding" }, h("h3", {}, "Maharashtra: no clear response."),
+        h("p", {}, `No delayed fall. Before its 2017 waiver there is a hint of a small immediate rise (${sign(20 * m13.coef)}% per 20-point shortfall, q = ${fmt(m13.q_bh, 2)}) that does not survive correction for multiple tests.`)),
+      h("div", { class: "finding" }, h("h3", {}, "State-level series are too short to decide."),
+        h("p", {}, `With about 20 years per state, ${nState} of ${D.summary.length} weather, yield and price effects reach significance and none survives the multiple-test correction. They are reported as inconclusive, not as "no effect".`))),
+    h("h2", {}, "Latest position"), tiles, h("div", { style: "height:12px" }), rainT);
+}
+
+function creditPage(el) {
+  const c1 = h("div", { class: "card" }, h("h3", {}, "Real growth of agricultural credit outstanding"),
+    h("p", { class: "note" }, "Year-on-year change, % (log points), deflated by WPI all commodities. End-March of each year. Shaded: loan-waiver credit years (2008 national; 2018 and 2020 Maharashtra)."));
+  lineChart(c1, { series: REG.map(r => ({ name: r, color: COLOR[r], points: by(D.credit, "region", r).filter(x => x.year >= 2006).map(x => [x.year, x.credit_real_growth_pct]) })),
+    unit: "% real growth", yFmt: v => sign(v, 0), marks: [2008, 2018, 2020] });
+  const c2 = h("div", { class: "grid" });
+  for (const r of REG) {
+    const card = h("div", { class: "card" }, h("h3", {}, `${r}: credit outstanding`), h("p", { class: "note" }, "₹ crore, nominal. 2004–2009 RBI Handbook Table 157; from 2010 DBIE BSR-1 (they agree within 0.003% where both exist)."));
+    lineChart(card, { series: [{ name: r, color: COLOR[r], points: by(D.credit, "region", r).filter(x => x.agri_total_long_cr !== null).map(x => [x.year, x.agri_total_long_cr]) }],
+      unit: "₹ crore", yFmt: v => v >= 1e5 ? fmt(v / 1e5, 1) + " lakh" : fmt(v / 1e3, 0) + "k", height: 200, inGrid: true });
+    c2.append(card);
+  }
+  el.append(h("h2", {}, "Credit trends"), c1, c2,
+    h("p", { class: "note", style: "color:var(--ink-2);font-size:13px" }, "Concept: amount outstanding with scheduled commercial banks (incl. RRBs, small finance banks) at end-March; a stock, not disbursement. Excludes cooperative banks."));
+}
+
+function agriPage(el) {
+  const g = h("div", { class: "grid" });
+  for (const r of REG) {
+    const card = h("div", { class: "card" }, h("h3", {}, `${r}: June–September monsoon`), h("p", { class: "note" }, "% departure from the 1971–2020 mean, IMD 0.25° gridded rainfall averaged over the region."));
+    departureBars(card, { name: r, points: by(D.rain, "region", r).filter(x => x.year >= 1990).map(x => [x.year, x.jjas_departure_pct]) });
+    g.append(card);
+  }
+  const y = h("div", { class: "card" }, h("h3", {}, "Foodgrain yield shortfall"), h("p", { class: "note" }, "% below the region's 2004-05–2024-25 linear trend (positive = worse). Shown against the credit year it precedes."));
+  lineChart(y, { series: REG.map(r => ({ name: r, color: COLOR[r], points: by(D.shocks, "region", r).filter(x => x.year >= 2005).map(x => [x.year, x.yield_shortfall_pct]) })), unit: "% below trend", yFmt: v => sign(v, 0) });
+  const p = h("div", { class: "card" }, h("h3", {}, "Real crop-price fall"), h("p", { class: "note" }, "Area-weighted fall in real WPI of each region's crops (2004–07 crop mix), % (positive = worse). National prices: the states differ only through crop mix."));
+  lineChart(p, { series: REG.map(r => ({ name: r, color: COLOR[r], points: by(D.shocks, "region", r).filter(x => x.year >= 2006).map(x => [x.year, x.price_fall_pct]) })), unit: "% real price fall", yFmt: v => sign(v, 0) });
+  el.append(h("h2", {}, "Weather and agriculture"), g, y, p);
+}
+
+function resultsPage(el) {
+  // scenario
+  const card = h("div", { class: "card" }, h("h3", {}, "What does a dry monsoon imply for district credit?"),
+    h("p", { class: "note" }, "Applies the district estimates to a monsoon departure you choose. Changes are relative to districts of the same state with a normal monsoon; ranges are 90% intervals."));
+  const sel = h("select", { "aria-label": "State" }, ["Bihar", "Maharashtra"].map(r => h("option", { value: r }, r)));
+  const rng = h("input", { type: "range", min: -60, max: 40, step: 5, value: -20, "aria-label": "Monsoon departure, per cent" });
+  const lab = h("b", {}, "−20%"); const out = h("div");
+  card.append(h("div", { class: "controls" }, h("label", {}, "State ", sel), h("label", {}, "Monsoon departure ", rng, " ", lab)), out);
+  const obs = D.district ? null : null;
+  const render = () => {
+    const dep = +rng.value, sf = -dep, st = sel.value; lab.textContent = sign(dep, 0) + "%";
+    const imm = dc(st === "Bihar" ? "D8" : "D9", "rain_shortfall_pct");
+    const lines = [["Next March (1 year)", imm]];
+    if (st === "Bihar") lines.push(["2 years later", dc("D15", "rain_shortfall_lag2_pct")], ["3 years later", dc("D15", "rain_shortfall_lag3_pct")]);
+    else lines.push(["2 years later", dc("D11", "rain_shortfall_lag2_pct")], ["3 years later", dc("D11", "rain_shortfall_lag3_pct")]);
+    const rows = lines.map(([when, c]) => { const a = c.coef * sf, b1 = c.ci90_low * sf, b2 = c.ci90_high * sf;
+      return { when, est: a, lo: Math.min(b1, b2), hi: Math.max(b1, b2), p: c.p_wild, cls: c.classification }; });
+    out.replaceChildren(h("div", { class: "result" }, `${st}, monsoon ${sign(dep, 0)}%: credit ${sign(rows[0].est)}% next March (range ${sign(rows[0].lo)} to ${sign(rows[0].hi)}).`),
+      h("table", {}, h("thead", {}, h("tr", {}, h("th", {}, "When"), h("th", { class: "num" }, "Credit change %"), h("th", { class: "num" }, "90% range"), h("th", {}, "Evidence"))),
+        h("tbody", {}, rows.map(r => h("tr", {}, h("td", {}, r.when), h("td", { class: "num" }, sign(r.est)), h("td", { class: "num" }, `${sign(r.lo)} to ${sign(r.hi)}`), h("td", {}, r.cls === "inconclusive" ? "inconclusive" : `${r.cls} (p ${fmt(r.p, 3)})`))))),
+      dep < -50 || dep > 35 ? h("div", { class: "warn" }, "Outside most of the observed district range — treat as extrapolation.") : "",
+      h("p", { class: "note", style: "margin-top:8px" }, st === "Bihar" ? "Lagged rows use the specification with district trends (D15)." : "Lagged rows use D11 (no district trends)."));
+  };
+  rng.oninput = render; sel.onchange = render; render();
+
+  // district coefficient plot
+  const dcard = h("div", { class: "card" }, h("h3", {}, "District panel: effect of a 20-point monsoon shortfall on credit"),
+    h("p", { class: "note" }, "% change in direct agricultural credit outstanding. District + state×year fixed effects; standard errors clustered by district (71 districts)."));
+  const pick = [["D1", "rain_shortfall_pct", "Both states · next March"], ["D2", "rain_shortfall_lag2_pct", "Both · 2 years on"], ["D2", "rain_shortfall_lag3_pct", "Both · 3 years on"],
+    ["D14", "rain_shortfall_lag3_pct", "Both · 3 yrs on, trends"], ["D8", "rain_shortfall_pct", "Bihar · next March"], ["D15", "rain_shortfall_lag2_pct", "Bihar · 2 yrs on, trends"],
+    ["D15", "rain_shortfall_lag3_pct", "Bihar · 3 yrs on, trends"], ["D9", "rain_shortfall_pct", "Maharashtra · next March"], ["D11", "rain_shortfall_lag3_pct", "Maharashtra · 3 years on"],
+    ["DP", "rain_shortfall_lead_placebo_pct", "Placebo: later monsoon"]];
+  coefPlot(dcard, { unit: "% credit per 20-pt shortfall", rows: pick.map(([sp, t, label]) => { const c = dc(sp, t);
+    return { label, est: 20 * c.coef, lo: 20 * c.ci90_low, hi: 20 * c.ci90_high, p: c.p_wild, q: c.q_bh, cls: c.classification,
+      color: label.startsWith("Bihar") ? COLOR.Bihar : label.startsWith("Maharashtra") ? COLOR.Maharashtra : null }; }) });
+
+  // state summary
+  const scard = h("div", { class: "card" }, h("h3", {}, "State time series: weather, production and price shocks (headline model M4)"),
+    h("p", { class: "note" }, "Change in real credit growth (percentage points) after an illustrative adverse shock: 20-point monsoon shortfall, yield 10% below trend, 5% real crop-price fall. Newey-West errors; ~20 years per region."));
+  coefPlot(scard, { unit: "pp real credit growth", rows: D.summary.map(r => ({ label: `${r.region} · ${r.shock.split(" (")[0]}`, est: r.effect_on_credit_growth_pp, lo: r.effect_ci90_low,
+    hi: r.effect_ci90_high, p: r.p_wild, q: r.q_bh, cls: r.classification, color: COLOR[r.region] })) });
+  const rob = h("details", {}, h("summary", {}, "Robustness: how often alternative specifications agree"),
+    h("table", {}, h("thead", {}, h("tr", {}, h("th", {}, "Region"), h("th", {}, "Shock"), h("th", { class: "num" }, "Specs"), h("th", { class: "num" }, "Same sign"), h("th", { class: "num" }, "Same sign & significant"))),
+      h("tbody", {}, D.summary.map(r => h("tr", {}, h("td", {}, r.region), h("td", {}, r.shock), h("td", { class: "num" }, r.robustness_specs), h("td", { class: "num" }, r.robustness_same_sign), h("td", { class: "num" }, r.robustness_significant_same_sign))))));
+  scard.append(rob);
+  // event study + mechanism (pre-registered in ROADMAP.md)
+  const rb = (spec, term) => D.district_robust.find(r => r.spec === spec && r.term === term);
+  const rbRow = (spec, term, label, color) => { const c = rb(spec, term);
+    return { label, est: c.effect_20pt_pct, lo: c.effect_20pt_low, hi: c.effect_20pt_high, p: c.p_wild_district, q: c.q_bh_mechanism,
+      cls: c.p_wild_district < 0.1 ? (c.coef > 0 ? "countercyclical" : "procyclical") : "inconclusive", color }; };
+  const ecard = h("div", { class: "card" }, h("h3", {}, "Bihar event study: timing of the credit response"),
+    h("p", { class: "note" }, "% change in direct credit per 20-point shortfall in each monsoon, estimated jointly (2010–2024). The two monsoons after the credit date are placebos and should be zero."));
+  coefPlot(ecard, { unit: "% credit per 20-pt shortfall", rows: ["rain_shortfall_lead2_placebo_pct", "rain_shortfall_lead_placebo_pct", "rain_shortfall_pct", "rain_shortfall_lag2_pct", "rain_shortfall_lag3_pct", "rain_shortfall_lag4_pct"]
+    .map(t => rbRow("E2", t, rb("E2", t).horizon, COLOR.Bihar)) });
+  const kcard = h("div", { class: "card" }, h("h3", {}, "Bihar: what falls? Monsoon three years earlier"),
+    h("p", { class: "note" }, "% change per 20-point shortfall in monsoon t−3. Fewer borrowers rather than smaller loans; concentrated in regional rural banks and rural branches. q = Benjamini–Hochberg across all 24 mechanism tests."));
+  const K = [["K1", "Number of accounts"], ["K2", "Average loan size"], ["K3", "Sanctioned limit"], ["K4", "Public sector banks"], ["K5", "Private banks"],
+    ["K6", "Regional rural banks"], ["K7", "Rural branches"], ["K8", "Semi-urban & urban branches"]];
+  coefPlot(kcard, { unit: "% per 20-pt shortfall (t−3)", rows: K.map(([sp, label]) => rbRow(sp, "rain_shortfall_lag3_pct", label, COLOR.Bihar)) });
+  const fcard = h("div", { class: "card" }, h("h3", {}, "Can these relationships forecast credit? Out-of-sample test"),
+    h("p", { class: "note" }, "One-year-ahead forecasts of real credit growth, expanding window, 2016–2025. Ratio < 1 means better than the naive 'grows at its past average' forecast."),
+    h("div", { class: "tbl-wrap" }, h("table", {}, h("thead", {}, h("tr", {}, ["Region", "Model", "MAE (pp)", "Error vs naive", "Years better", "p vs naive"].map((t, i) => h("th", { class: i > 1 ? "num" : "" }, t)))),
+      h("tbody", {}, D.fc_state.map(r => h("tr", {}, h("td", {}, r.region), h("td", {}, { naive_mean: "Naive: past average", naive_last: "Naive: last year", ar1: "Autoregressive", rain: "Monsoon t−1, t−2", full: "Monsoon + yield + price" }[r.model]),
+        h("td", { class: "num" }, fmt(r.mae, 1)), h("td", { class: "num" }, fmt(r.mae_vs_naive_mean, 2)), h("td", { class: "num" }, `${r.wins_vs_naive_mean}/${r.n_forecasts}`), h("td", { class: "num" }, fmt(r.dm_p_vs_naive_mean, 2))))))),
+    h("div", { class: "warn" }, `No model beats the naive forecast reliably. Ranking Bihar districts by their lagged shortfall gives a mean rank correlation of ${fmt(D.fc_district.reduce((a, r) => a + r.spearman_rank_corr, 0) / D.fc_district.length, 2)} with next year's credit growth — too weak to forecast with. The scenario tool above is descriptive, not a forecast.`));
+  el.append(h("h2", {}, "Econometric results"), card, dcard, ecard, kcard, scard, fcard,
+    h("div", { class: "card" }, h("h3", {}, "How to read these"), h("p", { class: "note" },
+      "Positive = credit higher after worse conditions (countercyclical); negative = credit lower (procyclical). Estimates are conditional associations. The district design compares districts of the same state in the same year, so state policy, prices and inflation cancel out; rainfall differences between neighbouring districts are plausibly unrelated to bank behaviour, but the mechanism (less lending vs less demand vs restructuring) is not identified.")));
+}
+
+function ewPage(el) {
+  const years = [...new Set(D.ew_state.map(r => r.year))].sort();
+  const card = h("div", { class: "card" }, h("h3", {}, "State monitoring categories by credit year"),
+    h("p", { class: "note" }, "Rules: monsoon departure ≤ −20%, yield > 1 SD below trend, real crop-price fall > 1 SD, real credit contraction. Two adverse agricultural signals, or a severe one with weak credit, = Elevated concern."));
+  const wrap = h("div", { class: "tbl-wrap" });
+  wrap.append(h("table", {}, h("thead", {}, h("tr", {}, h("th", {}, "Year"), REG.map(r => h("th", {}, r)))),
+    h("tbody", {}, [...years].reverse().map(y => h("tr", {}, h("td", {}, y), REG.map(r => { const x = D.ew_state.find(q => q.region === r && q.year === y);
+      return h("td", { title: x ? x.indicators + (x.missing_inputs ? " | missing: " + x.missing_inputs : "") : "" }, x ? status(x.category) : "—", x && x.indicators !== "none" ? h("div", { style: "color:var(--ink-2);font-size:12px" }, x.indicators) : ""); }))))));
+  card.append(wrap);
+  const bt = h("div", { class: "card" }, h("h3", {}, "Does the signal anticipate weak credit? Historical backtest"),
+    h("p", { class: "note" }, "Precision = share of signals followed by below-median credit growth; compare with the base rate. A precision near the base rate means no predictive value."),
+    h("table", {}, h("thead", {}, h("tr", {}, ["Level", "Horizon", "Signals", "Precision", "Base rate", "Hit rate", "False-alarm rate"].map((t, i) => h("th", { class: i > 1 ? "num" : "" }, t)))),
+      h("tbody", {}, D.bt_state.map(r => h("tr", {}, h("td", {}, r.region), h("td", {}, "1 year"), h("td", { class: "num" }, r.signals), h("td", { class: "num" }, fmt(r.precision, 2)), h("td", { class: "num" }, fmt(r.base_rate, 2)), h("td", { class: "num" }, fmt(r.hit_rate, 2)), h("td", { class: "num" }, fmt(r.false_alarm_rate, 2)))),
+        D.bt_district.map(r => h("tr", {}, h("td", {}, `Districts · ${r.state}`), h("td", {}, `${r.horizon_years} year${r.horizon_years > 1 ? "s" : ""}`), h("td", { class: "num" }, r.drought_signals), h("td", { class: "num" }, fmt(r.precision, 2)), h("td", { class: "num" }, fmt(r.base_rate, 2)), h("td", { class: "num" }, fmt(r.hit_rate, 2)), h("td", { class: "num" }, fmt(r.false_alarm_rate, 2)))))),
+    h("div", { class: "warn" }, "Result: the signals do not reliably anticipate weaker credit growth. Use this page as a descriptive monitor that points to places worth checking, not as a forecast."));
+  const dl = h("div", { class: "card" }, h("h3", {}, `District watch list — monsoon ${D.ew_district[0].assessed_monsoon}`),
+    h("p", { class: "note" }, "Districts with a deficient monsoon, and Bihar districts with a deficient monsoon 1–2 years earlier (the lag found in the district panel)."));
+  const f = h("select", { "aria-label": "Filter districts" }, ["All flagged", "All districts"].map(v => h("option", {}, v)));
+  const body = h("div");
+  const draw = () => { const rows = D.ew_district.filter(r => f.value === "All districts" || r.category !== "Normal monitoring");
+    body.replaceChildren(h("div", { class: "tbl-wrap" }, h("table", {}, h("thead", {}, h("tr", {}, ["State", "District", "Category", "Reason", "Monsoon dep.", "Direct credit (latest)"].map((t, i) => h("th", { class: i >= 4 ? "num" : "" }, t)))),
+      h("tbody", {}, rows.map(r => h("tr", {}, h("td", {}, r.state), h("td", {}, r.district), h("td", {}, status(r.category)), h("td", {}, r.reason), h("td", { class: "num" }, sign(r.monsoon_departure_pct, 0) + "%"), h("td", { class: "num" }, crore(r.direct_credit_cr))))))),
+      h("p", { class: "note", style: "margin-top:8px" }, `${rows.length} districts shown.`)); };
+  f.onchange = draw; draw();
+  dl.append(h("div", { class: "controls" }, f), body);
+  el.append(h("h2", {}, "Early warning (monitoring aid)"), card, dl, bt,
+    h("p", { class: "note", style: "color:var(--ink-2);font-size:13px" }, "Not for individual credit decisions, loan approval or fund allocation. A flag means: verify local credit demand, disbursement timing and eligibility on the ground."));
+}
+
+function methodsPage(el) {
+  el.append(h("h2", {}, "Data and methodology"),
+    h("div", { class: "card" }, h("h3", {}, "Sources"), h("div", { class: "tbl-wrap" }, h("table", {}, h("thead", {}, h("tr", {}, ["ID", "Group", "Publisher", "Table / product", "Units", "Coverage", "Caveats"].map(t => h("th", {}, t)))),
+      h("tbody", {}, D.sources.filter(r => !String(r.source_id).startsWith("SRC-META") && !String(r.source_id).startsWith("SRC-DOC") && !String(r.source_id).startsWith("SRC-READ")).map(r => h("tr", {},
+        h("td", {}, r.source_id), h("td", {}, r.variable_group), h("td", {}, r.publisher), h("td", {}, String(r.url_or_reference || "").startsWith("http") ? h("a", { href: r.url_or_reference.split(" ")[0], style: "color:inherit" }, r.publication_or_table) : r.publication_or_table),
+        h("td", {}, r.units ?? ""), h("td", {}, r.coverage ?? ""), h("td", {}, r.caveats ?? ""))))))),
+    h("div", { class: "card" }, h("h3", {}, "Timing and definitions"), h("p", { class: "note" },
+      "Credit year t = amount outstanding at end-March t. It is matched to the June–September monsoon of calendar year t−1, the agricultural year (t−1)–t and prices of financial year (t−1)–t, so every shock predates the credit it is compared with. Rainfall departure is measured against the 1971–2020 mean of IMD 0.25° gridded rainfall. Yield shortfall = % below a region-specific linear trend. Price fall = area-weighted fall in real WPI of the region's crops, with weights fixed at the 2004–07 crop mix.")),
+    h("div", { class: "card" }, h("h3", {}, "Data checks"), h("table", {}, h("tbody", {}, D.validation.map(r => h("tr", {}, h("td", {}, r.result === "PASS" ? status("Normal monitoring") : status("Watch")), h("td", {}, r.check), h("td", {}, r.detail ?? "")))))),
+    h("div", { class: "card" }, h("h3", {}, "Limitations"), h("ul", { style: "margin:0;padding-left:18px;color:var(--ink-2);font-size:14px" },
+      ["Credit is a stock: it mixes new lending, rollovers, restructuring and write-offs.", "Two states and ~20 years: state-level estimates have low power; an inconclusive result is not evidence of no effect.",
+       "Crop prices are national WPI series; states differ only through crop mix.", "District units are current boundaries; Thane and Palghar are merged, Mumbai is excluded (metro-booked lending).",
+       "Yield and price shocks partly respond to farmer and policy behaviour; only rainfall is plausibly external.", "Policy-event dates were checked by hand; the two Maharashtra waivers still cite press reports rather than Government Resolutions."].map(t => h("li", {}, t)))));
+}
+
+// ---------------------------------------------------------------- shell
+const tabs = $("#tabs"), main = $("#main");
+const built = {};
+function select(id) {
+  for (const b of tabs.children) b.setAttribute("aria-selected", b.dataset.id === id);
+  for (const sec of main.children) sec.hidden = sec.id !== id;
+  if (!built[id]) { pages.find(p => p[0] === id)[2]($("#" + id)); built[id] = true; }
+  try { localStorage.setItem("acrews-tab", id); } catch (e) {}
+}
+for (const [id, label] of pages) {
+  tabs.append(h("button", { role: "tab", "data-id": id, type: "button", onclick: () => select(id) }, label));
+  main.append(h("section", { id, role: "tabpanel", hidden: "" }));
+}
+tabs.addEventListener("keydown", e => { const ids = pages.map(p => p[0]); const cur = ids.indexOf([...tabs.children].find(b => b.getAttribute("aria-selected") === "true").dataset.id);
+  if (e.key === "ArrowRight" || e.key === "ArrowLeft") { const n = ids[(cur + (e.key === "ArrowRight" ? 1 : ids.length - 1)) % ids.length]; select(n); tabs.querySelector(`[data-id="${n}"]`).focus(); } });
+let start = "overview"; try { start = localStorage.getItem("acrews-tab") || start; } catch (e) {}
+if (location.hash.length > 1) start = location.hash.slice(1);
+select(pages.some(p => p[0] === start) ? start : "overview");
+$("#theme").onclick = () => { const root = document.documentElement; const dark = root.dataset.theme ? root.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+  root.dataset.theme = dark ? "light" : "dark"; };
+$("#foot").textContent = `Generated ${D.generated} from saved outputs · model run ${D.model_run} · ACREWS research prototype. Sources: RBI (DBIE BSR-1, Handbook of Statistics on Indian States), IMD gridded rainfall, Office of the Economic Adviser (WPI), DES (MSP).`;
+</script>
+</body>
+</html>

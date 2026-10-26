@@ -1,0 +1,22 @@
+# ACREWS monitoring thresholds (spec s.12). Chosen from documented conventions BEFORE
+# looking at backtest results; change only with a reason recorded in data/metadata/cleaning_log.md.
+early_warning:
+  rain:
+    adverse_departure_pct: -20      # IMD 'deficient' band starts at -20% of normal
+    severe_standardised_anomaly: -1.5  # McKee et al. (1993) SPI 'severely dry'
+  yield:
+    adverse_sd: 1.0                 # design plan s.4: > 1 SD below trend
+    severe_sd: 2.0
+  price:
+    adverse_sd: 1.0                 # real crop-price fall larger than 1 SD of the region's history
+    severe_sd: 2.0
+  credit:
+    weak_real_growth_pct: 0.0       # real agricultural credit contracted
+    severe_real_growth_pct: -10.0
+  district:
+    # evidence-based lag (reports/tables/district_coefficients.csv, D10/D15): in Bihar,
+    # credit is lower 2-3 years after a district monsoon shortfall
+    lagged_watch_states: [Bihar]
+    lagged_drought_departure_pct: -20
+  data:
+    max_age_years: 2                # an input older than this (vs the assessed year) counts as stale

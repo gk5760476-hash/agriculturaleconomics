@@ -1,0 +1,481 @@
+wpi_base,item,published_name,index,fiscal_year
+2004-05,all_commodities,ALL COMMODITIES,100.0,2004-05
+2004-05,all_commodities,ALL COMMODITIES,104.47,2005-06
+2004-05,all_commodities,ALL COMMODITIES,111.35,2006-07
+2004-05,all_commodities,ALL COMMODITIES,116.63,2007-08
+2004-05,all_commodities,ALL COMMODITIES,126.02,2008-09
+2004-05,all_commodities,ALL COMMODITIES,130.81,2009-10
+2004-05,all_commodities,ALL COMMODITIES,143.32,2010-11
+2004-05,all_commodities,ALL COMMODITIES,156.13,2011-12
+2004-05,all_commodities,ALL COMMODITIES,167.62,2012-13
+2004-05,all_commodities,ALL COMMODITIES,177.64,2013-14
+2004-05,all_commodities,ALL COMMODITIES,181.19,2014-15
+2004-05,all_commodities,ALL COMMODITIES,176.67,2015-16
+2004-05,all_commodities,ALL COMMODITIES,183.2,2016-17
+2004-05,primary_articles,I    PRIMARY ARTICLES,100.0,2004-05
+2004-05,primary_articles,I    PRIMARY ARTICLES,104.3,2005-06
+2004-05,primary_articles,I    PRIMARY ARTICLES,114.33,2006-07
+2004-05,primary_articles,I    PRIMARY ARTICLES,123.85,2007-08
+2004-05,primary_articles,I    PRIMARY ARTICLES,137.53,2008-09
+2004-05,primary_articles,I    PRIMARY ARTICLES,154.94,2009-10
+2004-05,primary_articles,I    PRIMARY ARTICLES,182.44,2010-11
+2004-05,primary_articles,I    PRIMARY ARTICLES,200.32,2011-12
+2004-05,primary_articles,I    PRIMARY ARTICLES,219.97,2012-13
+2004-05,primary_articles,I    PRIMARY ARTICLES,241.61,2013-14
+2004-05,primary_articles,I    PRIMARY ARTICLES,248.8,2014-15
+2004-05,primary_articles,I    PRIMARY ARTICLES,249.58,2015-16
+2004-05,primary_articles,I    PRIMARY ARTICLES,261.65,2016-17
+2004-05,paddy,Rice,100.0,2004-05
+2004-05,paddy,Rice,105.23,2005-06
+2004-05,paddy,Rice,110.03,2006-07
+2004-05,paddy,Rice,122.46,2007-08
+2004-05,paddy,Rice,140.62,2008-09
+2004-05,paddy,Rice,157.93,2009-10
+2004-05,paddy,Rice,167.19,2010-11
+2004-05,paddy,Rice,172.29,2011-12
+2004-05,paddy,Rice,194.16,2012-13
+2004-05,paddy,Rice,226.22,2013-14
+2004-05,paddy,Rice,241.37,2014-15
+2004-05,paddy,Rice,237.36,2015-16
+2004-05,paddy,Rice,251.63,2016-17
+2004-05,wheat,Wheat,100.0,2004-05
+2004-05,wheat,Wheat,105.02,2005-06
+2004-05,wheat,Wheat,125.12,2006-07
+2004-05,wheat,Wheat,134.28,2007-08
+2004-05,wheat,Wheat,147.57,2008-09
+2004-05,wheat,Wheat,166.47,2009-10
+2004-05,wheat,Wheat,171.44,2010-11
+2004-05,wheat,Wheat,168.29,2011-12
+2004-05,wheat,Wheat,194.39,2012-13
+2004-05,wheat,Wheat,212.27,2013-14
+2004-05,wheat,Wheat,211.66,2014-15
+2004-05,wheat,Wheat,219.42,2015-16
+2004-05,wheat,Wheat,241.68,2016-17
+2004-05,maize,Maize,100.0,2004-05
+2004-05,maize,Maize,113.1,2005-06
+2004-05,maize,Maize,122.49,2006-07
+2004-05,maize,Maize,130.23,2007-08
+2004-05,maize,Maize,139.1,2008-09
+2004-05,maize,Maize,153.34,2009-10
+2004-05,maize,Maize,168.94,2010-11
+2004-05,maize,Maize,205.63,2011-12
+2004-05,maize,Maize,234.03,2012-13
+2004-05,maize,Maize,251.24,2013-14
+2004-05,maize,Maize,241.73,2014-15
+2004-05,maize,Maize,256.82,2015-16
+2004-05,maize,Maize,278.23,2016-17
+2004-05,gram,Gram,100.0,2004-05
+2004-05,gram,Gram,113.94,2005-06
+2004-05,gram,Gram,156.15,2006-07
+2004-05,gram,Gram,148.98,2007-08
+2004-05,gram,Gram,153.79,2008-09
+2004-05,gram,Gram,152.16,2009-10
+2004-05,gram,Gram,149.97,2010-11
+2004-05,gram,Gram,193.78,2011-12
+2004-05,gram,Gram,266.31,2012-13
+2004-05,gram,Gram,217.28,2013-14
+2004-05,gram,Gram,197.95,2014-15
+2004-05,gram,Gram,279.78,2015-16
+2004-05,gram,Gram,441.67,2016-17
+2004-05,arhar,Arhar,100.0,2004-05
+2004-05,arhar,Arhar,98.05,2005-06
+2004-05,arhar,Arhar,108.31,2006-07
+2004-05,arhar,Arhar,126.08,2007-08
+2004-05,arhar,Arhar,144.28,2008-09
+2004-05,arhar,Arhar,214.7,2009-10
+2004-05,arhar,Arhar,205.06,2010-11
+2004-05,arhar,Arhar,183.2,2011-12
+2004-05,arhar,Arhar,199.35,2012-13
+2004-05,arhar,Arhar,212.28,2013-14
+2004-05,arhar,Arhar,230.78,2014-15
+2004-05,arhar,Arhar,357.93,2015-16
+2004-05,arhar,Arhar,334.37,2016-17
+2004-05,moong,Moong,100.0,2004-05
+2004-05,moong,Moong,121.66,2005-06
+2004-05,moong,Moong,160.3,2006-07
+2004-05,moong,Moong,141.18,2007-08
+2004-05,moong,Moong,150.42,2008-09
+2004-05,moong,Moong,233.8,2009-10
+2004-05,moong,Moong,280.44,2010-11
+2004-05,moong,Moong,244.42,2011-12
+2004-05,moong,Moong,259.47,2012-13
+2004-05,moong,Moong,295.88,2013-14
+2004-05,moong,Moong,357.99,2014-15
+2004-05,moong,Moong,404.5,2015-16
+2004-05,moong,Moong,337.7,2016-17
+2004-05,urad,Urad,100.0,2004-05
+2004-05,urad,Urad,131.08,2005-06
+2004-05,urad,Urad,191.33,2006-07
+2004-05,urad,Urad,159.77,2007-08
+2004-05,urad,Urad,159.78,2008-09
+2004-05,urad,Urad,228.43,2009-10
+2004-05,urad,Urad,271.75,2010-11
+2004-05,urad,Urad,240.0,2011-12
+2004-05,urad,Urad,227.67,2012-13
+2004-05,urad,Urad,234.32,2013-14
+2004-05,urad,Urad,288.31,2014-15
+2004-05,urad,Urad,438.03,2015-16
+2004-05,urad,Urad,493.71,2016-17
+2004-05,potato,Potato,100.0,2004-05
+2004-05,potato,Potato,118.51,2005-06
+2004-05,potato,Potato,132.59,2006-07
+2004-05,potato,Potato,146.85,2007-08
+2004-05,potato,Potato,110.29,2008-09
+2004-05,potato,Potato,206.24,2009-10
+2004-05,potato,Potato,131.95,2010-11
+2004-05,potato,Potato,128.98,2011-12
+2004-05,potato,Potato,206.95,2012-13
+2004-05,potato,Potato,220.08,2013-14
+2004-05,potato,Potato,297.22,2014-15
+2004-05,potato,Potato,164.08,2015-16
+2004-05,potato,Potato,227.13,2016-17
+2004-05,onion,Onion,100.0,2004-05
+2004-05,onion,Onion,126.62,2005-06
+2004-05,onion,Onion,115.9,2006-07
+2004-05,onion,Onion,174.68,2007-08
+2004-05,onion,Onion,177.75,2008-09
+2004-05,onion,Onion,204.3,2009-10
+2004-05,onion,Onion,259.6,2010-11
+2004-05,onion,Onion,186.67,2011-12
+2004-05,onion,Onion,232.51,2012-13
+2004-05,onion,Onion,482.22,2013-14
+2004-05,onion,Onion,333.67,2014-15
+2004-05,onion,Onion,447.3,2015-16
+2004-05,onion,Onion,247.09,2016-17
+2004-05,raw_cotton,Raw Cotton,100.0,2004-05
+2004-05,raw_cotton,Raw Cotton,90.18,2005-06
+2004-05,raw_cotton,Raw Cotton,96.63,2006-07
+2004-05,raw_cotton,Raw Cotton,111.8,2007-08
+2004-05,raw_cotton,Raw Cotton,141.19,2008-09
+2004-05,raw_cotton,Raw Cotton,138.55,2009-10
+2004-05,raw_cotton,Raw Cotton,199.32,2010-11
+2004-05,raw_cotton,Raw Cotton,225.19,2011-12
+2004-05,raw_cotton,Raw Cotton,206.04,2012-13
+2004-05,raw_cotton,Raw Cotton,236.53,2013-14
+2004-05,raw_cotton,Raw Cotton,206.07,2014-15
+2004-05,raw_cotton,Raw Cotton,189.88,2015-16
+2004-05,raw_cotton,Raw Cotton,224.17,2016-17
+2004-05,rapeseed_mustard,Rape & Mustard Seed,100.0,2004-05
+2004-05,rapeseed_mustard,Rape & Mustard Seed,95.87,2005-06
+2004-05,rapeseed_mustard,Rape & Mustard Seed,99.97,2006-07
+2004-05,rapeseed_mustard,Rape & Mustard Seed,118.16,2007-08
+2004-05,rapeseed_mustard,Rape & Mustard Seed,144.39,2008-09
+2004-05,rapeseed_mustard,Rape & Mustard Seed,139.22,2009-10
+2004-05,rapeseed_mustard,Rape & Mustard Seed,135.09,2010-11
+2004-05,rapeseed_mustard,Rape & Mustard Seed,149.77,2011-12
+2004-05,rapeseed_mustard,Rape & Mustard Seed,202.65,2012-13
+2004-05,rapeseed_mustard,Rape & Mustard Seed,189.28,2013-14
+2004-05,rapeseed_mustard,Rape & Mustard Seed,193.92,2014-15
+2004-05,rapeseed_mustard,Rape & Mustard Seed,225.03,2015-16
+2004-05,rapeseed_mustard,Rape & Mustard Seed,231.01,2016-17
+2004-05,soyabean,Soyabean,100.0,2004-05
+2004-05,soyabean,Soyabean,82.03,2005-06
+2004-05,soyabean,Soyabean,79.47,2006-07
+2004-05,soyabean,Soyabean,100.65,2007-08
+2004-05,soyabean,Soyabean,129.75,2008-09
+2004-05,soyabean,Soyabean,141.24,2009-10
+2004-05,soyabean,Soyabean,128.38,2010-11
+2004-05,soyabean,Soyabean,140.78,2011-12
+2004-05,soyabean,Soyabean,211.86,2012-13
+2004-05,soyabean,Soyabean,226.33,2013-14
+2004-05,soyabean,Soyabean,216.47,2014-15
+2004-05,soyabean,Soyabean,210.0,2015-16
+2004-05,soyabean,Soyabean,196.4,2016-17
+2004-05,sugarcane,Sugarcane,100.0,2004-05
+2004-05,sugarcane,Sugarcane,100.15,2005-06
+2004-05,sugarcane,Sugarcane,100.92,2006-07
+2004-05,sugarcane,Sugarcane,101.66,2007-08
+2004-05,sugarcane,Sugarcane,101.3,2008-09
+2004-05,sugarcane,Sugarcane,106.55,2009-10
+2004-05,sugarcane,Sugarcane,156.44,2010-11
+2004-05,sugarcane,Sugarcane,166.4,2011-12
+2004-05,sugarcane,Sugarcane,172.51,2012-13
+2004-05,sugarcane,Sugarcane,188.63,2013-14
+2004-05,sugarcane,Sugarcane,206.8,2014-15
+2004-05,sugarcane,Sugarcane,254.0,2015-16
+2004-05,sugarcane,Sugarcane,272.3,2016-17
+2011-12,all_commodities,All commodities,100.0,2011-12
+2011-12,all_commodities,All commodities,106.9,2012-13
+2011-12,all_commodities,All commodities,112.5,2013-14
+2011-12,all_commodities,All commodities,113.9,2014-15
+2011-12,all_commodities,All commodities,109.7,2015-16
+2011-12,all_commodities,All commodities,111.6,2016-17
+2011-12,all_commodities,All commodities,114.9,2017-18
+2011-12,all_commodities,All commodities,119.8,2018-19
+2011-12,all_commodities,All commodities,121.8,2019-20
+2011-12,all_commodities,All commodities,123.4,2020-21
+2011-12,all_commodities,All commodities,139.4,2021-22
+2011-12,all_commodities,All commodities,152.5,2022-23
+2011-12,all_commodities,All commodities,151.4,2023-24
+2011-12,all_commodities,All commodities,154.9,2024-25
+2011-12,all_commodities,All commodities,155.99166666666667,2025-26
+2011-12,primary_articles,I    PRIMARY ARTICLES,100.0,2011-12
+2011-12,primary_articles,I    PRIMARY ARTICLES,111.4,2012-13
+2011-12,primary_articles,I    PRIMARY ARTICLES,122.4,2013-14
+2011-12,primary_articles,I    PRIMARY ARTICLES,125.1,2014-15
+2011-12,primary_articles,I    PRIMARY ARTICLES,124.6,2015-16
+2011-12,primary_articles,I    PRIMARY ARTICLES,128.9,2016-17
+2011-12,primary_articles,I    PRIMARY ARTICLES,130.6,2017-18
+2011-12,primary_articles,I    PRIMARY ARTICLES,134.2,2018-19
+2011-12,primary_articles,I    PRIMARY ARTICLES,143.3,2019-20
+2011-12,primary_articles,I    PRIMARY ARTICLES,145.7,2020-21
+2011-12,primary_articles,I    PRIMARY ARTICLES,160.7,2021-22
+2011-12,primary_articles,I    PRIMARY ARTICLES,176.8,2022-23
+2011-12,primary_articles,I    PRIMARY ARTICLES,183.0,2023-24
+2011-12,primary_articles,I    PRIMARY ARTICLES,192.5,2024-25
+2011-12,primary_articles,I    PRIMARY ARTICLES,190.42500000000004,2025-26
+2011-12,paddy,Paddy,100.0,2011-12
+2011-12,paddy,Paddy,113.2,2012-13
+2011-12,paddy,Paddy,129.1,2013-14
+2011-12,paddy,Paddy,136.6,2014-15
+2011-12,paddy,Paddy,134.7,2015-16
+2011-12,paddy,Paddy,143.6,2016-17
+2011-12,paddy,Paddy,149.4,2017-18
+2011-12,paddy,Paddy,155.3,2018-19
+2011-12,paddy,Paddy,160.5,2019-20
+2011-12,paddy,Paddy,163.5,2020-21
+2011-12,paddy,Paddy,162.3,2021-22
+2011-12,paddy,Paddy,170.7,2022-23
+2011-12,paddy,Paddy,186.5,2023-24
+2011-12,paddy,Paddy,202.2,2024-25
+2011-12,paddy,Paddy,202.25833333333333,2025-26
+2011-12,wheat,Wheat,100.0,2011-12
+2011-12,wheat,Wheat,115.3,2012-13
+2011-12,wheat,Wheat,124.9,2013-14
+2011-12,wheat,Wheat,123.4,2014-15
+2011-12,wheat,Wheat,128.4,2015-16
+2011-12,wheat,Wheat,142.1,2016-17
+2011-12,wheat,Wheat,138.7,2017-18
+2011-12,wheat,Wheat,149.4,2018-19
+2011-12,wheat,Wheat,159.2,2019-20
+2011-12,wheat,Wheat,152.9,2020-21
+2011-12,wheat,Wheat,160.1,2021-22
+2011-12,wheat,Wheat,184.9,2022-23
+2011-12,wheat,Wheat,193.3,2023-24
+2011-12,wheat,Wheat,208.1,2024-25
+2011-12,wheat,Wheat,210.54999999999998,2025-26
+2011-12,maize,Maize,100.0,2011-12
+2011-12,maize,Maize,116.0,2012-13
+2011-12,maize,Maize,123.1,2013-14
+2011-12,maize,Maize,118.5,2014-15
+2011-12,maize,Maize,125.5,2015-16
+2011-12,maize,Maize,137.0,2016-17
+2011-12,maize,Maize,124.7,2017-18
+2011-12,maize,Maize,133.2,2018-19
+2011-12,maize,Maize,175.4,2019-20
+2011-12,maize,Maize,143.3,2020-21
+2011-12,maize,Maize,152.1,2021-22
+2011-12,maize,Maize,187.2,2022-23
+2011-12,maize,Maize,188.4,2023-24
+2011-12,maize,Maize,210.9,2024-25
+2011-12,maize,Maize,198.8166666666667,2025-26
+2011-12,gram,Gram,100.0,2011-12
+2011-12,gram,Gram,135.3,2012-13
+2011-12,gram,Gram,109.4,2013-14
+2011-12,gram,Gram,103.0,2014-15
+2011-12,gram,Gram,142.0,2015-16
+2011-12,gram,Gram,219.2,2016-17
+2011-12,gram,Gram,164.8,2017-18
+2011-12,gram,Gram,135.7,2018-19
+2011-12,gram,Gram,145.1,2019-20
+2011-12,gram,Gram,153.2,2020-21
+2011-12,gram,Gram,167.6,2021-22
+2011-12,gram,Gram,163.7,2022-23
+2011-12,gram,Gram,182.1,2023-24
+2011-12,gram,Gram,215.0,2024-25
+2011-12,gram,Gram,196.38333333333333,2025-26
+2011-12,arhar,Arhar,100.0,2011-12
+2011-12,arhar,Arhar,109.8,2012-13
+2011-12,arhar,Arhar,118.0,2013-14
+2011-12,arhar,Arhar,128.1,2014-15
+2011-12,arhar,Arhar,193.2,2015-16
+2011-12,arhar,Arhar,181.1,2016-17
+2011-12,arhar,Arhar,116.8,2017-18
+2011-12,arhar,Arhar,118.2,2018-19
+2011-12,arhar,Arhar,149.8,2019-20
+2011-12,arhar,Arhar,165.9,2020-21
+2011-12,arhar,Arhar,177.6,2021-22
+2011-12,arhar,Arhar,188.4,2022-23
+2011-12,arhar,Arhar,250.1,2023-24
+2011-12,arhar,Arhar,279.6,2024-25
+2011-12,arhar,Arhar,203.5666666666667,2025-26
+2011-12,moong,Moong,100.0,2011-12
+2011-12,moong,Moong,108.6,2012-13
+2011-12,moong,Moong,122.6,2013-14
+2011-12,moong,Moong,145.7,2014-15
+2011-12,moong,Moong,165.2,2015-16
+2011-12,moong,Moong,136.8,2016-17
+2011-12,moong,Moong,114.0,2017-18
+2011-12,moong,Moong,119.6,2018-19
+2011-12,moong,Moong,142.8,2019-20
+2011-12,moong,Moong,170.0,2020-21
+2011-12,moong,Moong,166.1,2021-22
+2011-12,moong,Moong,167.3,2022-23
+2011-12,moong,Moong,195.1,2023-24
+2011-12,moong,Moong,194.4,2024-25
+2011-12,moong,Moong,187.42499999999998,2025-26
+2011-12,urad,Urad,100.0,2011-12
+2011-12,urad,Urad,96.6,2012-13
+2011-12,urad,Urad,100.4,2013-14
+2011-12,urad,Urad,124.1,2014-15
+2011-12,urad,Urad,180.0,2015-16
+2011-12,urad,Urad,201.6,2016-17
+2011-12,urad,Urad,128.2,2017-18
+2011-12,urad,Urad,114.3,2018-19
+2011-12,urad,Urad,149.4,2019-20
+2011-12,urad,Urad,186.7,2020-21
+2011-12,urad,Urad,183.4,2021-22
+2011-12,urad,Urad,181.7,2022-23
+2011-12,urad,Urad,204.6,2023-24
+2011-12,urad,Urad,219.1,2024-25
+2011-12,urad,Urad,196.04166666666666,2025-26
+2011-12,potato,Potato,100.0,2011-12
+2011-12,potato,Potato,162.9,2012-13
+2011-12,potato,Potato,176.5,2013-14
+2011-12,potato,Potato,227.3,2014-15
+2011-12,potato,Potato,127.5,2015-16
+2011-12,potato,Potato,175.6,2016-17
+2011-12,potato,Potato,117.9,2017-18
+2011-12,potato,Potato,192.6,2018-19
+2011-12,potato,Potato,193.9,2019-20
+2011-12,potato,Potato,290.7,2020-21
+2011-12,potato,Potato,191.4,2021-22
+2011-12,potato,Potato,238.1,2022-23
+2011-12,potato,Potato,197.4,2023-24
+2011-12,potato,Potato,327.2,2024-25
+2011-12,potato,Potato,208.48333333333332,2025-26
+2011-12,onion,Onion,100.0,2011-12
+2011-12,onion,Onion,126.1,2012-13
+2011-12,onion,Onion,270.5,2013-14
+2011-12,onion,Onion,194.0,2014-15
+2011-12,onion,Onion,253.6,2015-16
+2011-12,onion,Onion,117.4,2016-17
+2011-12,onion,Onion,212.0,2017-18
+2011-12,onion,Onion,138.0,2018-19
+2011-12,onion,Onion,306.5,2019-20
+2011-12,onion,Onion,255.2,2020-21
+2011-12,onion,Onion,237.1,2021-22
+2011-12,onion,Onion,175.0,2022-23
+2011-12,onion,Onion,245.7,2023-24
+2011-12,onion,Onion,350.2,2024-25
+2011-12,onion,Onion,183.79166666666666,2025-26
+2011-12,sugarcane,Sugarcane,100.0,2011-12
+2011-12,sugarcane,Sugarcane,103.7,2012-13
+2011-12,sugarcane,Sugarcane,113.4,2013-14
+2011-12,sugarcane,Sugarcane,124.3,2014-15
+2011-12,sugarcane,Sugarcane,152.7,2015-16
+2011-12,sugarcane,Sugarcane,163.4,2016-17
+2011-12,sugarcane,Sugarcane,168.4,2017-18
+2011-12,sugarcane,Sugarcane,169.5,2018-19
+2011-12,sugarcane,Sugarcane,169.5,2019-20
+2011-12,sugarcane,Sugarcane,185.6,2020-21
+2011-12,sugarcane,Sugarcane,197.8,2021-22
+2011-12,sugarcane,Sugarcane,205.0,2022-23
+2011-12,sugarcane,Sugarcane,213.6,2023-24
+2011-12,sugarcane,Sugarcane,225.6,2024-25
+2011-12,sugarcane,Sugarcane,239.35,2025-26
+2011-12,raw_cotton,Raw Cotton,100.0,2011-12
+2011-12,raw_cotton,Raw Cotton,95.0,2012-13
+2011-12,raw_cotton,Raw Cotton,108.6,2013-14
+2011-12,raw_cotton,Raw Cotton,95.8,2014-15
+2011-12,raw_cotton,Raw Cotton,89.5,2015-16
+2011-12,raw_cotton,Raw Cotton,106.8,2016-17
+2011-12,raw_cotton,Raw Cotton,107.5,2017-18
+2011-12,raw_cotton,Raw Cotton,116.6,2018-19
+2011-12,raw_cotton,Raw Cotton,116.0,2019-20
+2011-12,raw_cotton,Raw Cotton,105.3,2020-21
+2011-12,raw_cotton,Raw Cotton,142.4,2021-22
+2011-12,raw_cotton,Raw Cotton,195.9,2022-23
+2011-12,raw_cotton,Raw Cotton,159.6,2023-24
+2011-12,raw_cotton,Raw Cotton,151.0,2024-25
+2011-12,raw_cotton,Raw Cotton,148.9416666666667,2025-26
+2011-12,rapeseed_mustard,Rape & Mustard Seed,100.0,2011-12
+2011-12,rapeseed_mustard,Rape & Mustard Seed,131.1,2012-13
+2011-12,rapeseed_mustard,Rape & Mustard Seed,119.1,2013-14
+2011-12,rapeseed_mustard,Rape & Mustard Seed,122.7,2014-15
+2011-12,rapeseed_mustard,Rape & Mustard Seed,145.9,2015-16
+2011-12,rapeseed_mustard,Rape & Mustard Seed,149.4,2016-17
+2011-12,rapeseed_mustard,Rape & Mustard Seed,134.1,2017-18
+2011-12,rapeseed_mustard,Rape & Mustard Seed,142.2,2018-19
+2011-12,rapeseed_mustard,Rape & Mustard Seed,145.1,2019-20
+2011-12,rapeseed_mustard,Rape & Mustard Seed,163.7,2020-21
+2011-12,rapeseed_mustard,Rape & Mustard Seed,210.5,2021-22
+2011-12,rapeseed_mustard,Rape & Mustard Seed,198.8,2022-23
+2011-12,rapeseed_mustard,Rape & Mustard Seed,165.7,2023-24
+2011-12,rapeseed_mustard,Rape & Mustard Seed,181.0,2024-25
+2011-12,rapeseed_mustard,Rape & Mustard Seed,209.55000000000004,2025-26
+2011-12,soyabean,Soyabean,100.0,2011-12
+2011-12,soyabean,Soyabean,149.4,2012-13
+2011-12,soyabean,Soyabean,157.5,2013-14
+2011-12,soyabean,Soyabean,154.6,2014-15
+2011-12,soyabean,Soyabean,151.1,2015-16
+2011-12,soyabean,Soyabean,143.8,2016-17
+2011-12,soyabean,Soyabean,129.9,2017-18
+2011-12,soyabean,Soyabean,150.1,2018-19
+2011-12,soyabean,Soyabean,164.0,2019-20
+2011-12,soyabean,Soyabean,174.6,2020-21
+2011-12,soyabean,Soyabean,280.8,2021-22
+2011-12,soyabean,Soyabean,251.6,2022-23
+2011-12,soyabean,Soyabean,214.3,2023-24
+2011-12,soyabean,Soyabean,197.9,2024-25
+2011-12,soyabean,Soyabean,204.875,2025-26
+2022-23,all_commodities,All Commodities,100.0,2022-23
+2022-23,all_commodities,All Commodities,99.3,2023-24
+2022-23,all_commodities,All Commodities,101.0,2024-25
+2022-23,all_commodities,All Commodities,101.4,2025-26
+2022-23,primary_articles,I PRIMARY ARTICLES,100.0,2022-23
+2022-23,primary_articles,I PRIMARY ARTICLES,106.4,2023-24
+2022-23,primary_articles,I PRIMARY ARTICLES,112.8,2024-25
+2022-23,primary_articles,I PRIMARY ARTICLES,110.3,2025-26
+2022-23,paddy,Paddy,100.0,2022-23
+2022-23,paddy,Paddy,113.0,2023-24
+2022-23,paddy,Paddy,120.5,2024-25
+2022-23,paddy,Paddy,119.1,2025-26
+2022-23,wheat,Wheat,100.0,2022-23
+2022-23,wheat,Wheat,105.1,2023-24
+2022-23,wheat,Wheat,116.0,2024-25
+2022-23,wheat,Wheat,113.8,2025-26
+2022-23,maize,Maize,100.0,2022-23
+2022-23,maize,Maize,100.9,2023-24
+2022-23,maize,Maize,112.5,2024-25
+2022-23,maize,Maize,108.3,2025-26
+2022-23,gram,Gram,100.0,2022-23
+2022-23,gram,Gram,112.3,2023-24
+2022-23,gram,Gram,132.5,2024-25
+2022-23,gram,Gram,120.5,2025-26
+2022-23,moong,Moong,100.0,2022-23
+2022-23,moong,Moong,115.1,2023-24
+2022-23,moong,Moong,114.6,2024-25
+2022-23,moong,Moong,111.3,2025-26
+2022-23,arhar,Arhar,100.0,2022-23
+2022-23,arhar,Arhar,136.6,2023-24
+2022-23,arhar,Arhar,145.5,2024-25
+2022-23,arhar,Arhar,109.0,2025-26
+2022-23,urad,Urad,100.0,2022-23
+2022-23,urad,Urad,115.8,2023-24
+2022-23,urad,Urad,119.4,2024-25
+2022-23,urad,Urad,107.8,2025-26
+2022-23,potato,Potato,100.0,2022-23
+2022-23,potato,Potato,84.3,2023-24
+2022-23,potato,Potato,136.6,2024-25
+2022-23,potato,Potato,84.5,2025-26
+2022-23,onion,Onion,100.0,2022-23
+2022-23,onion,Onion,141.5,2023-24
+2022-23,onion,Onion,204.6,2024-25
+2022-23,onion,Onion,106.2,2025-26
+2022-23,sugarcane,Sugarcane,100.0,2022-23
+2022-23,sugarcane,Sugarcane,104.3,2023-24
+2022-23,sugarcane,Sugarcane,110.1,2024-25
+2022-23,sugarcane,Sugarcane,116.9,2025-26
+2022-23,raw_cotton,Raw Cotton,100.0,2022-23
+2022-23,raw_cotton,Raw Cotton,79.2,2023-24
+2022-23,raw_cotton,Raw Cotton,76.7,2024-25
+2022-23,raw_cotton,Raw Cotton,76.5,2025-26
+2022-23,soyabean,Soyabean,100.0,2022-23
+2022-23,soyabean,Soyabean,84.8,2023-24
+2022-23,soyabean,Soyabean,77.9,2024-25
+2022-23,soyabean,Soyabean,81.0,2025-26
+2022-23,rapeseed_mustard,Rapeseed & Mustard Seed,100.0,2022-23
+2022-23,rapeseed_mustard,Rapeseed & Mustard Seed,83.8,2023-24
+2022-23,rapeseed_mustard,Rapeseed & Mustard Seed,91.3,2024-25
+2022-23,rapeseed_mustard,Rapeseed & Mustard Seed,104.4,2025-26

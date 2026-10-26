@@ -1,0 +1,24 @@
+# Data cleaning log
+
+Every manual decision or correction applied between `raw/` and `processed/`. Code locations in brackets.
+
+| # | Date | Dataset | Issue | Action | Where |
+|---|---|---|---|---|---|
+| 1 | 2026-10-24 | Credit workbook | Table split over three sheets (`Data`, `Data(1)`, `Data(2)`) at Excel's 1,048,576-row limit; only the first has a header | Stacked all rows whose first cell is a year; 2,244,711 rows. Totals reconcile exactly with DBIE "Summary - Year Wise" and "Summary - State Wise" sheets | `ingestion.ingest_credit` |
+| 2 | 2026-10-24 | Credit workbook | `-` used for not-reported cells | Read as missing (NaN), never zero; 4 rows have no amount outstanding | `ingestion._num` |
+| 3 | 2026-10-24 | Credit workbook | Population group spelt `SEMI-URBAN` (2010–2022) and `SEMI URBAN` (2023–2026) | Harmonised to `SEMI URBAN` in processed tables; raw spelling kept in interim | `transformations.POPULATION_GROUP_FIX` |
+| 4 | 2026-10-24 | Credit workbook | Bank groups in mixed case and `SMALL FINANCE BANK` vs `SMALL FINANCE BANKS` | Upper-cased; singular → plural | `transformations.BANK_GROUP_FIX` |
+| 5 | 2026-10-24 | Credit | Non-agricultural credit definition | Defined as total SCB credit minus `I. AGRICULTURE`. The prior `panel.csv` `dlog_nonagri` differs by up to 5.4 pp and its definition is undocumented | `transformations.credit_region_year` |
+| 6 | 2026-10-24 | IMD rainfall | Years split across `.nc` and `.grd` formats | Both read onto the same 135 × 129 grid; GRD layout (time × lat × lon, float32, −999 missing) verified by identical land mask to NetCDF | `ingestion._read_rain_year` |
+| 7 | 2026-10-24 | IMD rainfall | State/district rainfall must be built from the grid | Cell-centre-in-polygon on Survey of India boundaries (reprojected EPSG:7755 → 4326); cos(latitude)-weighted mean. All-India = all valid IMD land cells | `ingestion.build_region_masks` |
+| 8 | 2026-10-24 | IMD rainfall | Mumbai and Mumbai Suburban contain no 0.25° cell centre | Assigned the nearest valid cell; flagged `nearest_cell_fallback` | `ingestion.build_region_masks` |
+| 9 | 2026-10-24 | IMD rainfall | Normal period | Initially mean of 39 available years in 1971–2020; superseded by entry 13 (all 50 years) | `transformations.RAIN_NORMAL_PERIOD` |
+| 10 | 2026-10-24 | Foodgrains | RBI HBS CSVs label the agricultural year by its start date (`2004-04-01` = 2004-05) | Converted to `crop_year` "2004-05" and `crop_year_start` 2004 | `ingestion.ingest_foodgrains` |
+| 11 | 2026-10-24 | Foodgrains | State name `Keralam`; J&K split into state (to 2018-19) and UT (from 2019-20) | Kept as published; not relevant to focus regions | — |
+| 12 | 2026-10-24 | Drive | `Data/Model/grd` is a 0-byte file; two copies of the design-plan PDF | Empty file not kept (logged in manifest); both PDFs kept in `docs/design/` | — |
+| 13 | 2026-10-24 | IMD rainfall | Years 1981-82, 2001-09, 2022 missing from Drive | Downloaded from IMD Pune with imdlib; normal now uses all 50 years 1971-2020. All-India JJAS normal = 858.9 mm. The Bihar (-5.0 pp) / Maharashtra (+4.5 pp) offset vs prior `panel.csv` persists, so it reflects a different rainfall source (likely IMD published state/sub-division figures), not missing years | `data/raw/rainfall/imd_0p25_grd/` |
+| 14 | 2026-10-24 | RBI HBS credit (T157) | Published in rupees; date = FY start | Divided by 1e7 to Rs crore; credit year = period_start + 1. Matches DBIE within 0.003% (rounding to Rs 10 cr) on all 48 overlapping region-years; DBIE used where available, HBS for 2004-2009 | `transformations.credit_agri_long` |
+| 15 | 2026-10-24 | WPI | Three bases (2004-05, 2011-12, 2022-23) | Rebased to 2011-12 = 100; 2004-05 series linked at FY 2011-12 (single-year ratio). 2004-05 'Rice' = later 'Paddy' (same item code). Base-year value 100 added for each base | `ingestion.ingest_wpi`, `transformations.wpi_spliced` |
+| 16 | 2026-10-24 | MSP | Only available as scanned-table PDF with personal data on p.1 | Hand-transcribed 16 crops/varieties, KMS 2004-05..2025-26, RMS 2004-05..2026-27; bonus footnotes kept in `note`. Crop year: KMS t/t+1 and RMS t+1/t+2 -> crop year t/t+1. PDF git-ignored | `src/build_msp_table.py` |
+| 17 | 2026-10-24 | Macro (HBS 21/22/29/30/108) | Rupees; GSVA agri base 2011-12 starts 2011-12 | Converted to Rs crore; 2004-05-base GSVA files kept in raw but not spliced (different base and coverage) | `transformations.macro_region_year` |
+| 18 | 2026-10-24 | Policy events | No source dataset | Hand-coded 13 events with source URL and verification status; dummies in panel: `loan_waiver_year`, `macro_shock_year` by first affected credit year, region-specific for state schemes | `data/raw/policy/policy_events.csv`, `transformations.policy_dummies` |
