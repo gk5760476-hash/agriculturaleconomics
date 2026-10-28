@@ -1,0 +1,704 @@
+{
+ "id": "ep03",
+ "title": "Same Week",
+ "subtitle": "Counteradaptive preferences",
+ "fps": 30,
+ "durationInFrames": 1673,
+ "shots": [
+  {
+   "img": "panels/p03_02",
+   "cam": {
+    "from": [
+     0.5,
+     0.5,
+     1.0
+    ],
+    "to": [
+     0.5,
+     0.5,
+     1.08
+    ]
+   },
+   "aspect": 1.7902,
+   "from": 0,
+   "duration": 214,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep03/001.mp3",
+     "from": 15,
+     "duration": 179,
+     "pages": [
+      [
+       {
+        "text": "But",
+        "start": 18,
+        "end": 26
+       },
+       {
+        "text": "the",
+        "start": 27,
+        "end": 31
+       },
+       {
+        "text": "same",
+        "start": 31,
+        "end": 44
+       },
+       {
+        "text": "deprivation",
+        "start": 44,
+        "end": 68
+       },
+       {
+        "text": "does",
+        "start": 72,
+        "end": 81
+       },
+       {
+        "text": "something",
+        "start": 82,
+        "end": 99
+       },
+       {
+        "text": "completely",
+        "start": 99,
+        "end": 121
+       },
+       {
+        "text": "different",
+        "start": 121,
+        "end": 136
+       },
+       {
+        "text": "to",
+        "start": 139,
+        "end": 144
+       },
+       {
+        "text": "Aarav's",
+        "start": 146,
+        "end": 160
+       },
+       {
+        "text": "friend",
+        "start": 160,
+        "end": 170
+       },
+       {
+        "text": "Deepa.",
+        "start": 171,
+        "end": 185
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "scenes/p01_01",
+   "cam": {
+    "from": [
+     0.5,
+     0.5,
+     1.0
+    ],
+    "to": [
+     0.4,
+     0.55,
+     1.15
+    ]
+   },
+   "aspect": 1.7886,
+   "amb": "room",
+   "from": 214,
+   "duration": 369,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep03/002.mp3",
+     "from": 229,
+     "duration": 334,
+     "pages": [
+      [
+       {
+        "text": "She",
+        "start": 232,
+        "end": 239
+       },
+       {
+        "text": "wants",
+        "start": 239,
+        "end": 251
+       },
+       {
+        "text": "to",
+        "start": 251,
+        "end": 254
+       },
+       {
+        "text": "become",
+        "start": 254,
+        "end": 269
+       },
+       {
+        "text": "a",
+        "start": 270,
+        "end": 272
+       },
+       {
+        "text": "doctor.",
+        "start": 273,
+        "end": 289
+       }
+      ],
+      [
+       {
+        "text": "Her",
+        "start": 317,
+        "end": 324
+       },
+       {
+        "text": "family",
+        "start": 324,
+        "end": 340
+       },
+       {
+        "text": "cannot",
+        "start": 340,
+        "end": 355
+       },
+       {
+        "text": "afford",
+        "start": 357,
+        "end": 371
+       },
+       {
+        "text": "it",
+        "start": 373,
+        "end": 378
+       },
+       {
+        "text": "either.",
+        "start": 380,
+        "end": 394
+       }
+      ],
+      [
+       {
+        "text": "But",
+        "start": 422,
+        "end": 429
+       },
+       {
+        "text": "Deepa",
+        "start": 431,
+        "end": 445
+       },
+       {
+        "text": "does",
+        "start": 445,
+        "end": 452
+       },
+       {
+        "text": "not",
+        "start": 452,
+        "end": 462
+       },
+       {
+        "text": "let",
+        "start": 462,
+        "end": 471
+       },
+       {
+        "text": "go.",
+        "start": 472,
+        "end": 481
+       }
+      ],
+      [
+       {
+        "text": "She",
+        "start": 510,
+        "end": 518
+       },
+       {
+        "text": "becomes",
+        "start": 518,
+        "end": 534
+       },
+       {
+        "text": "consumed.",
+        "start": 534,
+        "end": 554
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p04_01",
+   "cam": {
+    "from": [
+     0.4,
+     0.45,
+     1.2
+    ],
+    "to": [
+     0.32,
+     0.48,
+     1.4
+    ]
+   },
+   "aspect": 1.7902,
+   "amb": "room",
+   "from": 582,
+   "duration": 170,
+   "lines": [
+    {
+     "who": "deepa",
+     "name": "Deepa",
+     "color": "#E88AA0",
+     "audio": "audio/ep03/003.fx2.mp3",
+     "from": 597,
+     "duration": 135,
+     "pages": [
+      [
+       {
+        "text": "I",
+        "start": 600,
+        "end": 608
+       },
+       {
+        "text": "don't",
+        "start": 608,
+        "end": 617
+       },
+       {
+        "text": "care",
+        "start": 618,
+        "end": 624
+       },
+       {
+        "text": "how",
+        "start": 625,
+        "end": 632
+       },
+       {
+        "text": "long",
+        "start": 633,
+        "end": 642
+       },
+       {
+        "text": "it",
+        "start": 642,
+        "end": 646
+       },
+       {
+        "text": "takes.",
+        "start": 647,
+        "end": 661
+       }
+      ],
+      [
+       {
+        "text": "Nothing",
+        "start": 684,
+        "end": 698
+       },
+       {
+        "text": "else",
+        "start": 699,
+        "end": 706
+       },
+       {
+        "text": "matters.",
+        "start": 706,
+        "end": 724
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p04_01",
+   "cam": {
+    "from": [
+     0.72,
+     0.42,
+     1.35
+    ],
+    "to": [
+     0.78,
+     0.42,
+     1.45
+    ]
+   },
+   "aspect": 1.7902,
+   "amb": "room",
+   "from": 752,
+   "duration": 117,
+   "lines": [
+    {
+     "who": "aarav",
+     "name": "Aarav",
+     "color": "#F2C14E",
+     "audio": "audio/ep03/004.fx2.mp3",
+     "from": 767,
+     "duration": 82,
+     "pages": [
+      [
+       {
+        "text": "You",
+        "start": 770,
+        "end": 775
+       },
+       {
+        "text": "haven't",
+        "start": 775,
+        "end": 788
+       },
+       {
+        "text": "eaten",
+        "start": 790,
+        "end": 799
+       },
+       {
+        "text": "properly",
+        "start": 799,
+        "end": 817
+       },
+       {
+        "text": "in",
+        "start": 819,
+        "end": 824
+       },
+       {
+        "text": "two",
+        "start": 824,
+        "end": 828
+       },
+       {
+        "text": "days.",
+        "start": 828,
+        "end": 841
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p04_01",
+   "cam": {
+    "from": [
+     0.35,
+     0.55,
+     1.4
+    ],
+    "to": [
+     0.38,
+     0.6,
+     1.3
+    ]
+   },
+   "minSec": 3.5,
+   "aspect": 1.7902,
+   "amb": "room",
+   "from": 869,
+   "duration": 127,
+   "lines": [
+    {
+     "who": "deepa",
+     "name": "Deepa",
+     "color": "#E88AA0",
+     "audio": "audio/ep03/005.fx2.mp3",
+     "from": 884,
+     "duration": 92,
+     "pages": [
+      [
+       {
+        "text": "You",
+        "start": 887,
+        "end": 896
+       },
+       {
+        "text": "gave",
+        "start": 896,
+        "end": 905
+       },
+       {
+        "text": "up.",
+        "start": 905,
+        "end": 918
+       },
+       {
+        "text": "I",
+        "start": 943,
+        "end": 951
+       },
+       {
+        "text": "won't.",
+        "start": 952,
+        "end": 968
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "scenes/p01_01",
+   "cam": {
+    "from": [
+     0.4,
+     0.55,
+     1.15
+    ],
+    "to": [
+     0.5,
+     0.5,
+     1.0
+    ]
+   },
+   "aspect": 1.7886,
+   "amb": "room",
+   "from": 997,
+   "duration": 310,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep03/006.mp3",
+     "from": 1012,
+     "duration": 275,
+     "pages": [
+      [
+       {
+        "text": "Elster",
+        "start": 1015,
+        "end": 1028
+       },
+       {
+        "text": "calls",
+        "start": 1028,
+        "end": 1041
+       },
+       {
+        "text": "this",
+        "start": 1041,
+        "end": 1049
+       },
+       {
+        "text": "counteradaptive",
+        "start": 1050,
+        "end": 1076
+       },
+       {
+        "text": "preference",
+        "start": 1076,
+        "end": 1096
+       },
+       {
+        "text": "\u2014 the",
+        "start": 1107,
+        "end": 1112
+       },
+       {
+        "text": "exact",
+        "start": 1112,
+        "end": 1127
+       },
+       {
+        "text": "opposite",
+        "start": 1129,
+        "end": 1145
+       },
+       {
+        "text": "of",
+        "start": 1147,
+        "end": 1153
+       },
+       {
+        "text": "sour",
+        "start": 1153,
+        "end": 1163
+       },
+       {
+        "text": "grapes.",
+        "start": 1164,
+        "end": 1179
+       }
+      ],
+      [
+       {
+        "text": "The",
+        "start": 1208,
+        "end": 1210
+       },
+       {
+        "text": "forbidden",
+        "start": 1210,
+        "end": 1230
+       },
+       {
+        "text": "fruit",
+        "start": 1230,
+        "end": 1241
+       },
+       {
+        "text": "tastes",
+        "start": 1243,
+        "end": 1258
+       },
+       {
+        "text": "sweetest.",
+        "start": 1258,
+        "end": 1278
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p02_01",
+   "cam": {
+    "from": [
+     0.4,
+     0.66,
+     1.5
+    ],
+    "to": [
+     0.36,
+     0.64,
+     1.6
+    ]
+   },
+   "minSec": 4,
+   "aspect": 1.7902,
+   "amb": "room",
+   "from": 1306,
+   "duration": 366,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep03/007.mp3",
+     "from": 1321,
+     "duration": 331,
+     "pages": [
+      [
+       {
+        "text": "Deepa",
+        "start": 1324,
+        "end": 1337
+       },
+       {
+        "text": "inflates",
+        "start": 1340,
+        "end": 1357
+       },
+       {
+        "text": "the",
+        "start": 1357,
+        "end": 1361
+       },
+       {
+        "text": "value",
+        "start": 1361,
+        "end": 1376
+       },
+       {
+        "text": "of",
+        "start": 1378,
+        "end": 1385
+       },
+       {
+        "text": "medicine",
+        "start": 1386,
+        "end": 1403
+       },
+       {
+        "text": "because",
+        "start": 1405,
+        "end": 1422
+       },
+       {
+        "text": "it",
+        "start": 1422,
+        "end": 1426
+       },
+       {
+        "text": "is",
+        "start": 1426,
+        "end": 1431
+       },
+       {
+        "text": "denied.",
+        "start": 1431,
+        "end": 1447
+       }
+      ],
+      [
+       {
+        "text": "Same",
+        "start": 1476,
+        "end": 1489
+       },
+       {
+        "text": "deprivation,",
+        "start": 1489,
+        "end": 1512
+       },
+       {
+        "text": "opposite",
+        "start": 1519,
+        "end": 1535
+       },
+       {
+        "text": "response.",
+        "start": 1535,
+        "end": 1557
+       }
+      ],
+      [
+       {
+        "text": "Neither",
+        "start": 1585,
+        "end": 1599
+       },
+       {
+        "text": "is",
+        "start": 1602,
+        "end": 1609
+       },
+       {
+        "text": "simply",
+        "start": 1611,
+        "end": 1626
+       },
+       {
+        "text": "rational.",
+        "start": 1626,
+        "end": 1644
+       }
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

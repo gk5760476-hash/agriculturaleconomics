@@ -1,0 +1,21 @@
+{
+  "id": "ep03",
+  "title": "Same Week",
+  "subtitle": "Counteradaptive preferences",
+  "shots": [
+    {"img": "panels/p03_02", "cam": {"from": [0.5, 0.5, 1.0], "to": [0.5, 0.5, 1.08]},
+     "lines": [{"who": "narrator", "text": "But the same deprivation does something completely different to Aarav's friend Deepa."}]},
+    {"img": "scenes/p01_01", "cam": {"from": [0.5, 0.5, 1.0], "to": [0.4, 0.55, 1.15]},
+     "lines": [{"who": "narrator", "text": "She wants to become a doctor. Her family cannot afford it either. But Deepa does not let go. She becomes consumed."}]},
+    {"img": "panels/p04_01", "cam": {"from": [0.4, 0.45, 1.2], "to": [0.32, 0.48, 1.4]},
+     "lines": [{"who": "deepa", "mood": "insistent", "text": "I don't care how long it takes. Nothing else matters."}]},
+    {"img": "panels/p04_01", "cam": {"from": [0.72, 0.42, 1.35], "to": [0.78, 0.42, 1.45]},
+     "lines": [{"who": "aarav", "mood": "worried", "text": "You haven't eaten properly in two days."}]},
+    {"img": "panels/p04_01", "cam": {"from": [0.35, 0.55, 1.4], "to": [0.38, 0.6, 1.3]},
+     "lines": [{"who": "deepa", "mood": "bitter", "text": "You gave up. I won't."}], "minSec": 3.5},
+    {"img": "scenes/p01_01", "cam": {"from": [0.4, 0.55, 1.15], "to": [0.5, 0.5, 1.0]},
+     "lines": [{"who": "narrator", "text": "Elster calls this counteradaptive preference — the exact opposite of sour grapes. The forbidden fruit tastes sweetest."}]},
+    {"img": "panels/p02_01", "cam": {"from": [0.4, 0.66, 1.5], "to": [0.36, 0.64, 1.6]},
+     "lines": [{"who": "narrator", "text": "Deepa inflates the value of medicine because it is denied. Same deprivation, opposite response. Neither is simply rational."}], "minSec": 4}
+  ]
+}

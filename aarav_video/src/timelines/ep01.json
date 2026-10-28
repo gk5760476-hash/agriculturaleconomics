@@ -1,0 +1,1041 @@
+{
+ "id": "ep01",
+ "title": "Opening \u2014 A Pencil on Paper",
+ "subtitle": "The dream",
+ "fps": 30,
+ "durationInFrames": 2452,
+ "shots": [
+  {
+   "card": "THE MAN WHO\nSTOPPED WANTING",
+   "minSec": 3.5,
+   "from": 0,
+   "duration": 105,
+   "lines": []
+  },
+  {
+   "img": "panels/p01_01",
+   "cam": {
+    "from": [
+     0.5,
+     0.45,
+     1.0
+    ],
+    "to": [
+     0.62,
+     0.6,
+     1.15
+    ]
+   },
+   "aspect": 1.19,
+   "clip": "clips/panels_p01_01.mp4",
+   "clipLast": "clips/panels_p01_01_last.jpg",
+   "clipDuration": 5.0625,
+   "clipAspect": 1.7333,
+   "amb": "room",
+   "from": 105,
+   "duration": 138,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep01/001.mp3",
+     "from": 120,
+     "duration": 103,
+     "pages": [
+      [
+       {
+        "text": "Let",
+        "start": 123,
+        "end": 131
+       },
+       {
+        "text": "me",
+        "start": 132,
+        "end": 139
+       },
+       {
+        "text": "begin",
+        "start": 139,
+        "end": 152
+       },
+       {
+        "text": "with",
+        "start": 152,
+        "end": 159
+       },
+       {
+        "text": "a",
+        "start": 159,
+        "end": 161
+       },
+       {
+        "text": "person,",
+        "start": 161,
+        "end": 179
+       },
+       {
+        "text": "not",
+        "start": 185,
+        "end": 196
+       },
+       {
+        "text": "a",
+        "start": 196,
+        "end": 198
+       },
+       {
+        "text": "theory.",
+        "start": 198,
+        "end": 215
+       }
+      ]
+     ]
+    }
+   ],
+   "clipRate": 1.0,
+   "clipStart": 0.0
+  },
+  {
+   "img": "scenes/p01_02",
+   "cam": {
+    "from": [
+     0.5,
+     0.5,
+     1.0
+    ],
+    "to": [
+     0.45,
+     0.55,
+     1.12
+    ]
+   },
+   "aspect": 1.7886,
+   "amb": "room",
+   "from": 243,
+   "duration": 484,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep01/002.mp3",
+     "from": 258,
+     "duration": 449,
+     "pages": [
+      [
+       {
+        "text": "Aarav",
+        "start": 261,
+        "end": 273
+       },
+       {
+        "text": "is",
+        "start": 275,
+        "end": 282
+       },
+       {
+        "text": "seventeen.",
+        "start": 284,
+        "end": 307
+       }
+      ],
+      [
+       {
+        "text": "He",
+        "start": 334,
+        "end": 339
+       },
+       {
+        "text": "lives",
+        "start": 341,
+        "end": 351
+       },
+       {
+        "text": "in",
+        "start": 353,
+        "end": 356
+       },
+       {
+        "text": "a",
+        "start": 357,
+        "end": 359
+       },
+       {
+        "text": "crowded",
+        "start": 359,
+        "end": 375
+       },
+       {
+        "text": "neighbourhood",
+        "start": 377,
+        "end": 398
+       },
+       {
+        "text": "in",
+        "start": 401,
+        "end": 406
+       },
+       {
+        "text": "contemporary",
+        "start": 408,
+        "end": 433
+       },
+       {
+        "text": "India.",
+        "start": 435,
+        "end": 447
+       }
+      ],
+      [
+       {
+        "text": "He",
+        "start": 475,
+        "end": 481
+       },
+       {
+        "text": "is",
+        "start": 483,
+        "end": 489
+       },
+       {
+        "text": "good",
+        "start": 489,
+        "end": 497
+       },
+       {
+        "text": "at",
+        "start": 497,
+        "end": 504
+       },
+       {
+        "text": "mathematics.",
+        "start": 504,
+        "end": 532
+       }
+      ],
+      [
+       {
+        "text": "He",
+        "start": 560,
+        "end": 566
+       },
+       {
+        "text": "likes",
+        "start": 567,
+        "end": 577
+       },
+       {
+        "text": "pulling",
+        "start": 577,
+        "end": 588
+       },
+       {
+        "text": "apart",
+        "start": 588,
+        "end": 601
+       },
+       {
+        "text": "broken",
+        "start": 602,
+        "end": 617
+       },
+       {
+        "text": "gadgets",
+        "start": 617,
+        "end": 635
+       },
+       {
+        "text": "and",
+        "start": 641,
+        "end": 648
+       },
+       {
+        "text": "figuring",
+        "start": 648,
+        "end": 665
+       },
+       {
+        "text": "out",
+        "start": 665,
+        "end": 673
+       },
+       {
+        "text": "how",
+        "start": 673,
+        "end": 681
+       },
+       {
+        "text": "they",
+        "start": 681,
+        "end": 686
+       },
+       {
+        "text": "work.",
+        "start": 687,
+        "end": 699
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p01_02",
+   "cam": {
+    "from": [
+     0.5,
+     0.36,
+     1.0
+    ],
+    "to": [
+     0.42,
+     0.38,
+     1.1
+    ]
+   },
+   "aspect": 1.1866,
+   "amb": "room",
+   "from": 728,
+   "duration": 102,
+   "lines": [
+    {
+     "who": "aarav",
+     "name": "Aarav",
+     "color": "#F2C14E",
+     "audio": "audio/ep01/003.fx2.mp3",
+     "from": 743,
+     "duration": 67,
+     "pages": [
+      [
+       {
+        "text": "I",
+        "start": 746,
+        "end": 750
+       },
+       {
+        "text": "want",
+        "start": 750,
+        "end": 761
+       },
+       {
+        "text": "to",
+        "start": 763,
+        "end": 767
+       },
+       {
+        "text": "study",
+        "start": 767,
+        "end": 780
+       },
+       {
+        "text": "engineering.",
+        "start": 782,
+        "end": 801
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p01_01",
+   "cam": {
+    "from": [
+     0.62,
+     0.6,
+     1.15
+    ],
+    "to": [
+     0.55,
+     0.5,
+     1.0
+    ]
+   },
+   "aspect": 1.19,
+   "clip": "clips/panels_p01_01.mp4",
+   "clipLast": "clips/panels_p01_01_last.jpg",
+   "clipDuration": 5.0625,
+   "clipAspect": 1.7333,
+   "amb": "room",
+   "from": 829,
+   "duration": 332,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep01/004.mp3",
+     "from": 844,
+     "duration": 297,
+     "pages": [
+      [
+       {
+        "text": "It",
+        "start": 847,
+        "end": 851
+       },
+       {
+        "text": "is",
+        "start": 851,
+        "end": 857
+       },
+       {
+        "text": "not",
+        "start": 857,
+        "end": 867
+       },
+       {
+        "text": "an",
+        "start": 869,
+        "end": 876
+       },
+       {
+        "text": "extraordinary",
+        "start": 879,
+        "end": 906
+       },
+       {
+        "text": "dream.",
+        "start": 906,
+        "end": 922
+       }
+      ],
+      [
+       {
+        "text": "But",
+        "start": 949,
+        "end": 956
+       },
+       {
+        "text": "a",
+        "start": 959,
+        "end": 960
+       },
+       {
+        "text": "dream",
+        "start": 962,
+        "end": 976
+       },
+       {
+        "text": "is",
+        "start": 978,
+        "end": 984
+       },
+       {
+        "text": "two",
+        "start": 984,
+        "end": 988
+       },
+       {
+        "text": "things:",
+        "start": 988,
+        "end": 1003
+       }
+      ],
+      [
+       {
+        "text": "something",
+        "start": 1013,
+        "end": 1028
+       },
+       {
+        "text": "you",
+        "start": 1028,
+        "end": 1032
+       },
+       {
+        "text": "want,",
+        "start": 1032,
+        "end": 1046
+       },
+       {
+        "text": "and",
+        "start": 1057,
+        "end": 1063
+       },
+       {
+        "text": "something",
+        "start": 1063,
+        "end": 1078
+       },
+       {
+        "text": "you",
+        "start": 1078,
+        "end": 1082
+       },
+       {
+        "text": "believe",
+        "start": 1082,
+        "end": 1097
+       },
+       {
+        "text": "might",
+        "start": 1097,
+        "end": 1108
+       },
+       {
+        "text": "be",
+        "start": 1108,
+        "end": 1114
+       },
+       {
+        "text": "possible.",
+        "start": 1115,
+        "end": 1132
+       }
+      ]
+     ]
+    }
+   ],
+   "clipRate": 0.5,
+   "clipStart": 0.0
+  },
+  {
+   "img": "panels/p01_03",
+   "cam": {
+    "from": [
+     0.6,
+     0.36,
+     1.1
+    ],
+    "to": [
+     0.68,
+     0.33,
+     1.15
+    ]
+   },
+   "aspect": 1.19,
+   "amb": "room",
+   "from": 1161,
+   "duration": 170,
+   "lines": [
+    {
+     "who": "mother",
+     "name": "Mother",
+     "color": "#E07A3F",
+     "audio": "audio/ep01/005.fx2.mp3",
+     "from": 1176,
+     "duration": 135,
+     "pages": [
+      [
+       {
+        "text": "First,",
+        "start": 1179,
+        "end": 1199
+       },
+       {
+        "text": "let",
+        "start": 1208,
+        "end": 1216
+       },
+       {
+        "text": "us",
+        "start": 1216,
+        "end": 1221
+       },
+       {
+        "text": "see",
+        "start": 1221,
+        "end": 1228
+       },
+       {
+        "text": "how",
+        "start": 1229,
+        "end": 1237
+       },
+       {
+        "text": "we",
+        "start": 1238,
+        "end": 1243
+       },
+       {
+        "text": "manage",
+        "start": 1243,
+        "end": 1259
+       },
+       {
+        "text": "the",
+        "start": 1259,
+        "end": 1264
+       },
+       {
+        "text": "next",
+        "start": 1264,
+        "end": 1278
+       },
+       {
+        "text": "few",
+        "start": 1278,
+        "end": 1285
+       },
+       {
+        "text": "months.",
+        "start": 1286,
+        "end": 1302
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p01_04",
+   "cam": {
+    "from": [
+     0.5,
+     0.5,
+     1.0
+    ],
+    "to": [
+     0.45,
+     0.45,
+     1.12
+    ]
+   },
+   "aspect": 1.2205,
+   "amb": "room",
+   "from": 1331,
+   "duration": 386,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep01/006.mp3",
+     "from": 1346,
+     "duration": 351,
+     "pages": [
+      [
+       {
+        "text": "Nobody",
+        "start": 1349,
+        "end": 1363
+       },
+       {
+        "text": "bans",
+        "start": 1363,
+        "end": 1377
+       },
+       {
+        "text": "Aarav",
+        "start": 1379,
+        "end": 1390
+       },
+       {
+        "text": "from",
+        "start": 1390,
+        "end": 1400
+       },
+       {
+        "text": "studying.",
+        "start": 1400,
+        "end": 1416
+       }
+      ],
+      [
+       {
+        "text": "The",
+        "start": 1445,
+        "end": 1448
+       },
+       {
+        "text": "household",
+        "start": 1448,
+        "end": 1470
+       },
+       {
+        "text": "simply",
+        "start": 1470,
+        "end": 1486
+       },
+       {
+        "text": "needs",
+        "start": 1486,
+        "end": 1500
+       },
+       {
+        "text": "income",
+        "start": 1502,
+        "end": 1515
+       },
+       {
+        "text": "now.",
+        "start": 1515,
+        "end": 1525
+       }
+      ],
+      [
+       {
+        "text": "His",
+        "start": 1552,
+        "end": 1559
+       },
+       {
+        "text": "father's",
+        "start": 1559,
+        "end": 1576
+       },
+       {
+        "text": "work",
+        "start": 1578,
+        "end": 1590
+       },
+       {
+        "text": "is",
+        "start": 1593,
+        "end": 1599
+       },
+       {
+        "text": "irregular.",
+        "start": 1601,
+        "end": 1618
+       }
+      ],
+      [
+       {
+        "text": "Coaching",
+        "start": 1647,
+        "end": 1660
+       },
+       {
+        "text": "costs",
+        "start": 1660,
+        "end": 1676
+       },
+       {
+        "text": "money.",
+        "start": 1676,
+        "end": 1688
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p01_05",
+   "cam": {
+    "from": [
+     0.45,
+     0.5,
+     1.12
+    ],
+    "to": [
+     0.5,
+     0.55,
+     1.0
+    ]
+   },
+   "minSec": 3.5,
+   "aspect": 1.2169,
+   "amb": "room",
+   "from": 1717,
+   "duration": 120,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep01/007.mp3",
+     "from": 1732,
+     "duration": 85,
+     "pages": [
+      [
+       {
+        "text": "Time",
+        "start": 1735,
+        "end": 1745
+       },
+       {
+        "text": "runs",
+        "start": 1745,
+        "end": 1757
+       },
+       {
+        "text": "out",
+        "start": 1757,
+        "end": 1766
+       },
+       {
+        "text": "before",
+        "start": 1767,
+        "end": 1782
+       },
+       {
+        "text": "the",
+        "start": 1782,
+        "end": 1787
+       },
+       {
+        "text": "day",
+        "start": 1787,
+        "end": 1794
+       },
+       {
+        "text": "does.",
+        "start": 1795,
+        "end": 1808
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p01_06",
+   "cam": {
+    "from": [
+     0.5,
+     0.38,
+     1.0
+    ],
+    "to": [
+     0.55,
+     0.4,
+     1.12
+    ]
+   },
+   "aspect": 1.2205,
+   "amb": "room",
+   "from": 1836,
+   "duration": 394,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep01/008.mp3",
+     "from": 1851,
+     "duration": 359,
+     "pages": [
+      [
+       {
+        "text": "Aarav",
+        "start": 1854,
+        "end": 1864
+       },
+       {
+        "text": "starts",
+        "start": 1864,
+        "end": 1880
+       },
+       {
+        "text": "helping",
+        "start": 1880,
+        "end": 1894
+       },
+       {
+        "text": "at",
+        "start": 1897,
+        "end": 1904
+       },
+       {
+        "text": "Sharma",
+        "start": 1904,
+        "end": 1918
+       },
+       {
+        "text": "uncle's",
+        "start": 1920,
+        "end": 1938
+       },
+       {
+        "text": "electronics",
+        "start": 1940,
+        "end": 1963
+       },
+       {
+        "text": "repair",
+        "start": 1965,
+        "end": 1980
+       },
+       {
+        "text": "shop.",
+        "start": 1980,
+        "end": 1994
+       }
+      ],
+      [
+       {
+        "text": "He",
+        "start": 2023,
+        "end": 2028
+       },
+       {
+        "text": "still",
+        "start": 2028,
+        "end": 2040
+       },
+       {
+        "text": "studies",
+        "start": 2040,
+        "end": 2058
+       },
+       {
+        "text": "at",
+        "start": 2060,
+        "end": 2068
+       },
+       {
+        "text": "night.",
+        "start": 2068,
+        "end": 2081
+       }
+      ],
+      [
+       {
+        "text": "Then",
+        "start": 2109,
+        "end": 2119
+       },
+       {
+        "text": "less.",
+        "start": 2119,
+        "end": 2131
+       },
+       {
+        "text": "Then",
+        "start": 2160,
+        "end": 2169
+       },
+       {
+        "text": "not",
+        "start": 2169,
+        "end": 2180
+       },
+       {
+        "text": "at",
+        "start": 2182,
+        "end": 2189
+       },
+       {
+        "text": "all.",
+        "start": 2190,
+        "end": 2202
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "scenes/p01_12",
+   "cam": {
+    "from": [
+     0.5,
+     0.5,
+     1.15
+    ],
+    "to": [
+     0.5,
+     0.5,
+     1.0
+    ]
+   },
+   "minSec": 5,
+   "aspect": 1.7886,
+   "amb": "room",
+   "from": 2230,
+   "duration": 222,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep01/009.mp3",
+     "from": 2245,
+     "duration": 187,
+     "pages": [
+      [
+       {
+        "text": "This",
+        "start": 2248,
+        "end": 2256
+       },
+       {
+        "text": "story",
+        "start": 2258,
+        "end": 2272
+       },
+       {
+        "text": "is",
+        "start": 2275,
+        "end": 2279
+       },
+       {
+        "text": "about",
+        "start": 2279,
+        "end": 2291
+       },
+       {
+        "text": "what",
+        "start": 2293,
+        "end": 2302
+       },
+       {
+        "text": "happens",
+        "start": 2302,
+        "end": 2318
+       },
+       {
+        "text": "next",
+        "start": 2320,
+        "end": 2333
+       },
+       {
+        "text": "\u2014 not",
+        "start": 2338,
+        "end": 2349
+       },
+       {
+        "text": "to",
+        "start": 2349,
+        "end": 2352
+       },
+       {
+        "text": "his",
+        "start": 2352,
+        "end": 2361
+       },
+       {
+        "text": "career,",
+        "start": 2362,
+        "end": 2376
+       }
+      ],
+      [
+       {
+        "text": "but",
+        "start": 2386,
+        "end": 2394
+       },
+       {
+        "text": "to",
+        "start": 2394,
+        "end": 2398
+       },
+       {
+        "text": "his",
+        "start": 2398,
+        "end": 2407
+       },
+       {
+        "text": "desire.",
+        "start": 2407,
+        "end": 2423
+       }
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

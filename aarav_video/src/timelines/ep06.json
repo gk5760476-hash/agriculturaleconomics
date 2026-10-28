@@ -1,0 +1,839 @@
+{
+ "id": "ep06",
+ "title": "Thirteen Months In",
+ "subtitle": "Manipulation",
+ "fps": 30,
+ "durationInFrames": 2091,
+ "shots": [
+  {
+   "img": "panels/p07_01",
+   "cam": {
+    "from": [
+     0.5,
+     0.5,
+     1.0
+    ],
+    "to": [
+     0.6,
+     0.55,
+     1.2
+    ]
+   },
+   "aspect": 1.7902,
+   "amb": "room",
+   "from": 0,
+   "duration": 408,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep06/001.mp3",
+     "from": 15,
+     "duration": 373,
+     "pages": [
+      [
+       {
+        "text": "Sharma",
+        "start": 18,
+        "end": 32
+       },
+       {
+        "text": "uncle",
+        "start": 34,
+        "end": 51
+       },
+       {
+        "text": "\u2014 the",
+        "start": 52,
+        "end": 56
+       },
+       {
+        "text": "shop",
+        "start": 56,
+        "end": 68
+       },
+       {
+        "text": "owner",
+        "start": 70,
+        "end": 82
+       },
+       {
+        "text": "\u2014 is",
+        "start": 89,
+        "end": 95
+       },
+       {
+        "text": "shrewd.",
+        "start": 96,
+        "end": 111
+       }
+      ],
+      [
+       {
+        "text": "Aarav",
+        "start": 140,
+        "end": 152
+       },
+       {
+        "text": "is",
+        "start": 154,
+        "end": 160
+       },
+       {
+        "text": "his",
+        "start": 160,
+        "end": 168
+       },
+       {
+        "text": "best",
+        "start": 168,
+        "end": 178
+       },
+       {
+        "text": "worker.",
+        "start": 178,
+        "end": 195
+       }
+      ],
+      [
+       {
+        "text": "He",
+        "start": 224,
+        "end": 228
+       },
+       {
+        "text": "does",
+        "start": 228,
+        "end": 236
+       },
+       {
+        "text": "not",
+        "start": 236,
+        "end": 246
+       },
+       {
+        "text": "want",
+        "start": 246,
+        "end": 258
+       },
+       {
+        "text": "to",
+        "start": 258,
+        "end": 262
+       },
+       {
+        "text": "lose",
+        "start": 262,
+        "end": 274
+       },
+       {
+        "text": "him.",
+        "start": 274,
+        "end": 283
+       }
+      ],
+      [
+       {
+        "text": "Over",
+        "start": 311,
+        "end": 320
+       },
+       {
+        "text": "weeks,",
+        "start": 320,
+        "end": 335
+       },
+       {
+        "text": "he",
+        "start": 341,
+        "end": 347
+       },
+       {
+        "text": "plants",
+        "start": 348,
+        "end": 362
+       },
+       {
+        "text": "seeds.",
+        "start": 363,
+        "end": 379
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p07_02",
+   "cam": {
+    "from": [
+     0.6,
+     0.45,
+     1.15
+    ],
+    "to": [
+     0.68,
+     0.38,
+     1.4
+    ]
+   },
+   "aspect": 1.7902,
+   "amb": "room",
+   "from": 408,
+   "duration": 320,
+   "lines": [
+    {
+     "who": "sharma",
+     "name": "Sharma",
+     "color": "#9FC3D9",
+     "audio": "audio/ep06/002.fx2.mp3",
+     "from": 423,
+     "duration": 285,
+     "pages": [
+      [
+       {
+        "text": "You",
+        "start": 426,
+        "end": 435
+       },
+       {
+        "text": "know,",
+        "start": 436,
+        "end": 445
+       },
+       {
+        "text": "these",
+        "start": 453,
+        "end": 462
+       },
+       {
+        "text": "engineers",
+        "start": 464,
+        "end": 487
+       },
+       {
+        "text": "think",
+        "start": 489,
+        "end": 498
+       },
+       {
+        "text": "they're",
+        "start": 502,
+        "end": 513
+       },
+       {
+        "text": "above",
+        "start": 515,
+        "end": 527
+       },
+       {
+        "text": "us.",
+        "start": 528,
+        "end": 538
+       }
+      ],
+      [
+       {
+        "text": "But",
+        "start": 567,
+        "end": 577
+       },
+       {
+        "text": "who",
+        "start": 577,
+        "end": 584
+       },
+       {
+        "text": "do",
+        "start": 585,
+        "end": 589
+       },
+       {
+        "text": "they",
+        "start": 591,
+        "end": 596
+       },
+       {
+        "text": "come",
+        "start": 598,
+        "end": 605
+       },
+       {
+        "text": "to",
+        "start": 607,
+        "end": 611
+       },
+       {
+        "text": "when",
+        "start": 612,
+        "end": 621
+       },
+       {
+        "text": "their",
+        "start": 622,
+        "end": 629
+       },
+       {
+        "text": "laptops",
+        "start": 629,
+        "end": 649
+       },
+       {
+        "text": "break?",
+        "start": 651,
+        "end": 661
+       },
+       {
+        "text": "Us.",
+        "start": 689,
+        "end": 699
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p07_02",
+   "cam": {
+    "from": [
+     0.45,
+     0.48,
+     1.4
+    ],
+    "to": [
+     0.42,
+     0.5,
+     1.5
+    ]
+   },
+   "minSec": 2.5,
+   "aspect": 1.7902,
+   "amb": "room",
+   "from": 728,
+   "duration": 75,
+   "lines": [
+    {
+     "who": "aarav",
+     "name": "Aarav",
+     "color": "#F2C14E",
+     "audio": "audio/ep06/003.fx2.mp3",
+     "from": 743,
+     "duration": 35,
+     "pages": [
+      [
+       {
+        "text": "That's",
+        "start": 746,
+        "end": 759
+       },
+       {
+        "text": "true.",
+        "start": 759,
+        "end": 769
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p07_02",
+   "cam": {
+    "from": [
+     0.62,
+     0.5,
+     1.3
+    ],
+    "to": [
+     0.66,
+     0.55,
+     1.45
+    ]
+   },
+   "aspect": 1.7902,
+   "amb": "room",
+   "from": 803,
+   "duration": 287,
+   "lines": [
+    {
+     "who": "sharma",
+     "name": "Sharma",
+     "color": "#9FC3D9",
+     "audio": "audio/ep06/004.fx2.mp3",
+     "from": 818,
+     "duration": 252,
+     "pages": [
+      [
+       {
+        "text": "College",
+        "start": 821,
+        "end": 835
+       },
+       {
+        "text": "boys",
+        "start": 837,
+        "end": 847
+       },
+       {
+        "text": "can't",
+        "start": 848,
+        "end": 857
+       },
+       {
+        "text": "hold",
+        "start": 858,
+        "end": 868
+       },
+       {
+        "text": "a",
+        "start": 870,
+        "end": 873
+       },
+       {
+        "text": "screwdriver.",
+        "start": 873,
+        "end": 898
+       }
+      ],
+      [
+       {
+        "text": "Stay",
+        "start": 927,
+        "end": 937
+       },
+       {
+        "text": "here.",
+        "start": 938,
+        "end": 948
+       },
+       {
+        "text": "Five",
+        "start": 976,
+        "end": 989
+       },
+       {
+        "text": "years,",
+        "start": 991,
+        "end": 1005
+       },
+       {
+        "text": "I'll",
+        "start": 1012,
+        "end": 1022
+       },
+       {
+        "text": "make",
+        "start": 1023,
+        "end": 1032
+       },
+       {
+        "text": "you",
+        "start": 1032,
+        "end": 1039
+       },
+       {
+        "text": "a",
+        "start": 1040,
+        "end": 1043
+       },
+       {
+        "text": "partner.",
+        "start": 1045,
+        "end": 1061
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "scenes/p01_08",
+   "cam": {
+    "from": [
+     0.5,
+     0.5,
+     1.0
+    ],
+    "to": [
+     0.55,
+     0.5,
+     1.15
+    ]
+   },
+   "aspect": 1.7886,
+   "amb": "room",
+   "from": 1090,
+   "duration": 312,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep06/005.mp3",
+     "from": 1105,
+     "duration": 277,
+     "pages": [
+      [
+       {
+        "text": "The",
+        "start": 1108,
+        "end": 1111
+       },
+       {
+        "text": "partnership",
+        "start": 1111,
+        "end": 1135
+       },
+       {
+        "text": "offer",
+        "start": 1137,
+        "end": 1149
+       },
+       {
+        "text": "is",
+        "start": 1152,
+        "end": 1159
+       },
+       {
+        "text": "real.",
+        "start": 1159,
+        "end": 1171
+       }
+      ],
+      [
+       {
+        "text": "But",
+        "start": 1198,
+        "end": 1205
+       },
+       {
+        "text": "Sharma",
+        "start": 1205,
+        "end": 1219
+       },
+       {
+        "text": "uncle's",
+        "start": 1220,
+        "end": 1237
+       },
+       {
+        "text": "motive",
+        "start": 1237,
+        "end": 1253
+       },
+       {
+        "text": "is",
+        "start": 1256,
+        "end": 1262
+       },
+       {
+        "text": "not",
+        "start": 1262,
+        "end": 1271
+       },
+       {
+        "text": "Aarav's",
+        "start": 1273,
+        "end": 1286
+       },
+       {
+        "text": "welfare",
+        "start": 1286,
+        "end": 1304
+       },
+       {
+        "text": "\u2014 it",
+        "start": 1313,
+        "end": 1317
+       },
+       {
+        "text": "is",
+        "start": 1320,
+        "end": 1325
+       },
+       {
+        "text": "keeping",
+        "start": 1326,
+        "end": 1340
+       },
+       {
+        "text": "a",
+        "start": 1342,
+        "end": 1345
+       },
+       {
+        "text": "skilled",
+        "start": 1345,
+        "end": 1358
+       },
+       {
+        "text": "worker.",
+        "start": 1358,
+        "end": 1374
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "scenes/p01_14",
+   "cam": {
+    "from": [
+     0.5,
+     0.5,
+     1.15
+    ],
+    "to": [
+     0.5,
+     0.5,
+     1.0
+    ]
+   },
+   "aspect": 1.7886,
+   "amb": "room",
+   "from": 1402,
+   "duration": 310,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep06/006.mp3",
+     "from": 1417,
+     "duration": 275,
+     "pages": [
+      [
+       {
+        "text": "Elster",
+        "start": 1420,
+        "end": 1433
+       },
+       {
+        "text": "calls",
+        "start": 1433,
+        "end": 1446
+       },
+       {
+        "text": "this",
+        "start": 1446,
+        "end": 1455
+       },
+       {
+        "text": "manipulation:",
+        "start": 1455,
+        "end": 1481
+       }
+      ],
+      [
+       {
+        "text": "an",
+        "start": 1496,
+        "end": 1503
+       },
+       {
+        "text": "external",
+        "start": 1505,
+        "end": 1525
+       },
+       {
+        "text": "agent",
+        "start": 1527,
+        "end": 1539
+       },
+       {
+        "text": "deliberately",
+        "start": 1540,
+        "end": 1563
+       },
+       {
+        "text": "shaping",
+        "start": 1563,
+        "end": 1578
+       },
+       {
+        "text": "someone's",
+        "start": 1578,
+        "end": 1595
+       },
+       {
+        "text": "preferences",
+        "start": 1596,
+        "end": 1620
+       },
+       {
+        "text": "for",
+        "start": 1624,
+        "end": 1632
+       },
+       {
+        "text": "the",
+        "start": 1632,
+        "end": 1635
+       },
+       {
+        "text": "manipulator's",
+        "start": 1635,
+        "end": 1660
+       },
+       {
+        "text": "advantage.",
+        "start": 1662,
+        "end": 1684
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "scenes/p01_13",
+   "cam": {
+    "from": [
+     0.5,
+     0.5,
+     1.0
+    ],
+    "to": [
+     0.4,
+     0.6,
+     1.2
+    ]
+   },
+   "minSec": 4,
+   "aspect": 1.7886,
+   "amb": "room",
+   "from": 1712,
+   "duration": 379,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep06/007.mp3",
+     "from": 1727,
+     "duration": 344,
+     "pages": [
+      [
+       {
+        "text": "Unlike",
+        "start": 1730,
+        "end": 1745
+       },
+       {
+        "text": "sour",
+        "start": 1745,
+        "end": 1756
+       },
+       {
+        "text": "grapes,",
+        "start": 1756,
+        "end": 1772
+       },
+       {
+        "text": "which",
+        "start": 1780,
+        "end": 1789
+       },
+       {
+        "text": "happens",
+        "start": 1789,
+        "end": 1804
+       },
+       {
+        "text": "inside",
+        "start": 1807,
+        "end": 1823
+       },
+       {
+        "text": "a",
+        "start": 1825,
+        "end": 1828
+       },
+       {
+        "text": "person's",
+        "start": 1828,
+        "end": 1846
+       },
+       {
+        "text": "own",
+        "start": 1850,
+        "end": 1856
+       },
+       {
+        "text": "mind,",
+        "start": 1856,
+        "end": 1870
+       }
+      ],
+      [
+       {
+        "text": "manipulation",
+        "start": 1878,
+        "end": 1904
+       },
+       {
+        "text": "is",
+        "start": 1908,
+        "end": 1915
+       },
+       {
+        "text": "social",
+        "start": 1916,
+        "end": 1933
+       },
+       {
+        "text": "and",
+        "start": 1935,
+        "end": 1944
+       },
+       {
+        "text": "intentional.",
+        "start": 1946,
+        "end": 1969
+       }
+      ],
+      [
+       {
+        "text": "Someone",
+        "start": 1996,
+        "end": 2011
+       },
+       {
+        "text": "else",
+        "start": 2014,
+        "end": 2026
+       },
+       {
+        "text": "is",
+        "start": 2028,
+        "end": 2033
+       },
+       {
+        "text": "pulling",
+        "start": 2033,
+        "end": 2044
+       },
+       {
+        "text": "the",
+        "start": 2044,
+        "end": 2048
+       },
+       {
+        "text": "thread.",
+        "start": 2048,
+        "end": 2062
+       }
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

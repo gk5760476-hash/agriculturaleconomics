@@ -1,0 +1,26 @@
+{
+  "id": "ep01",
+  "title": "Opening — A Pencil on Paper",
+  "subtitle": "The dream",
+  "shots": [
+    {"card": "THE MAN WHO\nSTOPPED WANTING", "minSec": 3.5},
+    {"img": "panels/p01_01", "cam": {"from": [0.5, 0.45, 1.0], "to": [0.62, 0.6, 1.15]},
+     "lines": [{"who": "narrator", "text": "Let me begin with a person, not a theory."}]},
+    {"img": "scenes/p01_02", "cam": {"from": [0.5, 0.5, 1.0], "to": [0.45, 0.55, 1.12]},
+     "lines": [{"who": "narrator", "text": "Aarav is seventeen. He lives in a crowded neighbourhood in contemporary India. He is good at mathematics. He likes pulling apart broken gadgets and figuring out how they work."}]},
+    {"img": "panels/p01_02", "cam": {"from": [0.5, 0.36, 1.0], "to": [0.42, 0.38, 1.1]},
+     "lines": [{"who": "aarav", "mood": "hopeful", "text": "I want to study engineering."}]},
+    {"img": "panels/p01_01", "cam": {"from": [0.62, 0.6, 1.15], "to": [0.55, 0.5, 1.0]},
+     "lines": [{"who": "narrator", "text": "It is not an extraordinary dream. But a dream is two things: something you want, and something you believe might be possible."}]},
+    {"img": "panels/p01_03", "cam": {"from": [0.6, 0.36, 1.1], "to": [0.68, 0.33, 1.15]},
+     "lines": [{"who": "mother", "mood": "weary", "text": "First, let us see how we manage the next few months."}]},
+    {"img": "panels/p01_04", "cam": {"from": [0.5, 0.5, 1.0], "to": [0.45, 0.45, 1.12]},
+     "lines": [{"who": "narrator", "text": "Nobody bans Aarav from studying. The household simply needs income now. His father's work is irregular. Coaching costs money."}]},
+    {"img": "panels/p01_05", "cam": {"from": [0.45, 0.5, 1.12], "to": [0.5, 0.55, 1.0]},
+     "lines": [{"who": "narrator", "text": "Time runs out before the day does."}], "minSec": 3.5},
+    {"img": "panels/p01_06", "cam": {"from": [0.5, 0.38, 1.0], "to": [0.55, 0.4, 1.12]},
+     "lines": [{"who": "narrator", "text": "Aarav starts helping at Sharma uncle's electronics repair shop. He still studies at night. Then less. Then not at all."}]},
+    {"img": "scenes/p01_12", "cam": {"from": [0.5, 0.5, 1.15], "to": [0.5, 0.5, 1.0]},
+     "lines": [{"who": "narrator", "text": "This story is about what happens next — not to his career, but to his desire."}], "minSec": 5}
+  ]
+}

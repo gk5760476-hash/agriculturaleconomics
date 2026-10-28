@@ -1,0 +1,11 @@
+{
+  "narrator": {"name": "Narrator", "voice": "en-IN-PrabhatNeural", "rate": "-6%", "pitch": "-2Hz", "color": "#E8D9B0", "silent": true},
+  "aarav":    {"name": "Aarav",    "voice": "en-IN-PrabhatNeural", "rate": "-2%", "pitch": "+3Hz", "color": "#F2C14E"},
+  "mother":   {"name": "Mother",   "voice": "en-IN-NeerjaExpressiveNeural", "rate": "-8%", "pitch": "-5Hz", "color": "#E07A3F"},
+  "neeraj":   {"name": "Neeraj",   "voice": "hi-IN-MadhurNeural",  "rate": "+2%", "pitch": "+0Hz", "color": "#B98BE0"},
+  "deepa":    {"name": "Deepa",    "voice": "hi-IN-SwaraNeural",   "rate": "+4%", "pitch": "+3Hz", "color": "#E88AA0"},
+  "sharma":   {"name": "Sharma",   "voice": "mr-IN-ManoharNeural", "rate": "-6%", "pitch": "-8Hz", "color": "#9FC3D9"},
+  "res1":     {"name": "Resident 1", "voice": "ml-IN-MidhunNeural", "rate": "-8%", "pitch": "-10Hz", "color": "#C9B79C"},
+  "res2":     {"name": "Resident 2", "voice": "ta-IN-PallaviNeural", "rate": "-4%", "pitch": "+0Hz", "color": "#D9A07A"},
+  "res3":     {"name": "Resident 3", "voice": "bn-IN-BashkarNeural", "rate": "+2%", "pitch": "+8Hz", "color": "#A8C686"}
+}

@@ -1,0 +1,21 @@
+{
+  "id": "ep02",
+  "title": "Six Months In",
+  "subtitle": "Adaptive preferences",
+  "shots": [
+    {"img": "panels/p02_01", "cam": {"from": [0.5, 0.5, 1.0], "to": [0.5, 0.6, 1.15]},
+     "lines": [{"who": "narrator", "text": "Neeraj, his oldest friend, visits the shop."}], "minSec": 4},
+    {"img": "panels/p02_02", "cam": {"from": [0.6, 0.45, 1.05], "to": [0.8, 0.45, 1.4]},
+     "lines": [{"who": "neeraj", "mood": "curious", "text": "Still preparing for the entrance exam?"}]},
+    {"img": "panels/p02_02", "cam": {"from": [0.4, 0.5, 1.4], "to": [0.42, 0.52, 1.5]},
+     "lines": [{"who": "aarav", "mood": "curt", "text": "No. I've stopped."}]},
+    {"img": "panels/p03_01", "cam": {"from": [0.72, 0.42, 1.35], "to": [0.75, 0.4, 1.45]},
+     "lines": [{"who": "neeraj", "mood": "curious", "text": "Why?"}]},
+    {"img": "panels/p03_01", "cam": {"from": [0.42, 0.5, 1.3], "to": [0.4, 0.48, 1.5]},
+     "lines": [{"who": "aarav", "mood": "defensive", "text": "What's the point? Engineering costs money. Even if you get through, there's no guarantee of a job. Here I'm learning something real. I earn. I help at home. It's better."}]},
+    {"img": "scenes/p01_12", "cam": {"from": [0.5, 0.5, 1.0], "to": [0.55, 0.5, 1.2]},
+     "lines": [{"who": "narrator", "text": "A fox reaches for grapes, fails, and decides they must be sour. Aarav reaches for engineering, cannot afford it, and decides it must not be worth it."}]},
+    {"img": "scenes/p01_09", "cam": {"from": [0.5, 0.5, 1.0], "to": [0.45, 0.5, 1.2]},
+     "lines": [{"who": "narrator", "text": "Jon Elster calls this adaptive preference formation — the central mechanism in Sour Grapes. The frustration of wanting something inaccessible is resolved by wanting it less."}], "minSec": 4}
+  ]
+}

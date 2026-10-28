@@ -1,0 +1,1336 @@
+{
+ "id": "ep10",
+ "title": "Two Years In",
+ "subtitle": "Rationalization and state-dependence",
+ "fps": 30,
+ "durationInFrames": 3297,
+ "shots": [
+  {
+   "img": "panels/p10_02",
+   "cam": {
+    "from": [
+     0.5,
+     0.5,
+     1.0
+    ],
+    "to": [
+     0.5,
+     0.65,
+     1.2
+    ]
+   },
+   "aspect": 1.7902,
+   "amb": "room",
+   "from": 0,
+   "duration": 480,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep10/001.mp3",
+     "from": 15,
+     "duration": 445,
+     "pages": [
+      [
+       {
+        "text": "The",
+        "start": 18,
+        "end": 21
+       },
+       {
+        "text": "family",
+        "start": 21,
+        "end": 38
+       },
+       {
+        "text": "is",
+        "start": 41,
+        "end": 47
+       },
+       {
+        "text": "stable",
+        "start": 48,
+        "end": 62
+       },
+       {
+        "text": "again.",
+        "start": 64,
+        "end": 79
+       }
+      ],
+      [
+       {
+        "text": "Aarav",
+        "start": 107,
+        "end": 117
+       },
+       {
+        "text": "has",
+        "start": 117,
+        "end": 128
+       },
+       {
+        "text": "settled",
+        "start": 129,
+        "end": 145
+       },
+       {
+        "text": "into",
+        "start": 148,
+        "end": 157
+       },
+       {
+        "text": "routine.",
+        "start": 157,
+        "end": 174
+       }
+      ],
+      [
+       {
+        "text": "Neeraj",
+        "start": 201,
+        "end": 214
+       },
+       {
+        "text": "shows",
+        "start": 214,
+        "end": 228
+       },
+       {
+        "text": "him",
+        "start": 228,
+        "end": 235
+       },
+       {
+        "text": "a",
+        "start": 237,
+        "end": 240
+       },
+       {
+        "text": "newspaper",
+        "start": 240,
+        "end": 262
+       },
+       {
+        "text": "article:",
+        "start": 265,
+        "end": 283
+       }
+      ],
+      [
+       {
+        "text": "engineering",
+        "start": 290,
+        "end": 309
+       },
+       {
+        "text": "graduates",
+        "start": 309,
+        "end": 333
+       },
+       {
+        "text": "in",
+        "start": 336,
+        "end": 340
+       },
+       {
+        "text": "their",
+        "start": 342,
+        "end": 352
+       },
+       {
+        "text": "state",
+        "start": 352,
+        "end": 365
+       },
+       {
+        "text": "have",
+        "start": 365,
+        "end": 377
+       },
+       {
+        "text": "an",
+        "start": 380,
+        "end": 386
+       },
+       {
+        "text": "82%",
+        "start": 389,
+        "end": 418
+       },
+       {
+        "text": "employment",
+        "start": 420,
+        "end": 439
+       },
+       {
+        "text": "rate.",
+        "start": 439,
+        "end": 451
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p11_01",
+   "cam": {
+    "from": [
+     0.4,
+     0.45,
+     1.2
+    ],
+    "to": [
+     0.38,
+     0.45,
+     1.4
+    ]
+   },
+   "aspect": 1.7902,
+   "amb": "room",
+   "from": 480,
+   "duration": 202,
+   "lines": [
+    {
+     "who": "aarav",
+     "name": "Aarav",
+     "color": "#F2C14E",
+     "audio": "audio/ep10/002.fx2.mp3",
+     "from": 495,
+     "duration": 167,
+     "pages": [
+      [
+       {
+        "text": "That",
+        "start": 498,
+        "end": 507
+       },
+       {
+        "text": "can't",
+        "start": 508,
+        "end": 518
+       },
+       {
+        "text": "be",
+        "start": 518,
+        "end": 525
+       },
+       {
+        "text": "right.",
+        "start": 525,
+        "end": 538
+       }
+      ],
+      [
+       {
+        "text": "Everyone",
+        "start": 566,
+        "end": 584
+       },
+       {
+        "text": "knows",
+        "start": 584,
+        "end": 597
+       },
+       {
+        "text": "engineers",
+        "start": 599,
+        "end": 622
+       },
+       {
+        "text": "are",
+        "start": 625,
+        "end": 631
+       },
+       {
+        "text": "unemployed.",
+        "start": 633,
+        "end": 654
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p11_01",
+   "cam": {
+    "from": [
+     0.72,
+     0.4,
+     1.35
+    ],
+    "to": [
+     0.75,
+     0.38,
+     1.45
+    ]
+   },
+   "aspect": 1.7902,
+   "amb": "room",
+   "from": 682,
+   "duration": 123,
+   "lines": [
+    {
+     "who": "neeraj",
+     "name": "Neeraj",
+     "color": "#B98BE0",
+     "audio": "audio/ep10/003.fx2.mp3",
+     "from": 697,
+     "duration": 88,
+     "pages": [
+      [
+       {
+        "text": "It",
+        "start": 700,
+        "end": 703
+       },
+       {
+        "text": "says",
+        "start": 704,
+        "end": 715
+       },
+       {
+        "text": "82%.",
+        "start": 715,
+        "end": 743
+       },
+       {
+        "text": "Look.",
+        "start": 770,
+        "end": 777
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p11_01",
+   "cam": {
+    "from": [
+     0.4,
+     0.55,
+     1.4
+    ],
+    "to": [
+     0.38,
+     0.58,
+     1.5
+    ]
+   },
+   "aspect": 1.7902,
+   "amb": "room",
+   "from": 805,
+   "duration": 108,
+   "lines": [
+    {
+     "who": "aarav",
+     "name": "Aarav",
+     "color": "#F2C14E",
+     "audio": "audio/ep10/004.fx2.mp3",
+     "from": 820,
+     "duration": 73,
+     "pages": [
+      [
+       {
+        "text": "Newspapers",
+        "start": 823,
+        "end": 845
+       },
+       {
+        "text": "print",
+        "start": 845,
+        "end": 855
+       },
+       {
+        "text": "what",
+        "start": 857,
+        "end": 866
+       },
+       {
+        "text": "they",
+        "start": 866,
+        "end": 872
+       },
+       {
+        "text": "want.",
+        "start": 872,
+        "end": 885
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p11_01",
+   "cam": {
+    "from": [
+     0.5,
+     0.7,
+     1.5
+    ],
+    "to": [
+     0.5,
+     0.72,
+     1.8
+    ]
+   },
+   "aspect": 1.7902,
+   "amb": "room",
+   "from": 913,
+   "duration": 298,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep10/005.mp3",
+     "from": 928,
+     "duration": 263,
+     "pages": [
+      [
+       {
+        "text": "Rationalization.",
+        "start": 932,
+        "end": 966
+       },
+       {
+        "text": "Aarav",
+        "start": 995,
+        "end": 1006
+       },
+       {
+        "text": "has",
+        "start": 1006,
+        "end": 1015
+       },
+       {
+        "text": "not",
+        "start": 1015,
+        "end": 1025
+       },
+       {
+        "text": "changed",
+        "start": 1027,
+        "end": 1042
+       },
+       {
+        "text": "what",
+        "start": 1045,
+        "end": 1054
+       },
+       {
+        "text": "he",
+        "start": 1054,
+        "end": 1059
+       },
+       {
+        "text": "wants",
+        "start": 1059,
+        "end": 1074
+       },
+       {
+        "text": "\u2014 he",
+        "start": 1083,
+        "end": 1088
+       },
+       {
+        "text": "has",
+        "start": 1088,
+        "end": 1098
+       },
+       {
+        "text": "changed",
+        "start": 1098,
+        "end": 1114
+       },
+       {
+        "text": "what",
+        "start": 1118,
+        "end": 1128
+       }
+      ],
+      [
+       {
+        "text": "he",
+        "start": 1128,
+        "end": 1133
+       },
+       {
+        "text": "believes",
+        "start": 1133,
+        "end": 1149
+       },
+       {
+        "text": "about",
+        "start": 1151,
+        "end": 1162
+       },
+       {
+        "text": "the",
+        "start": 1162,
+        "end": 1167
+       },
+       {
+        "text": "facts.",
+        "start": 1167,
+        "end": 1183
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "scenes/p01_06",
+   "cam": {
+    "from": [
+     0.5,
+     0.5,
+     1.0
+    ],
+    "to": [
+     0.5,
+     0.55,
+     1.15
+    ]
+   },
+   "aspect": 1.7886,
+   "amb": "street",
+   "from": 1211,
+   "duration": 363,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep10/006.mp3",
+     "from": 1226,
+     "duration": 328,
+     "pages": [
+      [
+       {
+        "text": "His",
+        "start": 1229,
+        "end": 1236
+       },
+       {
+        "text": "desire",
+        "start": 1238,
+        "end": 1256
+       },
+       {
+        "text": "for",
+        "start": 1258,
+        "end": 1265
+       },
+       {
+        "text": "a",
+        "start": 1265,
+        "end": 1266
+       },
+       {
+        "text": "good",
+        "start": 1266,
+        "end": 1275
+       },
+       {
+        "text": "career",
+        "start": 1275,
+        "end": 1291
+       },
+       {
+        "text": "is",
+        "start": 1294,
+        "end": 1301
+       },
+       {
+        "text": "intact.",
+        "start": 1303,
+        "end": 1319
+       }
+      ],
+      [
+       {
+        "text": "But",
+        "start": 1347,
+        "end": 1355
+       },
+       {
+        "text": "his",
+        "start": 1355,
+        "end": 1363
+       },
+       {
+        "text": "map",
+        "start": 1363,
+        "end": 1374
+       },
+       {
+        "text": "of",
+        "start": 1374,
+        "end": 1380
+       },
+       {
+        "text": "reality",
+        "start": 1380,
+        "end": 1400
+       },
+       {
+        "text": "has",
+        "start": 1406,
+        "end": 1413
+       },
+       {
+        "text": "been",
+        "start": 1413,
+        "end": 1421
+       },
+       {
+        "text": "quietly",
+        "start": 1423,
+        "end": 1439
+       },
+       {
+        "text": "redrawn",
+        "start": 1439,
+        "end": 1457
+       },
+       {
+        "text": "to",
+        "start": 1463,
+        "end": 1467
+       },
+       {
+        "text": "make",
+        "start": 1467,
+        "end": 1478
+       },
+       {
+        "text": "the",
+        "start": 1478,
+        "end": 1483
+       }
+      ],
+      [
+       {
+        "text": "detour",
+        "start": 1483,
+        "end": 1497
+       },
+       {
+        "text": "feel",
+        "start": 1497,
+        "end": 1507
+       },
+       {
+        "text": "like",
+        "start": 1510,
+        "end": 1519
+       },
+       {
+        "text": "the",
+        "start": 1519,
+        "end": 1524
+       },
+       {
+        "text": "main",
+        "start": 1524,
+        "end": 1534
+       },
+       {
+        "text": "road.",
+        "start": 1534,
+        "end": 1546
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p11_02",
+   "cam": {
+    "from": [
+     0.68,
+     0.42,
+     1.25
+    ],
+    "to": [
+     0.75,
+     0.38,
+     1.4
+    ]
+   },
+   "aspect": 1.7902,
+   "amb": "room",
+   "from": 1575,
+   "duration": 182,
+   "lines": [
+    {
+     "who": "neeraj",
+     "name": "Neeraj",
+     "color": "#B98BE0",
+     "audio": "audio/ep10/007.fx2.mp3",
+     "from": 1590,
+     "duration": 147,
+     "pages": [
+      [
+       {
+        "text": "And",
+        "start": 1592,
+        "end": 1599
+       },
+       {
+        "text": "if",
+        "start": 1600,
+        "end": 1605
+       },
+       {
+        "text": "money",
+        "start": 1605,
+        "end": 1615
+       },
+       {
+        "text": "weren't",
+        "start": 1615,
+        "end": 1625
+       },
+       {
+        "text": "a",
+        "start": 1626,
+        "end": 1628
+       },
+       {
+        "text": "problem?",
+        "start": 1628,
+        "end": 1644
+       }
+      ],
+      [
+       {
+        "text": "If",
+        "start": 1669,
+        "end": 1673
+       },
+       {
+        "text": "someone",
+        "start": 1673,
+        "end": 1688
+       },
+       {
+        "text": "paid",
+        "start": 1688,
+        "end": 1698
+       },
+       {
+        "text": "for",
+        "start": 1698,
+        "end": 1706
+       },
+       {
+        "text": "everything?",
+        "start": 1709,
+        "end": 1728
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p11_02",
+   "cam": {
+    "from": [
+     0.4,
+     0.5,
+     1.35
+    ],
+    "to": [
+     0.38,
+     0.55,
+     1.5
+    ]
+   },
+   "minSec": 4,
+   "aspect": 1.7902,
+   "amb": "room",
+   "from": 1756,
+   "duration": 207,
+   "lines": [
+    {
+     "who": "aarav",
+     "name": "Aarav",
+     "color": "#F2C14E",
+     "audio": "audio/ep10/008.fx2.mp3",
+     "from": 1771,
+     "duration": 27,
+     "pages": [
+      [
+       {
+        "text": "Maybe.",
+        "start": 1774,
+        "end": 1790
+       }
+      ]
+     ]
+    },
+    {
+     "who": "aarav",
+     "name": "Aarav",
+     "color": "#F2C14E",
+     "audio": "audio/ep10/009.fx2.mp3",
+     "from": 1826,
+     "duration": 117,
+     "pages": [
+      [
+       {
+        "text": "But",
+        "start": 1829,
+        "end": 1835
+       },
+       {
+        "text": "money",
+        "start": 1835,
+        "end": 1847
+       },
+       {
+        "text": "is",
+        "start": 1848,
+        "end": 1853
+       },
+       {
+        "text": "a",
+        "start": 1853,
+        "end": 1855
+       },
+       {
+        "text": "problem.",
+        "start": 1855,
+        "end": 1870
+       }
+      ],
+      [
+       {
+        "text": "So",
+        "start": 1895,
+        "end": 1901
+       },
+       {
+        "text": "why",
+        "start": 1901,
+        "end": 1910
+       },
+       {
+        "text": "think",
+        "start": 1910,
+        "end": 1919
+       },
+       {
+        "text": "about",
+        "start": 1919,
+        "end": 1928
+       },
+       {
+        "text": "it?",
+        "start": 1928,
+        "end": 1934
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p11_02",
+   "cam": {
+    "from": [
+     0.5,
+     0.5,
+     1.2
+    ],
+    "to": [
+     0.5,
+     0.5,
+     1.0
+    ]
+   },
+   "aspect": 1.7902,
+   "amb": "room",
+   "from": 1963,
+   "duration": 402,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep10/010.mp3",
+     "from": 1978,
+     "duration": 367,
+     "pages": [
+      [
+       {
+        "text": "And",
+        "start": 1981,
+        "end": 1989
+       },
+       {
+        "text": "this",
+        "start": 1989,
+        "end": 1999
+       },
+       {
+        "text": "is",
+        "start": 2001,
+        "end": 2008
+       },
+       {
+        "text": "state-dependent",
+        "start": 2010,
+        "end": 2039
+       },
+       {
+        "text": "preference.",
+        "start": 2039,
+        "end": 2061
+       }
+      ],
+      [
+       {
+        "text": "In",
+        "start": 2088,
+        "end": 2093
+       },
+       {
+        "text": "his",
+        "start": 2093,
+        "end": 2101
+       },
+       {
+        "text": "current",
+        "start": 2102,
+        "end": 2113
+       },
+       {
+        "text": "condition",
+        "start": 2113,
+        "end": 2131
+       },
+       {
+        "text": "\u2014 financial",
+        "start": 2136,
+        "end": 2159
+       },
+       {
+        "text": "pressure,",
+        "start": 2159,
+        "end": 2176
+       },
+       {
+        "text": "family",
+        "start": 2188,
+        "end": 2204
+       },
+       {
+        "text": "obligation",
+        "start": 2205,
+        "end": 2229
+       },
+       {
+        "text": "\u2014 Aarav's",
+        "start": 2237,
+        "end": 2250
+       },
+       {
+        "text": "desires",
+        "start": 2250,
+        "end": 2271
+       },
+       {
+        "text": "are",
+        "start": 2273,
+        "end": 2281
+       },
+       {
+        "text": "chained",
+        "start": 2281,
+        "end": 2294
+       }
+      ],
+      [
+       {
+        "text": "to",
+        "start": 2296,
+        "end": 2300
+       },
+       {
+        "text": "what",
+        "start": 2301,
+        "end": 2311
+       },
+       {
+        "text": "is",
+        "start": 2313,
+        "end": 2319
+       },
+       {
+        "text": "urgent.",
+        "start": 2321,
+        "end": 2336
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p12_01",
+   "cam": {
+    "from": [
+     0.38,
+     0.5,
+     1.25
+    ],
+    "to": [
+     0.35,
+     0.5,
+     1.35
+    ]
+   },
+   "aspect": 1.7902,
+   "amb": "street",
+   "from": 2365,
+   "duration": 321,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep10/011.mp3",
+     "from": 2380,
+     "duration": 286,
+     "pages": [
+      [
+       {
+        "text": "If",
+        "start": 2383,
+        "end": 2388
+       },
+       {
+        "text": "the",
+        "start": 2388,
+        "end": 2391
+       },
+       {
+        "text": "condition",
+        "start": 2391,
+        "end": 2410
+       },
+       {
+        "text": "changed,",
+        "start": 2410,
+        "end": 2425
+       },
+       {
+        "text": "the",
+        "start": 2432,
+        "end": 2435
+       },
+       {
+        "text": "preference",
+        "start": 2435,
+        "end": 2453
+       },
+       {
+        "text": "might",
+        "start": 2453,
+        "end": 2464
+       },
+       {
+        "text": "change",
+        "start": 2465,
+        "end": 2478
+       },
+       {
+        "text": "too.",
+        "start": 2478,
+        "end": 2487
+       }
+      ],
+      [
+       {
+        "text": "When",
+        "start": 2516,
+        "end": 2523
+       },
+       {
+        "text": "a",
+        "start": 2525,
+        "end": 2527
+       },
+       {
+        "text": "state",
+        "start": 2527,
+        "end": 2540
+       },
+       {
+        "text": "persists",
+        "start": 2541,
+        "end": 2563
+       },
+       {
+        "text": "long",
+        "start": 2564,
+        "end": 2575
+       },
+       {
+        "text": "enough,",
+        "start": 2578,
+        "end": 2592
+       },
+       {
+        "text": "the",
+        "start": 2603,
+        "end": 2606
+       },
+       {
+        "text": "chain",
+        "start": 2606,
+        "end": 2618
+       },
+       {
+        "text": "becomes",
+        "start": 2618,
+        "end": 2635
+       },
+       {
+        "text": "invisible.",
+        "start": 2637,
+        "end": 2657
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "scenes/p01_15",
+   "cam": {
+    "from": [
+     0.5,
+     0.5,
+     1.0
+    ],
+    "to": [
+     0.5,
+     0.55,
+     1.15
+    ]
+   },
+   "minSec": 5,
+   "aspect": 1.7886,
+   "amb": "night",
+   "from": 2686,
+   "duration": 612,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep10/012.mp3",
+     "from": 2701,
+     "duration": 577,
+     "pages": [
+      [
+       {
+        "text": "Nine",
+        "start": 2704,
+        "end": 2713
+       },
+       {
+        "text": "moments.",
+        "start": 2713,
+        "end": 2732
+       },
+       {
+        "text": "Nine",
+        "start": 2760,
+        "end": 2770
+       },
+       {
+        "text": "forces",
+        "start": 2770,
+        "end": 2788
+       },
+       {
+        "text": "that",
+        "start": 2788,
+        "end": 2797
+       },
+       {
+        "text": "moved",
+        "start": 2797,
+        "end": 2809
+       },
+       {
+        "text": "a",
+        "start": 2812,
+        "end": 2814
+       },
+       {
+        "text": "want.",
+        "start": 2814,
+        "end": 2829
+       }
+      ],
+      [
+       {
+        "text": "Some",
+        "start": 2858,
+        "end": 2869
+       },
+       {
+        "text": "preserved",
+        "start": 2869,
+        "end": 2887
+       },
+       {
+        "text": "Aarav's",
+        "start": 2889,
+        "end": 2903
+       },
+       {
+        "text": "autonomy.",
+        "start": 2906,
+        "end": 2925
+       }
+      ],
+      [
+       {
+        "text": "Some",
+        "start": 2954,
+        "end": 2965
+       },
+       {
+        "text": "eroded",
+        "start": 2967,
+        "end": 2981
+       },
+       {
+        "text": "it.",
+        "start": 2981,
+        "end": 2988
+       }
+      ],
+      [
+       {
+        "text": "Some",
+        "start": 3016,
+        "end": 3027
+       },
+       {
+        "text": "are",
+        "start": 3029,
+        "end": 3037
+       },
+       {
+        "text": "ambiguous.",
+        "start": 3039,
+        "end": 3063
+       }
+      ],
+      [
+       {
+        "text": "And",
+        "start": 3091,
+        "end": 3098
+       },
+       {
+        "text": "all",
+        "start": 3101,
+        "end": 3110
+       },
+       {
+        "text": "nine",
+        "start": 3110,
+        "end": 3121
+       },
+       {
+        "text": "produced",
+        "start": 3121,
+        "end": 3139
+       },
+       {
+        "text": "the",
+        "start": 3141,
+        "end": 3145
+       },
+       {
+        "text": "same",
+        "start": 3145,
+        "end": 3158
+       },
+       {
+        "text": "outward",
+        "start": 3159,
+        "end": 3176
+       },
+       {
+        "text": "result:",
+        "start": 3176,
+        "end": 3194
+       }
+      ],
+      [
+       {
+        "text": "a",
+        "start": 3203,
+        "end": 3206
+       },
+       {
+        "text": "man",
+        "start": 3206,
+        "end": 3218
+       },
+       {
+        "text": "who",
+        "start": 3218,
+        "end": 3224
+       },
+       {
+        "text": "says",
+        "start": 3224,
+        "end": 3238
+       },
+       {
+        "text": "he",
+        "start": 3238,
+        "end": 3246
+       },
+       {
+        "text": "is",
+        "start": 3248,
+        "end": 3255
+       },
+       {
+        "text": "fine.",
+        "start": 3255,
+        "end": 3269
+       }
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

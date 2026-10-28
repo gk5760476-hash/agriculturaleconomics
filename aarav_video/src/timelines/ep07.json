@@ -1,0 +1,988 @@
+{
+ "id": "ep07",
+ "title": "Fifteen Months In",
+ "subtitle": "Character planning",
+ "fps": 30,
+ "durationInFrames": 2409,
+ "shots": [
+  {
+   "img": "panels/p08_01",
+   "cam": {
+    "from": [
+     0.55,
+     0.5,
+     1.0
+    ],
+    "to": [
+     0.45,
+     0.5,
+     1.2
+    ]
+   },
+   "aspect": 1.7902,
+   "amb": "night",
+   "from": 0,
+   "duration": 244,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep07/001.mp3",
+     "from": 15,
+     "duration": 209,
+     "pages": [
+      [
+       {
+        "text": "A",
+        "start": 18,
+        "end": 20
+       },
+       {
+        "text": "quiet",
+        "start": 20,
+        "end": 33
+       },
+       {
+        "text": "night.",
+        "start": 34,
+        "end": 48
+       }
+      ],
+      [
+       {
+        "text": "Aarav",
+        "start": 77,
+        "end": 87
+       },
+       {
+        "text": "sits",
+        "start": 87,
+        "end": 98
+       },
+       {
+        "text": "on",
+        "start": 101,
+        "end": 106
+       },
+       {
+        "text": "the",
+        "start": 106,
+        "end": 109
+       },
+       {
+        "text": "roof",
+        "start": 109,
+        "end": 121
+       },
+       {
+        "text": "with",
+        "start": 125,
+        "end": 132
+       },
+       {
+        "text": "a",
+        "start": 132,
+        "end": 134
+       },
+       {
+        "text": "tattered",
+        "start": 134,
+        "end": 151
+       },
+       {
+        "text": "book",
+        "start": 151,
+        "end": 159
+       },
+       {
+        "text": "his",
+        "start": 159,
+        "end": 168
+       },
+       {
+        "text": "old",
+        "start": 171,
+        "end": 180
+       },
+       {
+        "text": "teacher",
+        "start": 183,
+        "end": 197
+       },
+       {
+        "text": "lent",
+        "start": 197,
+        "end": 206
+       },
+       {
+        "text": "him.",
+        "start": 206,
+        "end": 215
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "scenes/p01_03",
+   "cam": {
+    "from": [
+     0.5,
+     0.5,
+     1.0
+    ],
+    "to": [
+     0.5,
+     0.45,
+     1.15
+    ]
+   },
+   "minSec": 5,
+   "aspect": 1.7918,
+   "amb": "night",
+   "from": 244,
+   "duration": 223,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep07/002.mp3",
+     "from": 259,
+     "duration": 188,
+     "pages": [
+      [
+       {
+        "text": "He",
+        "start": 262,
+        "end": 267
+       },
+       {
+        "text": "thinks",
+        "start": 268,
+        "end": 280
+       },
+       {
+        "text": "about",
+        "start": 282,
+        "end": 293
+       },
+       {
+        "text": "duty.",
+        "start": 295,
+        "end": 310
+       }
+      ],
+      [
+       {
+        "text": "About",
+        "start": 338,
+        "end": 349
+       },
+       {
+        "text": "what",
+        "start": 351,
+        "end": 360
+       },
+       {
+        "text": "kind",
+        "start": 361,
+        "end": 372
+       },
+       {
+        "text": "of",
+        "start": 372,
+        "end": 377
+       },
+       {
+        "text": "person",
+        "start": 377,
+        "end": 394
+       },
+       {
+        "text": "he",
+        "start": 400,
+        "end": 405
+       },
+       {
+        "text": "wants",
+        "start": 406,
+        "end": 419
+       },
+       {
+        "text": "to",
+        "start": 419,
+        "end": 422
+       },
+       {
+        "text": "become.",
+        "start": 422,
+        "end": 438
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p08_02",
+   "cam": {
+    "from": [
+     0.45,
+     0.5,
+     1.15
+    ],
+    "to": [
+     0.42,
+     0.52,
+     1.35
+    ]
+   },
+   "aspect": 1.7902,
+   "amb": "night",
+   "from": 467,
+   "duration": 578,
+   "lines": [
+    {
+     "who": "aarav",
+     "name": "Aarav",
+     "color": "#F2C14E",
+     "audio": "audio/ep07/003.fx2.mp3",
+     "from": 482,
+     "duration": 543,
+     "pages": [
+      [
+       {
+        "text": "I've",
+        "start": 485,
+        "end": 494
+       },
+       {
+        "text": "been",
+        "start": 494,
+        "end": 505
+       },
+       {
+        "text": "thinking.",
+        "start": 505,
+        "end": 523
+       }
+      ],
+      [
+       {
+        "text": "I",
+        "start": 554,
+        "end": 560
+       },
+       {
+        "text": "don't",
+        "start": 560,
+        "end": 574
+       },
+       {
+        "text": "want",
+        "start": 574,
+        "end": 587
+       },
+       {
+        "text": "to",
+        "start": 589,
+        "end": 593
+       },
+       {
+        "text": "spend",
+        "start": 593,
+        "end": 607
+       },
+       {
+        "text": "my",
+        "start": 607,
+        "end": 616
+       },
+       {
+        "text": "life",
+        "start": 616,
+        "end": 629
+       },
+       {
+        "text": "chasing",
+        "start": 629,
+        "end": 645
+       },
+       {
+        "text": "something",
+        "start": 645,
+        "end": 664
+       },
+       {
+        "text": "I",
+        "start": 666,
+        "end": 673
+       },
+       {
+        "text": "may",
+        "start": 673,
+        "end": 681
+       },
+       {
+        "text": "never",
+        "start": 681,
+        "end": 694
+       }
+      ],
+      [
+       {
+        "text": "get.",
+        "start": 694,
+        "end": 706
+       },
+       {
+        "text": "I",
+        "start": 736,
+        "end": 742
+       },
+       {
+        "text": "want",
+        "start": 742,
+        "end": 755
+       },
+       {
+        "text": "to",
+        "start": 755,
+        "end": 758
+       },
+       {
+        "text": "find",
+        "start": 758,
+        "end": 772
+       },
+       {
+        "text": "meaning",
+        "start": 772,
+        "end": 788
+       },
+       {
+        "text": "in",
+        "start": 790,
+        "end": 795
+       },
+       {
+        "text": "what's",
+        "start": 795,
+        "end": 810
+       },
+       {
+        "text": "in",
+        "start": 812,
+        "end": 818
+       },
+       {
+        "text": "front",
+        "start": 818,
+        "end": 830
+       },
+       {
+        "text": "of",
+        "start": 830,
+        "end": 835
+       },
+       {
+        "text": "me.",
+        "start": 835,
+        "end": 843
+       }
+      ],
+      [
+       {
+        "text": "My",
+        "start": 875,
+        "end": 882
+       },
+       {
+        "text": "family.",
+        "start": 882,
+        "end": 900
+       },
+       {
+        "text": "My",
+        "start": 930,
+        "end": 936
+       },
+       {
+        "text": "craft.",
+        "start": 936,
+        "end": 953
+       },
+       {
+        "text": "This",
+        "start": 983,
+        "end": 992
+       },
+       {
+        "text": "neighbourhood.",
+        "start": 992,
+        "end": 1017
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p08_02",
+   "cam": {
+    "from": [
+     0.75,
+     0.42,
+     1.35
+    ],
+    "to": [
+     0.8,
+     0.4,
+     1.45
+    ]
+   },
+   "aspect": 1.7902,
+   "amb": "night",
+   "from": 1045,
+   "duration": 137,
+   "lines": [
+    {
+     "who": "neeraj",
+     "name": "Neeraj",
+     "color": "#B98BE0",
+     "audio": "audio/ep07/004.fx2.mp3",
+     "from": 1060,
+     "duration": 102,
+     "pages": [
+      [
+       {
+        "text": "That",
+        "start": 1063,
+        "end": 1072
+       },
+       {
+        "text": "sounds",
+        "start": 1072,
+        "end": 1087
+       },
+       {
+        "text": "like",
+        "start": 1087,
+        "end": 1096
+       },
+       {
+        "text": "giving",
+        "start": 1096,
+        "end": 1107
+       },
+       {
+        "text": "up",
+        "start": 1107,
+        "end": 1114
+       },
+       {
+        "text": "with",
+        "start": 1114,
+        "end": 1122
+       },
+       {
+        "text": "extra",
+        "start": 1125,
+        "end": 1139
+       },
+       {
+        "text": "steps.",
+        "start": 1139,
+        "end": 1153
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p08_02",
+   "cam": {
+    "from": [
+     0.42,
+     0.55,
+     1.35
+    ],
+    "to": [
+     0.4,
+     0.58,
+     1.45
+    ]
+   },
+   "aspect": 1.7902,
+   "amb": "night",
+   "from": 1182,
+   "duration": 318,
+   "lines": [
+    {
+     "who": "aarav",
+     "name": "Aarav",
+     "color": "#F2C14E",
+     "audio": "audio/ep07/005.fx2.mp3",
+     "from": 1197,
+     "duration": 283,
+     "pages": [
+      [
+       {
+        "text": "Giving",
+        "start": 1200,
+        "end": 1211
+       },
+       {
+        "text": "up",
+        "start": 1212,
+        "end": 1220
+       },
+       {
+        "text": "is",
+        "start": 1222,
+        "end": 1228
+       },
+       {
+        "text": "when",
+        "start": 1228,
+        "end": 1235
+       },
+       {
+        "text": "you",
+        "start": 1235,
+        "end": 1240
+       },
+       {
+        "text": "stop",
+        "start": 1240,
+        "end": 1252
+       },
+       {
+        "text": "wanting",
+        "start": 1252,
+        "end": 1267
+       },
+       {
+        "text": "something",
+        "start": 1267,
+        "end": 1283
+       },
+       {
+        "text": "because",
+        "start": 1283,
+        "end": 1299
+       },
+       {
+        "text": "it",
+        "start": 1299,
+        "end": 1302
+       },
+       {
+        "text": "hurts.",
+        "start": 1302,
+        "end": 1317
+       }
+      ],
+      [
+       {
+        "text": "This",
+        "start": 1345,
+        "end": 1355
+       },
+       {
+        "text": "is",
+        "start": 1356,
+        "end": 1362
+       },
+       {
+        "text": "different.",
+        "start": 1363,
+        "end": 1379
+       }
+      ],
+      [
+       {
+        "text": "I'm",
+        "start": 1406,
+        "end": 1414
+       },
+       {
+        "text": "choosing",
+        "start": 1414,
+        "end": 1429
+       },
+       {
+        "text": "what",
+        "start": 1429,
+        "end": 1438
+       },
+       {
+        "text": "to",
+        "start": 1438,
+        "end": 1442
+       },
+       {
+        "text": "care",
+        "start": 1442,
+        "end": 1454
+       },
+       {
+        "text": "about.",
+        "start": 1456,
+        "end": 1471
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "scenes/p01_03",
+   "cam": {
+    "from": [
+     0.5,
+     0.45,
+     1.15
+    ],
+    "to": [
+     0.5,
+     0.5,
+     1.0
+    ]
+   },
+   "aspect": 1.7918,
+   "amb": "night",
+   "from": 1500,
+   "duration": 398,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep07/006.mp3",
+     "from": 1515,
+     "duration": 363,
+     "pages": [
+      [
+       {
+        "text": "Character",
+        "start": 1518,
+        "end": 1532
+       },
+       {
+        "text": "planning:",
+        "start": 1532,
+        "end": 1549
+       },
+       {
+        "text": "the",
+        "start": 1553,
+        "end": 1556
+       },
+       {
+        "text": "deliberate,",
+        "start": 1556,
+        "end": 1577
+       },
+       {
+        "text": "reflective",
+        "start": 1586,
+        "end": 1608
+       },
+       {
+        "text": "cultivation",
+        "start": 1608,
+        "end": 1632
+       },
+       {
+        "text": "of",
+        "start": 1635,
+        "end": 1642
+       },
+       {
+        "text": "one's",
+        "start": 1642,
+        "end": 1657
+       },
+       {
+        "text": "own",
+        "start": 1660,
+        "end": 1668
+       },
+       {
+        "text": "desires.",
+        "start": 1668,
+        "end": 1689
+       }
+      ],
+      [
+       {
+        "text": "Aarav",
+        "start": 1716,
+        "end": 1727
+       },
+       {
+        "text": "is",
+        "start": 1729,
+        "end": 1736
+       },
+       {
+        "text": "forming",
+        "start": 1736,
+        "end": 1751
+       },
+       {
+        "text": "a",
+        "start": 1753,
+        "end": 1756
+       },
+       {
+        "text": "second-order",
+        "start": 1756,
+        "end": 1780
+       },
+       {
+        "text": "preference",
+        "start": 1780,
+        "end": 1799
+       },
+       {
+        "text": "\u2014 a",
+        "start": 1806,
+        "end": 1808
+       },
+       {
+        "text": "desire",
+        "start": 1809,
+        "end": 1826
+       },
+       {
+        "text": "about",
+        "start": 1828,
+        "end": 1840
+       },
+       {
+        "text": "his",
+        "start": 1840,
+        "end": 1848
+       },
+       {
+        "text": "desires.",
+        "start": 1848,
+        "end": 1870
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "scenes/p01_11",
+   "cam": {
+    "from": [
+     0.5,
+     0.5,
+     1.0
+    ],
+    "to": [
+     0.6,
+     0.5,
+     1.2
+    ]
+   },
+   "minSec": 4,
+   "aspect": 1.7918,
+   "amb": "room",
+   "from": 1898,
+   "duration": 511,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep07/007.mp3",
+     "from": 1913,
+     "duration": 476,
+     "pages": [
+      [
+       {
+        "text": "He",
+        "start": 1916,
+        "end": 1921
+       },
+       {
+        "text": "does",
+        "start": 1921,
+        "end": 1929
+       },
+       {
+        "text": "not",
+        "start": 1929,
+        "end": 1938
+       },
+       {
+        "text": "merely",
+        "start": 1938,
+        "end": 1955
+       },
+       {
+        "text": "stop",
+        "start": 1955,
+        "end": 1968
+       },
+       {
+        "text": "wanting",
+        "start": 1968,
+        "end": 1984
+       },
+       {
+        "text": "engineering;",
+        "start": 1986,
+        "end": 2006
+       }
+      ],
+      [
+       {
+        "text": "he",
+        "start": 2018,
+        "end": 2023
+       },
+       {
+        "text": "wants",
+        "start": 2024,
+        "end": 2037
+       },
+       {
+        "text": "to",
+        "start": 2037,
+        "end": 2040
+       },
+       {
+        "text": "stop",
+        "start": 2040,
+        "end": 2053
+       },
+       {
+        "text": "wanting",
+        "start": 2053,
+        "end": 2069
+       },
+       {
+        "text": "it,",
+        "start": 2069,
+        "end": 2075
+       },
+       {
+        "text": "and",
+        "start": 2085,
+        "end": 2092
+       },
+       {
+        "text": "he",
+        "start": 2092,
+        "end": 2098
+       },
+       {
+        "text": "has",
+        "start": 2098,
+        "end": 2108
+       },
+       {
+        "text": "reasons",
+        "start": 2108,
+        "end": 2124
+       },
+       {
+        "text": "he",
+        "start": 2129,
+        "end": 2134
+       },
+       {
+        "text": "has",
+        "start": 2134,
+        "end": 2144
+       }
+      ],
+      [
+       {
+        "text": "examined.",
+        "start": 2144,
+        "end": 2163
+       },
+       {
+        "text": "The",
+        "start": 2192,
+        "end": 2195
+       },
+       {
+        "text": "difficulty:",
+        "start": 2196,
+        "end": 2217
+       }
+      ],
+      [
+       {
+        "text": "from",
+        "start": 2224,
+        "end": 2233
+       },
+       {
+        "text": "the",
+        "start": 2233,
+        "end": 2237
+       },
+       {
+        "text": "outside,",
+        "start": 2237,
+        "end": 2256
+       },
+       {
+        "text": "character",
+        "start": 2265,
+        "end": 2278
+       },
+       {
+        "text": "planning",
+        "start": 2278,
+        "end": 2296
+       },
+       {
+        "text": "and",
+        "start": 2300,
+        "end": 2307
+       },
+       {
+        "text": "adaptive",
+        "start": 2307,
+        "end": 2323
+       },
+       {
+        "text": "preferences",
+        "start": 2323,
+        "end": 2347
+       },
+       {
+        "text": "look",
+        "start": 2348,
+        "end": 2357
+       },
+       {
+        "text": "identical.",
+        "start": 2359,
+        "end": 2381
+       }
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

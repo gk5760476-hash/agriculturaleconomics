@@ -1,0 +1,15 @@
+{
+  "id": "ep09",
+  "title": "Twenty Months In",
+  "subtitle": "Addiction",
+  "shots": [
+    {"img": "panels/p10_01", "cam": {"from": [0.5, 0.5, 1.0], "to": [0.7, 0.6, 1.2]},
+     "lines": [{"who": "narrator", "text": "A brief detour. Aarav's neighbour Ravi once dreamed of becoming a cricketer. When that door closed, Ravi started drinking. Now Ravi's only daily priority is the next drink."}]},
+    {"img": "panels/p10_01", "cam": {"from": [0.35, 0.5, 1.4], "to": [0.32, 0.5, 1.5]},
+     "lines": [{"who": "aarav", "mood": "sad", "text": "He used to be the best batsman on the street."}], "minSec": 3.5},
+    {"img": "panels/p10_01", "cam": {"from": [0.82, 0.6, 1.5], "to": [0.8, 0.55, 1.25]},
+     "lines": [{"who": "narrator", "text": "Addiction: a preference that has escaped rational control. Ravi has not chosen, reflected, or adapted. His desires have been captured."}]},
+    {"img": "scenes/p01_06", "cam": {"from": [0.5, 0.5, 1.0], "to": [0.55, 0.55, 1.15]},
+     "lines": [{"who": "narrator", "text": "Elster places addiction on the same map as the other mechanisms — it too produces preference change. But here the person has lost autonomy rather than exercised it."}], "minSec": 4}
+  ]
+}

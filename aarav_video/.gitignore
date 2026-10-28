@@ -1,0 +1,21 @@
+﻿# keep secrets and generated media out of version control
+.env
+node_modules/
+out/
+clips/in/
+clips/kling_tasks.json
+public/clips/
+.venv/
+# generated media (rebuild: prepare_assets.py, voice.py, freeze_masks.py, lipsync.py)
+public/img/
+public/audio/
+public/lips/
+clips/upload/
+clips/lips/
+clips/model_in/
+clips/frozen/
+clips/classroom_takes/
+clips/*_log.txt
+*.dry.wav
+*.wet.wav
+__pycache__/

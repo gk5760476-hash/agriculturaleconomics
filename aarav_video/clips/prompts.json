@@ -1,0 +1,98 @@
+{
+  "_style": "Keep the exact art style, colours, faces and composition of the input image. Static camera, no zoom, no cuts. Subtle, realistic, slow motion only. Speech bubbles, captions and any printed text stay perfectly still and unchanged. Characters keep the same clothes and faces.",
+  "_skip": ["panels/p03_02", "scenes/p01_10", "scenes/p01_16"],
+  "_freeze": {
+    "panels/p02_01": [[0.12, 0.06, 0.88, 0.34]],
+    "panels/p04_02": [[0.16, 0.04, 0.89, 0.28]],
+    "panels/p06_01": [[0.17, 0.05, 0.63, 0.31], [0.77, 0.05, 0.84, 0.31]],
+    "panels/p07_01": [[0.04, 0.07, 0.96, 0.17], [0.04, 0.17, 0.54, 0.31], [0.64, 0.17, 0.96, 0.31]],
+    "panels/p07_02": [[0.1, 0.28, 0.32, 0.4]],
+    "panels/p08_01": [[0.48, 0.06, 0.81, 0.31]],
+    "panels/p10_01": [[0.09, 0.07, 0.93, 0.27], [0.23, 0.27, 0.93, 0.34]],
+    "panels/p10_02": [[0.07, 0.01, 0.93, 0.22], [0.07, 0.22, 0.39, 0.31], [0.51, 0.22, 0.65, 0.31], [0.77, 0.22, 0.93, 0.31]],
+    "panels/p12_01": [[0.76, 0.07, 1.0, 0.32]],
+    "panels/p17_02": [[0.0, 0.0, 1.0, 0.13]],
+    "panels/p18_01": [[0.85, 0.0, 1.0, 0.08]],
+    "panels/p19_01": [[0.28, 0.24, 0.72, 0.31]],
+    "panels/p19_02": [[0.12, 0.41, 0.88, 0.61]]
+  },
+  "_faces": {
+    "panels/p01_02": ["aarav", "mother"], "panels/p01_03": ["aarav", "mother"],
+    "panels/p02_02": ["aarav", "neeraj"], "panels/p03_01": ["aarav", "neeraj"],
+    "panels/p04_01": ["deepa", "aarav"], "panels/p05_02": ["aarav", "mother"],
+    "panels/p06_02": ["aarav", "mother"], "panels/p07_02": ["aarav", "sharma"],
+    "panels/p08_02": ["aarav", "neeraj"], "panels/p09_01": ["mother", "aarav"],
+    "panels/p10_01": ["aarav"], "panels/p11_01": ["aarav", "neeraj"], "panels/p11_02": ["aarav", "neeraj"],
+    "panels/p13_01": ["aarav", "neeraj"], "panels/p13_02": ["aarav", "neeraj"],
+    "panels/p14_01": ["aarav", "neeraj"], "panels/p14_02": ["aarav", "neeraj"],
+    "panels/p15_01": ["aarav", "neeraj"], "panels/p16_01": ["aarav", "mother"],
+    "panels/p16_02": ["aarav", "mother"], "panels/p17_01": ["aarav", "mother"],
+    "panels/p18_02": ["res1", "res2", "res3"]
+  },
+
+  "panels/p01_01": "A teenager's hand slowly writes with a pencil in the notebook, small pencil movements; ceiling fan shadow turns slowly on the wall; distant auto-rickshaws move slightly outside the barred window.",
+  "scenes/p01_02": "Empty study room. Ceiling fan blades rotate slowly; desk lamp glows with a faint flicker; papers on the wall flutter lightly in the fan breeze; traffic lights blur and move outside the window.",
+  "panels/p01_02": "The young man looks up at his mother with hopeful eyes, blinks, lips move gently as he speaks; the mother breathes and tilts her head slightly; ceiling fan turns.",
+  "panels/p01_03": "The mother speaks softly with a worried expression, lips moving, then looks down; the young man blinks and his shoulders drop slightly; warm evening light.",
+  "panels/p01_04": "Still life: receipts on the open notebook flutter very slightly in a breeze; a coin wobbles; dusk light slowly dims through the window.",
+  "panels/p01_05": "Still life at night: a tool bag rests on the closed notebook; ceiling fan shadow passes slowly across the dark desk; faint flicker of street light through the bars.",
+  "panels/p01_06": "The young man solders a circuit board with small precise hand movements; a thin wisp of solder smoke rises; the bulb sways gently; people move slowly in the street outside.",
+  "scenes/p01_12": "Still life: a tool bag on top of a notebook; dust motes drift in warm lamp light; a sheet of paper lifts slightly in a breeze.",
+
+  "panels/p02_01": "The young man solders a laptop motherboard, hands moving carefully, smoke curls up from the iron; the desk lamp glows; traffic moves outside the shop window.",
+  "panels/p02_02": "The friend in glasses and purple shirt leans in and asks a question, lips moving; the young man in the olive shirt glances up, blinks and answers briefly; both breathe naturally.",
+  "panels/p03_01": "The young man speaks defensively with small hand gestures, lips moving, eyes shifting; the friend in glasses listens, frowning slightly, and blinks; ceiling fan turns overhead.",
+
+  "scenes/p01_01": "Cluttered student room at night: lamp light flickers softly, pages on the desk stir, steam rises faintly from the plate of food, fan blades turn.",
+  "panels/p04_01": "The young woman speaks intensely, gesturing with one hand over her open books, lips moving; the young man watches her with concern, blinks and leans forward slightly; laptop screen glows.",
+
+  "panels/p04_02": "An older man in a brown jacket gestures welcomingly; the young man with a backpack takes a step forward, looking around; the engineer at the door holds out his hand; people walk in the background.",
+  "panels/p05_01": "The young man leans on the cubicle and slowly looks around the office; office workers type and click at computers; one worker rubs his eyes; ceiling lights hum.",
+  "scenes/p01_04": "Old engineering office: monitors flicker with dim screens, ceiling fan turns slowly, dust drifts in the window light, a sheet of paper stirs on the desk.",
+  "panels/p05_02": "The young man explains with open-hand gestures, lips moving; the mother in the orange sari listens, tilts her head and blinks; evening city lights twinkle outside.",
+
+  "panels/p06_01": "The young man looks at his phone, then up at his mother with a thoughtful expression; the mother leans on the table, breathing slowly; lamps glow, city lights twinkle outside.",
+  "panels/p06_02": "The young man speaks firmly with both hands open, lips moving; the mother holds the scholarship form, looks at it, then at him, and blinks; slight paper movement.",
+
+  "panels/p07_01": "The young man solders a green circuit board, smoke curls up; the older shop owner with glasses and moustache stands with hands on hips, watching and nodding slowly.",
+  "panels/p07_02": "The older shop owner speaks persuasively, hand on the young man's shoulder, other hand gesturing, lips moving; the young man looks up at him, listening and blinking.",
+  "scenes/p01_08": "Electronics repair shop interior: a bulb sways gently, small LEDs blink on equipment, a fan turns, people pass outside the open front.",
+  "scenes/p01_14": "Electronics repair shop interior: hanging bulb sways, an old TV screen flickers, dust drifts in light from the window, a calendar page flutters.",
+
+  "panels/p08_01": "Night rooftop: the young man sits holding an old book, slowly lifts his eyes to the city and breathes deeply; the bulb on the pole sways; clothes on the line flutter in the breeze; city lights twinkle.",
+  "scenes/p01_03": "Rooftop at dusk over a dense city: clothes on the line flutter, a bird flies across, windows light up one by one, haze drifts.",
+  "panels/p08_02": "The young man speaks calmly with open hands, lips moving, a small sincere smile; the friend in glasses listens skeptically, arms slightly tense, blinks; auto-rickshaw idles outside.",
+
+  "scenes/p01_05": "Dim hospital corridor: fluorescent tube light flickers faintly, a curtain sways slightly, dust drifts in the air.",
+  "panels/p09_01": "Hospital room: the father lies in bed breathing slowly, chest rising and falling; the mother looks at her son and speaks softly; the son holds the file and answers gently; heart monitor line moves.",
+
+  "panels/p10_01": "Night street: the man in the number 10 jersey stumbles forward slowly, swaying; the young man by the shop window watches him with sad eyes, blinks; shop lights glow, traffic moves.",
+  "scenes/p01_06": "Narrow neighbourhood lane by day: a few people walk past, a hanging wire sways, shop signs and cloth awnings move in a light breeze.",
+
+  "panels/p10_02": "The friend in glasses taps the newspaper with his finger and leans in; the young man looks down at the article, breathing slowly, unconvinced; lamp glows.",
+  "panels/p11_01": "The young man dismisses the newspaper with a small hand motion, lips moving; the friend in glasses points at the article insistently, speaking; the bulb above sways slightly.",
+  "panels/p11_02": "Long pause: the young man stares down at the table, breathing slowly, then speaks quietly; the friend in glasses leans over the table, waiting, blinking; the bulb sways.",
+  "panels/p12_01": "The young man pulls the metal shop shutter down slowly; an auto-rickshaw drives past; pedestrians walk; the street lamp flickers.",
+  "scenes/p01_15": "Night street: a closed metal shutter under a flickering sign light; a stray piece of paper drifts along the ground; distant headlights pass.",
+
+  "panels/p12_02": "The young man sits at the shop counter; the phone on the table lights up with a notification glow; he slowly looks down at it; a fan turns; people pass outside the open door.",
+  "scenes/p01_13": "Close up: the phone screen lights up with a notification and gently glows; steam rises from the cup of chai; nothing else moves.",
+  "panels/p13_01": "The friend in glasses leans over the table, pointing at the phone, speaking; the young man keeps his hand flat on the table, looks away and answers briefly; bulb sways.",
+  "panels/p13_02": "The friend in glasses taps the glowing phone screen, speaking; the young man avoids eye contact, answers flatly, small shake of the head.",
+  "panels/p14_01": "The friend in glasses opens his hands in appeal, speaking; the young man looks down at the phone, answers, jaw tight; bulb sways slightly.",
+  "panels/p14_02": "The young man turns sharply toward his friend, frowning, speaking with anger; the friend in glasses holds still and meets his eyes; the bulb sways.",
+  "panels/p15_01": "The friend in glasses spreads his hands, speaking calmly; the young man stares at him, then looks down, jaw clenched; long tense silence, only breathing.",
+  "panels/p15_02": "Evening: the young man sits alone at the table, staring at the newspaper; his mother enters and leans on the table beside him; the street outside darkens, lamps come on.",
+  "panels/p16_01": "The mother leans over the table and asks gently, lips moving; the young man looks down at the phone, blinks and answers quietly.",
+  "panels/p16_02": "The mother asks softly, lips moving; the young man answers with a pained expression, small hand gesture of uncertainty; the bulb sways.",
+  "panels/p17_01": "The mother nods slowly and speaks with understanding; the young man speaks tiredly, eyes downcast, shoulders heavy; evening light outside.",
+  "panels/p17_02": "Split panel: on the left the young man solders a circuit board under a lamp, smoke curling; on the right the young man and his mother stand still in the doorway, breathing; papers on the table stir slightly.",
+
+  "panels/p18_01": "Busy neighbourhood street from above: students with backpacks walk toward the coaching centre, auto-rickshaws and scooters move, street lamp glows, signs flicker.",
+  "panels/p18_02": "The old man in the striped shirt speaks and gestures; the woman in the sari speaks with concern; the planner with the clipboard writes and listens; the teenage boy leans on the stall and shrugs.",
+  "panels/p19_01": "Planners in suits move slightly: one points at the blueprint on the table, two talk by the pillar, one scrolls a tablet; screens glow softly.",
+  "panels/p19_02": "Industrial neighbourhood at dusk: smoke rises from the factory chimneys, a queue of workers shuffles forward toward the gate, signs flicker, auto-rickshaws move.",
+
+  "scenes/p01_07": "Empty classroom: sunlight slowly shifts across the desks, dust motes drift in the light beams, the ceiling fan turns slowly, the paper on the front desk stirs.",
+  "scenes/p01_11": "Close up of the notebook: the pencil rolls very slightly, warm lamp light flickers, dust drifts; the handwriting stays perfectly still."
+}

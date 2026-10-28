@@ -1,0 +1,2545 @@
+{
+ "id": "ep13",
+ "title": "The Mirror \u2014 From One Person to a Society",
+ "subtitle": "Welfarism, Pareto, the industrialisation paradox",
+ "fps": 30,
+ "durationInFrames": 6611,
+ "shots": [
+  {
+   "card": "THE MIRROR",
+   "minSec": 2.5,
+   "from": 0,
+   "duration": 75,
+   "lines": []
+  },
+  {
+   "img": "panels/p18_01",
+   "cam": {
+    "from": [
+     0.4,
+     0.55,
+     1.25
+    ],
+    "to": [
+     0.42,
+     0.6,
+     1.4
+    ]
+   },
+   "aspect": 1.8318,
+   "amb": "street",
+   "from": 75,
+   "duration": 224,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep13/001.mp3",
+     "from": 90,
+     "duration": 189,
+     "pages": [
+      [
+       {
+        "text": "A",
+        "start": 93,
+        "end": 95
+       },
+       {
+        "text": "government",
+        "start": 95,
+        "end": 111
+       },
+       {
+        "text": "planner",
+        "start": 111,
+        "end": 127
+       },
+       {
+        "text": "surveys",
+        "start": 127,
+        "end": 147
+       },
+       {
+        "text": "residents",
+        "start": 148,
+        "end": 167
+       },
+       {
+        "text": "about",
+        "start": 169,
+        "end": 180
+       },
+       {
+        "text": "a",
+        "start": 182,
+        "end": 184
+       },
+       {
+        "text": "proposed",
+        "start": 184,
+        "end": 204
+       },
+       {
+        "text": "education",
+        "start": 206,
+        "end": 229
+       },
+       {
+        "text": "and",
+        "start": 233,
+        "end": 240
+       },
+       {
+        "text": "skills",
+        "start": 240,
+        "end": 253
+       },
+       {
+        "text": "centre.",
+        "start": 254,
+        "end": 270
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p18_02",
+   "cam": {
+    "from": [
+     0.3,
+     0.45,
+     1.3
+    ],
+    "to": [
+     0.27,
+     0.42,
+     1.45
+    ]
+   },
+   "aspect": 1.8318,
+   "amb": "street",
+   "from": 299,
+   "duration": 164,
+   "lines": [
+    {
+     "who": "res1",
+     "name": "Resident 1",
+     "color": "#C9B79C",
+     "audio": "audio/ep13/002.fx2.mp3",
+     "from": 314,
+     "duration": 129,
+     "pages": [
+      [
+       {
+        "text": "What",
+        "start": 317,
+        "end": 329
+       },
+       {
+        "text": "will",
+        "start": 330,
+        "end": 341
+       },
+       {
+        "text": "we",
+        "start": 343,
+        "end": 347
+       },
+       {
+        "text": "do",
+        "start": 350,
+        "end": 354
+       },
+       {
+        "text": "with",
+        "start": 355,
+        "end": 363
+       },
+       {
+        "text": "it?",
+        "start": 363,
+        "end": 368
+       }
+      ],
+      [
+       {
+        "text": "We",
+        "start": 399,
+        "end": 404
+       },
+       {
+        "text": "need",
+        "start": 407,
+        "end": 417
+       },
+       {
+        "text": "work",
+        "start": 418,
+        "end": 426
+       },
+       {
+        "text": "now.",
+        "start": 428,
+        "end": 434
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p18_02",
+   "cam": {
+    "from": [
+     0.45,
+     0.45,
+     1.35
+    ],
+    "to": [
+     0.47,
+     0.42,
+     1.45
+    ]
+   },
+   "aspect": 1.8318,
+   "amb": "street",
+   "from": 463,
+   "duration": 164,
+   "lines": [
+    {
+     "who": "res2",
+     "name": "Resident 2",
+     "color": "#D9A07A",
+     "audio": "audio/ep13/003.fx2.mp3",
+     "from": 478,
+     "duration": 129,
+     "pages": [
+      [
+       {
+        "text": "Our",
+        "start": 481,
+        "end": 487
+       },
+       {
+        "text": "children",
+        "start": 487,
+        "end": 499
+       },
+       {
+        "text": "should",
+        "start": 500,
+        "end": 506
+       },
+       {
+        "text": "study,",
+        "start": 506,
+        "end": 522
+       },
+       {
+        "text": "but",
+        "start": 527,
+        "end": 535
+       },
+       {
+        "text": "fees",
+        "start": 535,
+        "end": 547
+       },
+       {
+        "text": "and",
+        "start": 547,
+        "end": 551
+       },
+       {
+        "text": "transport",
+        "start": 552,
+        "end": 573
+       },
+       {
+        "text": "are",
+        "start": 573,
+        "end": 578
+       },
+       {
+        "text": "the",
+        "start": 578,
+        "end": 580
+       },
+       {
+        "text": "problem.",
+        "start": 581,
+        "end": 598
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p18_02",
+   "cam": {
+    "from": [
+     0.8,
+     0.45,
+     1.35
+    ],
+    "to": [
+     0.85,
+     0.42,
+     1.45
+    ]
+   },
+   "aspect": 1.8318,
+   "amb": "street",
+   "from": 627,
+   "duration": 171,
+   "lines": [
+    {
+     "who": "res3",
+     "name": "Resident 3",
+     "color": "#A8C686",
+     "audio": "audio/ep13/004.fx2.mp3",
+     "from": 642,
+     "duration": 136,
+     "pages": [
+      [
+       {
+        "text": "We're",
+        "start": 645,
+        "end": 650
+       },
+       {
+        "text": "managing.",
+        "start": 650,
+        "end": 667
+       },
+       {
+        "text": "Why",
+        "start": 696,
+        "end": 702
+       },
+       {
+        "text": "spend",
+        "start": 703,
+        "end": 712
+       },
+       {
+        "text": "money",
+        "start": 712,
+        "end": 720
+       },
+       {
+        "text": "on",
+        "start": 721,
+        "end": 724
+       },
+       {
+        "text": "something",
+        "start": 725,
+        "end": 735
+       },
+       {
+        "text": "people",
+        "start": 736,
+        "end": 746
+       },
+       {
+        "text": "may",
+        "start": 746,
+        "end": 749
+       },
+       {
+        "text": "not",
+        "start": 750,
+        "end": 756
+       },
+       {
+        "text": "use?",
+        "start": 757,
+        "end": 770
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p18_02",
+   "cam": {
+    "from": [
+     0.6,
+     0.45,
+     1.5
+    ],
+    "to": [
+     0.6,
+     0.5,
+     1.2
+    ]
+   },
+   "aspect": 1.8318,
+   "amb": "street",
+   "from": 798,
+   "duration": 343,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep13/005.mp3",
+     "from": 813,
+     "duration": 308,
+     "pages": [
+      [
+       {
+        "text": "The",
+        "start": 816,
+        "end": 819
+       },
+       {
+        "text": "planner",
+        "start": 819,
+        "end": 834
+       },
+       {
+        "text": "concludes:",
+        "start": 834,
+        "end": 855
+       }
+      ],
+      [
+       {
+        "text": "the",
+        "start": 863,
+        "end": 866
+       },
+       {
+        "text": "community",
+        "start": 866,
+        "end": 887
+       },
+       {
+        "text": "does",
+        "start": 887,
+        "end": 894
+       },
+       {
+        "text": "not",
+        "start": 894,
+        "end": 904
+       },
+       {
+        "text": "want",
+        "start": 904,
+        "end": 915
+       },
+       {
+        "text": "further",
+        "start": 915,
+        "end": 930
+       },
+       {
+        "text": "education.",
+        "start": 932,
+        "end": 954
+       }
+      ],
+      [
+       {
+        "text": "The",
+        "start": 983,
+        "end": 986
+       },
+       {
+        "text": "centre",
+        "start": 986,
+        "end": 1002
+       },
+       {
+        "text": "is",
+        "start": 1005,
+        "end": 1011
+       },
+       {
+        "text": "cancelled.",
+        "start": 1011,
+        "end": 1031
+       }
+      ],
+      [
+       {
+        "text": "The",
+        "start": 1060,
+        "end": 1063
+       },
+       {
+        "text": "budget",
+        "start": 1063,
+        "end": 1078
+       },
+       {
+        "text": "is",
+        "start": 1080,
+        "end": 1087
+       },
+       {
+        "text": "redirected.",
+        "start": 1087,
+        "end": 1113
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "scenes/p01_06",
+   "cam": {
+    "from": [
+     0.5,
+     0.5,
+     1.0
+    ],
+    "to": [
+     0.5,
+     0.5,
+     1.15
+    ]
+   },
+   "aspect": 1.7886,
+   "amb": "street",
+   "from": 1141,
+   "duration": 421,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep13/006.mp3",
+     "from": 1156,
+     "duration": 386,
+     "pages": [
+      [
+       {
+        "text": "The",
+        "start": 1159,
+        "end": 1162
+       },
+       {
+        "text": "community's",
+        "start": 1162,
+        "end": 1186
+       },
+       {
+        "text": "preferences",
+        "start": 1186,
+        "end": 1210
+       },
+       {
+        "text": "have",
+        "start": 1211,
+        "end": 1218
+       },
+       {
+        "text": "been",
+        "start": 1218,
+        "end": 1228
+       },
+       {
+        "text": "respected.",
+        "start": 1228,
+        "end": 1250
+       }
+      ],
+      [
+       {
+        "text": "But",
+        "start": 1279,
+        "end": 1286
+       },
+       {
+        "text": "those",
+        "start": 1287,
+        "end": 1298
+       },
+       {
+        "text": "preferences",
+        "start": 1298,
+        "end": 1321
+       },
+       {
+        "text": "may",
+        "start": 1321,
+        "end": 1329
+       },
+       {
+        "text": "have",
+        "start": 1329,
+        "end": 1339
+       },
+       {
+        "text": "formed",
+        "start": 1339,
+        "end": 1353
+       },
+       {
+        "text": "under",
+        "start": 1355,
+        "end": 1365
+       },
+       {
+        "text": "the",
+        "start": 1365,
+        "end": 1369
+       },
+       {
+        "text": "same",
+        "start": 1369,
+        "end": 1381
+       },
+       {
+        "text": "pressures",
+        "start": 1381,
+        "end": 1399
+       },
+       {
+        "text": "we",
+        "start": 1406,
+        "end": 1412
+       },
+       {
+        "text": "watched",
+        "start": 1413,
+        "end": 1427
+       }
+      ],
+      [
+       {
+        "text": "in",
+        "start": 1431,
+        "end": 1436
+       },
+       {
+        "text": "Aarav's",
+        "start": 1439,
+        "end": 1452
+       },
+       {
+        "text": "life",
+        "start": 1452,
+        "end": 1466
+       },
+       {
+        "text": "\u2014 scaled",
+        "start": 1472,
+        "end": 1487
+       },
+       {
+        "text": "to",
+        "start": 1489,
+        "end": 1495
+       },
+       {
+        "text": "thousands",
+        "start": 1495,
+        "end": 1512
+       },
+       {
+        "text": "of",
+        "start": 1513,
+        "end": 1518
+       },
+       {
+        "text": "people.",
+        "start": 1518,
+        "end": 1534
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p18_01",
+   "cam": {
+    "from": [
+     0.42,
+     0.6,
+     1.4
+    ],
+    "to": [
+     0.4,
+     0.55,
+     1.2
+    ]
+   },
+   "aspect": 1.8318,
+   "amb": "street",
+   "from": 1562,
+   "duration": 356,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep13/007.mp3",
+     "from": 1577,
+     "duration": 321,
+     "pages": [
+      [
+       {
+        "text": "When",
+        "start": 1580,
+        "end": 1588
+       },
+       {
+        "text": "an",
+        "start": 1590,
+        "end": 1597
+       },
+       {
+        "text": "entire",
+        "start": 1599,
+        "end": 1616
+       },
+       {
+        "text": "community",
+        "start": 1617,
+        "end": 1637
+       },
+       {
+        "text": "has",
+        "start": 1638,
+        "end": 1647
+       },
+       {
+        "text": "adapted",
+        "start": 1649,
+        "end": 1666
+       },
+       {
+        "text": "to",
+        "start": 1668,
+        "end": 1673
+       },
+       {
+        "text": "deprivation,",
+        "start": 1673,
+        "end": 1697
+       }
+      ],
+      [
+       {
+        "text": "aggregating",
+        "start": 1711,
+        "end": 1734
+       },
+       {
+        "text": "their",
+        "start": 1734,
+        "end": 1743
+       },
+       {
+        "text": "preferences",
+        "start": 1743,
+        "end": 1768
+       },
+       {
+        "text": "does",
+        "start": 1773,
+        "end": 1780
+       },
+       {
+        "text": "not",
+        "start": 1780,
+        "end": 1789
+       },
+       {
+        "text": "escape",
+        "start": 1791,
+        "end": 1805
+       },
+       {
+        "text": "the",
+        "start": 1805,
+        "end": 1809
+       },
+       {
+        "text": "problem.",
+        "start": 1809,
+        "end": 1826
+       }
+      ],
+      [
+       {
+        "text": "It",
+        "start": 1854,
+        "end": 1858
+       },
+       {
+        "text": "magnifies",
+        "start": 1858,
+        "end": 1883
+       },
+       {
+        "text": "it.",
+        "start": 1883,
+        "end": 1890
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p19_01",
+   "cam": {
+    "from": [
+     0.5,
+     0.5,
+     1.0
+    ],
+    "to": [
+     0.5,
+     0.5,
+     1.1
+    ]
+   },
+   "aspect": 1.8318,
+   "from": 1918,
+   "duration": 356,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep13/008.mp3",
+     "from": 1933,
+     "duration": 321,
+     "pages": [
+      [
+       {
+        "text": "This",
+        "start": 1936,
+        "end": 1945
+       },
+       {
+        "text": "is",
+        "start": 1947,
+        "end": 1953
+       },
+       {
+        "text": "where",
+        "start": 1953,
+        "end": 1964
+       },
+       {
+        "text": "Sen's",
+        "start": 1964,
+        "end": 1976
+       },
+       {
+        "text": "critique",
+        "start": 1977,
+        "end": 1992
+       },
+       {
+        "text": "of",
+        "start": 1994,
+        "end": 2001
+       },
+       {
+        "text": "utilitarian",
+        "start": 2001,
+        "end": 2027
+       },
+       {
+        "text": "evaluation",
+        "start": 2030,
+        "end": 2055
+       },
+       {
+        "text": "becomes",
+        "start": 2055,
+        "end": 2071
+       },
+       {
+        "text": "structural.",
+        "start": 2073,
+        "end": 2094
+       }
+      ],
+      [
+       {
+        "text": "Traditional",
+        "start": 2121,
+        "end": 2139
+       },
+       {
+        "text": "utilitarian",
+        "start": 2139,
+        "end": 2164
+       },
+       {
+        "text": "social",
+        "start": 2164,
+        "end": 2181
+       },
+       {
+        "text": "choice",
+        "start": 2181,
+        "end": 2193
+       },
+       {
+        "text": "rests",
+        "start": 2195,
+        "end": 2210
+       },
+       {
+        "text": "on",
+        "start": 2212,
+        "end": 2220
+       },
+       {
+        "text": "three",
+        "start": 2220,
+        "end": 2228
+       },
+       {
+        "text": "pillars:",
+        "start": 2230,
+        "end": 2245
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "scenes/p01_16",
+   "cam": {
+    "from": [
+     0.18,
+     0.5,
+     1.6
+    ],
+    "to": [
+     0.82,
+     0.5,
+     1.6
+    ]
+   },
+   "aspect": 1.7918,
+   "from": 2274,
+   "duration": 464,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep13/009.mp3",
+     "from": 2289,
+     "duration": 148,
+     "pages": [
+      [
+       {
+        "text": "Welfarism",
+        "start": 2292,
+        "end": 2318
+       },
+       {
+        "text": "\u2014 evaluate",
+        "start": 2320,
+        "end": 2342
+       },
+       {
+        "text": "a",
+        "start": 2344,
+        "end": 2347
+       },
+       {
+        "text": "society",
+        "start": 2347,
+        "end": 2365
+       },
+       {
+        "text": "through",
+        "start": 2366,
+        "end": 2373
+       },
+       {
+        "text": "people's",
+        "start": 2373,
+        "end": 2391
+       },
+       {
+        "text": "reported",
+        "start": 2393,
+        "end": 2411
+       },
+       {
+        "text": "utility.",
+        "start": 2411,
+        "end": 2429
+       }
+      ]
+     ]
+    },
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep13/010.mp3",
+     "from": 2447,
+     "duration": 97,
+     "pages": [
+      [
+       {
+        "text": "Sum-ranking",
+        "start": 2450,
+        "end": 2474
+       },
+       {
+        "text": "\u2014 add",
+        "start": 2476,
+        "end": 2483
+       },
+       {
+        "text": "those",
+        "start": 2483,
+        "end": 2496
+       },
+       {
+        "text": "utilities",
+        "start": 2496,
+        "end": 2518
+       },
+       {
+        "text": "together.",
+        "start": 2519,
+        "end": 2536
+       }
+      ]
+     ]
+    },
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep13/011.mp3",
+     "from": 2554,
+     "duration": 164,
+     "pages": [
+      [
+       {
+        "text": "Consequentialism",
+        "start": 2557,
+        "end": 2592
+       },
+       {
+        "text": "\u2014 judge",
+        "start": 2596,
+        "end": 2607
+       },
+       {
+        "text": "a",
+        "start": 2610,
+        "end": 2612
+       },
+       {
+        "text": "policy",
+        "start": 2612,
+        "end": 2630
+       },
+       {
+        "text": "by",
+        "start": 2630,
+        "end": 2637
+       },
+       {
+        "text": "the",
+        "start": 2637,
+        "end": 2641
+       },
+       {
+        "text": "state",
+        "start": 2641,
+        "end": 2653
+       },
+       {
+        "text": "of",
+        "start": 2655,
+        "end": 2662
+       },
+       {
+        "text": "affairs",
+        "start": 2662,
+        "end": 2677
+       },
+       {
+        "text": "it",
+        "start": 2680,
+        "end": 2685
+       },
+       {
+        "text": "produces.",
+        "start": 2685,
+        "end": 2709
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "scenes/p01_04",
+   "cam": {
+    "from": [
+     0.5,
+     0.5,
+     1.0
+    ],
+    "to": [
+     0.6,
+     0.5,
+     1.15
+    ]
+   },
+   "aspect": 1.7918,
+   "amb": "room",
+   "from": 2738,
+   "duration": 679,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep13/012.mp3",
+     "from": 2753,
+     "duration": 644,
+     "pages": [
+      [
+       {
+        "text": "If",
+        "start": 2756,
+        "end": 2761
+       },
+       {
+        "text": "preferences",
+        "start": 2761,
+        "end": 2784
+       },
+       {
+        "text": "have",
+        "start": 2784,
+        "end": 2793
+       },
+       {
+        "text": "adapted",
+        "start": 2795,
+        "end": 2813
+       },
+       {
+        "text": "to",
+        "start": 2815,
+        "end": 2820
+       },
+       {
+        "text": "deprivation,",
+        "start": 2820,
+        "end": 2844
+       },
+       {
+        "text": "welfarism",
+        "start": 2856,
+        "end": 2880
+       },
+       {
+        "text": "records",
+        "start": 2880,
+        "end": 2897
+       },
+       {
+        "text": "that",
+        "start": 2900,
+        "end": 2909
+       },
+       {
+        "text": "adaptation",
+        "start": 2911,
+        "end": 2935
+       },
+       {
+        "text": "as",
+        "start": 2938,
+        "end": 2948
+       },
+       {
+        "text": "satisfaction.",
+        "start": 2949,
+        "end": 2977
+       }
+      ],
+      [
+       {
+        "text": "Sum-ranking",
+        "start": 3005,
+        "end": 3027
+       },
+       {
+        "text": "aggregates",
+        "start": 3029,
+        "end": 3050
+       },
+       {
+        "text": "it.",
+        "start": 3050,
+        "end": 3057
+       }
+      ],
+      [
+       {
+        "text": "Consequentialism",
+        "start": 3085,
+        "end": 3120
+       },
+       {
+        "text": "calls",
+        "start": 3120,
+        "end": 3133
+       },
+       {
+        "text": "the",
+        "start": 3133,
+        "end": 3138
+       },
+       {
+        "text": "outcome",
+        "start": 3138,
+        "end": 3153
+       },
+       {
+        "text": "acceptable.",
+        "start": 3155,
+        "end": 3179
+       }
+      ],
+      [
+       {
+        "text": "The",
+        "start": 3206,
+        "end": 3209
+       },
+       {
+        "text": "framework",
+        "start": 3209,
+        "end": 3229
+       },
+       {
+        "text": "is",
+        "start": 3231,
+        "end": 3237
+       },
+       {
+        "text": "internally",
+        "start": 3239,
+        "end": 3258
+       },
+       {
+        "text": "consistent",
+        "start": 3259,
+        "end": 3280
+       },
+       {
+        "text": "\u2014 and",
+        "start": 3290,
+        "end": 3295
+       },
+       {
+        "text": "blind",
+        "start": 3295,
+        "end": 3309
+       },
+       {
+        "text": "to",
+        "start": 3311,
+        "end": 3315
+       },
+       {
+        "text": "the",
+        "start": 3315,
+        "end": 3319
+       },
+       {
+        "text": "process",
+        "start": 3319,
+        "end": 3336
+       },
+       {
+        "text": "that",
+        "start": 3336,
+        "end": 3345
+       },
+       {
+        "text": "produced",
+        "start": 3345,
+        "end": 3362
+       },
+       {
+        "text": "the",
+        "start": 3364,
+        "end": 3369
+       },
+       {
+        "text": "numbers.",
+        "start": 3369,
+        "end": 3389
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "scenes/p01_03",
+   "cam": {
+    "from": [
+     0.5,
+     0.5,
+     1.0
+    ],
+    "to": [
+     0.5,
+     0.45,
+     1.15
+    ]
+   },
+   "aspect": 1.7918,
+   "amb": "night",
+   "from": 3417,
+   "duration": 652,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep13/013.mp3",
+     "from": 3432,
+     "duration": 617,
+     "pages": [
+      [
+       {
+        "text": "A",
+        "start": 3435,
+        "end": 3436
+       },
+       {
+        "text": "related",
+        "start": 3437,
+        "end": 3453
+       },
+       {
+        "text": "concept:",
+        "start": 3454,
+        "end": 3472
+       }
+      ],
+      [
+       {
+        "text": "Pareto",
+        "start": 3478,
+        "end": 3491
+       },
+       {
+        "text": "optimality",
+        "start": 3493,
+        "end": 3529
+       },
+       {
+        "text": "\u2014 a state",
+        "start": 3529,
+        "end": 3543
+       },
+       {
+        "text": "in",
+        "start": 3546,
+        "end": 3551
+       },
+       {
+        "text": "which",
+        "start": 3551,
+        "end": 3561
+       },
+       {
+        "text": "no",
+        "start": 3562,
+        "end": 3569
+       },
+       {
+        "text": "one",
+        "start": 3569,
+        "end": 3579
+       },
+       {
+        "text": "can",
+        "start": 3579,
+        "end": 3587
+       },
+       {
+        "text": "be",
+        "start": 3587,
+        "end": 3593
+       },
+       {
+        "text": "made",
+        "start": 3594,
+        "end": 3604
+       },
+       {
+        "text": "better",
+        "start": 3604,
+        "end": 3616
+       },
+       {
+        "text": "off",
+        "start": 3616,
+        "end": 3627
+       }
+      ],
+      [
+       {
+        "text": "without",
+        "start": 3629,
+        "end": 3644
+       },
+       {
+        "text": "making",
+        "start": 3645,
+        "end": 3659
+       },
+       {
+        "text": "someone",
+        "start": 3659,
+        "end": 3673
+       },
+       {
+        "text": "worse",
+        "start": 3673,
+        "end": 3685
+       },
+       {
+        "text": "off.",
+        "start": 3685,
+        "end": 3698
+       }
+      ],
+      [
+       {
+        "text": "A",
+        "start": 3726,
+        "end": 3728
+       },
+       {
+        "text": "neighbourhood",
+        "start": 3729,
+        "end": 3749
+       },
+       {
+        "text": "can",
+        "start": 3749,
+        "end": 3758
+       },
+       {
+        "text": "be",
+        "start": 3758,
+        "end": 3763
+       },
+       {
+        "text": "Pareto",
+        "start": 3763,
+        "end": 3778
+       },
+       {
+        "text": "optimal",
+        "start": 3780,
+        "end": 3798
+       },
+       {
+        "text": "and",
+        "start": 3803,
+        "end": 3810
+       },
+       {
+        "text": "deeply",
+        "start": 3810,
+        "end": 3824
+       },
+       {
+        "text": "unjust",
+        "start": 3826,
+        "end": 3842
+       },
+       {
+        "text": "at",
+        "start": 3845,
+        "end": 3852
+       },
+       {
+        "text": "the",
+        "start": 3852,
+        "end": 3857
+       },
+       {
+        "text": "same",
+        "start": 3857,
+        "end": 3867
+       }
+      ],
+      [
+       {
+        "text": "time.",
+        "start": 3867,
+        "end": 3880
+       },
+       {
+        "text": "Optimality",
+        "start": 3908,
+        "end": 3933
+       },
+       {
+        "text": "is",
+        "start": 3935,
+        "end": 3940
+       },
+       {
+        "text": "an",
+        "start": 3940,
+        "end": 3945
+       },
+       {
+        "text": "efficiency",
+        "start": 3948,
+        "end": 3968
+       },
+       {
+        "text": "criterion,",
+        "start": 3969,
+        "end": 3992
+       },
+       {
+        "text": "not",
+        "start": 4000,
+        "end": 4009
+       },
+       {
+        "text": "a",
+        "start": 4011,
+        "end": 4012
+       },
+       {
+        "text": "moral",
+        "start": 4012,
+        "end": 4025
+       },
+       {
+        "text": "verdict.",
+        "start": 4025,
+        "end": 4041
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p19_02",
+   "cam": {
+    "from": [
+     0.5,
+     0.5,
+     1.0
+    ],
+    "to": [
+     0.5,
+     0.5,
+     1.06
+    ]
+   },
+   "minSec": 3,
+   "aspect": 1.8318,
+   "amb": "street",
+   "from": 4069,
+   "duration": 90,
+   "lines": []
+  },
+  {
+   "img": "panels/p19_02",
+   "cam": {
+    "from": [
+     0.3,
+     0.6,
+     1.4
+    ],
+    "to": [
+     0.4,
+     0.55,
+     1.3
+    ]
+   },
+   "aspect": 1.8318,
+   "amb": "street",
+   "from": 4159,
+   "duration": 376,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep13/014.mp3",
+     "from": 4174,
+     "duration": 341,
+     "pages": [
+      [
+       {
+        "text": "Consider",
+        "start": 4178,
+        "end": 4196
+       },
+       {
+        "text": "a",
+        "start": 4199,
+        "end": 4201
+       },
+       {
+        "text": "harder",
+        "start": 4201,
+        "end": 4215
+       },
+       {
+        "text": "case.",
+        "start": 4215,
+        "end": 4229
+       }
+      ],
+      [
+       {
+        "text": "Before",
+        "start": 4258,
+        "end": 4271
+       },
+       {
+        "text": "industrialisation,",
+        "start": 4274,
+        "end": 4313
+       },
+       {
+        "text": "a",
+        "start": 4322,
+        "end": 4324
+       },
+       {
+        "text": "community's",
+        "start": 4324,
+        "end": 4350
+       },
+       {
+        "text": "wants",
+        "start": 4350,
+        "end": 4363
+       },
+       {
+        "text": "are",
+        "start": 4365,
+        "end": 4371
+       },
+       {
+        "text": "modest",
+        "start": 4371,
+        "end": 4386
+       },
+       {
+        "text": "and",
+        "start": 4389,
+        "end": 4397
+       },
+       {
+        "text": "mostly",
+        "start": 4397,
+        "end": 4414
+       },
+       {
+        "text": "met.",
+        "start": 4414,
+        "end": 4425
+       }
+      ],
+      [
+       {
+        "text": "People",
+        "start": 4454,
+        "end": 4466
+       },
+       {
+        "text": "report",
+        "start": 4466,
+        "end": 4482
+       },
+       {
+        "text": "contentment.",
+        "start": 4483,
+        "end": 4507
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p19_02",
+   "cam": {
+    "from": [
+     0.65,
+     0.4,
+     1.3
+    ],
+    "to": [
+     0.75,
+     0.35,
+     1.45
+    ]
+   },
+   "aspect": 1.8318,
+   "amb": "street",
+   "from": 4536,
+   "duration": 406,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep13/015.mp3",
+     "from": 4551,
+     "duration": 371,
+     "pages": [
+      [
+       {
+        "text": "Then",
+        "start": 4554,
+        "end": 4563
+       },
+       {
+        "text": "industry",
+        "start": 4565,
+        "end": 4581
+       },
+       {
+        "text": "arrives",
+        "start": 4582,
+        "end": 4599
+       },
+       {
+        "text": "\u2014 new",
+        "start": 4604,
+        "end": 4613
+       },
+       {
+        "text": "jobs,",
+        "start": 4613,
+        "end": 4629
+       },
+       {
+        "text": "new",
+        "start": 4641,
+        "end": 4649
+       },
+       {
+        "text": "goods,",
+        "start": 4649,
+        "end": 4663
+       }
+      ],
+      [
+       {
+        "text": "new",
+        "start": 4673,
+        "end": 4681
+       },
+       {
+        "text": "horizons",
+        "start": 4682,
+        "end": 4707
+       },
+       {
+        "text": "\u2014 but",
+        "start": 4715,
+        "end": 4722
+       },
+       {
+        "text": "also",
+        "start": 4724,
+        "end": 4737
+       },
+       {
+        "text": "new",
+        "start": 4737,
+        "end": 4745
+       },
+       {
+        "text": "inequality,",
+        "start": 4747,
+        "end": 4770
+       },
+       {
+        "text": "new",
+        "start": 4778,
+        "end": 4786
+       },
+       {
+        "text": "disruption,",
+        "start": 4786,
+        "end": 4807
+       }
+      ],
+      [
+       {
+        "text": "new",
+        "start": 4817,
+        "end": 4824
+       },
+       {
+        "text": "aspirations",
+        "start": 4826,
+        "end": 4853
+       },
+       {
+        "text": "that",
+        "start": 4853,
+        "end": 4863
+       },
+       {
+        "text": "cannot",
+        "start": 4864,
+        "end": 4877
+       },
+       {
+        "text": "yet",
+        "start": 4877,
+        "end": 4886
+       },
+       {
+        "text": "be",
+        "start": 4887,
+        "end": 4893
+       },
+       {
+        "text": "fulfilled.",
+        "start": 4894,
+        "end": 4913
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p19_02",
+   "cam": {
+    "from": [
+     0.6,
+     0.7,
+     1.4
+    ],
+    "to": [
+     0.5,
+     0.5,
+     1.0
+    ]
+   },
+   "aspect": 1.8318,
+   "amb": "street",
+   "from": 4941,
+   "duration": 527,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep13/016.mp3",
+     "from": 4956,
+     "duration": 161,
+     "pages": [
+      [
+       {
+        "text": "Reported",
+        "start": 4959,
+        "end": 4976
+       },
+       {
+        "text": "satisfaction",
+        "start": 4976,
+        "end": 5003
+       },
+       {
+        "text": "may",
+        "start": 5003,
+        "end": 5012
+       },
+       {
+        "text": "fall",
+        "start": 5012,
+        "end": 5026
+       },
+       {
+        "text": "even",
+        "start": 5028,
+        "end": 5039
+       },
+       {
+        "text": "as",
+        "start": 5042,
+        "end": 5052
+       },
+       {
+        "text": "real",
+        "start": 5052,
+        "end": 5061
+       },
+       {
+        "text": "possibilities",
+        "start": 5061,
+        "end": 5087
+       },
+       {
+        "text": "expand.",
+        "start": 5089,
+        "end": 5109
+       }
+      ]
+     ]
+    },
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep13/017.mp3",
+     "from": 5145,
+     "duration": 304,
+     "pages": [
+      [
+       {
+        "text": "Should",
+        "start": 5148,
+        "end": 5155
+       },
+       {
+        "text": "we",
+        "start": 5155,
+        "end": 5160
+       },
+       {
+        "text": "preserve",
+        "start": 5161,
+        "end": 5179
+       },
+       {
+        "text": "the",
+        "start": 5179,
+        "end": 5184
+       },
+       {
+        "text": "earlier",
+        "start": 5186,
+        "end": 5200
+       },
+       {
+        "text": "state",
+        "start": 5200,
+        "end": 5211
+       },
+       {
+        "text": "because",
+        "start": 5211,
+        "end": 5226
+       },
+       {
+        "text": "people",
+        "start": 5226,
+        "end": 5239
+       },
+       {
+        "text": "were",
+        "start": 5239,
+        "end": 5247
+       },
+       {
+        "text": "happier?",
+        "start": 5247,
+        "end": 5263
+       }
+      ],
+      [
+       {
+        "text": "Or",
+        "start": 5291,
+        "end": 5296
+       },
+       {
+        "text": "accept",
+        "start": 5299,
+        "end": 5315
+       },
+       {
+        "text": "the",
+        "start": 5317,
+        "end": 5321
+       },
+       {
+        "text": "frustrations",
+        "start": 5321,
+        "end": 5347
+       },
+       {
+        "text": "of",
+        "start": 5350,
+        "end": 5356
+       },
+       {
+        "text": "transition",
+        "start": 5356,
+        "end": 5375
+       },
+       {
+        "text": "because",
+        "start": 5375,
+        "end": 5390
+       },
+       {
+        "text": "the",
+        "start": 5390,
+        "end": 5394
+       },
+       {
+        "text": "world",
+        "start": 5394,
+        "end": 5407
+       },
+       {
+        "text": "has",
+        "start": 5407,
+        "end": 5416
+       },
+       {
+        "text": "opened",
+        "start": 5419,
+        "end": 5431
+       },
+       {
+        "text": "up?",
+        "start": 5431,
+        "end": 5440
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "scenes/p01_15",
+   "cam": {
+    "from": [
+     0.5,
+     0.5,
+     1.15
+    ],
+    "to": [
+     0.5,
+     0.5,
+     1.0
+    ]
+   },
+   "aspect": 1.7886,
+   "amb": "night",
+   "from": 5468,
+   "duration": 352,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep13/018.mp3",
+     "from": 5483,
+     "duration": 317,
+     "pages": [
+      [
+       {
+        "text": "A",
+        "start": 5486,
+        "end": 5488
+       },
+       {
+        "text": "policy",
+        "start": 5488,
+        "end": 5506
+       },
+       {
+        "text": "that",
+        "start": 5506,
+        "end": 5515
+       },
+       {
+        "text": "preserves",
+        "start": 5515,
+        "end": 5535
+       },
+       {
+        "text": "low",
+        "start": 5537,
+        "end": 5545
+       },
+       {
+        "text": "aspirations",
+        "start": 5547,
+        "end": 5574
+       },
+       {
+        "text": "because",
+        "start": 5581,
+        "end": 5596
+       },
+       {
+        "text": "they",
+        "start": 5596,
+        "end": 5601
+       },
+       {
+        "text": "produce",
+        "start": 5602,
+        "end": 5619
+       },
+       {
+        "text": "high",
+        "start": 5622,
+        "end": 5629
+       },
+       {
+        "text": "satisfaction",
+        "start": 5629,
+        "end": 5657
+       },
+       {
+        "text": "risks",
+        "start": 5657,
+        "end": 5671
+       }
+      ],
+      [
+       {
+        "text": "making",
+        "start": 5671,
+        "end": 5686
+       },
+       {
+        "text": "adaptation",
+        "start": 5687,
+        "end": 5713
+       },
+       {
+        "text": "into",
+        "start": 5715,
+        "end": 5723
+       },
+       {
+        "text": "a",
+        "start": 5725,
+        "end": 5727
+       },
+       {
+        "text": "reason",
+        "start": 5727,
+        "end": 5743
+       },
+       {
+        "text": "to",
+        "start": 5743,
+        "end": 5747
+       },
+       {
+        "text": "never",
+        "start": 5747,
+        "end": 5759
+       },
+       {
+        "text": "change",
+        "start": 5759,
+        "end": 5772
+       },
+       {
+        "text": "anything.",
+        "start": 5774,
+        "end": 5792
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p19_02",
+   "cam": {
+    "from": [
+     0.75,
+     0.45,
+     1.4
+    ],
+    "to": [
+     0.7,
+     0.5,
+     1.2
+    ]
+   },
+   "aspect": 1.8318,
+   "amb": "street",
+   "from": 5820,
+   "duration": 308,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep13/019.mp3",
+     "from": 5835,
+     "duration": 273,
+     "pages": [
+      [
+       {
+        "text": "But",
+        "start": 5839,
+        "end": 5845
+       },
+       {
+        "text": "a",
+        "start": 5848,
+        "end": 5849
+       },
+       {
+        "text": "policy",
+        "start": 5849,
+        "end": 5868
+       },
+       {
+        "text": "that",
+        "start": 5868,
+        "end": 5878
+       },
+       {
+        "text": "imposes",
+        "start": 5880,
+        "end": 5898
+       },
+       {
+        "text": "change",
+        "start": 5898,
+        "end": 5912
+       },
+       {
+        "text": "because",
+        "start": 5913,
+        "end": 5929
+       },
+       {
+        "text": "outsiders",
+        "start": 5929,
+        "end": 5953
+       },
+       {
+        "text": "think",
+        "start": 5960,
+        "end": 5970
+       },
+       {
+        "text": "they",
+        "start": 5971,
+        "end": 5977
+       },
+       {
+        "text": "know",
+        "start": 5977,
+        "end": 5985
+       },
+       {
+        "text": "better",
+        "start": 5986,
+        "end": 5997
+       }
+      ],
+      [
+       {
+        "text": "risks",
+        "start": 5997,
+        "end": 6012
+       },
+       {
+        "text": "destroying",
+        "start": 6012,
+        "end": 6032
+       },
+       {
+        "text": "autonomy",
+        "start": 6034,
+        "end": 6054
+       },
+       {
+        "text": "in",
+        "start": 6056,
+        "end": 6060
+       },
+       {
+        "text": "the",
+        "start": 6060,
+        "end": 6064
+       },
+       {
+        "text": "name",
+        "start": 6064,
+        "end": 6077
+       },
+       {
+        "text": "of",
+        "start": 6078,
+        "end": 6084
+       },
+       {
+        "text": "freedom.",
+        "start": 6084,
+        "end": 6100
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "scenes/p01_02",
+   "cam": {
+    "from": [
+     0.5,
+     0.5,
+     1.15
+    ],
+    "to": [
+     0.5,
+     0.5,
+     1.0
+    ]
+   },
+   "minSec": 4,
+   "aspect": 1.7886,
+   "amb": "room",
+   "from": 6129,
+   "duration": 483,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep13/020.mp3",
+     "from": 6144,
+     "duration": 448,
+     "pages": [
+      [
+       {
+        "text": "There",
+        "start": 6147,
+        "end": 6157
+       },
+       {
+        "text": "is",
+        "start": 6160,
+        "end": 6166
+       },
+       {
+        "text": "no",
+        "start": 6166,
+        "end": 6173
+       },
+       {
+        "text": "clean",
+        "start": 6174,
+        "end": 6186
+       },
+       {
+        "text": "exit",
+        "start": 6188,
+        "end": 6201
+       },
+       {
+        "text": "from",
+        "start": 6201,
+        "end": 6211
+       },
+       {
+        "text": "this",
+        "start": 6211,
+        "end": 6218
+       },
+       {
+        "text": "dilemma.",
+        "start": 6218,
+        "end": 6233
+       }
+      ],
+      [
+       {
+        "text": "There",
+        "start": 6260,
+        "end": 6269
+       },
+       {
+        "text": "is",
+        "start": 6273,
+        "end": 6279
+       },
+       {
+        "text": "only",
+        "start": 6281,
+        "end": 6293
+       },
+       {
+        "text": "the",
+        "start": 6293,
+        "end": 6298
+       },
+       {
+        "text": "obligation",
+        "start": 6298,
+        "end": 6321
+       },
+       {
+        "text": "to",
+        "start": 6321,
+        "end": 6325
+       },
+       {
+        "text": "see",
+        "start": 6325,
+        "end": 6335
+       },
+       {
+        "text": "it",
+        "start": 6337,
+        "end": 6342
+       },
+       {
+        "text": "clearly",
+        "start": 6345,
+        "end": 6362
+       },
+       {
+        "text": "\u2014 and",
+        "start": 6371,
+        "end": 6378
+       },
+       {
+        "text": "to",
+        "start": 6378,
+        "end": 6384
+       },
+       {
+        "text": "ensure",
+        "start": 6386,
+        "end": 6404
+       }
+      ],
+      [
+       {
+        "text": "that",
+        "start": 6404,
+        "end": 6414
+       },
+       {
+        "text": "when",
+        "start": 6414,
+        "end": 6423
+       },
+       {
+        "text": "opportunities",
+        "start": 6425,
+        "end": 6453
+       },
+       {
+        "text": "expand,",
+        "start": 6455,
+        "end": 6473
+       },
+       {
+        "text": "people",
+        "start": 6479,
+        "end": 6492
+       },
+       {
+        "text": "have",
+        "start": 6492,
+        "end": 6502
+       },
+       {
+        "text": "a",
+        "start": 6504,
+        "end": 6507
+       },
+       {
+        "text": "genuine",
+        "start": 6507,
+        "end": 6524
+       },
+       {
+        "text": "say",
+        "start": 6524,
+        "end": 6535
+       },
+       {
+        "text": "in",
+        "start": 6538,
+        "end": 6542
+       },
+       {
+        "text": "what",
+        "start": 6543,
+        "end": 6552
+       },
+       {
+        "text": "happens",
+        "start": 6552,
+        "end": 6569
+       },
+       {
+        "text": "next.",
+        "start": 6569,
+        "end": 6583
+       }
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,585 @@
+{
+ "id": "ep09",
+ "title": "Twenty Months In",
+ "subtitle": "Addiction",
+ "fps": 30,
+ "durationInFrames": 1456,
+ "shots": [
+  {
+   "img": "panels/p10_01",
+   "cam": {
+    "from": [
+     0.5,
+     0.5,
+     1.0
+    ],
+    "to": [
+     0.7,
+     0.6,
+     1.2
+    ]
+   },
+   "aspect": 1.7902,
+   "amb": "street",
+   "from": 0,
+   "duration": 490,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep09/001.mp3",
+     "from": 15,
+     "duration": 455,
+     "pages": [
+      [
+       {
+        "text": "A",
+        "start": 18,
+        "end": 20
+       },
+       {
+        "text": "brief",
+        "start": 20,
+        "end": 34
+       },
+       {
+        "text": "detour.",
+        "start": 34,
+        "end": 48
+       }
+      ],
+      [
+       {
+        "text": "Aarav's",
+        "start": 77,
+        "end": 90
+       },
+       {
+        "text": "neighbour",
+        "start": 91,
+        "end": 105
+       },
+       {
+        "text": "Ravi",
+        "start": 105,
+        "end": 116
+       },
+       {
+        "text": "once",
+        "start": 116,
+        "end": 129
+       },
+       {
+        "text": "dreamed",
+        "start": 131,
+        "end": 145
+       },
+       {
+        "text": "of",
+        "start": 147,
+        "end": 153
+       },
+       {
+        "text": "becoming",
+        "start": 153,
+        "end": 171
+       },
+       {
+        "text": "a",
+        "start": 174,
+        "end": 177
+       },
+       {
+        "text": "cricketer.",
+        "start": 177,
+        "end": 195
+       }
+      ],
+      [
+       {
+        "text": "When",
+        "start": 223,
+        "end": 232
+       },
+       {
+        "text": "that",
+        "start": 232,
+        "end": 241
+       },
+       {
+        "text": "door",
+        "start": 242,
+        "end": 251
+       },
+       {
+        "text": "closed,",
+        "start": 252,
+        "end": 267
+       },
+       {
+        "text": "Ravi",
+        "start": 276,
+        "end": 286
+       },
+       {
+        "text": "started",
+        "start": 286,
+        "end": 302
+       },
+       {
+        "text": "drinking.",
+        "start": 304,
+        "end": 322
+       }
+      ],
+      [
+       {
+        "text": "Now",
+        "start": 351,
+        "end": 358
+       },
+       {
+        "text": "Ravi's",
+        "start": 358,
+        "end": 373
+       },
+       {
+        "text": "only",
+        "start": 376,
+        "end": 388
+       },
+       {
+        "text": "daily",
+        "start": 388,
+        "end": 400
+       },
+       {
+        "text": "priority",
+        "start": 401,
+        "end": 423
+       },
+       {
+        "text": "is",
+        "start": 426,
+        "end": 431
+       },
+       {
+        "text": "the",
+        "start": 431,
+        "end": 436
+       },
+       {
+        "text": "next",
+        "start": 436,
+        "end": 447
+       },
+       {
+        "text": "drink.",
+        "start": 449,
+        "end": 461
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p10_01",
+   "cam": {
+    "from": [
+     0.35,
+     0.5,
+     1.4
+    ],
+    "to": [
+     0.32,
+     0.5,
+     1.5
+    ]
+   },
+   "minSec": 3.5,
+   "aspect": 1.7902,
+   "amb": "street",
+   "from": 490,
+   "duration": 149,
+   "lines": [
+    {
+     "who": "aarav",
+     "name": "Aarav",
+     "color": "#F2C14E",
+     "audio": "audio/ep09/002.fx2.mp3",
+     "from": 505,
+     "duration": 114,
+     "pages": [
+      [
+       {
+        "text": "He",
+        "start": 508,
+        "end": 513
+       },
+       {
+        "text": "used",
+        "start": 514,
+        "end": 527
+       },
+       {
+        "text": "to",
+        "start": 529,
+        "end": 534
+       },
+       {
+        "text": "be",
+        "start": 534,
+        "end": 541
+       },
+       {
+        "text": "the",
+        "start": 541,
+        "end": 546
+       },
+       {
+        "text": "best",
+        "start": 546,
+        "end": 558
+       },
+       {
+        "text": "batsman",
+        "start": 558,
+        "end": 582
+       },
+       {
+        "text": "on",
+        "start": 585,
+        "end": 590
+       },
+       {
+        "text": "the",
+        "start": 590,
+        "end": 594
+       },
+       {
+        "text": "street.",
+        "start": 594,
+        "end": 610
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p10_01",
+   "cam": {
+    "from": [
+     0.82,
+     0.6,
+     1.5
+    ],
+    "to": [
+     0.8,
+     0.55,
+     1.25
+    ]
+   },
+   "aspect": 1.7902,
+   "amb": "street",
+   "from": 639,
+   "duration": 393,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep09/003.mp3",
+     "from": 654,
+     "duration": 358,
+     "pages": [
+      [
+       {
+        "text": "Addiction:",
+        "start": 657,
+        "end": 673
+       },
+       {
+        "text": "a",
+        "start": 680,
+        "end": 682
+       },
+       {
+        "text": "preference",
+        "start": 682,
+        "end": 701
+       },
+       {
+        "text": "that",
+        "start": 701,
+        "end": 710
+       },
+       {
+        "text": "has",
+        "start": 710,
+        "end": 719
+       },
+       {
+        "text": "escaped",
+        "start": 720,
+        "end": 737
+       },
+       {
+        "text": "rational",
+        "start": 738,
+        "end": 754
+       },
+       {
+        "text": "control.",
+        "start": 754,
+        "end": 774
+       }
+      ],
+      [
+       {
+        "text": "Ravi",
+        "start": 800,
+        "end": 811
+       },
+       {
+        "text": "has",
+        "start": 811,
+        "end": 820
+       },
+       {
+        "text": "not",
+        "start": 820,
+        "end": 830
+       },
+       {
+        "text": "chosen,",
+        "start": 831,
+        "end": 847
+       },
+       {
+        "text": "reflected,",
+        "start": 853,
+        "end": 874
+       },
+       {
+        "text": "or",
+        "start": 882,
+        "end": 888
+       },
+       {
+        "text": "adapted.",
+        "start": 890,
+        "end": 908
+       }
+      ],
+      [
+       {
+        "text": "His",
+        "start": 937,
+        "end": 944
+       },
+       {
+        "text": "desires",
+        "start": 944,
+        "end": 965
+       },
+       {
+        "text": "have",
+        "start": 965,
+        "end": 974
+       },
+       {
+        "text": "been",
+        "start": 974,
+        "end": 983
+       },
+       {
+        "text": "captured.",
+        "start": 984,
+        "end": 1003
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "scenes/p01_06",
+   "cam": {
+    "from": [
+     0.5,
+     0.5,
+     1.0
+    ],
+    "to": [
+     0.55,
+     0.55,
+     1.15
+    ]
+   },
+   "minSec": 4,
+   "aspect": 1.7886,
+   "amb": "street",
+   "from": 1031,
+   "duration": 424,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep09/004.mp3",
+     "from": 1046,
+     "duration": 389,
+     "pages": [
+      [
+       {
+        "text": "Elster",
+        "start": 1050,
+        "end": 1063
+       },
+       {
+        "text": "places",
+        "start": 1063,
+        "end": 1080
+       },
+       {
+        "text": "addiction",
+        "start": 1081,
+        "end": 1098
+       },
+       {
+        "text": "on",
+        "start": 1101,
+        "end": 1106
+       },
+       {
+        "text": "the",
+        "start": 1106,
+        "end": 1109
+       },
+       {
+        "text": "same",
+        "start": 1109,
+        "end": 1122
+       },
+       {
+        "text": "map",
+        "start": 1122,
+        "end": 1134
+       },
+       {
+        "text": "as",
+        "start": 1136,
+        "end": 1144
+       },
+       {
+        "text": "the",
+        "start": 1144,
+        "end": 1149
+       },
+       {
+        "text": "other",
+        "start": 1151,
+        "end": 1162
+       },
+       {
+        "text": "mechanisms",
+        "start": 1162,
+        "end": 1184
+       },
+       {
+        "text": "\u2014 it",
+        "start": 1194,
+        "end": 1199
+       }
+      ],
+      [
+       {
+        "text": "too",
+        "start": 1200,
+        "end": 1204
+       },
+       {
+        "text": "produces",
+        "start": 1204,
+        "end": 1224
+       },
+       {
+        "text": "preference",
+        "start": 1224,
+        "end": 1241
+       },
+       {
+        "text": "change.",
+        "start": 1241,
+        "end": 1256
+       }
+      ],
+      [
+       {
+        "text": "But",
+        "start": 1285,
+        "end": 1292
+       },
+       {
+        "text": "here",
+        "start": 1292,
+        "end": 1303
+       },
+       {
+        "text": "the",
+        "start": 1303,
+        "end": 1307
+       },
+       {
+        "text": "person",
+        "start": 1307,
+        "end": 1325
+       },
+       {
+        "text": "has",
+        "start": 1331,
+        "end": 1339
+       },
+       {
+        "text": "lost",
+        "start": 1339,
+        "end": 1351
+       },
+       {
+        "text": "autonomy",
+        "start": 1353,
+        "end": 1372
+       },
+       {
+        "text": "rather",
+        "start": 1372,
+        "end": 1386
+       },
+       {
+        "text": "than",
+        "start": 1386,
+        "end": 1395
+       },
+       {
+        "text": "exercised",
+        "start": 1397,
+        "end": 1420
+       },
+       {
+        "text": "it.",
+        "start": 1420,
+        "end": 1427
+       }
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "ep04",
+  "title": "Nine Months In",
+  "subtitle": "Learning",
+  "shots": [
+    {"img": "panels/p04_02", "cam": {"from": [0.5, 0.5, 1.0], "to": [0.4, 0.6, 1.2]},
+     "lines": [{"who": "narrator", "text": "Aarav's uncle arranges a two-month placement at a small manufacturing unit in the city. Aarav assists the engineers."}]},
+    {"img": "panels/p05_01", "cam": {"from": [0.3, 0.45, 1.25], "to": [0.6, 0.5, 1.05]},
+     "lines": [{"who": "narrator", "text": "He watches their daily work — the paperwork, the office politics, the distance between elegant mathematics and the mundane reality of the job."}]},
+    {"img": "scenes/p01_04", "cam": {"from": [0.5, 0.5, 1.1], "to": [0.5, 0.5, 1.0]},
+     "lines": [{"who": "narrator", "text": "He comes back."}], "minSec": 3},
+    {"img": "panels/p05_02", "cam": {"from": [0.6, 0.45, 1.15], "to": [0.68, 0.42, 1.35]},
+     "lines": [{"who": "mother", "mood": "warm", "text": "How was the city?"}]},
+    {"img": "panels/p05_02", "cam": {"from": [0.42, 0.55, 1.35], "to": [0.4, 0.55, 1.45]},
+     "lines": [{"who": "aarav", "mood": "sceptical", "text": "Different from what I imagined. The engineers sit at computers filling forms. I fixed more things in one week at the shop than they fix in a month."}]},
+    {"img": "scenes/p01_04", "cam": {"from": [0.5, 0.5, 1.0], "to": [0.6, 0.55, 1.2]},
+     "lines": [{"who": "narrator", "text": "This is what Elster, drawing on Amartya Sen, calls preference change through learning. Aarav has now experienced both alternatives."}]},
+    {"img": "scenes/p01_08", "cam": {"from": [0.5, 0.5, 1.0], "to": [0.55, 0.55, 1.15]},
+     "lines": [{"who": "narrator", "text": "His preference for repair work is no longer based on imagination — it is based on evidence. Learning requires exposure. Without it, a preference may rest on ignorance of what was missed."}], "minSec": 4}
+  ]
+}

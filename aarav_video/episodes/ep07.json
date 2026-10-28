@@ -1,0 +1,21 @@
+{
+  "id": "ep07",
+  "title": "Fifteen Months In",
+  "subtitle": "Character planning",
+  "shots": [
+    {"img": "panels/p08_01", "cam": {"from": [0.55, 0.5, 1.0], "to": [0.45, 0.5, 1.2]},
+     "lines": [{"who": "narrator", "text": "A quiet night. Aarav sits on the roof with a tattered book his old teacher lent him."}]},
+    {"img": "scenes/p01_03", "cam": {"from": [0.5, 0.5, 1.0], "to": [0.5, 0.45, 1.15]},
+     "lines": [{"who": "narrator", "text": "He thinks about duty. About what kind of person he wants to become."}], "minSec": 5},
+    {"img": "panels/p08_02", "cam": {"from": [0.45, 0.5, 1.15], "to": [0.42, 0.52, 1.35]},
+     "lines": [{"who": "aarav", "mood": "reflective", "text": "I've been thinking. I don't want to spend my life chasing something I may never get. I want to find meaning in what's in front of me. My family. My craft. This neighbourhood."}]},
+    {"img": "panels/p08_02", "cam": {"from": [0.75, 0.42, 1.35], "to": [0.8, 0.4, 1.45]},
+     "lines": [{"who": "neeraj", "mood": "sceptical", "text": "That sounds like giving up with extra steps."}]},
+    {"img": "panels/p08_02", "cam": {"from": [0.42, 0.55, 1.35], "to": [0.4, 0.58, 1.45]},
+     "lines": [{"who": "aarav", "mood": "firm", "text": "Giving up is when you stop wanting something because it hurts. This is different. I'm choosing what to care about."}]},
+    {"img": "scenes/p01_03", "cam": {"from": [0.5, 0.45, 1.15], "to": [0.5, 0.5, 1.0]},
+     "lines": [{"who": "narrator", "text": "Character planning: the deliberate, reflective cultivation of one's own desires. Aarav is forming a second-order preference — a desire about his desires."}]},
+    {"img": "scenes/p01_11", "cam": {"from": [0.5, 0.5, 1.0], "to": [0.6, 0.5, 1.2]},
+     "lines": [{"who": "narrator", "text": "He does not merely stop wanting engineering; he wants to stop wanting it, and he has reasons he has examined. The difficulty: from the outside, character planning and adaptive preferences look identical."}], "minSec": 4}
+  ]
+}

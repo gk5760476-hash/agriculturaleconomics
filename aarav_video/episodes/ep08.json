@@ -1,0 +1,20 @@
+{
+  "id": "ep08",
+  "title": "Eighteen Months In",
+  "subtitle": "Attribute weights",
+  "shots": [
+    {"card": "EIGHTEEN MONTHS IN", "minSec": 2.5},
+    {"img": "scenes/p01_05", "cam": {"from": [0.5, 0.5, 1.0], "to": [0.45, 0.5, 1.2]},
+     "lines": [{"who": "narrator", "text": "Aarav's father collapses at work. Three weeks in hospital. Medical bills eat through savings. Aarav works double shifts."}]},
+    {"img": "panels/p09_01", "cam": {"from": [0.55, 0.45, 1.15], "to": [0.62, 0.4, 1.35]},
+     "lines": [{"who": "mother", "mood": "sad", "text": "I'm sorry. I know you wanted—"}]},
+    {"img": "panels/p09_01", "cam": {"from": [0.8, 0.42, 1.35], "to": [0.82, 0.4, 1.5]},
+     "lines": [{"who": "aarav", "mood": "tender", "text": "Don't. This is what matters."}], "minSec": 3.5},
+    {"img": "panels/p09_01", "cam": {"from": [0.4, 0.55, 1.3], "to": [0.5, 0.5, 1.0]},
+     "lines": [{"who": "narrator", "text": "Before the hospital, Aarav weighed two things: intellectual challenge and family security. Challenge came first. Now family security dominates everything."}]},
+    {"img": "panels/p05_01", "cam": {"from": [0.5, 0.5, 1.0], "to": [0.35, 0.5, 1.2]},
+     "lines": [{"who": "narrator", "text": "He looks at the same two options but weighs the attributes differently. Elster calls this prior change of attribute weights."}]},
+    {"img": "scenes/p01_12", "cam": {"from": [0.5, 0.5, 1.0], "to": [0.55, 0.5, 1.15]},
+     "lines": [{"who": "narrator", "text": "The question is whether the crisis revealed something genuine about his values — or whether deprivation forced one priority to drown out the others."}], "minSec": 4}
+  ]
+}

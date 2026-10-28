@@ -1,0 +1,1135 @@
+{
+ "id": "ep12",
+ "title": "Thin and Broad Rationality",
+ "subtitle": "Consistency vs formation",
+ "fps": 30,
+ "durationInFrames": 2942,
+ "shots": [
+  {
+   "img": "scenes/p01_10",
+   "cam": {
+    "from": [
+     0.5,
+     0.5,
+     1.0
+    ],
+    "to": [
+     0.5,
+     0.5,
+     1.05
+    ]
+   },
+   "minSec": 3,
+   "aspect": 1.7918,
+   "from": 0,
+   "duration": 90,
+   "lines": []
+  },
+  {
+   "img": "panels/p17_02",
+   "cam": {
+    "from": [
+     0.5,
+     0.5,
+     1.0
+    ],
+    "to": [
+     0.27,
+     0.55,
+     1.7
+    ]
+   },
+   "aspect": 1.7902,
+   "from": 90,
+   "duration": 370,
+   "lines": [
+    {
+     "who": "neeraj",
+     "name": "Neeraj",
+     "color": "#B98BE0",
+     "audio": "audio/ep12/001.fx2.mp3",
+     "from": 105,
+     "duration": 335,
+     "pages": [
+      [
+       {
+        "text": "Aarav",
+        "start": 108,
+        "end": 120
+       },
+       {
+        "text": "says",
+        "start": 120,
+        "end": 134
+       },
+       {
+        "text": "he",
+        "start": 134,
+        "end": 141
+       },
+       {
+        "text": "doesn't",
+        "start": 141,
+        "end": 154
+       },
+       {
+        "text": "want",
+        "start": 154,
+        "end": 166
+       },
+       {
+        "text": "engineering.",
+        "start": 168,
+        "end": 189
+       }
+      ],
+      [
+       {
+        "text": "He",
+        "start": 222,
+        "end": 227
+       },
+       {
+        "text": "acts",
+        "start": 230,
+        "end": 242
+       },
+       {
+        "text": "accordingly",
+        "start": 244,
+        "end": 268
+       },
+       {
+        "text": "\u2014 he",
+        "start": 275,
+        "end": 280
+       },
+       {
+        "text": "works",
+        "start": 281,
+        "end": 295
+       },
+       {
+        "text": "at",
+        "start": 297,
+        "end": 305
+       },
+       {
+        "text": "the",
+        "start": 305,
+        "end": 310
+       },
+       {
+        "text": "shop,",
+        "start": 310,
+        "end": 323
+       }
+      ],
+      [
+       {
+        "text": "he",
+        "start": 333,
+        "end": 339
+       },
+       {
+        "text": "supports",
+        "start": 339,
+        "end": 361
+       },
+       {
+        "text": "his",
+        "start": 361,
+        "end": 370
+       },
+       {
+        "text": "family,",
+        "start": 370,
+        "end": 387
+       },
+       {
+        "text": "he",
+        "start": 396,
+        "end": 401
+       },
+       {
+        "text": "doesn't",
+        "start": 402,
+        "end": 414
+       },
+       {
+        "text": "apply.",
+        "start": 415,
+        "end": 431
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p17_02",
+   "cam": {
+    "from": [
+     0.27,
+     0.55,
+     1.7
+    ],
+    "to": [
+     0.25,
+     0.5,
+     1.8
+    ]
+   },
+   "aspect": 1.7902,
+   "from": 460,
+   "duration": 362,
+   "lines": [
+    {
+     "who": "neeraj",
+     "name": "Neeraj",
+     "color": "#B98BE0",
+     "audio": "audio/ep12/002.fx2.mp3",
+     "from": 475,
+     "duration": 297,
+     "pages": [
+      [
+       {
+        "text": "His",
+        "start": 478,
+        "end": 484
+       },
+       {
+        "text": "beliefs,",
+        "start": 484,
+        "end": 499
+       },
+       {
+        "text": "desires,",
+        "start": 504,
+        "end": 527
+       },
+       {
+        "text": "and",
+        "start": 533,
+        "end": 540
+       },
+       {
+        "text": "actions",
+        "start": 542,
+        "end": 558
+       },
+       {
+        "text": "are",
+        "start": 561,
+        "end": 567
+       },
+       {
+        "text": "perfectly",
+        "start": 567,
+        "end": 587
+       },
+       {
+        "text": "consistent.",
+        "start": 587,
+        "end": 610
+       }
+      ],
+      [
+       {
+        "text": "By",
+        "start": 641,
+        "end": 648
+       },
+       {
+        "text": "the",
+        "start": 648,
+        "end": 651
+       },
+       {
+        "text": "standard",
+        "start": 651,
+        "end": 671
+       },
+       {
+        "text": "of",
+        "start": 671,
+        "end": 677
+       },
+       {
+        "text": "thin",
+        "start": 677,
+        "end": 685
+       },
+       {
+        "text": "rationality,",
+        "start": 685,
+        "end": 711
+       },
+       {
+        "text": "there",
+        "start": 719,
+        "end": 731
+       },
+       {
+        "text": "is",
+        "start": 734,
+        "end": 740
+       },
+       {
+        "text": "nothing",
+        "start": 740,
+        "end": 754
+       },
+       {
+        "text": "wrong.",
+        "start": 754,
+        "end": 764
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p17_02",
+   "cam": {
+    "from": [
+     0.75,
+     0.6,
+     1.7
+    ],
+    "to": [
+     0.72,
+     0.72,
+     1.9
+    ]
+   },
+   "aspect": 1.7902,
+   "from": 822,
+   "duration": 330,
+   "lines": [
+    {
+     "who": "mother",
+     "name": "Mother",
+     "color": "#E07A3F",
+     "audio": "audio/ep12/003.fx2.mp3",
+     "from": 837,
+     "duration": 295,
+     "pages": [
+      [
+       {
+        "text": "But",
+        "start": 840,
+        "end": 847
+       },
+       {
+        "text": "I",
+        "start": 847,
+        "end": 852
+       },
+       {
+        "text": "watched",
+        "start": 852,
+        "end": 868
+       },
+       {
+        "text": "those",
+        "start": 868,
+        "end": 877
+       },
+       {
+        "text": "beliefs",
+        "start": 878,
+        "end": 896
+       },
+       {
+        "text": "form.",
+        "start": 897,
+        "end": 914
+       }
+      ],
+      [
+       {
+        "text": "I",
+        "start": 950,
+        "end": 955
+       },
+       {
+        "text": "watched",
+        "start": 955,
+        "end": 972
+       },
+       {
+        "text": "the",
+        "start": 972,
+        "end": 976
+       },
+       {
+        "text": "notebook",
+        "start": 976,
+        "end": 997
+       },
+       {
+        "text": "close.",
+        "start": 998,
+        "end": 1018
+       }
+      ],
+      [
+       {
+        "text": "I",
+        "start": 1055,
+        "end": 1061
+       },
+       {
+        "text": "watched",
+        "start": 1062,
+        "end": 1078
+       },
+       {
+        "text": "the",
+        "start": 1079,
+        "end": 1085
+       },
+       {
+        "text": "ambition",
+        "start": 1085,
+        "end": 1103
+       },
+       {
+        "text": "shrink.",
+        "start": 1104,
+        "end": 1123
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p17_02",
+   "cam": {
+    "from": [
+     0.72,
+     0.45,
+     1.8
+    ],
+    "to": [
+     0.75,
+     0.45,
+     1.7
+    ]
+   },
+   "aspect": 1.7902,
+   "from": 1152,
+   "duration": 387,
+   "lines": [
+    {
+     "who": "mother",
+     "name": "Mother",
+     "color": "#E07A3F",
+     "audio": "audio/ep12/004.fx2.mp3",
+     "from": 1167,
+     "duration": 322,
+     "pages": [
+      [
+       {
+        "text": "The",
+        "start": 1170,
+        "end": 1174
+       },
+       {
+        "text": "question",
+        "start": 1174,
+        "end": 1194
+       },
+       {
+        "text": "is",
+        "start": 1194,
+        "end": 1200
+       },
+       {
+        "text": "not",
+        "start": 1200,
+        "end": 1210
+       },
+       {
+        "text": "whether",
+        "start": 1210,
+        "end": 1220
+       },
+       {
+        "text": "he",
+        "start": 1221,
+        "end": 1229
+       },
+       {
+        "text": "acts",
+        "start": 1229,
+        "end": 1240
+       },
+       {
+        "text": "on",
+        "start": 1241,
+        "end": 1246
+       },
+       {
+        "text": "what",
+        "start": 1246,
+        "end": 1254
+       },
+       {
+        "text": "he",
+        "start": 1255,
+        "end": 1258
+       },
+       {
+        "text": "wants.",
+        "start": 1259,
+        "end": 1275
+       }
+      ],
+      [
+       {
+        "text": "The",
+        "start": 1308,
+        "end": 1312
+       },
+       {
+        "text": "question",
+        "start": 1313,
+        "end": 1330
+       },
+       {
+        "text": "is",
+        "start": 1331,
+        "end": 1336
+       },
+       {
+        "text": "whether",
+        "start": 1337,
+        "end": 1349
+       },
+       {
+        "text": "what",
+        "start": 1349,
+        "end": 1355
+       },
+       {
+        "text": "he",
+        "start": 1356,
+        "end": 1359
+       },
+       {
+        "text": "wants",
+        "start": 1360,
+        "end": 1372
+       },
+       {
+        "text": "was",
+        "start": 1372,
+        "end": 1377
+       },
+       {
+        "text": "shaped",
+        "start": 1377,
+        "end": 1390
+       },
+       {
+        "text": "by",
+        "start": 1391,
+        "end": 1397
+       },
+       {
+        "text": "conditions",
+        "start": 1397,
+        "end": 1421
+       },
+       {
+        "text": "that",
+        "start": 1421,
+        "end": 1428
+       }
+      ],
+      [
+       {
+        "text": "gave",
+        "start": 1428,
+        "end": 1438
+       },
+       {
+        "text": "him",
+        "start": 1439,
+        "end": 1445
+       },
+       {
+        "text": "no",
+        "start": 1446,
+        "end": 1453
+       },
+       {
+        "text": "real",
+        "start": 1453,
+        "end": 1464
+       },
+       {
+        "text": "choice.",
+        "start": 1464,
+        "end": 1480
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "scenes/p01_10",
+   "cam": {
+    "from": [
+     0.5,
+     0.5,
+     1.05
+    ],
+    "to": [
+     0.5,
+     0.5,
+     1.0
+    ]
+   },
+   "aspect": 1.7918,
+   "from": 1539,
+   "duration": 555,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep12/005.mp3",
+     "from": 1554,
+     "duration": 520,
+     "pages": [
+      [
+       {
+        "text": "Thin",
+        "start": 1557,
+        "end": 1564
+       },
+       {
+        "text": "rationality",
+        "start": 1564,
+        "end": 1588
+       },
+       {
+        "text": "checks",
+        "start": 1589,
+        "end": 1600
+       },
+       {
+        "text": "for",
+        "start": 1600,
+        "end": 1608
+       },
+       {
+        "text": "consistency.",
+        "start": 1608,
+        "end": 1635
+       }
+      ],
+      [
+       {
+        "text": "Broad",
+        "start": 1663,
+        "end": 1673
+       },
+       {
+        "text": "rationality",
+        "start": 1673,
+        "end": 1698
+       },
+       {
+        "text": "checks",
+        "start": 1698,
+        "end": 1709
+       },
+       {
+        "text": "for",
+        "start": 1709,
+        "end": 1717
+       },
+       {
+        "text": "formation.",
+        "start": 1717,
+        "end": 1738
+       }
+      ],
+      [
+       {
+        "text": "A",
+        "start": 1767,
+        "end": 1768
+       },
+       {
+        "text": "person",
+        "start": 1768,
+        "end": 1784
+       },
+       {
+        "text": "can",
+        "start": 1784,
+        "end": 1793
+       },
+       {
+        "text": "pass",
+        "start": 1793,
+        "end": 1804
+       },
+       {
+        "text": "the",
+        "start": 1804,
+        "end": 1808
+       },
+       {
+        "text": "first",
+        "start": 1808,
+        "end": 1821
+       },
+       {
+        "text": "test",
+        "start": 1823,
+        "end": 1834
+       },
+       {
+        "text": "\u2014 their",
+        "start": 1839,
+        "end": 1849
+       },
+       {
+        "text": "actions",
+        "start": 1851,
+        "end": 1868
+       },
+       {
+        "text": "match",
+        "start": 1873,
+        "end": 1886
+       },
+       {
+        "text": "their",
+        "start": 1887,
+        "end": 1896
+       },
+       {
+        "text": "preferences",
+        "start": 1896,
+        "end": 1922
+       }
+      ],
+      [
+       {
+        "text": "\u2014 while",
+        "start": 1932,
+        "end": 1943
+       },
+       {
+        "text": "failing",
+        "start": 1943,
+        "end": 1956
+       },
+       {
+        "text": "the",
+        "start": 1956,
+        "end": 1960
+       },
+       {
+        "text": "second",
+        "start": 1960,
+        "end": 1975
+       },
+       {
+        "text": "\u2014 their",
+        "start": 1980,
+        "end": 1990
+       },
+       {
+        "text": "preferences",
+        "start": 1990,
+        "end": 2013
+       },
+       {
+        "text": "were",
+        "start": 2013,
+        "end": 2022
+       },
+       {
+        "text": "never",
+        "start": 2022,
+        "end": 2035
+       },
+       {
+        "text": "freely",
+        "start": 2035,
+        "end": 2049
+       },
+       {
+        "text": "formed.",
+        "start": 2049,
+        "end": 2065
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "scenes/p01_10",
+   "cam": {
+    "from": [
+     0.27,
+     0.5,
+     1.45
+    ],
+    "to": [
+     0.27,
+     0.5,
+     1.5
+    ]
+   },
+   "minSec": 3,
+   "aspect": 1.7918,
+   "from": 2094,
+   "duration": 93,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep12/006.mp3",
+     "from": 2109,
+     "duration": 58,
+     "pages": [
+      [
+       {
+        "text": "Aarav",
+        "start": 2112,
+        "end": 2121
+       },
+       {
+        "text": "passes",
+        "start": 2121,
+        "end": 2138
+       },
+       {
+        "text": "this",
+        "start": 2138,
+        "end": 2146
+       },
+       {
+        "text": "test.",
+        "start": 2146,
+        "end": 2158
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "scenes/p01_10",
+   "cam": {
+    "from": [
+     0.73,
+     0.5,
+     1.45
+    ],
+    "to": [
+     0.73,
+     0.5,
+     1.5
+    ]
+   },
+   "minSec": 3.5,
+   "aspect": 1.7918,
+   "from": 2187,
+   "duration": 131,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep12/007.mp3",
+     "from": 2202,
+     "duration": 96,
+     "pages": [
+      [
+       {
+        "text": "This",
+        "start": 2205,
+        "end": 2214
+       },
+       {
+        "text": "is",
+        "start": 2216,
+        "end": 2221
+       },
+       {
+        "text": "the",
+        "start": 2222,
+        "end": 2226
+       },
+       {
+        "text": "test",
+        "start": 2226,
+        "end": 2238
+       },
+       {
+        "text": "that",
+        "start": 2240,
+        "end": 2249
+       },
+       {
+        "text": "won't",
+        "start": 2249,
+        "end": 2261
+       },
+       {
+        "text": "let",
+        "start": 2263,
+        "end": 2270
+       },
+       {
+        "text": "us",
+        "start": 2271,
+        "end": 2277
+       },
+       {
+        "text": "rest.",
+        "start": 2277,
+        "end": 2289
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p17_02",
+   "cam": {
+    "from": [
+     0.5,
+     0.5,
+     1.0
+    ],
+    "to": [
+     0.5,
+     0.5,
+     1.08
+    ]
+   },
+   "minSec": 4,
+   "aspect": 1.7902,
+   "from": 2317,
+   "duration": 625,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep12/008.mp3",
+     "from": 2332,
+     "duration": 590,
+     "pages": [
+      [
+       {
+        "text": "Elster's",
+        "start": 2335,
+        "end": 2353
+       },
+       {
+        "text": "nine",
+        "start": 2355,
+        "end": 2367
+       },
+       {
+        "text": "mechanisms",
+        "start": 2367,
+        "end": 2391
+       },
+       {
+        "text": "are",
+        "start": 2394,
+        "end": 2402
+       },
+       {
+        "text": "tools",
+        "start": 2402,
+        "end": 2416
+       },
+       {
+        "text": "of",
+        "start": 2418,
+        "end": 2423
+       },
+       {
+        "text": "broad",
+        "start": 2423,
+        "end": 2434
+       },
+       {
+        "text": "rationality.",
+        "start": 2434,
+        "end": 2459
+       }
+      ],
+      [
+       {
+        "text": "They",
+        "start": 2486,
+        "end": 2491
+       },
+       {
+        "text": "ask:",
+        "start": 2493,
+        "end": 2505
+       },
+       {
+        "text": "was",
+        "start": 2515,
+        "end": 2524
+       },
+       {
+        "text": "this",
+        "start": 2524,
+        "end": 2531
+       },
+       {
+        "text": "preference",
+        "start": 2531,
+        "end": 2548
+       },
+       {
+        "text": "produced",
+        "start": 2548,
+        "end": 2565
+       },
+       {
+        "text": "by",
+        "start": 2565,
+        "end": 2573
+       },
+       {
+        "text": "learning",
+        "start": 2573,
+        "end": 2589
+       },
+       {
+        "text": "and",
+        "start": 2591,
+        "end": 2598
+       },
+       {
+        "text": "reflection,",
+        "start": 2598,
+        "end": 2618
+       }
+      ],
+      [
+       {
+        "text": "or",
+        "start": 2629,
+        "end": 2635
+       },
+       {
+        "text": "by",
+        "start": 2636,
+        "end": 2644
+       },
+       {
+        "text": "deprivation",
+        "start": 2644,
+        "end": 2667
+       },
+       {
+        "text": "and",
+        "start": 2670,
+        "end": 2677
+       },
+       {
+        "text": "constraint?",
+        "start": 2677,
+        "end": 2699
+       }
+      ],
+      [
+       {
+        "text": "Thin",
+        "start": 2729,
+        "end": 2736
+       },
+       {
+        "text": "rationality",
+        "start": 2736,
+        "end": 2760
+       },
+       {
+        "text": "cannot",
+        "start": 2760,
+        "end": 2775
+       },
+       {
+        "text": "tell",
+        "start": 2775,
+        "end": 2783
+       },
+       {
+        "text": "the",
+        "start": 2783,
+        "end": 2787
+       },
+       {
+        "text": "difference.",
+        "start": 2787,
+        "end": 2806
+       }
+      ],
+      [
+       {
+        "text": "Broad",
+        "start": 2833,
+        "end": 2844
+       },
+       {
+        "text": "rationality",
+        "start": 2844,
+        "end": 2868
+       },
+       {
+        "text": "demands",
+        "start": 2868,
+        "end": 2886
+       },
+       {
+        "text": "that",
+        "start": 2887,
+        "end": 2896
+       },
+       {
+        "text": "we",
+        "start": 2896,
+        "end": 2903
+       },
+       {
+        "text": "look.",
+        "start": 2905,
+        "end": 2914
+       }
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

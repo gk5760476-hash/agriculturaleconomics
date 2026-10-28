@@ -1,0 +1,768 @@
+{
+ "id": "ep02",
+ "title": "Six Months In",
+ "subtitle": "Adaptive preferences",
+ "fps": 30,
+ "durationInFrames": 1758,
+ "shots": [
+  {
+   "img": "panels/p02_01",
+   "cam": {
+    "from": [
+     0.5,
+     0.5,
+     1.0
+    ],
+    "to": [
+     0.5,
+     0.6,
+     1.15
+    ]
+   },
+   "minSec": 4,
+   "aspect": 1.7902,
+   "amb": "room",
+   "from": 0,
+   "duration": 142,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep02/001.mp3",
+     "from": 15,
+     "duration": 107,
+     "pages": [
+      [
+       {
+        "text": "Neeraj,",
+        "start": 18,
+        "end": 32
+       },
+       {
+        "text": "his",
+        "start": 39,
+        "end": 46
+       },
+       {
+        "text": "oldest",
+        "start": 48,
+        "end": 62
+       },
+       {
+        "text": "friend,",
+        "start": 62,
+        "end": 76
+       },
+       {
+        "text": "visits",
+        "start": 81,
+        "end": 95
+       },
+       {
+        "text": "the",
+        "start": 95,
+        "end": 100
+       },
+       {
+        "text": "shop.",
+        "start": 100,
+        "end": 114
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p02_02",
+   "cam": {
+    "from": [
+     0.6,
+     0.45,
+     1.05
+    ],
+    "to": [
+     0.8,
+     0.45,
+     1.4
+    ]
+   },
+   "aspect": 1.7902,
+   "clipFreeze": "clips/panels_p02_02_frozen.png",
+   "clip": "clips/panels_p02_02.mp4",
+   "clipLast": "clips/panels_p02_02_last.jpg",
+   "clipDuration": 5.0625,
+   "clipAspect": 1.7333,
+   "amb": "room",
+   "from": 142,
+   "duration": 119,
+   "lines": [
+    {
+     "who": "neeraj",
+     "name": "Neeraj",
+     "color": "#B98BE0",
+     "audio": "audio/ep02/002.fx2.mp3",
+     "from": 157,
+     "duration": 84,
+     "pages": [
+      [
+       {
+        "text": "Still",
+        "start": 160,
+        "end": 169
+       },
+       {
+        "text": "preparing",
+        "start": 169,
+        "end": 187
+       },
+       {
+        "text": "for",
+        "start": 187,
+        "end": 195
+       },
+       {
+        "text": "the",
+        "start": 195,
+        "end": 200
+       },
+       {
+        "text": "entrance",
+        "start": 201,
+        "end": 215
+       },
+       {
+        "text": "exam?",
+        "start": 217,
+        "end": 233
+       }
+      ]
+     ]
+    }
+   ],
+   "clipRate": 0.6935,
+   "clipStart": 0.0
+  },
+  {
+   "img": "panels/p02_02",
+   "cam": {
+    "from": [
+     0.4,
+     0.5,
+     1.4
+    ],
+    "to": [
+     0.42,
+     0.52,
+     1.5
+    ]
+   },
+   "aspect": 1.7902,
+   "clipFreeze": "clips/panels_p02_02_frozen.png",
+   "clip": "clips/panels_p02_02.mp4",
+   "clipLast": "clips/panels_p02_02_last.jpg",
+   "clipDuration": 5.0625,
+   "clipAspect": 1.7333,
+   "amb": "room",
+   "from": 261,
+   "duration": 100,
+   "lines": [
+    {
+     "who": "aarav",
+     "name": "Aarav",
+     "color": "#F2C14E",
+     "audio": "audio/ep02/003.fx2.mp3",
+     "from": 276,
+     "duration": 65,
+     "pages": [
+      [
+       {
+        "text": "No.",
+        "start": 279,
+        "end": 285
+       },
+       {
+        "text": "I've",
+        "start": 312,
+        "end": 319
+       },
+       {
+        "text": "stopped.",
+        "start": 319,
+        "end": 333
+       }
+      ]
+     ]
+    }
+   ],
+   "clipRate": 0.6935,
+   "clipStart": 2.751
+  },
+  {
+   "img": "panels/p03_01",
+   "cam": {
+    "from": [
+     0.72,
+     0.42,
+     1.35
+    ],
+    "to": [
+     0.75,
+     0.4,
+     1.45
+    ]
+   },
+   "aspect": 1.7902,
+   "amb": "room",
+   "from": 362,
+   "duration": 60,
+   "lines": [
+    {
+     "who": "neeraj",
+     "name": "Neeraj",
+     "color": "#B98BE0",
+     "audio": "audio/ep02/004.fx2.mp3",
+     "from": 377,
+     "duration": 20,
+     "pages": [
+      [
+       {
+        "text": "Why?",
+        "start": 380,
+        "end": 389
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p03_01",
+   "cam": {
+    "from": [
+     0.42,
+     0.5,
+     1.3
+    ],
+    "to": [
+     0.4,
+     0.48,
+     1.5
+    ]
+   },
+   "aspect": 1.7902,
+   "amb": "room",
+   "from": 422,
+   "duration": 495,
+   "lines": [
+    {
+     "who": "aarav",
+     "name": "Aarav",
+     "color": "#F2C14E",
+     "audio": "audio/ep02/005.fx2.mp3",
+     "from": 437,
+     "duration": 460,
+     "pages": [
+      [
+       {
+        "text": "What's",
+        "start": 440,
+        "end": 449
+       },
+       {
+        "text": "the",
+        "start": 449,
+        "end": 452
+       },
+       {
+        "text": "point?",
+        "start": 452,
+        "end": 465
+       }
+      ],
+      [
+       {
+        "text": "Engineering",
+        "start": 490,
+        "end": 506
+       },
+       {
+        "text": "costs",
+        "start": 506,
+        "end": 520
+       },
+       {
+        "text": "money.",
+        "start": 520,
+        "end": 531
+       }
+      ],
+      [
+       {
+        "text": "Even",
+        "start": 557,
+        "end": 566
+       },
+       {
+        "text": "if",
+        "start": 568,
+        "end": 575
+       },
+       {
+        "text": "you",
+        "start": 575,
+        "end": 579
+       },
+       {
+        "text": "get",
+        "start": 579,
+        "end": 586
+       },
+       {
+        "text": "through,",
+        "start": 586,
+        "end": 598
+       },
+       {
+        "text": "there's",
+        "start": 605,
+        "end": 617
+       },
+       {
+        "text": "no",
+        "start": 617,
+        "end": 624
+       },
+       {
+        "text": "guarantee",
+        "start": 625,
+        "end": 639
+       },
+       {
+        "text": "of",
+        "start": 640,
+        "end": 646
+       },
+       {
+        "text": "a",
+        "start": 646,
+        "end": 648
+       },
+       {
+        "text": "job.",
+        "start": 648,
+        "end": 660
+       }
+      ],
+      [
+       {
+        "text": "Here",
+        "start": 685,
+        "end": 693
+       },
+       {
+        "text": "I'm",
+        "start": 695,
+        "end": 704
+       },
+       {
+        "text": "learning",
+        "start": 704,
+        "end": 718
+       },
+       {
+        "text": "something",
+        "start": 718,
+        "end": 732
+       },
+       {
+        "text": "real.",
+        "start": 732,
+        "end": 744
+       }
+      ],
+      [
+       {
+        "text": "I",
+        "start": 768,
+        "end": 772
+       },
+       {
+        "text": "earn.",
+        "start": 775,
+        "end": 786
+       },
+       {
+        "text": "I",
+        "start": 811,
+        "end": 815
+       },
+       {
+        "text": "help",
+        "start": 815,
+        "end": 826
+       },
+       {
+        "text": "at",
+        "start": 827,
+        "end": 834
+       },
+       {
+        "text": "home.",
+        "start": 834,
+        "end": 846
+       },
+       {
+        "text": "It's",
+        "start": 869,
+        "end": 875
+       },
+       {
+        "text": "better.",
+        "start": 875,
+        "end": 888
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "scenes/p01_12",
+   "cam": {
+    "from": [
+     0.5,
+     0.5,
+     1.0
+    ],
+    "to": [
+     0.55,
+     0.5,
+     1.2
+    ]
+   },
+   "aspect": 1.7886,
+   "amb": "room",
+   "from": 916,
+   "duration": 406,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep02/006.mp3",
+     "from": 931,
+     "duration": 371,
+     "pages": [
+      [
+       {
+        "text": "A",
+        "start": 934,
+        "end": 936
+       },
+       {
+        "text": "fox",
+        "start": 936,
+        "end": 950
+       },
+       {
+        "text": "reaches",
+        "start": 952,
+        "end": 967
+       },
+       {
+        "text": "for",
+        "start": 967,
+        "end": 975
+       },
+       {
+        "text": "grapes,",
+        "start": 975,
+        "end": 991
+       },
+       {
+        "text": "fails,",
+        "start": 996,
+        "end": 1012
+       },
+       {
+        "text": "and",
+        "start": 1021,
+        "end": 1026
+       },
+       {
+        "text": "decides",
+        "start": 1026,
+        "end": 1044
+       },
+       {
+        "text": "they",
+        "start": 1044,
+        "end": 1050
+       },
+       {
+        "text": "must",
+        "start": 1050,
+        "end": 1061
+       },
+       {
+        "text": "be",
+        "start": 1061,
+        "end": 1068
+       },
+       {
+        "text": "sour.",
+        "start": 1068,
+        "end": 1079
+       }
+      ],
+      [
+       {
+        "text": "Aarav",
+        "start": 1108,
+        "end": 1118
+       },
+       {
+        "text": "reaches",
+        "start": 1118,
+        "end": 1133
+       },
+       {
+        "text": "for",
+        "start": 1133,
+        "end": 1140
+       },
+       {
+        "text": "engineering,",
+        "start": 1142,
+        "end": 1162
+       },
+       {
+        "text": "cannot",
+        "start": 1171,
+        "end": 1182
+       },
+       {
+        "text": "afford",
+        "start": 1182,
+        "end": 1195
+       },
+       {
+        "text": "it,",
+        "start": 1195,
+        "end": 1203
+       }
+      ],
+      [
+       {
+        "text": "and",
+        "start": 1212,
+        "end": 1218
+       },
+       {
+        "text": "decides",
+        "start": 1218,
+        "end": 1237
+       },
+       {
+        "text": "it",
+        "start": 1239,
+        "end": 1244
+       },
+       {
+        "text": "must",
+        "start": 1244,
+        "end": 1255
+       },
+       {
+        "text": "not",
+        "start": 1257,
+        "end": 1267
+       },
+       {
+        "text": "be",
+        "start": 1267,
+        "end": 1274
+       },
+       {
+        "text": "worth",
+        "start": 1274,
+        "end": 1284
+       },
+       {
+        "text": "it.",
+        "start": 1286,
+        "end": 1294
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "scenes/p01_09",
+   "cam": {
+    "from": [
+     0.5,
+     0.5,
+     1.0
+    ],
+    "to": [
+     0.45,
+     0.5,
+     1.2
+    ]
+   },
+   "minSec": 4,
+   "aspect": 1.7886,
+   "amb": "room",
+   "from": 1322,
+   "duration": 436,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep02/007.mp3",
+     "from": 1337,
+     "duration": 401,
+     "pages": [
+      [
+       {
+        "text": "Jon",
+        "start": 1341,
+        "end": 1351
+       },
+       {
+        "text": "Elster",
+        "start": 1354,
+        "end": 1368
+       },
+       {
+        "text": "calls",
+        "start": 1368,
+        "end": 1380
+       },
+       {
+        "text": "this",
+        "start": 1380,
+        "end": 1388
+       },
+       {
+        "text": "adaptive",
+        "start": 1390,
+        "end": 1408
+       },
+       {
+        "text": "preference",
+        "start": 1408,
+        "end": 1425
+       },
+       {
+        "text": "formation",
+        "start": 1426,
+        "end": 1447
+       },
+       {
+        "text": "\u2014 the",
+        "start": 1458,
+        "end": 1462
+       },
+       {
+        "text": "central",
+        "start": 1462,
+        "end": 1478
+       },
+       {
+        "text": "mechanism",
+        "start": 1478,
+        "end": 1498
+       },
+       {
+        "text": "in",
+        "start": 1500,
+        "end": 1506
+       },
+       {
+        "text": "Sour",
+        "start": 1506,
+        "end": 1516
+       }
+      ],
+      [
+       {
+        "text": "Grapes.",
+        "start": 1517,
+        "end": 1532
+       },
+       {
+        "text": "The",
+        "start": 1561,
+        "end": 1564
+       },
+       {
+        "text": "frustration",
+        "start": 1564,
+        "end": 1589
+       },
+       {
+        "text": "of",
+        "start": 1592,
+        "end": 1598
+       },
+       {
+        "text": "wanting",
+        "start": 1598,
+        "end": 1615
+       },
+       {
+        "text": "something",
+        "start": 1615,
+        "end": 1631
+       },
+       {
+        "text": "inaccessible",
+        "start": 1633,
+        "end": 1660
+       },
+       {
+        "text": "is",
+        "start": 1664,
+        "end": 1670
+       },
+       {
+        "text": "resolved",
+        "start": 1671,
+        "end": 1687
+       },
+       {
+        "text": "by",
+        "start": 1688,
+        "end": 1696
+       },
+       {
+        "text": "wanting",
+        "start": 1696,
+        "end": 1711
+       },
+       {
+        "text": "it",
+        "start": 1711,
+        "end": 1716
+       },
+       {
+        "text": "less.",
+        "start": 1716,
+        "end": 1730
+       }
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

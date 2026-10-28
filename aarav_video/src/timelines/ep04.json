@@ -1,0 +1,894 @@
+{
+ "id": "ep04",
+ "title": "Nine Months In",
+ "subtitle": "Learning",
+ "fps": 30,
+ "durationInFrames": 2104,
+ "shots": [
+  {
+   "img": "panels/p04_02",
+   "cam": {
+    "from": [
+     0.5,
+     0.5,
+     1.0
+    ],
+    "to": [
+     0.4,
+     0.6,
+     1.2
+    ]
+   },
+   "aspect": 1.7902,
+   "amb": "room",
+   "from": 0,
+   "duration": 309,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep04/001.mp3",
+     "from": 15,
+     "duration": 274,
+     "pages": [
+      [
+       {
+        "text": "Aarav's",
+        "start": 18,
+        "end": 31
+       },
+       {
+        "text": "uncle",
+        "start": 33,
+        "end": 46
+       },
+       {
+        "text": "arranges",
+        "start": 48,
+        "end": 66
+       },
+       {
+        "text": "a",
+        "start": 68,
+        "end": 71
+       },
+       {
+        "text": "two-month",
+        "start": 71,
+        "end": 84
+       },
+       {
+        "text": "placement",
+        "start": 85,
+        "end": 103
+       },
+       {
+        "text": "at",
+        "start": 109,
+        "end": 115
+       },
+       {
+        "text": "a",
+        "start": 115,
+        "end": 117
+       },
+       {
+        "text": "small",
+        "start": 117,
+        "end": 130
+       },
+       {
+        "text": "manufacturing",
+        "start": 130,
+        "end": 157
+       },
+       {
+        "text": "unit",
+        "start": 157,
+        "end": 168
+       },
+       {
+        "text": "in",
+        "start": 170,
+        "end": 174
+       }
+      ],
+      [
+       {
+        "text": "the",
+        "start": 174,
+        "end": 178
+       },
+       {
+        "text": "city.",
+        "start": 178,
+        "end": 191
+       },
+       {
+        "text": "Aarav",
+        "start": 219,
+        "end": 229
+       },
+       {
+        "text": "assists",
+        "start": 231,
+        "end": 249
+       },
+       {
+        "text": "the",
+        "start": 249,
+        "end": 256
+       },
+       {
+        "text": "engineers.",
+        "start": 256,
+        "end": 280
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p05_01",
+   "cam": {
+    "from": [
+     0.3,
+     0.45,
+     1.25
+    ],
+    "to": [
+     0.6,
+     0.5,
+     1.05
+    ]
+   },
+   "aspect": 1.7902,
+   "amb": "room",
+   "from": 309,
+   "duration": 339,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep04/002.mp3",
+     "from": 324,
+     "duration": 304,
+     "pages": [
+      [
+       {
+        "text": "He",
+        "start": 327,
+        "end": 331
+       },
+       {
+        "text": "watches",
+        "start": 332,
+        "end": 347
+       },
+       {
+        "text": "their",
+        "start": 347,
+        "end": 358
+       },
+       {
+        "text": "daily",
+        "start": 358,
+        "end": 370
+       },
+       {
+        "text": "work",
+        "start": 370,
+        "end": 382
+       },
+       {
+        "text": "\u2014 the",
+        "start": 388,
+        "end": 392
+       },
+       {
+        "text": "paperwork,",
+        "start": 392,
+        "end": 415
+       }
+      ],
+      [
+       {
+        "text": "the",
+        "start": 426,
+        "end": 430
+       },
+       {
+        "text": "office",
+        "start": 431,
+        "end": 443
+       },
+       {
+        "text": "politics,",
+        "start": 443,
+        "end": 462
+       },
+       {
+        "text": "the",
+        "start": 473,
+        "end": 476
+       },
+       {
+        "text": "distance",
+        "start": 477,
+        "end": 493
+       },
+       {
+        "text": "between",
+        "start": 493,
+        "end": 508
+       },
+       {
+        "text": "elegant",
+        "start": 510,
+        "end": 524
+       },
+       {
+        "text": "mathematics",
+        "start": 524,
+        "end": 549
+       },
+       {
+        "text": "and",
+        "start": 553,
+        "end": 559
+       },
+       {
+        "text": "the",
+        "start": 559,
+        "end": 564
+       },
+       {
+        "text": "mundane",
+        "start": 564,
+        "end": 578
+       },
+       {
+        "text": "reality",
+        "start": 578,
+        "end": 596
+       }
+      ],
+      [
+       {
+        "text": "of",
+        "start": 597,
+        "end": 602
+       },
+       {
+        "text": "the",
+        "start": 602,
+        "end": 606
+       },
+       {
+        "text": "job.",
+        "start": 606,
+        "end": 619
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "scenes/p01_04",
+   "cam": {
+    "from": [
+     0.5,
+     0.5,
+     1.1
+    ],
+    "to": [
+     0.5,
+     0.5,
+     1.0
+    ]
+   },
+   "minSec": 3,
+   "aspect": 1.7918,
+   "amb": "room",
+   "from": 647,
+   "duration": 90,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep04/003.mp3",
+     "from": 662,
+     "duration": 40,
+     "pages": [
+      [
+       {
+        "text": "He",
+        "start": 666,
+        "end": 669
+       },
+       {
+        "text": "comes",
+        "start": 670,
+        "end": 682
+       },
+       {
+        "text": "back.",
+        "start": 682,
+        "end": 693
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p05_02",
+   "cam": {
+    "from": [
+     0.6,
+     0.45,
+     1.15
+    ],
+    "to": [
+     0.68,
+     0.42,
+     1.35
+    ]
+   },
+   "aspect": 1.7902,
+   "amb": "room",
+   "from": 737,
+   "duration": 82,
+   "lines": [
+    {
+     "who": "mother",
+     "name": "Mother",
+     "color": "#E07A3F",
+     "audio": "audio/ep04/004.fx2.mp3",
+     "from": 752,
+     "duration": 47,
+     "pages": [
+      [
+       {
+        "text": "How",
+        "start": 756,
+        "end": 764
+       },
+       {
+        "text": "was",
+        "start": 764,
+        "end": 770
+       },
+       {
+        "text": "the",
+        "start": 771,
+        "end": 774
+       },
+       {
+        "text": "city?",
+        "start": 774,
+        "end": 791
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p05_02",
+   "cam": {
+    "from": [
+     0.42,
+     0.55,
+     1.35
+    ],
+    "to": [
+     0.4,
+     0.55,
+     1.45
+    ]
+   },
+   "aspect": 1.7902,
+   "amb": "room",
+   "from": 820,
+   "duration": 424,
+   "lines": [
+    {
+     "who": "aarav",
+     "name": "Aarav",
+     "color": "#F2C14E",
+     "audio": "audio/ep04/005.fx2.mp3",
+     "from": 835,
+     "duration": 389,
+     "pages": [
+      [
+       {
+        "text": "Different",
+        "start": 838,
+        "end": 852
+       },
+       {
+        "text": "from",
+        "start": 852,
+        "end": 864
+       },
+       {
+        "text": "what",
+        "start": 864,
+        "end": 872
+       },
+       {
+        "text": "I",
+        "start": 874,
+        "end": 880
+       },
+       {
+        "text": "imagined.",
+        "start": 882,
+        "end": 902
+       }
+      ],
+      [
+       {
+        "text": "The",
+        "start": 931,
+        "end": 937
+       },
+       {
+        "text": "engineers",
+        "start": 939,
+        "end": 963
+       },
+       {
+        "text": "sit",
+        "start": 965,
+        "end": 974
+       },
+       {
+        "text": "at",
+        "start": 976,
+        "end": 984
+       },
+       {
+        "text": "computers",
+        "start": 984,
+        "end": 1008
+       },
+       {
+        "text": "filling",
+        "start": 1008,
+        "end": 1019
+       },
+       {
+        "text": "forms.",
+        "start": 1019,
+        "end": 1036
+       }
+      ],
+      [
+       {
+        "text": "I",
+        "start": 1064,
+        "end": 1069
+       },
+       {
+        "text": "fixed",
+        "start": 1069,
+        "end": 1081
+       },
+       {
+        "text": "more",
+        "start": 1083,
+        "end": 1093
+       },
+       {
+        "text": "things",
+        "start": 1093,
+        "end": 1108
+       },
+       {
+        "text": "in",
+        "start": 1111,
+        "end": 1115
+       },
+       {
+        "text": "one",
+        "start": 1115,
+        "end": 1125
+       },
+       {
+        "text": "week",
+        "start": 1125,
+        "end": 1137
+       },
+       {
+        "text": "at",
+        "start": 1139,
+        "end": 1146
+       },
+       {
+        "text": "the",
+        "start": 1146,
+        "end": 1151
+       },
+       {
+        "text": "shop",
+        "start": 1151,
+        "end": 1163
+       },
+       {
+        "text": "than",
+        "start": 1164,
+        "end": 1174
+       },
+       {
+        "text": "they",
+        "start": 1174,
+        "end": 1180
+       }
+      ],
+      [
+       {
+        "text": "fix",
+        "start": 1180,
+        "end": 1193
+       },
+       {
+        "text": "in",
+        "start": 1195,
+        "end": 1200
+       },
+       {
+        "text": "a",
+        "start": 1200,
+        "end": 1202
+       },
+       {
+        "text": "month.",
+        "start": 1202,
+        "end": 1215
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "scenes/p01_04",
+   "cam": {
+    "from": [
+     0.5,
+     0.5,
+     1.0
+    ],
+    "to": [
+     0.6,
+     0.55,
+     1.2
+    ]
+   },
+   "aspect": 1.7918,
+   "amb": "room",
+   "from": 1244,
+   "duration": 362,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep04/006.mp3",
+     "from": 1259,
+     "duration": 327,
+     "pages": [
+      [
+       {
+        "text": "This",
+        "start": 1262,
+        "end": 1270
+       },
+       {
+        "text": "is",
+        "start": 1272,
+        "end": 1278
+       },
+       {
+        "text": "what",
+        "start": 1278,
+        "end": 1288
+       },
+       {
+        "text": "Elster,",
+        "start": 1290,
+        "end": 1306
+       },
+       {
+        "text": "drawing",
+        "start": 1317,
+        "end": 1332
+       },
+       {
+        "text": "on",
+        "start": 1333,
+        "end": 1341
+       },
+       {
+        "text": "Amartya",
+        "start": 1341,
+        "end": 1356
+       },
+       {
+        "text": "Sen,",
+        "start": 1356,
+        "end": 1368
+       }
+      ],
+      [
+       {
+        "text": "calls",
+        "start": 1382,
+        "end": 1393
+       },
+       {
+        "text": "preference",
+        "start": 1394,
+        "end": 1411
+       },
+       {
+        "text": "change",
+        "start": 1411,
+        "end": 1425
+       },
+       {
+        "text": "through",
+        "start": 1426,
+        "end": 1435
+       },
+       {
+        "text": "learning.",
+        "start": 1435,
+        "end": 1452
+       }
+      ],
+      [
+       {
+        "text": "Aarav",
+        "start": 1480,
+        "end": 1490
+       },
+       {
+        "text": "has",
+        "start": 1490,
+        "end": 1500
+       },
+       {
+        "text": "now",
+        "start": 1500,
+        "end": 1510
+       },
+       {
+        "text": "experienced",
+        "start": 1511,
+        "end": 1535
+       },
+       {
+        "text": "both",
+        "start": 1537,
+        "end": 1547
+       },
+       {
+        "text": "alternatives.",
+        "start": 1550,
+        "end": 1577
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "scenes/p01_08",
+   "cam": {
+    "from": [
+     0.5,
+     0.5,
+     1.0
+    ],
+    "to": [
+     0.55,
+     0.55,
+     1.15
+    ]
+   },
+   "minSec": 4,
+   "aspect": 1.7886,
+   "amb": "room",
+   "from": 1605,
+   "duration": 498,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep04/007.mp3",
+     "from": 1620,
+     "duration": 463,
+     "pages": [
+      [
+       {
+        "text": "His",
+        "start": 1624,
+        "end": 1630
+       },
+       {
+        "text": "preference",
+        "start": 1630,
+        "end": 1647
+       },
+       {
+        "text": "for",
+        "start": 1647,
+        "end": 1655
+       },
+       {
+        "text": "repair",
+        "start": 1655,
+        "end": 1669
+       },
+       {
+        "text": "work",
+        "start": 1669,
+        "end": 1682
+       },
+       {
+        "text": "is",
+        "start": 1685,
+        "end": 1691
+       },
+       {
+        "text": "no",
+        "start": 1691,
+        "end": 1699
+       },
+       {
+        "text": "longer",
+        "start": 1699,
+        "end": 1712
+       },
+       {
+        "text": "based",
+        "start": 1712,
+        "end": 1724
+       },
+       {
+        "text": "on",
+        "start": 1727,
+        "end": 1733
+       },
+       {
+        "text": "imagination",
+        "start": 1735,
+        "end": 1762
+       },
+       {
+        "text": "\u2014 it",
+        "start": 1770,
+        "end": 1775
+       }
+      ],
+      [
+       {
+        "text": "is",
+        "start": 1775,
+        "end": 1780
+       },
+       {
+        "text": "based",
+        "start": 1780,
+        "end": 1792
+       },
+       {
+        "text": "on",
+        "start": 1795,
+        "end": 1802
+       },
+       {
+        "text": "evidence.",
+        "start": 1804,
+        "end": 1821
+       }
+      ],
+      [
+       {
+        "text": "Learning",
+        "start": 1849,
+        "end": 1865
+       },
+       {
+        "text": "requires",
+        "start": 1865,
+        "end": 1885
+       },
+       {
+        "text": "exposure.",
+        "start": 1887,
+        "end": 1908
+       }
+      ],
+      [
+       {
+        "text": "Without",
+        "start": 1937,
+        "end": 1951
+       },
+       {
+        "text": "it,",
+        "start": 1951,
+        "end": 1958
+       },
+       {
+        "text": "a",
+        "start": 1966,
+        "end": 1968
+       },
+       {
+        "text": "preference",
+        "start": 1968,
+        "end": 1986
+       },
+       {
+        "text": "may",
+        "start": 1986,
+        "end": 1993
+       },
+       {
+        "text": "rest",
+        "start": 1993,
+        "end": 2003
+       },
+       {
+        "text": "on",
+        "start": 2005,
+        "end": 2013
+       },
+       {
+        "text": "ignorance",
+        "start": 2015,
+        "end": 2035
+       },
+       {
+        "text": "of",
+        "start": 2038,
+        "end": 2044
+       },
+       {
+        "text": "what",
+        "start": 2044,
+        "end": 2054
+       },
+       {
+        "text": "was",
+        "start": 2054,
+        "end": 2064
+       },
+       {
+        "text": "missed.",
+        "start": 2064,
+        "end": 2075
+       }
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

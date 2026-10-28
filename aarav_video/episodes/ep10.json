@@ -1,0 +1,29 @@
+{
+  "id": "ep10",
+  "title": "Two Years In",
+  "subtitle": "Rationalization and state-dependence",
+  "shots": [
+    {"img": "panels/p10_02", "cam": {"from": [0.5, 0.5, 1.0], "to": [0.5, 0.65, 1.2]},
+     "lines": [{"who": "narrator", "text": "The family is stable again. Aarav has settled into routine. Neeraj shows him a newspaper article: engineering graduates in their state have an 82% employment rate."}]},
+    {"img": "panels/p11_01", "cam": {"from": [0.4, 0.45, 1.2], "to": [0.38, 0.45, 1.4]},
+     "lines": [{"who": "aarav", "mood": "sceptical", "text": "That can't be right. Everyone knows engineers are unemployed."}]},
+    {"img": "panels/p11_01", "cam": {"from": [0.72, 0.4, 1.35], "to": [0.75, 0.38, 1.45]},
+     "lines": [{"who": "neeraj", "mood": "insistent", "text": "It says 82%. Look."}]},
+    {"img": "panels/p11_01", "cam": {"from": [0.4, 0.55, 1.4], "to": [0.38, 0.58, 1.5]},
+     "lines": [{"who": "aarav", "mood": "defensive", "text": "Newspapers print what they want."}]},
+    {"img": "panels/p11_01", "cam": {"from": [0.5, 0.7, 1.5], "to": [0.5, 0.72, 1.8]},
+     "lines": [{"who": "narrator", "text": "Rationalization. Aarav has not changed what he wants — he has changed what he believes about the facts."}]},
+    {"img": "scenes/p01_06", "cam": {"from": [0.5, 0.5, 1.0], "to": [0.5, 0.55, 1.15]},
+     "lines": [{"who": "narrator", "text": "His desire for a good career is intact. But his map of reality has been quietly redrawn to make the detour feel like the main road."}]},
+    {"img": "panels/p11_02", "cam": {"from": [0.68, 0.42, 1.25], "to": [0.75, 0.38, 1.4]},
+     "lines": [{"who": "neeraj", "mood": "curious", "text": "And if money weren't a problem? If someone paid for everything?"}]},
+    {"img": "panels/p11_02", "cam": {"from": [0.4, 0.5, 1.35], "to": [0.38, 0.55, 1.5]},
+     "lines": [{"who": "aarav", "mood": "reflective", "text": "Maybe.", "pause": 0.6}, {"who": "aarav", "mood": "curt", "text": "But money is a problem. So why think about it?"}], "minSec": 4},
+    {"img": "panels/p11_02", "cam": {"from": [0.5, 0.5, 1.2], "to": [0.5, 0.5, 1.0]},
+     "lines": [{"who": "narrator", "text": "And this is state-dependent preference. In his current condition — financial pressure, family obligation — Aarav's desires are chained to what is urgent."}]},
+    {"img": "panels/p12_01", "cam": {"from": [0.38, 0.5, 1.25], "to": [0.35, 0.5, 1.35]},
+     "lines": [{"who": "narrator", "text": "If the condition changed, the preference might change too. When a state persists long enough, the chain becomes invisible."}]},
+    {"img": "scenes/p01_15", "cam": {"from": [0.5, 0.5, 1.0], "to": [0.5, 0.55, 1.15]},
+     "lines": [{"who": "narrator", "text": "Nine moments. Nine forces that moved a want. Some preserved Aarav's autonomy. Some eroded it. Some are ambiguous. And all nine produced the same outward result: a man who says he is fine."}], "minSec": 5}
+  ]
+}

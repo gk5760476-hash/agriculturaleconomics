@@ -1,0 +1,730 @@
+{
+ "id": "ep05",
+ "title": "One Year In",
+ "subtitle": "Precommitment",
+ "fps": 30,
+ "durationInFrames": 1745,
+ "shots": [
+  {
+   "img": "panels/p06_01",
+   "cam": {
+    "from": [
+     0.5,
+     0.5,
+     1.0
+    ],
+    "to": [
+     0.45,
+     0.6,
+     1.2
+    ]
+   },
+   "aspect": 1.7902,
+   "amb": "room",
+   "from": 0,
+   "duration": 322,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep05/001.mp3",
+     "from": 15,
+     "duration": 287,
+     "pages": [
+      [
+       {
+        "text": "One",
+        "start": 18,
+        "end": 27
+       },
+       {
+        "text": "evening,",
+        "start": 30,
+        "end": 46
+       },
+       {
+        "text": "Aarav",
+        "start": 55,
+        "end": 65
+       },
+       {
+        "text": "hears",
+        "start": 65,
+        "end": 80
+       },
+       {
+        "text": "a",
+        "start": 82,
+        "end": 84
+       },
+       {
+        "text": "rumour",
+        "start": 84,
+        "end": 98
+       },
+       {
+        "text": "that",
+        "start": 98,
+        "end": 107
+       },
+       {
+        "text": "a",
+        "start": 109,
+        "end": 111
+       },
+       {
+        "text": "local",
+        "start": 111,
+        "end": 125
+       },
+       {
+        "text": "trust",
+        "start": 125,
+        "end": 137
+       },
+       {
+        "text": "may",
+        "start": 137,
+        "end": 145
+       },
+       {
+        "text": "offer",
+        "start": 148,
+        "end": 159
+       }
+      ],
+      [
+       {
+        "text": "scholarships",
+        "start": 159,
+        "end": 181
+       },
+       {
+        "text": "soon.",
+        "start": 182,
+        "end": 196
+       },
+       {
+        "text": "The",
+        "start": 224,
+        "end": 228
+       },
+       {
+        "text": "old",
+        "start": 232,
+        "end": 241
+       },
+       {
+        "text": "pull",
+        "start": 241,
+        "end": 250
+       },
+       {
+        "text": "returns",
+        "start": 250,
+        "end": 270
+       },
+       {
+        "text": "\u2014 a",
+        "start": 274,
+        "end": 277
+       },
+       {
+        "text": "flicker.",
+        "start": 277,
+        "end": 293
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p06_01",
+   "cam": {
+    "from": [
+     0.45,
+     0.6,
+     1.2
+    ],
+    "to": [
+     0.42,
+     0.55,
+     1.45
+    ]
+   },
+   "aspect": 1.7902,
+   "amb": "room",
+   "from": 322,
+   "duration": 230,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep05/002.mp3",
+     "from": 337,
+     "duration": 195,
+     "pages": [
+      [
+       {
+        "text": "But",
+        "start": 340,
+        "end": 347
+       },
+       {
+        "text": "he",
+        "start": 347,
+        "end": 353
+       },
+       {
+        "text": "knows",
+        "start": 353,
+        "end": 365
+       },
+       {
+        "text": "that",
+        "start": 365,
+        "end": 374
+       },
+       {
+        "text": "if",
+        "start": 375,
+        "end": 380
+       },
+       {
+        "text": "he",
+        "start": 380,
+        "end": 385
+       },
+       {
+        "text": "starts",
+        "start": 385,
+        "end": 401
+       },
+       {
+        "text": "hoping",
+        "start": 401,
+        "end": 414
+       },
+       {
+        "text": "again",
+        "start": 415,
+        "end": 427
+       },
+       {
+        "text": "and",
+        "start": 430,
+        "end": 438
+       },
+       {
+        "text": "fails,",
+        "start": 438,
+        "end": 453
+       }
+      ],
+      [
+       {
+        "text": "the",
+        "start": 463,
+        "end": 466
+       },
+       {
+        "text": "disappointment",
+        "start": 467,
+        "end": 493
+       },
+       {
+        "text": "will",
+        "start": 494,
+        "end": 503
+       },
+       {
+        "text": "break",
+        "start": 503,
+        "end": 513
+       },
+       {
+        "text": "him.",
+        "start": 513,
+        "end": 524
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p06_02",
+   "cam": {
+    "from": [
+     0.5,
+     0.5,
+     1.1
+    ],
+    "to": [
+     0.45,
+     0.55,
+     1.4
+    ]
+   },
+   "aspect": 1.7902,
+   "amb": "room",
+   "from": 552,
+   "duration": 444,
+   "lines": [
+    {
+     "who": "aarav",
+     "name": "Aarav",
+     "color": "#F2C14E",
+     "audio": "audio/ep05/003.fx2.mp3",
+     "from": 567,
+     "duration": 409,
+     "pages": [
+      [
+       {
+        "text": "If",
+        "start": 570,
+        "end": 575
+       },
+       {
+        "text": "anyone",
+        "start": 578,
+        "end": 594
+       },
+       {
+        "text": "brings",
+        "start": 594,
+        "end": 607
+       },
+       {
+        "text": "me",
+        "start": 607,
+        "end": 614
+       },
+       {
+        "text": "a",
+        "start": 614,
+        "end": 616
+       },
+       {
+        "text": "scholarship",
+        "start": 616,
+        "end": 637
+       },
+       {
+        "text": "form",
+        "start": 637,
+        "end": 653
+       },
+       {
+        "text": "in",
+        "start": 655,
+        "end": 658
+       },
+       {
+        "text": "the",
+        "start": 658,
+        "end": 662
+       },
+       {
+        "text": "next",
+        "start": 662,
+        "end": 673
+       },
+       {
+        "text": "three",
+        "start": 676,
+        "end": 685
+       },
+       {
+        "text": "months,",
+        "start": 686,
+        "end": 701
+       }
+      ],
+      [
+       {
+        "text": "hide",
+        "start": 707,
+        "end": 717
+       },
+       {
+        "text": "it.",
+        "start": 717,
+        "end": 725
+       },
+       {
+        "text": "I",
+        "start": 753,
+        "end": 759
+       },
+       {
+        "text": "need",
+        "start": 759,
+        "end": 770
+       },
+       {
+        "text": "to",
+        "start": 772,
+        "end": 776
+       },
+       {
+        "text": "finish",
+        "start": 776,
+        "end": 789
+       },
+       {
+        "text": "the",
+        "start": 789,
+        "end": 794
+       },
+       {
+        "text": "busy",
+        "start": 794,
+        "end": 807
+       },
+       {
+        "text": "season",
+        "start": 807,
+        "end": 821
+       },
+       {
+        "text": "first.",
+        "start": 821,
+        "end": 836
+       }
+      ],
+      [
+       {
+        "text": "I'll",
+        "start": 864,
+        "end": 872
+       },
+       {
+        "text": "decide",
+        "start": 872,
+        "end": 888
+       },
+       {
+        "text": "in",
+        "start": 891,
+        "end": 897
+       },
+       {
+        "text": "January.",
+        "start": 897,
+        "end": 915
+       },
+       {
+        "text": "Not",
+        "start": 944,
+        "end": 952
+       },
+       {
+        "text": "before.",
+        "start": 952,
+        "end": 968
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p06_02",
+   "cam": {
+    "from": [
+     0.72,
+     0.6,
+     1.5
+    ],
+    "to": [
+     0.75,
+     0.62,
+     1.7
+    ]
+   },
+   "aspect": 1.7902,
+   "amb": "room",
+   "from": 996,
+   "duration": 334,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep05/004.mp3",
+     "from": 1011,
+     "duration": 299,
+     "pages": [
+      [
+       {
+        "text": "Precommitment:",
+        "start": 1015,
+        "end": 1037
+       },
+       {
+        "text": "deliberately",
+        "start": 1041,
+        "end": 1064
+       },
+       {
+        "text": "restricting",
+        "start": 1064,
+        "end": 1083
+       },
+       {
+        "text": "your",
+        "start": 1083,
+        "end": 1092
+       },
+       {
+        "text": "own",
+        "start": 1096,
+        "end": 1104
+       },
+       {
+        "text": "future",
+        "start": 1104,
+        "end": 1120
+       },
+       {
+        "text": "choices",
+        "start": 1120,
+        "end": 1135
+       },
+       {
+        "text": "to",
+        "start": 1136,
+        "end": 1139
+       },
+       {
+        "text": "protect",
+        "start": 1139,
+        "end": 1154
+       },
+       {
+        "text": "a",
+        "start": 1157,
+        "end": 1159
+       },
+       {
+        "text": "clearer",
+        "start": 1159,
+        "end": 1175
+       },
+       {
+        "text": "decision",
+        "start": 1175,
+        "end": 1191
+       }
+      ],
+      [
+       {
+        "text": "later.",
+        "start": 1191,
+        "end": 1205
+       },
+       {
+        "text": "Odysseus",
+        "start": 1233,
+        "end": 1251
+       },
+       {
+        "text": "binds",
+        "start": 1251,
+        "end": 1265
+       },
+       {
+        "text": "himself",
+        "start": 1265,
+        "end": 1283
+       },
+       {
+        "text": "to",
+        "start": 1283,
+        "end": 1286
+       },
+       {
+        "text": "the",
+        "start": 1286,
+        "end": 1290
+       },
+       {
+        "text": "mast.",
+        "start": 1290,
+        "end": 1302
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "scenes/p01_02",
+   "cam": {
+    "from": [
+     0.5,
+     0.5,
+     1.0
+    ],
+    "to": [
+     0.45,
+     0.6,
+     1.15
+    ]
+   },
+   "minSec": 4,
+   "aspect": 1.7886,
+   "amb": "room",
+   "from": 1331,
+   "duration": 415,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep05/005.mp3",
+     "from": 1346,
+     "duration": 380,
+     "pages": [
+      [
+       {
+        "text": "Aarav",
+        "start": 1349,
+        "end": 1358
+       },
+       {
+        "text": "asks",
+        "start": 1360,
+        "end": 1376
+       },
+       {
+        "text": "his",
+        "start": 1376,
+        "end": 1384
+       },
+       {
+        "text": "mother",
+        "start": 1384,
+        "end": 1397
+       },
+       {
+        "text": "to",
+        "start": 1397,
+        "end": 1401
+       },
+       {
+        "text": "hide",
+        "start": 1402,
+        "end": 1413
+       },
+       {
+        "text": "the",
+        "start": 1413,
+        "end": 1418
+       },
+       {
+        "text": "form.",
+        "start": 1418,
+        "end": 1434
+       }
+      ],
+      [
+       {
+        "text": "He",
+        "start": 1461,
+        "end": 1467
+       },
+       {
+        "text": "is",
+        "start": 1469,
+        "end": 1475
+       },
+       {
+        "text": "not",
+        "start": 1475,
+        "end": 1485
+       },
+       {
+        "text": "changing",
+        "start": 1486,
+        "end": 1504
+       },
+       {
+        "text": "his",
+        "start": 1504,
+        "end": 1512
+       },
+       {
+        "text": "desire.",
+        "start": 1512,
+        "end": 1530
+       }
+      ],
+      [
+       {
+        "text": "He",
+        "start": 1559,
+        "end": 1565
+       },
+       {
+        "text": "is",
+        "start": 1567,
+        "end": 1574
+       },
+       {
+        "text": "managing",
+        "start": 1574,
+        "end": 1591
+       },
+       {
+        "text": "the",
+        "start": 1591,
+        "end": 1594
+       },
+       {
+        "text": "timing.",
+        "start": 1594,
+        "end": 1611
+       }
+      ],
+      [
+       {
+        "text": "This",
+        "start": 1639,
+        "end": 1648
+       },
+       {
+        "text": "is",
+        "start": 1650,
+        "end": 1657
+       },
+       {
+        "text": "strategy,",
+        "start": 1659,
+        "end": 1680
+       },
+       {
+        "text": "not",
+        "start": 1687,
+        "end": 1698
+       },
+       {
+        "text": "surrender.",
+        "start": 1698,
+        "end": 1717
+       }
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

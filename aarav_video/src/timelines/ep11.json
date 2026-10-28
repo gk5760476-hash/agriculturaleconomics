@@ -1,0 +1,2384 @@
+{
+ "id": "ep11",
+ "title": "The Knock \u2014 A Scholarship Arrives",
+ "subtitle": "Sen: what can he actually do and be?",
+ "fps": 30,
+ "durationInFrames": 5311,
+ "shots": [
+  {
+   "card": "THE KNOCK",
+   "minSec": 2.5,
+   "from": 0,
+   "duration": 75,
+   "lines": []
+  },
+  {
+   "img": "panels/p12_02",
+   "cam": {
+    "from": [
+     0.5,
+     0.5,
+     1.0
+    ],
+    "to": [
+     0.42,
+     0.62,
+     1.3
+    ]
+   },
+   "minSec": 3,
+   "aspect": 1.7902,
+   "amb": "room",
+   "from": 75,
+   "duration": 90,
+   "lines": []
+  },
+  {
+   "img": "scenes/p01_13",
+   "cam": {
+    "from": [
+     0.4,
+     0.6,
+     1.3
+    ],
+    "to": [
+     0.32,
+     0.68,
+     1.5
+    ]
+   },
+   "sfx": "notify",
+   "minSec": 6,
+   "aspect": 1.7886,
+   "amb": "room",
+   "from": 165,
+   "duration": 254,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep11/001.mp3",
+     "from": 180,
+     "duration": 219,
+     "pages": [
+      [
+       {
+        "text": "A",
+        "start": 183,
+        "end": 185
+       },
+       {
+        "text": "scholarship",
+        "start": 185,
+        "end": 207
+       },
+       {
+        "text": "announcement",
+        "start": 208,
+        "end": 230
+       },
+       {
+        "text": "\u2014 tuition",
+        "start": 235,
+        "end": 247
+       },
+       {
+        "text": "covered,",
+        "start": 249,
+        "end": 263
+       },
+       {
+        "text": "study",
+        "start": 270,
+        "end": 283
+       },
+       {
+        "text": "expenses",
+        "start": 284,
+        "end": 306
+       },
+       {
+        "text": "assisted.",
+        "start": 308,
+        "end": 326
+       }
+      ],
+      [
+       {
+        "text": "He",
+        "start": 355,
+        "end": 361
+       },
+       {
+        "text": "is",
+        "start": 362,
+        "end": 369
+       },
+       {
+        "text": "eligible.",
+        "start": 372,
+        "end": 390
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p13_01",
+   "cam": {
+    "from": [
+     0.68,
+     0.42,
+     1.25
+    ],
+    "to": [
+     0.75,
+     0.38,
+     1.4
+    ]
+   },
+   "aspect": 1.7902,
+   "amb": "room",
+   "from": 419,
+   "duration": 110,
+   "lines": [
+    {
+     "who": "neeraj",
+     "name": "Neeraj",
+     "color": "#B98BE0",
+     "audio": "audio/ep11/002.fx2.mp3",
+     "from": 434,
+     "duration": 75,
+     "pages": [
+      [
+       {
+        "text": "Aarav.",
+        "start": 437,
+        "end": 447
+       },
+       {
+        "text": "You",
+        "start": 474,
+        "end": 479
+       },
+       {
+        "text": "should",
+        "start": 479,
+        "end": 486
+       },
+       {
+        "text": "apply.",
+        "start": 488,
+        "end": 501
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p13_01",
+   "cam": {
+    "from": [
+     0.4,
+     0.5,
+     1.4
+    ],
+    "to": [
+     0.38,
+     0.52,
+     1.5
+    ]
+   },
+   "minSec": 2,
+   "aspect": 1.7902,
+   "amb": "room",
+   "from": 529,
+   "duration": 60,
+   "lines": [
+    {
+     "who": "aarav",
+     "name": "Aarav",
+     "color": "#F2C14E",
+     "audio": "audio/ep11/003.fx2.mp3",
+     "from": 544,
+     "duration": 18,
+     "pages": [
+      [
+       {
+        "text": "No.",
+        "start": 547,
+        "end": 553
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p13_02",
+   "cam": {
+    "from": [
+     0.72,
+     0.42,
+     1.35
+    ],
+    "to": [
+     0.75,
+     0.4,
+     1.45
+    ]
+   },
+   "aspect": 1.7902,
+   "amb": "room",
+   "from": 589,
+   "duration": 88,
+   "lines": [
+    {
+     "who": "neeraj",
+     "name": "Neeraj",
+     "color": "#B98BE0",
+     "audio": "audio/ep11/004.fx2.mp3",
+     "from": 604,
+     "duration": 53,
+     "pages": [
+      [
+       {
+        "text": "You",
+        "start": 607,
+        "end": 612
+       },
+       {
+        "text": "haven't",
+        "start": 612,
+        "end": 625
+       },
+       {
+        "text": "even",
+        "start": 627,
+        "end": 637
+       },
+       {
+        "text": "read",
+        "start": 637,
+        "end": 644
+       },
+       {
+        "text": "it.",
+        "start": 644,
+        "end": 649
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p13_02",
+   "cam": {
+    "from": [
+     0.4,
+     0.55,
+     1.4
+    ],
+    "to": [
+     0.38,
+     0.58,
+     1.5
+    ]
+   },
+   "aspect": 1.7902,
+   "amb": "room",
+   "from": 677,
+   "duration": 81,
+   "lines": [
+    {
+     "who": "aarav",
+     "name": "Aarav",
+     "color": "#F2C14E",
+     "audio": "audio/ep11/005.fx2.mp3",
+     "from": 692,
+     "duration": 46,
+     "pages": [
+      [
+       {
+        "text": "I",
+        "start": 695,
+        "end": 700
+       },
+       {
+        "text": "have",
+        "start": 700,
+        "end": 709
+       },
+       {
+        "text": "work",
+        "start": 709,
+        "end": 719
+       },
+       {
+        "text": "here.",
+        "start": 719,
+        "end": 730
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p14_01",
+   "cam": {
+    "from": [
+     0.72,
+     0.42,
+     1.35
+    ],
+    "to": [
+     0.75,
+     0.4,
+     1.45
+    ]
+   },
+   "aspect": 1.7902,
+   "amb": "room",
+   "from": 758,
+   "duration": 82,
+   "lines": [
+    {
+     "who": "neeraj",
+     "name": "Neeraj",
+     "color": "#B98BE0",
+     "audio": "audio/ep11/006.fx2.mp3",
+     "from": 773,
+     "duration": 47,
+     "pages": [
+      [
+       {
+        "text": "But",
+        "start": 776,
+        "end": 783
+       },
+       {
+        "text": "you",
+        "start": 783,
+        "end": 787
+       },
+       {
+        "text": "wanted",
+        "start": 787,
+        "end": 802
+       },
+       {
+        "text": "this.",
+        "start": 802,
+        "end": 812
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p14_01",
+   "cam": {
+    "from": [
+     0.4,
+     0.55,
+     1.4
+    ],
+    "to": [
+     0.38,
+     0.58,
+     1.5
+    ]
+   },
+   "aspect": 1.7902,
+   "amb": "room",
+   "from": 841,
+   "duration": 130,
+   "lines": [
+    {
+     "who": "aarav",
+     "name": "Aarav",
+     "color": "#F2C14E",
+     "audio": "audio/ep11/007.fx2.mp3",
+     "from": 856,
+     "duration": 95,
+     "pages": [
+      [
+       {
+        "text": "That",
+        "start": 859,
+        "end": 866
+       },
+       {
+        "text": "was",
+        "start": 866,
+        "end": 876
+       },
+       {
+        "text": "years",
+        "start": 876,
+        "end": 887
+       },
+       {
+        "text": "ago.",
+        "start": 887,
+        "end": 896
+       },
+       {
+        "text": "I",
+        "start": 922,
+        "end": 926
+       },
+       {
+        "text": "changed.",
+        "start": 927,
+        "end": 942
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p14_02",
+   "cam": {
+    "from": [
+     0.72,
+     0.42,
+     1.35
+    ],
+    "to": [
+     0.76,
+     0.38,
+     1.5
+    ]
+   },
+   "minSec": 4,
+   "aspect": 1.7902,
+   "amb": "room",
+   "from": 970,
+   "duration": 133,
+   "lines": [
+    {
+     "who": "neeraj",
+     "name": "Neeraj",
+     "color": "#B98BE0",
+     "audio": "audio/ep11/008.fx2.mp3",
+     "from": 985,
+     "duration": 98,
+     "pages": [
+      [
+       {
+        "text": "Or",
+        "start": 988,
+        "end": 995
+       },
+       {
+        "text": "did",
+        "start": 996,
+        "end": 1003
+       },
+       {
+        "text": "the",
+        "start": 1003,
+        "end": 1008
+       },
+       {
+        "text": "choices",
+        "start": 1008,
+        "end": 1023
+       },
+       {
+        "text": "available",
+        "start": 1024,
+        "end": 1043
+       },
+       {
+        "text": "to",
+        "start": 1043,
+        "end": 1047
+       },
+       {
+        "text": "you",
+        "start": 1047,
+        "end": 1051
+       },
+       {
+        "text": "change",
+        "start": 1052,
+        "end": 1064
+       },
+       {
+        "text": "first?",
+        "start": 1064,
+        "end": 1075
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p14_02",
+   "cam": {
+    "from": [
+     0.42,
+     0.5,
+     1.5
+    ],
+    "to": [
+     0.38,
+     0.48,
+     1.7
+    ]
+   },
+   "aspect": 1.7902,
+   "amb": "room",
+   "from": 1103,
+   "duration": 174,
+   "lines": [
+    {
+     "who": "aarav",
+     "name": "Aarav",
+     "color": "#F2C14E",
+     "audio": "audio/ep11/009.fx2.mp3",
+     "from": 1118,
+     "duration": 139,
+     "pages": [
+      [
+       {
+        "text": "You",
+        "start": 1121,
+        "end": 1125
+       },
+       {
+        "text": "think",
+        "start": 1126,
+        "end": 1133
+       },
+       {
+        "text": "you",
+        "start": 1133,
+        "end": 1137
+       },
+       {
+        "text": "understand",
+        "start": 1138,
+        "end": 1155
+       },
+       {
+        "text": "my",
+        "start": 1155,
+        "end": 1162
+       },
+       {
+        "text": "life",
+        "start": 1162,
+        "end": 1171
+       },
+       {
+        "text": "because",
+        "start": 1171,
+        "end": 1184
+       },
+       {
+        "text": "you",
+        "start": 1184,
+        "end": 1188
+       },
+       {
+        "text": "remember",
+        "start": 1188,
+        "end": 1202
+       },
+       {
+        "text": "what",
+        "start": 1202,
+        "end": 1211
+       },
+       {
+        "text": "I",
+        "start": 1212,
+        "end": 1216
+       },
+       {
+        "text": "wanted",
+        "start": 1216,
+        "end": 1228
+       },
+       {
+        "text": "at",
+        "start": 1228,
+        "end": 1232
+       },
+       {
+        "text": "seventeen?",
+        "start": 1232,
+        "end": 1249
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p15_01",
+   "cam": {
+    "from": [
+     0.72,
+     0.42,
+     1.35
+    ],
+    "to": [
+     0.75,
+     0.4,
+     1.45
+    ]
+   },
+   "aspect": 1.7902,
+   "amb": "room",
+   "from": 1277,
+   "duration": 161,
+   "lines": [
+    {
+     "who": "neeraj",
+     "name": "Neeraj",
+     "color": "#B98BE0",
+     "audio": "audio/ep11/010.fx2.mp3",
+     "from": 1292,
+     "duration": 126,
+     "pages": [
+      [
+       {
+        "text": "I'm",
+        "start": 1295,
+        "end": 1304
+       },
+       {
+        "text": "not",
+        "start": 1304,
+        "end": 1313
+       },
+       {
+        "text": "deciding",
+        "start": 1313,
+        "end": 1334
+       },
+       {
+        "text": "for",
+        "start": 1334,
+        "end": 1342
+       },
+       {
+        "text": "you.",
+        "start": 1342,
+        "end": 1350
+       },
+       {
+        "text": "I'm",
+        "start": 1382,
+        "end": 1390
+       },
+       {
+        "text": "asking.",
+        "start": 1392,
+        "end": 1410
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p15_01",
+   "cam": {
+    "from": [
+     0.4,
+     0.55,
+     1.4
+    ],
+    "to": [
+     0.38,
+     0.58,
+     1.5
+    ]
+   },
+   "aspect": 1.7902,
+   "amb": "room",
+   "from": 1438,
+   "duration": 134,
+   "lines": [
+    {
+     "who": "aarav",
+     "name": "Aarav",
+     "color": "#F2C14E",
+     "audio": "audio/ep11/011.fx2.mp3",
+     "from": 1453,
+     "duration": 99,
+     "pages": [
+      [
+       {
+        "text": "Then",
+        "start": 1456,
+        "end": 1465
+       },
+       {
+        "text": "ask",
+        "start": 1466,
+        "end": 1478
+       },
+       {
+        "text": "without",
+        "start": 1479,
+        "end": 1494
+       },
+       {
+        "text": "already",
+        "start": 1496,
+        "end": 1512
+       },
+       {
+        "text": "knowing",
+        "start": 1512,
+        "end": 1523
+       },
+       {
+        "text": "the",
+        "start": 1523,
+        "end": 1528
+       },
+       {
+        "text": "answer.",
+        "start": 1529,
+        "end": 1544
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "scenes/p01_15",
+   "cam": {
+    "from": [
+     0.5,
+     0.5,
+     1.0
+    ],
+    "to": [
+     0.5,
+     0.5,
+     1.1
+    ]
+   },
+   "minSec": 5,
+   "aspect": 1.7886,
+   "amb": "night",
+   "from": 1572,
+   "duration": 150,
+   "lines": []
+  },
+  {
+   "img": "panels/p15_02",
+   "cam": {
+    "from": [
+     0.5,
+     0.5,
+     1.0
+    ],
+    "to": [
+     0.55,
+     0.45,
+     1.15
+    ]
+   },
+   "minSec": 3.5,
+   "aspect": 1.7902,
+   "amb": "room",
+   "from": 1722,
+   "duration": 137,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep11/012.mp3",
+     "from": 1737,
+     "duration": 102,
+     "pages": [
+      [
+       {
+        "text": "Later",
+        "start": 1741,
+        "end": 1755
+       },
+       {
+        "text": "that",
+        "start": 1755,
+        "end": 1764
+       },
+       {
+        "text": "evening",
+        "start": 1766,
+        "end": 1782
+       },
+       {
+        "text": "\u2014 a",
+        "start": 1786,
+        "end": 1788
+       },
+       {
+        "text": "different",
+        "start": 1789,
+        "end": 1804
+       },
+       {
+        "text": "conversation.",
+        "start": 1804,
+        "end": 1831
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p16_01",
+   "cam": {
+    "from": [
+     0.68,
+     0.42,
+     1.25
+    ],
+    "to": [
+     0.75,
+     0.38,
+     1.4
+    ]
+   },
+   "aspect": 1.7902,
+   "amb": "room",
+   "from": 1859,
+   "duration": 91,
+   "lines": [
+    {
+     "who": "mother",
+     "name": "Mother",
+     "color": "#E07A3F",
+     "audio": "audio/ep11/013.fx2.mp3",
+     "from": 1874,
+     "duration": 56,
+     "pages": [
+      [
+       {
+        "text": "Do",
+        "start": 1878,
+        "end": 1885
+       },
+       {
+        "text": "you",
+        "start": 1885,
+        "end": 1890
+       },
+       {
+        "text": "want",
+        "start": 1890,
+        "end": 1898
+       },
+       {
+        "text": "to",
+        "start": 1899,
+        "end": 1902
+       },
+       {
+        "text": "apply?",
+        "start": 1903,
+        "end": 1922
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p16_01",
+   "cam": {
+    "from": [
+     0.4,
+     0.55,
+     1.4
+    ],
+    "to": [
+     0.38,
+     0.58,
+     1.5
+    ]
+   },
+   "minSec": 2.5,
+   "aspect": 1.7902,
+   "amb": "room",
+   "from": 1950,
+   "duration": 78,
+   "lines": [
+    {
+     "who": "aarav",
+     "name": "Aarav",
+     "color": "#F2C14E",
+     "audio": "audio/ep11/014.fx2.mp3",
+     "from": 1965,
+     "duration": 43,
+     "pages": [
+      [
+       {
+        "text": "I",
+        "start": 1969,
+        "end": 1974
+       },
+       {
+        "text": "don't",
+        "start": 1974,
+        "end": 1988
+       },
+       {
+        "text": "know.",
+        "start": 1990,
+        "end": 2000
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p16_02",
+   "cam": {
+    "from": [
+     0.72,
+     0.42,
+     1.35
+    ],
+    "to": [
+     0.75,
+     0.4,
+     1.45
+    ]
+   },
+   "aspect": 1.7902,
+   "amb": "room",
+   "from": 2028,
+   "duration": 111,
+   "lines": [
+    {
+     "who": "mother",
+     "name": "Mother",
+     "color": "#E07A3F",
+     "audio": "audio/ep11/015.fx2.mp3",
+     "from": 2043,
+     "duration": 76,
+     "pages": [
+      [
+       {
+        "text": "Would",
+        "start": 2046,
+        "end": 2053
+       },
+       {
+        "text": "you",
+        "start": 2054,
+        "end": 2058
+       },
+       {
+        "text": "go",
+        "start": 2058,
+        "end": 2066
+       },
+       {
+        "text": "if",
+        "start": 2066,
+        "end": 2070
+       },
+       {
+        "text": "the",
+        "start": 2070,
+        "end": 2074
+       },
+       {
+        "text": "money",
+        "start": 2074,
+        "end": 2085
+       },
+       {
+        "text": "were",
+        "start": 2086,
+        "end": 2094
+       },
+       {
+        "text": "enough?",
+        "start": 2094,
+        "end": 2111
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p16_02",
+   "cam": {
+    "from": [
+     0.4,
+     0.55,
+     1.4
+    ],
+    "to": [
+     0.38,
+     0.58,
+     1.5
+    ]
+   },
+   "aspect": 1.7902,
+   "amb": "room",
+   "from": 2139,
+   "duration": 287,
+   "lines": [
+    {
+     "who": "aarav",
+     "name": "Aarav",
+     "color": "#F2C14E",
+     "audio": "audio/ep11/016.fx2.mp3",
+     "from": 2154,
+     "duration": 252,
+     "pages": [
+      [
+       {
+        "text": "Maybe.",
+        "start": 2157,
+        "end": 2170
+       },
+       {
+        "text": "But",
+        "start": 2197,
+        "end": 2204
+       },
+       {
+        "text": "then",
+        "start": 2204,
+        "end": 2213
+       },
+       {
+        "text": "who",
+        "start": 2213,
+        "end": 2218
+       },
+       {
+        "text": "helps",
+        "start": 2219,
+        "end": 2231
+       },
+       {
+        "text": "here?",
+        "start": 2231,
+        "end": 2240
+       }
+      ],
+      [
+       {
+        "text": "What",
+        "start": 2267,
+        "end": 2274
+       },
+       {
+        "text": "if",
+        "start": 2275,
+        "end": 2280
+       },
+       {
+        "text": "I",
+        "start": 2282,
+        "end": 2288
+       },
+       {
+        "text": "fail?",
+        "start": 2288,
+        "end": 2300
+       }
+      ],
+      [
+       {
+        "text": "Everyone",
+        "start": 2324,
+        "end": 2340
+       },
+       {
+        "text": "will",
+        "start": 2340,
+        "end": 2348
+       },
+       {
+        "text": "say",
+        "start": 2348,
+        "end": 2356
+       },
+       {
+        "text": "I",
+        "start": 2357,
+        "end": 2363
+       },
+       {
+        "text": "wasted",
+        "start": 2363,
+        "end": 2378
+       },
+       {
+        "text": "the",
+        "start": 2378,
+        "end": 2383
+       },
+       {
+        "text": "chance.",
+        "start": 2383,
+        "end": 2398
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p17_01",
+   "cam": {
+    "from": [
+     0.72,
+     0.42,
+     1.35
+    ],
+    "to": [
+     0.75,
+     0.4,
+     1.45
+    ]
+   },
+   "aspect": 1.7902,
+   "amb": "room",
+   "from": 2426,
+   "duration": 94,
+   "lines": [
+    {
+     "who": "mother",
+     "name": "Mother",
+     "color": "#E07A3F",
+     "audio": "audio/ep11/017.fx2.mp3",
+     "from": 2441,
+     "duration": 59,
+     "pages": [
+      [
+       {
+        "text": "Those",
+        "start": 2444,
+        "end": 2457
+       },
+       {
+        "text": "are",
+        "start": 2457,
+        "end": 2462
+       },
+       {
+        "text": "real",
+        "start": 2462,
+        "end": 2473
+       },
+       {
+        "text": "worries.",
+        "start": 2474,
+        "end": 2491
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p17_01",
+   "cam": {
+    "from": [
+     0.4,
+     0.55,
+     1.4
+    ],
+    "to": [
+     0.38,
+     0.58,
+     1.5
+    ]
+   },
+   "aspect": 1.7902,
+   "amb": "room",
+   "from": 2520,
+   "duration": 306,
+   "lines": [
+    {
+     "who": "aarav",
+     "name": "Aarav",
+     "color": "#F2C14E",
+     "audio": "audio/ep11/018.fx2.mp3",
+     "from": 2535,
+     "duration": 271,
+     "pages": [
+      [
+       {
+        "text": "I'm",
+        "start": 2538,
+        "end": 2547
+       },
+       {
+        "text": "not",
+        "start": 2547,
+        "end": 2558
+       },
+       {
+        "text": "afraid",
+        "start": 2560,
+        "end": 2576
+       },
+       {
+        "text": "of",
+        "start": 2577,
+        "end": 2583
+       },
+       {
+        "text": "studying.",
+        "start": 2583,
+        "end": 2600
+       }
+      ],
+      [
+       {
+        "text": "I'm",
+        "start": 2632,
+        "end": 2640
+       },
+       {
+        "text": "tired",
+        "start": 2640,
+        "end": 2655
+       },
+       {
+        "text": "of",
+        "start": 2655,
+        "end": 2661
+       },
+       {
+        "text": "building",
+        "start": 2661,
+        "end": 2676
+       },
+       {
+        "text": "my",
+        "start": 2676,
+        "end": 2684
+       },
+       {
+        "text": "life",
+        "start": 2684,
+        "end": 2697
+       },
+       {
+        "text": "around",
+        "start": 2699,
+        "end": 2712
+       },
+       {
+        "text": "a",
+        "start": 2715,
+        "end": 2717
+       },
+       {
+        "text": "possibility",
+        "start": 2718,
+        "end": 2746
+       },
+       {
+        "text": "that",
+        "start": 2748,
+        "end": 2759
+       },
+       {
+        "text": "might",
+        "start": 2759,
+        "end": 2770
+       },
+       {
+        "text": "not",
+        "start": 2772,
+        "end": 2782
+       },
+       {
+        "text": "work.",
+        "start": 2782,
+        "end": 2797
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p17_01",
+   "cam": {
+    "from": [
+     0.7,
+     0.45,
+     1.3
+    ],
+    "to": [
+     0.75,
+     0.42,
+     1.55
+    ]
+   },
+   "aspect": 1.7902,
+   "amb": "room",
+   "from": 2826,
+   "duration": 360,
+   "lines": [
+    {
+     "who": "mother",
+     "name": "Mother",
+     "color": "#E07A3F",
+     "audio": "audio/ep11/019.fx2.mp3",
+     "from": 2841,
+     "duration": 325,
+     "pages": [
+      [
+       {
+        "text": "Then",
+        "start": 2844,
+        "end": 2856
+       },
+       {
+        "text": "maybe",
+        "start": 2856,
+        "end": 2869
+       },
+       {
+        "text": "the",
+        "start": 2869,
+        "end": 2873
+       },
+       {
+        "text": "question",
+        "start": 2874,
+        "end": 2896
+       },
+       {
+        "text": "is",
+        "start": 2896,
+        "end": 2902
+       },
+       {
+        "text": "not",
+        "start": 2902,
+        "end": 2913
+       },
+       {
+        "text": "whether",
+        "start": 2913,
+        "end": 2924
+       },
+       {
+        "text": "you",
+        "start": 2925,
+        "end": 2928
+       },
+       {
+        "text": "want",
+        "start": 2928,
+        "end": 2937
+       },
+       {
+        "text": "to",
+        "start": 2937,
+        "end": 2940
+       },
+       {
+        "text": "study.",
+        "start": 2941,
+        "end": 2960
+       }
+      ],
+      [
+       {
+        "text": "It",
+        "start": 2994,
+        "end": 2999
+       },
+       {
+        "text": "is",
+        "start": 2999,
+        "end": 3005
+       },
+       {
+        "text": "whether",
+        "start": 3005,
+        "end": 3016
+       },
+       {
+        "text": "studying",
+        "start": 3017,
+        "end": 3032
+       },
+       {
+        "text": "can",
+        "start": 3033,
+        "end": 3039
+       },
+       {
+        "text": "be",
+        "start": 3039,
+        "end": 3043
+       },
+       {
+        "text": "made",
+        "start": 3044,
+        "end": 3055
+       },
+       {
+        "text": "possible",
+        "start": 3055,
+        "end": 3077
+       },
+       {
+        "text": "without",
+        "start": 3078,
+        "end": 3098
+       },
+       {
+        "text": "everything",
+        "start": 3098,
+        "end": 3118
+       },
+       {
+        "text": "else",
+        "start": 3119,
+        "end": 3128
+       },
+       {
+        "text": "collapsing.",
+        "start": 3129,
+        "end": 3157
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p15_02",
+   "cam": {
+    "from": [
+     0.55,
+     0.45,
+     1.15
+    ],
+    "to": [
+     0.5,
+     0.5,
+     1.0
+    ]
+   },
+   "aspect": 1.7902,
+   "amb": "room",
+   "from": 3185,
+   "duration": 285,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep11/020.mp3",
+     "from": 3200,
+     "duration": 250,
+     "pages": [
+      [
+       {
+        "text": "His",
+        "start": 3204,
+        "end": 3210
+       },
+       {
+        "text": "mother",
+        "start": 3210,
+        "end": 3224
+       },
+       {
+        "text": "has",
+        "start": 3224,
+        "end": 3235
+       },
+       {
+        "text": "reframed",
+        "start": 3235,
+        "end": 3254
+       },
+       {
+        "text": "the",
+        "start": 3255,
+        "end": 3260
+       },
+       {
+        "text": "problem.",
+        "start": 3260,
+        "end": 3277
+       }
+      ],
+      [
+       {
+        "text": "Not",
+        "start": 3304,
+        "end": 3314
+       },
+       {
+        "text": "\"What",
+        "start": 3315,
+        "end": 3325
+       },
+       {
+        "text": "do",
+        "start": 3325,
+        "end": 3330
+       },
+       {
+        "text": "you",
+        "start": 3330,
+        "end": 3334
+       },
+       {
+        "text": "desire?\"",
+        "start": 3334,
+        "end": 3352
+       },
+       {
+        "text": "but",
+        "start": 3356,
+        "end": 3364
+       },
+       {
+        "text": "\"What",
+        "start": 3367,
+        "end": 3378
+       },
+       {
+        "text": "can",
+        "start": 3378,
+        "end": 3385
+       },
+       {
+        "text": "actually",
+        "start": 3386,
+        "end": 3401
+       },
+       {
+        "text": "be",
+        "start": 3401,
+        "end": 3406
+       },
+       {
+        "text": "made",
+        "start": 3407,
+        "end": 3416
+       },
+       {
+        "text": "available",
+        "start": 3416,
+        "end": 3432
+       },
+       {
+        "text": "to",
+        "start": 3432,
+        "end": 3436
+       },
+       {
+        "text": "you?\"",
+        "start": 3436,
+        "end": 3442
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "scenes/p01_14",
+   "cam": {
+    "from": [
+     0.5,
+     0.5,
+     1.0
+    ],
+    "to": [
+     0.5,
+     0.5,
+     1.15
+    ]
+   },
+   "aspect": 1.7886,
+   "amb": "room",
+   "from": 3471,
+   "duration": 418,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep11/021.mp3",
+     "from": 3486,
+     "duration": 383,
+     "pages": [
+      [
+       {
+        "text": "Amartya",
+        "start": 3489,
+        "end": 3502
+       },
+       {
+        "text": "Sen,",
+        "start": 3502,
+        "end": 3514
+       },
+       {
+        "text": "in",
+        "start": 3520,
+        "end": 3525
+       },
+       {
+        "text": "On",
+        "start": 3525,
+        "end": 3531
+       },
+       {
+        "text": "Ethics",
+        "start": 3534,
+        "end": 3548
+       },
+       {
+        "text": "and",
+        "start": 3550,
+        "end": 3558
+       },
+       {
+        "text": "Economics,",
+        "start": 3561,
+        "end": 3583
+       }
+      ],
+      [
+       {
+        "text": "argues",
+        "start": 3593,
+        "end": 3611
+       },
+       {
+        "text": "that",
+        "start": 3611,
+        "end": 3619
+       },
+       {
+        "text": "evaluating",
+        "start": 3621,
+        "end": 3646
+       },
+       {
+        "text": "a",
+        "start": 3647,
+        "end": 3650
+       },
+       {
+        "text": "person's",
+        "start": 3650,
+        "end": 3669
+       },
+       {
+        "text": "well-being",
+        "start": 3671,
+        "end": 3691
+       },
+       {
+        "text": "only",
+        "start": 3693,
+        "end": 3705
+       },
+       {
+        "text": "through",
+        "start": 3705,
+        "end": 3715
+       },
+       {
+        "text": "their",
+        "start": 3715,
+        "end": 3724
+       },
+       {
+        "text": "satisfaction",
+        "start": 3724,
+        "end": 3752
+       },
+       {
+        "text": "\u2014 through",
+        "start": 3763,
+        "end": 3770
+       },
+       {
+        "text": "utility",
+        "start": 3770,
+        "end": 3790
+       }
+      ],
+      [
+       {
+        "text": "\u2014 gives",
+        "start": 3794,
+        "end": 3806
+       },
+       {
+        "text": "us",
+        "start": 3806,
+        "end": 3813
+       },
+       {
+        "text": "an",
+        "start": 3815,
+        "end": 3823
+       },
+       {
+        "text": "incomplete",
+        "start": 3825,
+        "end": 3845
+       },
+       {
+        "text": "picture.",
+        "start": 3845,
+        "end": 3861
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "scenes/p01_06",
+   "cam": {
+    "from": [
+     0.5,
+     0.5,
+     1.15
+    ],
+    "to": [
+     0.5,
+     0.5,
+     1.0
+    ]
+   },
+   "aspect": 1.7886,
+   "amb": "street",
+   "from": 3889,
+   "duration": 327,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep11/022.mp3",
+     "from": 3904,
+     "duration": 292,
+     "pages": [
+      [
+       {
+        "text": "A",
+        "start": 3907,
+        "end": 3908
+       },
+       {
+        "text": "person",
+        "start": 3908,
+        "end": 3925
+       },
+       {
+        "text": "can",
+        "start": 3925,
+        "end": 3933
+       },
+       {
+        "text": "be",
+        "start": 3933,
+        "end": 3938
+       },
+       {
+        "text": "content",
+        "start": 3938,
+        "end": 3956
+       },
+       {
+        "text": "and",
+        "start": 3960,
+        "end": 3969
+       },
+       {
+        "text": "still",
+        "start": 3969,
+        "end": 3979
+       },
+       {
+        "text": "lack",
+        "start": 3979,
+        "end": 3989
+       },
+       {
+        "text": "freedoms",
+        "start": 3989,
+        "end": 4006
+       },
+       {
+        "text": "that",
+        "start": 4006,
+        "end": 4016
+       },
+       {
+        "text": "matter.",
+        "start": 4016,
+        "end": 4031
+       }
+      ],
+      [
+       {
+        "text": "Happiness",
+        "start": 4060,
+        "end": 4076
+       },
+       {
+        "text": "is",
+        "start": 4078,
+        "end": 4085
+       },
+       {
+        "text": "real",
+        "start": 4085,
+        "end": 4094
+       },
+       {
+        "text": "evidence,",
+        "start": 4096,
+        "end": 4112
+       },
+       {
+        "text": "but",
+        "start": 4123,
+        "end": 4130
+       },
+       {
+        "text": "it",
+        "start": 4131,
+        "end": 4135
+       },
+       {
+        "text": "is",
+        "start": 4136,
+        "end": 4141
+       },
+       {
+        "text": "not",
+        "start": 4141,
+        "end": 4151
+       },
+       {
+        "text": "the",
+        "start": 4151,
+        "end": 4156
+       },
+       {
+        "text": "whole",
+        "start": 4156,
+        "end": 4167
+       },
+       {
+        "text": "of",
+        "start": 4167,
+        "end": 4172
+       },
+       {
+        "text": "a",
+        "start": 4172,
+        "end": 4173
+       },
+       {
+        "text": "life.",
+        "start": 4173,
+        "end": 4187
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p12_02",
+   "cam": {
+    "from": [
+     0.5,
+     0.5,
+     1.0
+    ],
+    "to": [
+     0.35,
+     0.5,
+     1.2
+    ]
+   },
+   "aspect": 1.7902,
+   "amb": "room",
+   "from": 4216,
+   "duration": 318,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep11/023.mp3",
+     "from": 4231,
+     "duration": 283,
+     "pages": [
+      [
+       {
+        "text": "Sen",
+        "start": 4234,
+        "end": 4242
+       },
+       {
+        "text": "asks",
+        "start": 4245,
+        "end": 4260
+       },
+       {
+        "text": "us",
+        "start": 4262,
+        "end": 4269
+       },
+       {
+        "text": "to",
+        "start": 4269,
+        "end": 4273
+       },
+       {
+        "text": "look",
+        "start": 4273,
+        "end": 4282
+       },
+       {
+        "text": "at",
+        "start": 4285,
+        "end": 4292
+       },
+       {
+        "text": "the",
+        "start": 4292,
+        "end": 4297
+       },
+       {
+        "text": "opportunities",
+        "start": 4297,
+        "end": 4329
+       },
+       {
+        "text": "and",
+        "start": 4335,
+        "end": 4343
+       },
+       {
+        "text": "real",
+        "start": 4343,
+        "end": 4353
+       },
+       {
+        "text": "freedoms",
+        "start": 4353,
+        "end": 4369
+       },
+       {
+        "text": "available",
+        "start": 4371,
+        "end": 4390
+       }
+      ],
+      [
+       {
+        "text": "to",
+        "start": 4390,
+        "end": 4393
+       },
+       {
+        "text": "a",
+        "start": 4395,
+        "end": 4397
+       },
+       {
+        "text": "person,",
+        "start": 4397,
+        "end": 4414
+       },
+       {
+        "text": "not",
+        "start": 4423,
+        "end": 4433
+       },
+       {
+        "text": "only",
+        "start": 4435,
+        "end": 4448
+       },
+       {
+        "text": "at",
+        "start": 4449,
+        "end": 4457
+       },
+       {
+        "text": "what",
+        "start": 4457,
+        "end": 4467
+       },
+       {
+        "text": "they",
+        "start": 4467,
+        "end": 4474
+       },
+       {
+        "text": "report",
+        "start": 4474,
+        "end": 4489
+       },
+       {
+        "text": "feeling.",
+        "start": 4489,
+        "end": 4506
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "img": "panels/p12_02",
+   "cam": {
+    "from": [
+     0.35,
+     0.5,
+     1.2
+    ],
+    "to": [
+     0.42,
+     0.6,
+     1.35
+    ]
+   },
+   "aspect": 1.7902,
+   "amb": "room",
+   "from": 4534,
+   "duration": 517,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep11/024.mp3",
+     "from": 4549,
+     "duration": 482,
+     "pages": [
+      [
+       {
+        "text": "Aarav's",
+        "start": 4552,
+        "end": 4565
+       },
+       {
+        "text": "satisfaction",
+        "start": 4567,
+        "end": 4597
+       },
+       {
+        "text": "is",
+        "start": 4600,
+        "end": 4606
+       },
+       {
+        "text": "not",
+        "start": 4606,
+        "end": 4615
+       },
+       {
+        "text": "fake.",
+        "start": 4615,
+        "end": 4628
+       }
+      ],
+      [
+       {
+        "text": "His",
+        "start": 4657,
+        "end": 4665
+       },
+       {
+        "text": "skill",
+        "start": 4668,
+        "end": 4680
+       },
+       {
+        "text": "and",
+        "start": 4681,
+        "end": 4689
+       },
+       {
+        "text": "family",
+        "start": 4689,
+        "end": 4703
+       },
+       {
+        "text": "contribution",
+        "start": 4703,
+        "end": 4731
+       },
+       {
+        "text": "are",
+        "start": 4733,
+        "end": 4741
+       },
+       {
+        "text": "genuine.",
+        "start": 4741,
+        "end": 4760
+       }
+      ],
+      [
+       {
+        "text": "But",
+        "start": 4788,
+        "end": 4795
+       },
+       {
+        "text": "so",
+        "start": 4795,
+        "end": 4805
+       },
+       {
+        "text": "is",
+        "start": 4807,
+        "end": 4812
+       },
+       {
+        "text": "the",
+        "start": 4812,
+        "end": 4816
+       },
+       {
+        "text": "question",
+        "start": 4816,
+        "end": 4833
+       },
+       {
+        "text": "of",
+        "start": 4836,
+        "end": 4843
+       },
+       {
+        "text": "whether",
+        "start": 4843,
+        "end": 4858
+       },
+       {
+        "text": "he",
+        "start": 4858,
+        "end": 4864
+       },
+       {
+        "text": "has",
+        "start": 4864,
+        "end": 4874
+       },
+       {
+        "text": "a",
+        "start": 4875,
+        "end": 4877
+       },
+       {
+        "text": "meaningful",
+        "start": 4877,
+        "end": 4899
+       },
+       {
+        "text": "chance",
+        "start": 4899,
+        "end": 4913
+       }
+      ],
+      [
+       {
+        "text": "to",
+        "start": 4914,
+        "end": 4917
+       },
+       {
+        "text": "pursue",
+        "start": 4917,
+        "end": 4933
+       },
+       {
+        "text": "education",
+        "start": 4935,
+        "end": 4958
+       },
+       {
+        "text": "if",
+        "start": 4961,
+        "end": 4968
+       },
+       {
+        "text": "he",
+        "start": 4968,
+        "end": 4973
+       },
+       {
+        "text": "decides",
+        "start": 4973,
+        "end": 4992
+       },
+       {
+        "text": "he",
+        "start": 4998,
+        "end": 5003
+       },
+       {
+        "text": "wants",
+        "start": 5003,
+        "end": 5016
+       },
+       {
+        "text": "it.",
+        "start": 5016,
+        "end": 5023
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "card": "Is he satisfied?\n\u2014\nWhat can he actually do and be?",
+   "minSec": 5,
+   "from": 5052,
+   "duration": 260,
+   "lines": [
+    {
+     "silent": true,
+     "who": "narrator",
+     "name": "Narrator",
+     "color": "#E8D9B0",
+     "audio": "audio/ep11/025.mp3",
+     "from": 5067,
+     "duration": 225,
+     "pages": [
+      [
+       {
+        "text": "The",
+        "start": 5070,
+        "end": 5072
+       },
+       {
+        "text": "utilitarian",
+        "start": 5072,
+        "end": 5099
+       },
+       {
+        "text": "asks:",
+        "start": 5101,
+        "end": 5117
+       }
+      ],
+      [
+       {
+        "text": "Is",
+        "start": 5121,
+        "end": 5126
+       },
+       {
+        "text": "he",
+        "start": 5127,
+        "end": 5133
+       },
+       {
+        "text": "satisfied?",
+        "start": 5133,
+        "end": 5157
+       }
+      ],
+      [
+       {
+        "text": "Sen",
+        "start": 5185,
+        "end": 5194
+       },
+       {
+        "text": "asks:",
+        "start": 5197,
+        "end": 5213
+       },
+       {
+        "text": "What",
+        "start": 5221,
+        "end": 5230
+       },
+       {
+        "text": "can",
+        "start": 5230,
+        "end": 5237
+       },
+       {
+        "text": "he",
+        "start": 5237,
+        "end": 5243
+       },
+       {
+        "text": "actually",
+        "start": 5243,
+        "end": 5258
+       },
+       {
+        "text": "do",
+        "start": 5258,
+        "end": 5266
+       },
+       {
+        "text": "and",
+        "start": 5267,
+        "end": 5274
+       },
+       {
+        "text": "be?",
+        "start": 5274,
+        "end": 5283
+       }
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

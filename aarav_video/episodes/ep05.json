@@ -1,0 +1,17 @@
+{
+  "id": "ep05",
+  "title": "One Year In",
+  "subtitle": "Precommitment",
+  "shots": [
+    {"img": "panels/p06_01", "cam": {"from": [0.5, 0.5, 1.0], "to": [0.45, 0.6, 1.2]},
+     "lines": [{"who": "narrator", "text": "One evening, Aarav hears a rumour that a local trust may offer scholarships soon. The old pull returns — a flicker."}]},
+    {"img": "panels/p06_01", "cam": {"from": [0.45, 0.6, 1.2], "to": [0.42, 0.55, 1.45]},
+     "lines": [{"who": "narrator", "text": "But he knows that if he starts hoping again and fails, the disappointment will break him."}]},
+    {"img": "panels/p06_02", "cam": {"from": [0.5, 0.5, 1.1], "to": [0.45, 0.55, 1.4]},
+     "lines": [{"who": "aarav", "mood": "firm", "text": "If anyone brings me a scholarship form in the next three months, hide it. I need to finish the busy season first. I'll decide in January. Not before."}]},
+    {"img": "panels/p06_02", "cam": {"from": [0.72, 0.6, 1.5], "to": [0.75, 0.62, 1.7]},
+     "lines": [{"who": "narrator", "text": "Precommitment: deliberately restricting your own future choices to protect a clearer decision later. Odysseus binds himself to the mast."}]},
+    {"img": "scenes/p01_02", "cam": {"from": [0.5, 0.5, 1.0], "to": [0.45, 0.6, 1.15]},
+     "lines": [{"who": "narrator", "text": "Aarav asks his mother to hide the form. He is not changing his desire. He is managing the timing. This is strategy, not surrender."}], "minSec": 4}
+  ]
+}

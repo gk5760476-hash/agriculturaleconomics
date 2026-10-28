@@ -1,0 +1,24 @@
+{
+  "id": "ep12",
+  "title": "Thin and Broad Rationality",
+  "subtitle": "Consistency vs formation",
+  "shots": [
+    {"img": "scenes/p01_10", "cam": {"from": [0.5, 0.5, 1.0], "to": [0.5, 0.5, 1.05]}, "minSec": 3},
+    {"img": "panels/p17_02", "cam": {"from": [0.5, 0.5, 1.0], "to": [0.27, 0.55, 1.7]},
+     "lines": [{"who": "neeraj", "mood": "reflective", "text": "Aarav says he doesn't want engineering. He acts accordingly — he works at the shop, he supports his family, he doesn't apply."}]},
+    {"img": "panels/p17_02", "cam": {"from": [0.27, 0.55, 1.7], "to": [0.25, 0.5, 1.8]},
+     "lines": [{"who": "neeraj", "mood": "firm", "text": "His beliefs, desires, and actions are perfectly consistent. By the standard of thin rationality, there is nothing wrong.", "pause": 1.0}]},
+    {"img": "panels/p17_02", "cam": {"from": [0.75, 0.6, 1.7], "to": [0.72, 0.72, 1.9]},
+     "lines": [{"who": "mother", "mood": "sad", "text": "But I watched those beliefs form. I watched the notebook close. I watched the ambition shrink."}]},
+    {"img": "panels/p17_02", "cam": {"from": [0.72, 0.45, 1.8], "to": [0.75, 0.45, 1.7]},
+     "lines": [{"who": "mother", "mood": "firm", "text": "The question is not whether he acts on what he wants. The question is whether what he wants was shaped by conditions that gave him no real choice.", "pause": 1.0}]},
+    {"img": "scenes/p01_10", "cam": {"from": [0.5, 0.5, 1.05], "to": [0.5, 0.5, 1.0]},
+     "lines": [{"who": "narrator", "text": "Thin rationality checks for consistency. Broad rationality checks for formation. A person can pass the first test — their actions match their preferences — while failing the second — their preferences were never freely formed."}]},
+    {"img": "scenes/p01_10", "cam": {"from": [0.27, 0.5, 1.45], "to": [0.27, 0.5, 1.5]},
+     "lines": [{"who": "narrator", "text": "Aarav passes this test."}], "minSec": 3},
+    {"img": "scenes/p01_10", "cam": {"from": [0.73, 0.5, 1.45], "to": [0.73, 0.5, 1.5]},
+     "lines": [{"who": "narrator", "text": "This is the test that won't let us rest."}], "minSec": 3.5},
+    {"img": "panels/p17_02", "cam": {"from": [0.5, 0.5, 1.0], "to": [0.5, 0.5, 1.08]},
+     "lines": [{"who": "narrator", "text": "Elster's nine mechanisms are tools of broad rationality. They ask: was this preference produced by learning and reflection, or by deprivation and constraint? Thin rationality cannot tell the difference. Broad rationality demands that we look."}], "minSec": 4}
+  ]
+}
