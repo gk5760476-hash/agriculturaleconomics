@@ -1,7 +1,8 @@
 """Make dry TTS lines sound recorded in a small room (numpy/scipy; Remotion's ffmpeg has no audio filters).
 
 Chain: 80 Hz low cut, 11.5 kHz high cut, -2.5 dB at 280 Hz (mud), +1.5 dB at 3.2 kHz (presence),
-gentle 2.2:1 compression, then faint early reflections at 23/41/67 ms. Length is unchanged.
+gentle 2.2:1 compression, faint early reflections at 23/41/67 ms, level matched to the dry take,
+then a look-ahead limiter at -4 dBFS (headroom for one linear film gain). Length is unchanged.
 
 Usage: python tools/voice_fx.py in.wav out.wav
 """
@@ -69,12 +70,31 @@ def room(x: np.ndarray, rate: int) -> np.ndarray:
     y = y + refl
     fade = min(len(y), int(0.015 * rate))
     y[:fade] *= np.linspace(0, 1, fade)
-    # keep the line as loud as the dry take (mood volumes stay intact), then cap the peak
+    # keep the line as loud as the dry take (mood volumes stay intact), then limit the peaks
     rms_in, rms_out = np.sqrt(np.mean(x ** 2)), np.sqrt(np.mean(y ** 2))
     if rms_out > 0:
         y *= rms_in / rms_out
-    peak = np.max(np.abs(y))
-    return y * (0.95 / peak) if peak > 0.95 else y
+    return limit(y, rate)
+
+
+def limit(y: np.ndarray, rate: int, ceiling_db=-4.0, lookahead=0.005, release=0.08) -> np.ndarray:
+    """Look-ahead peak limiter: leaves headroom so the whole film can take one linear gain later."""
+    ceiling = 10 ** (ceiling_db / 20)
+    need = np.minimum(1.0, ceiling / np.maximum(np.abs(y), 1e-9))
+    look = int(lookahead * rate)
+    # gain must already be down when the peak arrives: running minimum over the look-ahead window
+    padded = np.concatenate([need, np.ones(look)])
+    ahead = np.lib.stride_tricks.sliding_window_view(padded, look + 1).min(axis=1)
+    # averaging the last `look` values ramps the gain down smoothly yet still reaches the needed
+    # reduction by the peak (every value in that window already includes the peak)
+    ahead = np.convolve(np.concatenate([np.ones(look), ahead]), np.ones(look + 1) / (look + 1), "valid")
+    a_rel = np.exp(-1 / (release * rate))
+    gain = np.empty_like(ahead)
+    g = 1.0
+    for i, target in enumerate(ahead):
+        g = target if target < g else a_rel * g + (1 - a_rel) * target
+        gain[i] = g
+    return y * gain
 
 
 if __name__ == "__main__":

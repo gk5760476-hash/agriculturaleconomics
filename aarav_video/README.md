@@ -10,7 +10,7 @@ Motion-comic adaptation of `source/story_script_final.pdf`, built from the panel
 | 3. Sound effects + ambience beds | `.\.venv\Scripts\python.exe -I tools\make_sfx.py`; `.\.venv\Scripts\python.exe -I tools\make_ambience.py` | `public/sfx/*.wav` |
 | 4. Voices + timelines | `.\.venv\Scripts\python.exe -I tools\voice.py all` | `public/audio/epNN/*.mp3` (+ room-processed `*.fxN.mp3`), `src/timelines/*.json` |
 | 5. Preview | `npx remotion studio` | browser studio |
-| 6. Render (1080p, loudness-normalised) | `.\tools\render_all.ps1` | `out/epNN.mp4`, `out/full_film.mp4` |
+| 6. Render (1080p, linear gain to ~-16 LUFS) | `.\tools\render_all.ps1` | `out/epNN.mp4`, `out/full_film.mp4` |
 
 Edit the story in `episodes/epNN.json` (schema: `.claude/skills/episode-script`), voices in `tools/cast.json`, then rerun steps 4 and 6.
 

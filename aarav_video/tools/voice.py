@@ -44,6 +44,7 @@ MOODS = {
     "bitter":    (-2, -4, +5),
     "proud":     (+2, +2, +10),
     "insistent": (+8, +4, +15),
+    "quiet":     (-14, -3, -22),  # script "(quietly)": slower, lower, much softer
 }
 
 
@@ -97,7 +98,7 @@ async def synth(text: str, who: str, mood: str | None, mp3: Path, force: bool) -
 
 # Dry TTS sounds pasted on; tools/voice_fx.py puts it in a small room (EQ, gentle compression,
 # faint early reflections). Bump FX_VERSION when that chain changes.
-FX_VERSION = 2
+FX_VERSION = 3
 
 
 def room_fx(mp3: Path) -> Path:

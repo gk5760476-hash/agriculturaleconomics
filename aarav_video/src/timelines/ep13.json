@@ -129,7 +129,7 @@
      "who": "res1",
      "name": "Resident 1",
      "color": "#C9B79C",
-     "audio": "audio/ep13/002.fx2.mp3",
+     "audio": "audio/ep13/002.fx3.mp3",
      "from": 314,
      "duration": 129,
      "pages": [
@@ -214,7 +214,7 @@
      "who": "res2",
      "name": "Resident 2",
      "color": "#D9A07A",
-     "audio": "audio/ep13/003.fx2.mp3",
+     "audio": "audio/ep13/003.fx3.mp3",
      "from": 478,
      "duration": 129,
      "pages": [
@@ -302,7 +302,7 @@
      "who": "res3",
      "name": "Resident 3",
      "color": "#A8C686",
-     "audio": "audio/ep13/004.fx2.mp3",
+     "audio": "audio/ep13/004.fx3.mp3",
      "from": 642,
      "duration": 136,
      "pages": [
