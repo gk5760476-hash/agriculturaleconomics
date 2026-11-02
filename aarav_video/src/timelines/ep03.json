@@ -114,6 +114,7 @@
    },
    "aspect": 1.7886,
    "amb": "room",
+   "depth": "img/depth/p01_01.png",
    "from": 214,
    "duration": 369,
    "lines": [
@@ -266,7 +267,7 @@
      "who": "deepa",
      "name": "Deepa",
      "color": "#E88AA0",
-     "audio": "audio/ep03/003.fx3.mp3",
+     "audio": "audio/ep03/003.fx4.mp3",
      "from": 597,
      "duration": 135,
      "pages": [
@@ -351,7 +352,7 @@
      "who": "aarav",
      "name": "Aarav",
      "color": "#F2C14E",
-     "audio": "audio/ep03/004.fx3.mp3",
+     "audio": "audio/ep03/004.fx4.mp3",
      "from": 767,
      "duration": 82,
      "pages": [
@@ -420,7 +421,7 @@
      "who": "deepa",
      "name": "Deepa",
      "color": "#E88AA0",
-     "audio": "audio/ep03/005.fx3.mp3",
+     "audio": "audio/ep03/005.fx4.mp3",
      "from": 884,
      "duration": 92,
      "pages": [
@@ -471,6 +472,7 @@
    },
    "aspect": 1.7886,
    "amb": "room",
+   "depth": "img/depth/p01_01.png",
    "from": 997,
    "duration": 310,
    "lines": [

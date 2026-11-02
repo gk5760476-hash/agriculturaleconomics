@@ -209,7 +209,7 @@
      "who": "aarav",
      "name": "Aarav",
      "color": "#F2C14E",
-     "audio": "audio/ep09/002.fx3.mp3",
+     "audio": "audio/ep09/002.fx4.mp3",
      "from": 505,
      "duration": 114,
      "pages": [
@@ -424,6 +424,7 @@
    "minSec": 4,
    "aspect": 1.7886,
    "amb": "street",
+   "depth": "img/depth/p01_06.png",
    "from": 1031,
    "duration": 424,
    "lines": [

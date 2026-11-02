@@ -10,7 +10,7 @@
     {"img": "panels/p07_02", "cam": {"from": [0.45, 0.48, 1.4], "to": [0.42, 0.5, 1.5]},
      "lines": [{"who": "aarav", "mood": "reflective", "text": "That's true."}], "minSec": 2.5},
     {"img": "panels/p07_02", "cam": {"from": [0.62, 0.5, 1.3], "to": [0.66, 0.55, 1.45]},
-     "lines": [{"who": "sharma", "mood": "proud", "text": "College boys can't hold a screwdriver. Stay here. Five years, I'll make you a partner."}]},
+     "lines": [{"who": "sharma", "mood": "proud", "text": "College boys can't hold a screwdriver. Stay here. Five years, I'll make you a partner.", "say": "College boys... can't hold a screwdriver. Stay here. Five years, I'll make you a partner."}]},
     {"img": "scenes/p01_08", "cam": {"from": [0.5, 0.5, 1.0], "to": [0.55, 0.5, 1.15]},
      "lines": [{"who": "narrator", "text": "The partnership offer is real. But Sharma uncle's motive is not Aarav's welfare — it is keeping a skilled worker."}]},
     {"img": "scenes/p01_14", "cam": {"from": [0.5, 0.5, 1.15], "to": [0.5, 0.5, 1.0]},

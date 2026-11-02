@@ -64,7 +64,7 @@ def room(x: np.ndarray, rate: int) -> np.ndarray:
     # early reflections, slightly darkened, like a plastered room
     refl = np.zeros_like(y)
     dark = signal.sosfilt(signal.butter(1, 4000, "lowpass", fs=rate, output="sos"), y)
-    for ms, g in ((23, 0.12), (41, 0.07), (67, 0.045)):
+    for ms, g in ((23, 0.07), (41, 0.045), (67, 0.03)):  # light, so consonants stay crisp
         d = int(rate * ms / 1000)
         refl[d:] += dark[:-d] * g
     y = y + refl

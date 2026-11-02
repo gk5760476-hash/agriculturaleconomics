@@ -280,7 +280,7 @@
      "who": "aarav",
      "name": "Aarav",
      "color": "#F2C14E",
-     "audio": "audio/ep05/003.fx3.mp3",
+     "audio": "audio/ep05/003.fx4.mp3",
      "from": 567,
      "duration": 409,
      "pages": [
@@ -582,6 +582,7 @@
    "minSec": 4,
    "aspect": 1.7886,
    "amb": "room",
+   "depth": "img/depth/p01_02.png",
    "from": 1331,
    "duration": 415,
    "lines": [

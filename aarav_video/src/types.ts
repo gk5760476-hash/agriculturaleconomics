@@ -24,6 +24,8 @@ export type Shot = {
 	sfx?: string;
 	// Ambience bed (public/sfx/amb_<name>.wav), looped under the shot.
 	amb?: string;
+	// Depth map (white = near) for 2.5D parallax, from tools/depth_maps.py.
+	depth?: string;
 	aspect?: number;
 	clip?: string;
 	clipLast?: string;

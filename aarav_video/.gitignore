@@ -19,3 +19,4 @@ clips/*_log.txt
 *.dry.wav
 *.wet.wav
 __pycache__/
+public/fx/

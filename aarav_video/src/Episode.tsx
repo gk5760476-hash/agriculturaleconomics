@@ -7,16 +7,14 @@ import {
 	OffthreadVideo,
 	Sequence,
 	interpolate,
+	random,
 	staticFile,
 	useCurrentFrame,
 } from 'remotion';
-import {loadFont as loadBebas} from '@remotion/google-fonts/BebasNeue';
-import {loadFont as loadInter} from '@remotion/google-fonts/Inter';
 import {Captions} from './Captions';
+import {DepthShot} from './DepthShot';
+import {bebas, inter} from './fonts';
 import type {Cam, Shot, Timeline} from './types';
-
-const {fontFamily: bebas} = loadBebas();
-const {fontFamily: inter} = loadInter('normal', {weights: ['400', '600'], subsets: ['latin']});
 
 const W = 1280;
 const H = 720;
@@ -24,6 +22,17 @@ const FPS = 30;
 const XFADE = 12; // frames each shot overlaps the previous one
 
 const ease = Easing.inOut(Easing.cubic);
+const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
+
+// One warm, slightly richer grade over every picture so comic panels and photo plates sit together.
+const GRADE = 'contrast(1.05) saturate(1.07) sepia(0.05) brightness(1.01)';
+
+// Gentle handheld drift (CSS px, degrees) from a few slow incommensurate sines: alive, never shaky.
+const handheld = (f: number) => ({
+	x: 2.2 * Math.sin(f / 70) + 1.1 * Math.sin(f / 29 + 1.3),
+	y: 1.6 * Math.sin(f / 83 + 0.7) + 0.9 * Math.sin(f / 37 + 2.1),
+	r: 0.09 * Math.sin(f / 101 + 0.4),
+});
 
 // Place the image so image point (cx, cy) sits at frame centre at the given zoom, never showing an edge.
 const coverRect = (aspect: number, [cx, cy, zoom]: Cam) => {
@@ -87,6 +96,21 @@ const ImageShot: React.FC<{shot: Shot}> = ({shot}) => {
 		);
 	}
 
+	if (shot.depth) {
+		return (
+			<DepthShot
+				img={`img/${shot.img}.jpg`}
+				depth={shot.depth}
+				cam={cam}
+				start={from}
+				t={t}
+				width={W}
+				height={H}
+				cover={coverRect}
+			/>
+		);
+	}
+
 	if (shot.fit === 'contain') {
 		const h = Math.min(H, W / aspect) * cam[2];
 		return (
@@ -99,66 +123,171 @@ const ImageShot: React.FC<{shot: Shot}> = ({shot}) => {
 	return <Img src={src} style={{position: 'absolute', ...coverRect(aspect, cam)}} />;
 };
 
+const GOLD = 'linear-gradient(180deg, #fbe7a6 0%, #e2b45a 55%, #a8772c 100%)';
+
+// Title card: letters (or words, for long cards) rise in one after another, then a light sheen sweeps
+// across the gold; thin rules draw out from the centre.
 const Card: React.FC<{text: string; duration: number}> = ({text, duration}) => {
 	const frame = useCurrentFrame();
-	const scale = interpolate(frame, [0, duration], [1.04, 1], {extrapolateRight: 'clamp'});
 	const long = text.length > 40;
+	const scale = interpolate(frame, [0, duration], [1.035, 1], clamp);
+	const font: React.CSSProperties = {
+		fontFamily: long ? inter : bebas,
+		fontWeight: long ? 600 : 400,
+		fontSize: long ? (text === text.toUpperCase() ? 36 : 42) : 150,
+		lineHeight: long ? 1.35 : 0.95,
+		letterSpacing: long ? 0.5 : 4,
+		textAlign: 'center',
+		whiteSpace: 'pre-line',
+	};
+	const units = long ? text.split(/(\s+)/) : Array.from(text);
+	const step = long ? 1.6 : 2.2;
+	let n = 0;
+	const pieces = units.map((u, i) => {
+		if (!u || /^\s+$/.test(u)) return u;
+		const at = 4 + n++ * step;
+		const p = interpolate(frame, [at, at + 10], [0, 1], clamp);
+		return (
+			<span
+				key={i}
+				style={{
+					display: 'inline-block',
+					opacity: p,
+					transform: `translateY(${(1 - p) * 16}px)`,
+					filter: p < 1 ? `blur(${(1 - p) * 4}px)` : undefined,
+					background: GOLD,
+					WebkitBackgroundClip: 'text',
+					color: 'transparent',
+				}}
+			>
+				{u}
+			</span>
+		);
+	});
+	const revealed = 4 + n * step + 10;
+	const sheen = interpolate(frame, [revealed, revealed + 28], [130, -30], clamp);
+	const rule = interpolate(frame, [2, 26], [0, 1], {...clamp, easing: Easing.out(Easing.cubic)});
+	const glowX = 50 + 6 * Math.sin(frame / 40);
+	const line: React.CSSProperties = {
+		height: 1,
+		width: 420 * rule,
+		background: 'linear-gradient(90deg, transparent, #e2b45a, transparent)',
+		opacity: 0.8,
+	};
 	return (
 		<AbsoluteFill
 			style={{
-				background: 'radial-gradient(ellipse at center, #1a1612 0%, #050403 75%)',
+				background: `radial-gradient(ellipse at ${glowX}% 46%, #221b13 0%, #0b0907 45%, #040302 78%)`,
 				justifyContent: 'center',
 				alignItems: 'center',
 				padding: '0 60px 90px',
 			}}
 		>
-			<div
-				style={{
-					fontFamily: long ? inter : bebas,
-					fontWeight: long ? 600 : 400,
-					fontSize: long ? (text === text.toUpperCase() ? 36 : 42) : 150,
-					maxWidth: 1120,
-					lineHeight: long ? 1.35 : 0.95,
-					letterSpacing: long ? 0.5 : 4,
-					textAlign: 'center',
-					whiteSpace: 'pre-line',
-					transform: `scale(${scale})`,
-					background: 'linear-gradient(180deg, #fbe7a6 0%, #e2b45a 55%, #a8772c 100%)',
-					WebkitBackgroundClip: 'text',
-					color: 'transparent',
-					filter: 'drop-shadow(0 4px 18px rgba(0,0,0,0.8))',
-				}}
-			>
-				{text}
+			<div style={{transform: `scale(${scale})`, display: 'flex', flexDirection: 'column', alignItems: 'center', maxWidth: 1120}}>
+				<div style={{...line, marginBottom: long ? 26 : 30}} />
+				<div style={{display: 'grid', filter: 'drop-shadow(0 4px 18px rgba(0,0,0,0.8))'}}>
+					<div style={{...font, gridArea: '1 / 1'}}>{pieces}</div>
+					{frame >= revealed ? (
+						<div
+							aria-hidden
+							style={{
+								...font,
+								gridArea: '1 / 1',
+								background: 'linear-gradient(105deg, transparent 42%, rgba(255,248,225,0.85) 50%, transparent 58%)',
+								backgroundSize: '250% 100%',
+								backgroundPosition: `${sheen}% 0`,
+								WebkitBackgroundClip: 'text',
+								color: 'transparent',
+							}}
+						>
+							{text}
+						</div>
+					) : null}
+				</div>
+				<div style={{...line, marginTop: long ? 26 : 22}} />
 			</div>
 		</AbsoluteFill>
 	);
 };
 
-// Dissolving between two framings of the same picture ghosts it, so those shots cut instead.
-const ShotLayer: React.FC<{shot: Shot; first: boolean; cut: boolean}> = ({shot, first, cut}) => {
+// Warm motes drifting through the light in indoor shots.
+const Dust: React.FC<{seed: number; frame: number}> = ({seed, frame}) => (
+	<AbsoluteFill style={{mixBlendMode: 'screen', pointerEvents: 'none'}}>
+		{Array.from({length: 26}, (_, i) => {
+			const r = (k: string) => random(`${k}${seed}-${i}`);
+			const size = 1.5 + 3.5 * r('s');
+			const span = H + 40;
+			const y = ((((r('y') * span - frame * (0.12 + 0.3 * r('v'))) % span) + span) % span) - 20;
+			const x = r('x') * W + 16 * Math.sin(frame / (60 + 50 * r('p')) + 6.28 * r('q'));
+			const glow = 0.12 + 0.28 * (0.5 + 0.5 * Math.sin(frame / (18 + 20 * r('t')) + 6.28 * r('u')));
+			return (
+				<div
+					key={i}
+					style={{
+						position: 'absolute',
+						left: x,
+						top: y,
+						width: size * 3,
+						height: size * 3,
+						borderRadius: '50%',
+						opacity: glow,
+						background: 'radial-gradient(circle, rgba(255,236,200,0.95) 0%, rgba(255,236,200,0) 70%)',
+					}}
+				/>
+			);
+		})}
+	</AbsoluteFill>
+);
+
+// Fine film grain over everything; six full-frame tiles cycled and shifted every frame.
+const Grain: React.FC = () => {
 	const frame = useCurrentFrame();
-	const opacity = first || cut ? 1 : interpolate(frame, [0, XFADE], [0, 1], {extrapolateRight: 'clamp'});
+	const ox = Math.floor(random(`gx${frame}`) * 128);
+	const oy = Math.floor(random(`gy${frame}`) * 128);
 	return (
-		<AbsoluteFill style={{opacity, backgroundColor: '#000'}}>
-			{shot.card ? <Card text={shot.card} duration={shot.duration} /> : <ImageShot shot={shot} />}
+		<AbsoluteFill style={{overflow: 'hidden', mixBlendMode: 'overlay', opacity: 0.09, pointerEvents: 'none'}}>
+			<Img src={staticFile(`fx/grain_${frame % 6}.png`)} style={{position: 'absolute', left: -ox, top: -oy, width: 1408, height: 848}} />
 		</AbsoluteFill>
 	);
 };
 
+// Dissolving between two framings of the same picture ghosts it, so those shots cut instead.
+// Other shots dissolve through a soft blur, like a lens racking between pictures.
+const ShotLayer: React.FC<{shot: Shot; first: boolean; cut: boolean}> = ({shot, first, cut}) => {
+	const frame = useCurrentFrame();
+	const p = first || cut ? 1 : interpolate(frame, [0, XFADE], [0, 1], clamp);
+	const hh = handheld(shot.from + frame);
+	return (
+		<AbsoluteFill style={{opacity: p, backgroundColor: '#000', filter: p < 1 ? `blur(${(1 - p) * 6}px)` : undefined}}>
+			{shot.card ? (
+				<Card text={shot.card} duration={shot.duration} />
+			) : (
+				<AbsoluteFill style={{transform: `translate(${hh.x}px, ${hh.y}px) rotate(${hh.r}deg) scale(1.015)`, filter: GRADE, overflow: 'hidden'}}>
+					<ImageShot shot={shot} />
+				</AbsoluteFill>
+			)}
+			{shot.amb === 'room' && !shot.card ? <Dust seed={shot.from} frame={shot.from + frame} /> : null}
+		</AbsoluteFill>
+	);
+};
+
+// Lower-third episode strip: bottom-left, clear of the baked-in titles at the top of many panels.
 const EpisodeChip: React.FC<{timeline: Timeline}> = ({timeline}) => {
 	const frame = useCurrentFrame();
-	const opacity = interpolate(frame, [10, 30, 130, 160], [0, 1, 1, 0], {
-		extrapolateLeft: 'clamp',
-		extrapolateRight: 'clamp',
-	});
+	const opacity = interpolate(frame, [10, 30, 130, 160], [0, 1, 1, 0], clamp);
+	const slide = interpolate(frame, [10, 34], [-26, 0], {...clamp, easing: Easing.out(Easing.cubic)});
+	const rule = interpolate(frame, [18, 44], [0, 1], {...clamp, easing: Easing.out(Easing.cubic)});
 	return (
 		<div
 			style={{
 				position: 'absolute',
-				top: 28,
-				left: 34,
+				bottom: 150,
+				left: 0,
+				padding: '10px 70px 12px 36px',
+				background: 'linear-gradient(90deg, rgba(0,0,0,0.62) 0%, rgba(0,0,0,0.35) 65%, rgba(0,0,0,0) 100%)',
+				borderLeft: '3px solid #e2b45a',
 				opacity,
+				transform: `translateX(${slide}px)`,
 				fontFamily: inter,
 				color: '#f3e6c4',
 				textShadow: '0 2px 8px rgba(0,0,0,0.9)',
@@ -168,6 +297,7 @@ const EpisodeChip: React.FC<{timeline: Timeline}> = ({timeline}) => {
 				Episode {Number(timeline.id.slice(2))} · {timeline.subtitle}
 			</div>
 			<div style={{fontSize: 26, fontWeight: 600}}>{timeline.title}</div>
+			<div style={{marginTop: 8, height: 2, width: 220 * rule, background: 'linear-gradient(90deg, #e2b45a, transparent)'}} />
 		</div>
 	);
 };
@@ -243,6 +373,7 @@ export const Episode: React.FC<{timeline: Timeline}> = ({timeline}) => {
 			])}
 			<Captions lines={timeline.shots.flatMap((s) => s.lines).filter((l) => !l.silent)} fontFamily={inter} />
 			<EpisodeChip timeline={timeline} />
+			<Grain />
 			<EdgeFade duration={timeline.durationInFrames} />
 		</AbsoluteFill>
 	);

@@ -3,7 +3,7 @@
  "title": "Two Years In",
  "subtitle": "Rationalization and state-dependence",
  "fps": 30,
- "durationInFrames": 3297,
+ "durationInFrames": 3299,
  "shots": [
   {
    "img": "panels/p10_02",
@@ -198,7 +198,7 @@
      "who": "aarav",
      "name": "Aarav",
      "color": "#F2C14E",
-     "audio": "audio/ep10/002.fx3.mp3",
+     "audio": "audio/ep10/002.fx4.mp3",
      "from": 495,
      "duration": 167,
      "pages": [
@@ -272,15 +272,15 @@
    "aspect": 1.7902,
    "amb": "room",
    "from": 682,
-   "duration": 123,
+   "duration": 125,
    "lines": [
     {
      "who": "neeraj",
      "name": "Neeraj",
      "color": "#B98BE0",
-     "audio": "audio/ep10/003.fx3.mp3",
+     "audio": "audio/ep10/003.fx4.mp3",
      "from": 697,
-     "duration": 88,
+     "duration": 90,
      "pages": [
       [
        {
@@ -290,18 +290,18 @@
        },
        {
         "text": "says",
-        "start": 704,
-        "end": 715
+        "start": 705,
+        "end": 716
        },
        {
         "text": "82%.",
-        "start": 715,
-        "end": 743
+        "start": 718,
+        "end": 745
        },
        {
         "text": "Look.",
-        "start": 770,
-        "end": 777
+        "start": 771,
+        "end": 778
        }
       ]
      ]
@@ -324,42 +324,42 @@
    },
    "aspect": 1.7902,
    "amb": "room",
-   "from": 805,
+   "from": 807,
    "duration": 108,
    "lines": [
     {
      "who": "aarav",
      "name": "Aarav",
      "color": "#F2C14E",
-     "audio": "audio/ep10/004.fx3.mp3",
-     "from": 820,
+     "audio": "audio/ep10/004.fx4.mp3",
+     "from": 822,
      "duration": 73,
      "pages": [
       [
        {
         "text": "Newspapers",
-        "start": 823,
-        "end": 845
+        "start": 825,
+        "end": 846
        },
        {
         "text": "print",
-        "start": 845,
-        "end": 855
+        "start": 847,
+        "end": 857
        },
        {
         "text": "what",
-        "start": 857,
-        "end": 866
+        "start": 859,
+        "end": 868
        },
        {
         "text": "they",
-        "start": 866,
-        "end": 872
+        "start": 868,
+        "end": 873
        },
        {
         "text": "want.",
-        "start": 872,
-        "end": 885
+        "start": 874,
+        "end": 886
        }
       ]
      ]
@@ -382,7 +382,7 @@
    },
    "aspect": 1.7902,
    "amb": "room",
-   "from": 913,
+   "from": 915,
    "duration": 298,
    "lines": [
     {
@@ -391,96 +391,96 @@
      "name": "Narrator",
      "color": "#E8D9B0",
      "audio": "audio/ep10/005.mp3",
-     "from": 928,
+     "from": 930,
      "duration": 263,
      "pages": [
       [
        {
         "text": "Rationalization.",
-        "start": 932,
-        "end": 966
+        "start": 933,
+        "end": 968
        },
        {
         "text": "Aarav",
-        "start": 995,
-        "end": 1006
+        "start": 996,
+        "end": 1007
        },
        {
         "text": "has",
-        "start": 1006,
-        "end": 1015
+        "start": 1007,
+        "end": 1017
        },
        {
         "text": "not",
-        "start": 1015,
-        "end": 1025
+        "start": 1017,
+        "end": 1026
        },
        {
         "text": "changed",
-        "start": 1027,
-        "end": 1042
+        "start": 1028,
+        "end": 1043
        },
        {
         "text": "what",
-        "start": 1045,
-        "end": 1054
+        "start": 1046,
+        "end": 1055
        },
        {
         "text": "he",
-        "start": 1054,
-        "end": 1059
+        "start": 1055,
+        "end": 1061
        },
        {
         "text": "wants",
-        "start": 1059,
-        "end": 1074
+        "start": 1061,
+        "end": 1075
        },
        {
         "text": "\u2014 he",
-        "start": 1083,
-        "end": 1088
+        "start": 1084,
+        "end": 1090
        },
        {
         "text": "has",
-        "start": 1088,
-        "end": 1098
+        "start": 1090,
+        "end": 1099
        },
        {
         "text": "changed",
-        "start": 1098,
-        "end": 1114
+        "start": 1099,
+        "end": 1115
        },
        {
         "text": "what",
-        "start": 1118,
-        "end": 1128
+        "start": 1119,
+        "end": 1129
        }
       ],
       [
        {
         "text": "he",
-        "start": 1128,
-        "end": 1133
+        "start": 1129,
+        "end": 1134
        },
        {
         "text": "believes",
-        "start": 1133,
-        "end": 1149
+        "start": 1134,
+        "end": 1150
        },
        {
         "text": "about",
-        "start": 1151,
-        "end": 1162
+        "start": 1152,
+        "end": 1163
        },
        {
         "text": "the",
-        "start": 1162,
-        "end": 1167
+        "start": 1163,
+        "end": 1168
        },
        {
         "text": "facts.",
-        "start": 1167,
-        "end": 1183
+        "start": 1168,
+        "end": 1184
        }
       ]
      ]
@@ -503,7 +503,8 @@
    },
    "aspect": 1.7886,
    "amb": "street",
-   "from": 1211,
+   "depth": "img/depth/p01_06.png",
+   "from": 1212,
    "duration": 363,
    "lines": [
     {
@@ -512,143 +513,143 @@
      "name": "Narrator",
      "color": "#E8D9B0",
      "audio": "audio/ep10/006.mp3",
-     "from": 1226,
+     "from": 1227,
      "duration": 328,
      "pages": [
       [
        {
         "text": "His",
-        "start": 1229,
-        "end": 1236
+        "start": 1231,
+        "end": 1237
        },
        {
         "text": "desire",
-        "start": 1238,
-        "end": 1256
+        "start": 1239,
+        "end": 1257
        },
        {
         "text": "for",
-        "start": 1258,
-        "end": 1265
-       },
-       {
-        "text": "a",
-        "start": 1265,
+        "start": 1259,
         "end": 1266
        },
        {
-        "text": "good",
+        "text": "a",
         "start": 1266,
-        "end": 1275
+        "end": 1267
+       },
+       {
+        "text": "good",
+        "start": 1268,
+        "end": 1276
        },
        {
         "text": "career",
-        "start": 1275,
-        "end": 1291
+        "start": 1277,
+        "end": 1292
        },
        {
         "text": "is",
-        "start": 1294,
-        "end": 1301
+        "start": 1295,
+        "end": 1302
        },
        {
         "text": "intact.",
-        "start": 1303,
-        "end": 1319
+        "start": 1304,
+        "end": 1320
        }
       ],
       [
        {
         "text": "But",
-        "start": 1347,
-        "end": 1355
+        "start": 1349,
+        "end": 1356
        },
        {
         "text": "his",
-        "start": 1355,
-        "end": 1363
+        "start": 1356,
+        "end": 1364
        },
        {
         "text": "map",
-        "start": 1363,
-        "end": 1374
+        "start": 1364,
+        "end": 1375
        },
        {
         "text": "of",
-        "start": 1374,
-        "end": 1380
+        "start": 1375,
+        "end": 1381
        },
        {
         "text": "reality",
-        "start": 1380,
-        "end": 1400
+        "start": 1381,
+        "end": 1401
        },
        {
         "text": "has",
-        "start": 1406,
-        "end": 1413
+        "start": 1407,
+        "end": 1415
        },
        {
         "text": "been",
-        "start": 1413,
-        "end": 1421
+        "start": 1415,
+        "end": 1423
        },
        {
         "text": "quietly",
-        "start": 1423,
-        "end": 1439
+        "start": 1424,
+        "end": 1440
        },
        {
         "text": "redrawn",
-        "start": 1439,
-        "end": 1457
+        "start": 1440,
+        "end": 1458
        },
        {
         "text": "to",
-        "start": 1463,
-        "end": 1467
+        "start": 1464,
+        "end": 1468
        },
        {
         "text": "make",
-        "start": 1467,
-        "end": 1478
+        "start": 1469,
+        "end": 1479
        },
        {
         "text": "the",
-        "start": 1478,
-        "end": 1483
+        "start": 1479,
+        "end": 1484
        }
       ],
       [
        {
         "text": "detour",
-        "start": 1483,
-        "end": 1497
+        "start": 1485,
+        "end": 1498
        },
        {
         "text": "feel",
-        "start": 1497,
-        "end": 1507
+        "start": 1498,
+        "end": 1509
        },
        {
         "text": "like",
-        "start": 1510,
-        "end": 1519
+        "start": 1511,
+        "end": 1520
        },
        {
         "text": "the",
-        "start": 1519,
-        "end": 1524
+        "start": 1520,
+        "end": 1525
        },
        {
         "text": "main",
-        "start": 1524,
-        "end": 1534
+        "start": 1525,
+        "end": 1536
        },
        {
         "text": "road.",
-        "start": 1534,
-        "end": 1546
+        "start": 1536,
+        "end": 1547
        }
       ]
      ]
@@ -671,74 +672,74 @@
    },
    "aspect": 1.7902,
    "amb": "room",
-   "from": 1575,
+   "from": 1576,
    "duration": 182,
    "lines": [
     {
      "who": "neeraj",
      "name": "Neeraj",
      "color": "#B98BE0",
-     "audio": "audio/ep10/007.fx3.mp3",
-     "from": 1590,
+     "audio": "audio/ep10/007.fx4.mp3",
+     "from": 1591,
      "duration": 147,
      "pages": [
       [
        {
         "text": "And",
-        "start": 1592,
-        "end": 1599
+        "start": 1594,
+        "end": 1600
        },
        {
         "text": "if",
-        "start": 1600,
-        "end": 1605
+        "start": 1602,
+        "end": 1607
        },
        {
         "text": "money",
-        "start": 1605,
-        "end": 1615
+        "start": 1607,
+        "end": 1616
        },
        {
         "text": "weren't",
-        "start": 1615,
-        "end": 1625
+        "start": 1616,
+        "end": 1627
        },
        {
         "text": "a",
-        "start": 1626,
-        "end": 1628
+        "start": 1627,
+        "end": 1629
        },
        {
         "text": "problem?",
-        "start": 1628,
-        "end": 1644
+        "start": 1629,
+        "end": 1645
        }
       ],
       [
        {
         "text": "If",
-        "start": 1669,
-        "end": 1673
+        "start": 1671,
+        "end": 1675
        },
        {
         "text": "someone",
-        "start": 1673,
-        "end": 1688
+        "start": 1675,
+        "end": 1690
        },
        {
         "text": "paid",
-        "start": 1688,
-        "end": 1698
+        "start": 1690,
+        "end": 1699
        },
        {
         "text": "for",
-        "start": 1698,
-        "end": 1706
+        "start": 1699,
+        "end": 1707
        },
        {
         "text": "everything?",
-        "start": 1709,
-        "end": 1728
+        "start": 1710,
+        "end": 1729
        }
       ]
      ]
@@ -762,22 +763,22 @@
    "minSec": 4,
    "aspect": 1.7902,
    "amb": "room",
-   "from": 1756,
+   "from": 1757,
    "duration": 207,
    "lines": [
     {
      "who": "aarav",
      "name": "Aarav",
      "color": "#F2C14E",
-     "audio": "audio/ep10/008.fx3.mp3",
-     "from": 1771,
+     "audio": "audio/ep10/008.fx4.mp3",
+     "from": 1772,
      "duration": 27,
      "pages": [
       [
        {
         "text": "Maybe.",
-        "start": 1774,
-        "end": 1790
+        "start": 1776,
+        "end": 1791
        }
       ]
      ]
@@ -786,62 +787,62 @@
      "who": "aarav",
      "name": "Aarav",
      "color": "#F2C14E",
-     "audio": "audio/ep10/009.fx3.mp3",
-     "from": 1826,
+     "audio": "audio/ep10/009.fx4.mp3",
+     "from": 1827,
      "duration": 117,
      "pages": [
       [
        {
         "text": "But",
-        "start": 1829,
-        "end": 1835
+        "start": 1830,
+        "end": 1836
        },
        {
         "text": "money",
-        "start": 1835,
-        "end": 1847
+        "start": 1836,
+        "end": 1848
        },
        {
         "text": "is",
-        "start": 1848,
-        "end": 1853
+        "start": 1850,
+        "end": 1854
        },
        {
         "text": "a",
-        "start": 1853,
-        "end": 1855
+        "start": 1854,
+        "end": 1856
        },
        {
         "text": "problem.",
-        "start": 1855,
-        "end": 1870
+        "start": 1856,
+        "end": 1871
        }
       ],
       [
        {
         "text": "So",
-        "start": 1895,
-        "end": 1901
+        "start": 1897,
+        "end": 1902
        },
        {
         "text": "why",
-        "start": 1901,
-        "end": 1910
+        "start": 1902,
+        "end": 1911
        },
        {
         "text": "think",
-        "start": 1910,
-        "end": 1919
+        "start": 1911,
+        "end": 1920
        },
        {
         "text": "about",
-        "start": 1919,
-        "end": 1928
+        "start": 1920,
+        "end": 1930
        },
        {
         "text": "it?",
-        "start": 1928,
-        "end": 1934
+        "start": 1930,
+        "end": 1936
        }
       ]
      ]
@@ -864,7 +865,7 @@
    },
    "aspect": 1.7902,
    "amb": "room",
-   "from": 1963,
+   "from": 1964,
    "duration": 402,
    "lines": [
     {
@@ -873,118 +874,118 @@
      "name": "Narrator",
      "color": "#E8D9B0",
      "audio": "audio/ep10/010.mp3",
-     "from": 1978,
+     "from": 1979,
      "duration": 367,
      "pages": [
       [
        {
         "text": "And",
-        "start": 1981,
-        "end": 1989
+        "start": 1982,
+        "end": 1990
        },
        {
         "text": "this",
-        "start": 1989,
-        "end": 1999
+        "start": 1990,
+        "end": 2001
        },
        {
         "text": "is",
-        "start": 2001,
-        "end": 2008
+        "start": 2003,
+        "end": 2010
        },
        {
         "text": "state-dependent",
-        "start": 2010,
-        "end": 2039
+        "start": 2011,
+        "end": 2040
        },
        {
         "text": "preference.",
-        "start": 2039,
-        "end": 2061
+        "start": 2040,
+        "end": 2062
        }
       ],
       [
        {
         "text": "In",
-        "start": 2088,
-        "end": 2093
+        "start": 2090,
+        "end": 2094
        },
        {
         "text": "his",
-        "start": 2093,
-        "end": 2101
+        "start": 2094,
+        "end": 2103
        },
        {
         "text": "current",
-        "start": 2102,
-        "end": 2113
+        "start": 2103,
+        "end": 2114
        },
        {
         "text": "condition",
-        "start": 2113,
-        "end": 2131
+        "start": 2115,
+        "end": 2133
        },
        {
         "text": "\u2014 financial",
-        "start": 2136,
-        "end": 2159
+        "start": 2138,
+        "end": 2161
        },
        {
         "text": "pressure,",
-        "start": 2159,
-        "end": 2176
+        "start": 2161,
+        "end": 2177
        },
        {
         "text": "family",
-        "start": 2188,
-        "end": 2204
+        "start": 2189,
+        "end": 2205
        },
        {
         "text": "obligation",
-        "start": 2205,
-        "end": 2229
+        "start": 2207,
+        "end": 2231
        },
        {
         "text": "\u2014 Aarav's",
-        "start": 2237,
-        "end": 2250
+        "start": 2239,
+        "end": 2252
        },
        {
         "text": "desires",
-        "start": 2250,
-        "end": 2271
+        "start": 2252,
+        "end": 2272
        },
        {
         "text": "are",
-        "start": 2273,
-        "end": 2281
+        "start": 2275,
+        "end": 2282
        },
        {
         "text": "chained",
-        "start": 2281,
-        "end": 2294
+        "start": 2283,
+        "end": 2295
        }
       ],
       [
        {
         "text": "to",
-        "start": 2296,
-        "end": 2300
+        "start": 2297,
+        "end": 2302
        },
        {
         "text": "what",
-        "start": 2301,
-        "end": 2311
+        "start": 2302,
+        "end": 2313
        },
        {
         "text": "is",
-        "start": 2313,
-        "end": 2319
+        "start": 2315,
+        "end": 2321
        },
        {
         "text": "urgent.",
-        "start": 2321,
-        "end": 2336
+        "start": 2322,
+        "end": 2338
        }
       ]
      ]
@@ -1007,7 +1008,7 @@
    },
    "aspect": 1.7902,
    "amb": "street",
-   "from": 2365,
+   "from": 2366,
    "duration": 321,
    "lines": [
     {
@@ -1016,106 +1017,106 @@
      "name": "Narrator",
      "color": "#E8D9B0",
      "audio": "audio/ep10/011.mp3",
-     "from": 2380,
+     "from": 2381,
      "duration": 286,
      "pages": [
       [
        {
         "text": "If",
-        "start": 2383,
-        "end": 2388
+        "start": 2384,
+        "end": 2389
        },
        {
         "text": "the",
-        "start": 2388,
-        "end": 2391
+        "start": 2389,
+        "end": 2393
        },
        {
         "text": "condition",
-        "start": 2391,
-        "end": 2410
+        "start": 2393,
+        "end": 2412
        },
        {
         "text": "changed,",
-        "start": 2410,
-        "end": 2425
+        "start": 2412,
+        "end": 2426
        },
        {
         "text": "the",
-        "start": 2432,
-        "end": 2435
+        "start": 2433,
+        "end": 2437
        },
        {
         "text": "preference",
-        "start": 2435,
-        "end": 2453
+        "start": 2437,
+        "end": 2455
        },
        {
         "text": "might",
-        "start": 2453,
-        "end": 2464
+        "start": 2455,
+        "end": 2466
        },
        {
         "text": "change",
-        "start": 2465,
-        "end": 2478
+        "start": 2466,
+        "end": 2480
        },
        {
         "text": "too.",
-        "start": 2478,
-        "end": 2487
+        "start": 2480,
+        "end": 2488
        }
       ],
       [
        {
         "text": "When",
-        "start": 2516,
-        "end": 2523
+        "start": 2517,
+        "end": 2525
        },
        {
         "text": "a",
-        "start": 2525,
-        "end": 2527
+        "start": 2526,
+        "end": 2528
        },
        {
         "text": "state",
-        "start": 2527,
-        "end": 2540
+        "start": 2528,
+        "end": 2542
        },
        {
         "text": "persists",
-        "start": 2541,
-        "end": 2563
+        "start": 2542,
+        "end": 2564
        },
        {
         "text": "long",
-        "start": 2564,
-        "end": 2575
+        "start": 2565,
+        "end": 2577
        },
        {
         "text": "enough,",
-        "start": 2578,
-        "end": 2592
+        "start": 2579,
+        "end": 2594
        },
        {
         "text": "the",
-        "start": 2603,
-        "end": 2606
+        "start": 2605,
+        "end": 2608
        },
        {
         "text": "chain",
-        "start": 2606,
-        "end": 2618
+        "start": 2608,
+        "end": 2619
        },
        {
         "text": "becomes",
-        "start": 2618,
-        "end": 2635
+        "start": 2619,
+        "end": 2636
        },
        {
         "text": "invisible.",
-        "start": 2637,
-        "end": 2657
+        "start": 2639,
+        "end": 2658
        }
       ]
      ]
@@ -1139,7 +1140,8 @@
    "minSec": 5,
    "aspect": 1.7886,
    "amb": "night",
-   "from": 2686,
+   "depth": "img/depth/p01_15.png",
+   "from": 2687,
    "duration": 612,
    "lines": [
     {
@@ -1148,184 +1150,184 @@
      "name": "Narrator",
      "color": "#E8D9B0",
      "audio": "audio/ep10/012.mp3",
-     "from": 2701,
+     "from": 2702,
      "duration": 577,
      "pages": [
       [
        {
         "text": "Nine",
-        "start": 2704,
-        "end": 2713
+        "start": 2705,
+        "end": 2714
        },
        {
         "text": "moments.",
-        "start": 2713,
-        "end": 2732
+        "start": 2714,
+        "end": 2733
        },
        {
         "text": "Nine",
-        "start": 2760,
-        "end": 2770
+        "start": 2761,
+        "end": 2771
        },
        {
         "text": "forces",
-        "start": 2770,
-        "end": 2788
+        "start": 2771,
+        "end": 2789
        },
        {
         "text": "that",
-        "start": 2788,
-        "end": 2797
+        "start": 2789,
+        "end": 2799
        },
        {
         "text": "moved",
-        "start": 2797,
-        "end": 2809
+        "start": 2799,
+        "end": 2810
        },
        {
         "text": "a",
-        "start": 2812,
-        "end": 2814
+        "start": 2813,
+        "end": 2816
        },
        {
         "text": "want.",
-        "start": 2814,
-        "end": 2829
+        "start": 2816,
+        "end": 2830
        }
       ],
       [
        {
         "text": "Some",
-        "start": 2858,
-        "end": 2869
+        "start": 2859,
+        "end": 2870
        },
        {
         "text": "preserved",
-        "start": 2869,
-        "end": 2887
+        "start": 2870,
+        "end": 2888
        },
        {
         "text": "Aarav's",
-        "start": 2889,
-        "end": 2903
+        "start": 2891,
+        "end": 2905
        },
        {
         "text": "autonomy.",
-        "start": 2906,
-        "end": 2925
+        "start": 2907,
+        "end": 2927
        }
       ],
       [
        {
         "text": "Some",
-        "start": 2954,
-        "end": 2965
+        "start": 2956,
+        "end": 2966
        },
        {
         "text": "eroded",
-        "start": 2967,
-        "end": 2981
+        "start": 2968,
+        "end": 2982
        },
        {
         "text": "it.",
-        "start": 2981,
-        "end": 2988
+        "start": 2982,
+        "end": 2989
        }
       ],
       [
        {
         "text": "Some",
-        "start": 3016,
-        "end": 3027
+        "start": 3018,
+        "end": 3028
        },
        {
         "text": "are",
-        "start": 3029,
-        "end": 3037
+        "start": 3030,
+        "end": 3038
        },
        {
         "text": "ambiguous.",
-        "start": 3039,
-        "end": 3063
+        "start": 3041,
+        "end": 3065
        }
       ],
       [
        {
         "text": "And",
-        "start": 3091,
-        "end": 3098
+        "start": 3093,
+        "end": 3099
        },
        {
         "text": "all",
-        "start": 3101,
-        "end": 3110
+        "start": 3103,
+        "end": 3111
        },
        {
         "text": "nine",
-        "start": 3110,
-        "end": 3121
+        "start": 3111,
+        "end": 3122
        },
        {
         "text": "produced",
-        "start": 3121,
-        "end": 3139
+        "start": 3122,
+        "end": 3140
        },
        {
         "text": "the",
-        "start": 3141,
-        "end": 3145
+        "start": 3142,
+        "end": 3146
        },
        {
         "text": "same",
-        "start": 3145,
-        "end": 3158
+        "start": 3146,
+        "end": 3160
        },
        {
         "text": "outward",
-        "start": 3159,
-        "end": 3176
+        "start": 3160,
+        "end": 3178
        },
        {
         "text": "result:",
-        "start": 3176,
-        "end": 3194
+        "start": 3178,
+        "end": 3195
        }
       ],
       [
        {
         "text": "a",
-        "start": 3203,
-        "end": 3206
+        "start": 3205,
+        "end": 3207
        },
        {
         "text": "man",
-        "start": 3206,
-        "end": 3218
+        "start": 3207,
+        "end": 3219
        },
        {
         "text": "who",
-        "start": 3218,
-        "end": 3224
+        "start": 3219,
+        "end": 3226
        },
        {
         "text": "says",
-        "start": 3224,
-        "end": 3238
+        "start": 3226,
+        "end": 3239
        },
        {
         "text": "he",
-        "start": 3238,
-        "end": 3246
+        "start": 3239,
+        "end": 3247
        },
        {
         "text": "is",
-        "start": 3248,
-        "end": 3255
+        "start": 3249,
+        "end": 3256
        },
        {
         "text": "fine.",
-        "start": 3255,
-        "end": 3269
+        "start": 3256,
+        "end": 3270
        }
       ]
      ]

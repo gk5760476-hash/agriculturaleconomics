@@ -103,7 +103,7 @@
      "who": "neeraj",
      "name": "Neeraj",
      "color": "#B98BE0",
-     "audio": "audio/ep02/002.fx3.mp3",
+     "audio": "audio/ep02/002.fx4.mp3",
      "from": 157,
      "duration": 84,
      "pages": [
@@ -173,7 +173,7 @@
      "who": "aarav",
      "name": "Aarav",
      "color": "#F2C14E",
-     "audio": "audio/ep02/003.fx3.mp3",
+     "audio": "audio/ep02/003.fx4.mp3",
      "from": 276,
      "duration": 65,
      "pages": [
@@ -223,7 +223,7 @@
      "who": "neeraj",
      "name": "Neeraj",
      "color": "#B98BE0",
-     "audio": "audio/ep02/004.fx3.mp3",
+     "audio": "audio/ep02/004.fx4.mp3",
      "from": 377,
      "duration": 20,
      "pages": [
@@ -261,7 +261,7 @@
      "who": "aarav",
      "name": "Aarav",
      "color": "#F2C14E",
-     "audio": "audio/ep02/005.fx3.mp3",
+     "audio": "audio/ep02/005.fx4.mp3",
      "from": 437,
      "duration": 460,
      "pages": [
@@ -445,6 +445,7 @@
    },
    "aspect": 1.7886,
    "amb": "room",
+   "depth": "img/depth/p01_12.png",
    "from": 916,
    "duration": 406,
    "lines": [
@@ -619,6 +620,7 @@
    "minSec": 4,
    "aspect": 1.7886,
    "amb": "room",
+   "depth": "img/depth/p01_09.png",
    "from": 1322,
    "duration": 436,
    "lines": [

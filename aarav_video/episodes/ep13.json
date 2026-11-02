@@ -11,7 +11,7 @@
     {"img": "panels/p18_02", "cam": {"from": [0.45, 0.45, 1.35], "to": [0.47, 0.42, 1.45]},
      "lines": [{"who": "res2", "mood": "worried", "text": "Our children should study, but fees and transport are the problem."}]},
     {"img": "panels/p18_02", "cam": {"from": [0.8, 0.45, 1.35], "to": [0.85, 0.42, 1.45]},
-     "lines": [{"who": "res3", "mood": "sceptical", "text": "We're managing. Why spend money on something people may not use?"}]},
+     "lines": [{"who": "res3", "mood": "sceptical", "text": "We're managing. Why spend money on something people may not use?", "say": "We're managing. Why... spend money on something people may not use?"}]},
     {"img": "panels/p18_02", "cam": {"from": [0.6, 0.45, 1.5], "to": [0.6, 0.5, 1.2]},
      "lines": [{"who": "narrator", "text": "The planner concludes: the community does not want further education. The centre is cancelled. The budget is redirected."}]},
     {"img": "scenes/p01_06", "cam": {"from": [0.5, 0.5, 1.0], "to": [0.5, 0.5, 1.15]},

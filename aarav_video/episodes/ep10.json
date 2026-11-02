@@ -8,7 +8,7 @@
     {"img": "panels/p11_01", "cam": {"from": [0.4, 0.45, 1.2], "to": [0.38, 0.45, 1.4]},
      "lines": [{"who": "aarav", "mood": "sceptical", "text": "That can't be right. Everyone knows engineers are unemployed."}]},
     {"img": "panels/p11_01", "cam": {"from": [0.72, 0.4, 1.35], "to": [0.75, 0.38, 1.45]},
-     "lines": [{"who": "neeraj", "mood": "insistent", "text": "It says 82%. Look."}]},
+     "lines": [{"who": "neeraj", "mood": "insistent", "text": "It says 82%. Look.", "say": "It says eighty-two percent. Look."}]},
     {"img": "panels/p11_01", "cam": {"from": [0.4, 0.55, 1.4], "to": [0.38, 0.58, 1.5]},
      "lines": [{"who": "aarav", "mood": "defensive", "text": "Newspapers print what they want."}]},
     {"img": "panels/p11_01", "cam": {"from": [0.5, 0.7, 1.5], "to": [0.5, 0.72, 1.8]},

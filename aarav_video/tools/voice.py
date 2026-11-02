@@ -7,6 +7,7 @@ import asyncio
 import hashlib
 import json
 import re
+from difflib import SequenceMatcher
 import shutil
 import subprocess
 import sys
@@ -98,7 +99,7 @@ async def synth(text: str, who: str, mood: str | None, mp3: Path, force: bool) -
 
 # Dry TTS sounds pasted on; tools/voice_fx.py puts it in a small room (EQ, gentle compression,
 # faint early reflections). Bump FX_VERSION when that chain changes.
-FX_VERSION = 3
+FX_VERSION = 4
 
 
 def room_fx(mp3: Path) -> Path:
@@ -161,6 +162,25 @@ def attach_punctuation(text: str, words: list[dict]) -> list[dict]:
     return [{k: v for k, v in w.items() if k != "token"} for w in out]
 
 
+def respell(text: str, say: str, words: list[dict]) -> list[dict]:
+    """A line's optional `say` is what the voice reads (e.g. "82%" as "eighty-two percent", which a Hindi
+    voice would otherwise read in Hindi); captions keep the script's `text`, timed by the spoken words."""
+    shown, spoken = text.split(), say.split()
+    times = []  # one (start, end) per spoken token
+    for w in words:
+        times += [(w["start"], w["end"])] * len(w["text"].split())
+    times = (times + [times[-1]] * len(spoken))[:len(spoken)] if times else [(0.0, 0.5)] * len(spoken)
+    norm = lambda toks: [re.sub(r"\W", "", t).lower() for t in toks]
+    out = []
+    for tag, i1, i2, j1, j2 in SequenceMatcher(a=norm(spoken), b=norm(shown), autojunk=False).get_opcodes():
+        if tag == "equal":
+            out += [{"text": shown[j1 + k], "start": times[i1 + k][0], "end": times[i1 + k][1]} for k in range(i2 - i1)]
+        elif j2 > j1:
+            span = times[i1:i2] or [times[min(i1, len(times) - 1)]]
+            out.append({"text": " ".join(shown[j1:j2]), "start": span[0][0], "end": span[-1][1]})
+    return out
+
+
 def paginate(words: list[dict]) -> list[list[dict]]:
     """Break at sentence ends first, then commas/dashes, and only hard-split very long runs."""
     pages, cur = [], []
@@ -192,8 +212,11 @@ async def build(ep_id: str, force: bool) -> None:
         for line in shot.get("lines", []):
             n += 1
             mp3 = audio_dir / f"{n:03d}.mp3"
-            words = await synth(line["text"], line["who"], line.get("mood"), mp3, force)
-            words = attach_punctuation(line["text"], words)
+            spoken = line.get("say", line["text"])
+            words = await synth(spoken, line["who"], line.get("mood"), mp3, force)
+            words = attach_punctuation(spoken, words)
+            if spoken != line["text"]:
+                words = respell(line["text"], spoken, words)
             dur = (words[-1]["end"] + 0.25) if words else 1.0
             start = t + cursor
             lip = attach_lip(f"{ep_id}_{n:03d}", mp3)
@@ -225,6 +248,9 @@ async def build(ep_id: str, force: bool) -> None:
         amb = ambience(shot)
         if amb:
             extra["amb"] = amb
+        if "img" in shot and (ROOT / "public" / "img" / "depth" / f"{shot['img'].split('/')[-1]}.png").exists() \
+                and shot["img"].startswith("scenes/") and not shot.get("flat"):
+            extra["depth"] = f"img/depth/{shot['img'].split('/')[-1]}.png"  # tools/depth_maps.py
         shots_out.append({**{k: v for k, v in shot.items() if k != "lines"}, **extra,
                           "from": round(t * FPS), "duration": round(length * FPS),
                           "lines": lines_out})

@@ -19,6 +19,9 @@ export const Captions: React.FC<{lines: Line[]; fontFamily: string}> = ({lines, 
 	const page = activePage(line, frame);
 	const narrator = line.who === 'narrator';
 	const fade = interpolate(frame, [line.from, line.from + 5], [0, 1], {extrapolateRight: 'clamp'});
+	// each new page of words eases up into place
+	const pageStart = page.length ? page[0].start : line.from;
+	const rise = interpolate(frame, [pageStart - 2, pageStart + 5], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
 
 	return (
 		<div
@@ -36,8 +39,11 @@ export const Captions: React.FC<{lines: Line[]; fontFamily: string}> = ({lines, 
 				style={{
 					maxWidth: 1060,
 					padding: '12px 26px 14px',
-					borderRadius: 10,
-					background: 'rgba(8, 7, 6, 0.72)',
+					borderRadius: 12,
+					background: 'rgba(10, 8, 6, 0.64)',
+					backdropFilter: 'blur(6px)',
+					border: '1px solid rgba(226, 180, 90, 0.18)',
+					boxShadow: '0 10px 30px rgba(0, 0, 0, 0.45)',
 					textAlign: 'center',
 					fontFamily,
 				}}
@@ -61,6 +67,8 @@ export const Captions: React.FC<{lines: Line[]; fontFamily: string}> = ({lines, 
 						fontWeight: narrator ? 400 : 600,
 						fontStyle: narrator ? 'italic' : 'normal',
 						color: '#fff',
+						opacity: 0.4 + 0.6 * rise,
+						transform: `translateY(${(1 - rise) * 6}px)`,
 					}}
 				>
 					{page.map((w, i) => {
@@ -72,6 +80,7 @@ export const Captions: React.FC<{lines: Line[]; fontFamily: string}> = ({lines, 
 								style={{
 									opacity: spoken ? 1 : 0.5,
 									color: current ? line.color : '#fff',
+									textShadow: current ? `0 0 14px ${line.color}66` : '0 1px 2px rgba(0,0,0,0.6)',
 								}}
 							>
 								{w.text}

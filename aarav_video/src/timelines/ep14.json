@@ -29,6 +29,7 @@
    "minSec": 3.5,
    "aspect": 1.7917,
    "amb": "room",
+   "depth": "img/depth/p01_17.png",
    "from": 75,
    "duration": 105,
    "lines": [
@@ -78,6 +79,7 @@
    },
    "aspect": 1.7918,
    "amb": "room",
+   "depth": "img/depth/p01_07.png",
    "from": 180,
    "duration": 765,
    "lines": [
@@ -330,6 +332,7 @@
    },
    "aspect": 1.7917,
    "amb": "room",
+   "depth": "img/depth/p01_17.png",
    "from": 945,
    "duration": 636,
    "lines": [
@@ -565,6 +568,7 @@
    },
    "aspect": 1.7917,
    "amb": "room",
+   "depth": "img/depth/p01_18.png",
    "from": 1581,
    "duration": 653,
    "lines": [
@@ -802,6 +806,7 @@
    },
    "aspect": 1.7917,
    "amb": "room",
+   "depth": "img/depth/p01_17.png",
    "from": 2234,
    "duration": 460,
    "lines": [
@@ -1058,6 +1063,7 @@
    },
    "aspect": 1.7917,
    "amb": "room",
+   "depth": "img/depth/p01_18.png",
    "from": 2863,
    "duration": 536,
    "lines": [
@@ -1195,7 +1201,7 @@
      "who": "aarav",
      "name": "Aarav",
      "color": "#F2C14E",
-     "audio": "audio/ep14/008.fx3.mp3",
+     "audio": "audio/ep14/008.fx4.mp3",
      "from": 3157,
      "duration": 72,
      "pages": [
@@ -1717,6 +1723,7 @@
    },
    "aspect": 1.7886,
    "amb": "room",
+   "depth": "img/depth/p01_02.png",
    "from": 4499,
    "duration": 529,
    "lines": [

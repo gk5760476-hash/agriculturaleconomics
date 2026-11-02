@@ -51,6 +51,7 @@
    "minSec": 6,
    "aspect": 1.7886,
    "amb": "room",
+   "depth": "img/depth/p01_13.png",
    "from": 165,
    "duration": 254,
    "lines": [
@@ -149,7 +150,7 @@
      "who": "neeraj",
      "name": "Neeraj",
      "color": "#B98BE0",
-     "audio": "audio/ep11/002.fx3.mp3",
+     "audio": "audio/ep11/002.fx4.mp3",
      "from": 434,
      "duration": 75,
      "pages": [
@@ -203,7 +204,7 @@
      "who": "aarav",
      "name": "Aarav",
      "color": "#F2C14E",
-     "audio": "audio/ep11/003.fx3.mp3",
+     "audio": "audio/ep11/003.fx4.mp3",
      "from": 544,
      "duration": 18,
      "pages": [
@@ -241,7 +242,7 @@
      "who": "neeraj",
      "name": "Neeraj",
      "color": "#B98BE0",
-     "audio": "audio/ep11/004.fx3.mp3",
+     "audio": "audio/ep11/004.fx4.mp3",
      "from": 604,
      "duration": 53,
      "pages": [
@@ -299,7 +300,7 @@
      "who": "aarav",
      "name": "Aarav",
      "color": "#F2C14E",
-     "audio": "audio/ep11/005.fx3.mp3",
+     "audio": "audio/ep11/005.fx4.mp3",
      "from": 692,
      "duration": 46,
      "pages": [
@@ -352,7 +353,7 @@
      "who": "neeraj",
      "name": "Neeraj",
      "color": "#B98BE0",
-     "audio": "audio/ep11/006.fx3.mp3",
+     "audio": "audio/ep11/006.fx4.mp3",
      "from": 773,
      "duration": 47,
      "pages": [
@@ -405,7 +406,7 @@
      "who": "aarav",
      "name": "Aarav",
      "color": "#F2C14E",
-     "audio": "audio/ep11/007.fx3.mp3",
+     "audio": "audio/ep11/007.fx4.mp3",
      "from": 856,
      "duration": 95,
      "pages": [
@@ -469,7 +470,7 @@
      "who": "neeraj",
      "name": "Neeraj",
      "color": "#B98BE0",
-     "audio": "audio/ep11/008.fx3.mp3",
+     "audio": "audio/ep11/008.fx4.mp3",
      "from": 985,
      "duration": 98,
      "pages": [
@@ -547,7 +548,7 @@
      "who": "aarav",
      "name": "Aarav",
      "color": "#F2C14E",
-     "audio": "audio/ep11/009.fx3.mp3",
+     "audio": "audio/ep11/009.fx4.mp3",
      "from": 1118,
      "duration": 139,
      "pages": [
@@ -650,7 +651,7 @@
      "who": "neeraj",
      "name": "Neeraj",
      "color": "#B98BE0",
-     "audio": "audio/ep11/010.fx3.mp3",
+     "audio": "audio/ep11/010.fx4.mp3",
      "from": 1292,
      "duration": 126,
      "pages": [
@@ -718,7 +719,7 @@
      "who": "aarav",
      "name": "Aarav",
      "color": "#F2C14E",
-     "audio": "audio/ep11/011.fx3.mp3",
+     "audio": "audio/ep11/011.fx4.mp3",
      "from": 1453,
      "duration": 99,
      "pages": [
@@ -780,6 +781,7 @@
    "minSec": 5,
    "aspect": 1.7886,
    "amb": "night",
+   "depth": "img/depth/p01_15.png",
    "from": 1572,
    "duration": 150,
    "lines": []
@@ -872,7 +874,7 @@
      "who": "mother",
      "name": "Mother",
      "color": "#E07A3F",
-     "audio": "audio/ep11/013.fx3.mp3",
+     "audio": "audio/ep11/013.fx4.mp3",
      "from": 1874,
      "duration": 56,
      "pages": [
@@ -931,7 +933,7 @@
      "who": "aarav",
      "name": "Aarav",
      "color": "#F2C14E",
-     "audio": "audio/ep11/014.fx3.mp3",
+     "audio": "audio/ep11/014.fx4.mp3",
      "from": 1965,
      "duration": 43,
      "pages": [
@@ -979,7 +981,7 @@
      "who": "mother",
      "name": "Mother",
      "color": "#E07A3F",
-     "audio": "audio/ep11/015.fx3.mp3",
+     "audio": "audio/ep11/015.fx4.mp3",
      "from": 2043,
      "duration": 76,
      "pages": [
@@ -1052,7 +1054,7 @@
      "who": "aarav",
      "name": "Aarav",
      "color": "#F2C14E",
-     "audio": "audio/ep11/016.fx3.mp3",
+     "audio": "audio/ep11/016.fx4.mp3",
      "from": 2154,
      "duration": 252,
      "pages": [
@@ -1174,7 +1176,7 @@
      "who": "mother",
      "name": "Mother",
      "color": "#E07A3F",
-     "audio": "audio/ep11/017.fx3.mp3",
+     "audio": "audio/ep11/017.fx4.mp3",
      "from": 2441,
      "duration": 59,
      "pages": [
@@ -1227,7 +1229,7 @@
      "who": "aarav",
      "name": "Aarav",
      "color": "#F2C14E",
-     "audio": "audio/ep11/018.fx3.mp3",
+     "audio": "audio/ep11/018.fx4.mp3",
      "from": 2535,
      "duration": 271,
      "pages": [
@@ -1352,7 +1354,7 @@
      "who": "mother",
      "name": "Mother",
      "color": "#E07A3F",
-     "audio": "audio/ep11/019.fx3.mp3",
+     "audio": "audio/ep11/019.fx4.mp3",
      "from": 2841,
      "duration": 325,
      "pages": [
@@ -1631,6 +1633,7 @@
    },
    "aspect": 1.7886,
    "amb": "room",
+   "depth": "img/depth/p01_14.png",
    "from": 3471,
    "duration": 418,
    "lines": [
@@ -1789,6 +1792,7 @@
    },
    "aspect": 1.7886,
    "amb": "street",
+   "depth": "img/depth/p01_06.png",
    "from": 3889,
    "duration": 327,
    "lines": [

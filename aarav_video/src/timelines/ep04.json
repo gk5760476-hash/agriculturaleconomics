@@ -296,6 +296,7 @@
    "minSec": 3,
    "aspect": 1.7918,
    "amb": "room",
+   "depth": "img/depth/p01_04.png",
    "from": 647,
    "duration": 90,
    "lines": [
@@ -352,7 +353,7 @@
      "who": "mother",
      "name": "Mother",
      "color": "#E07A3F",
-     "audio": "audio/ep04/004.fx3.mp3",
+     "audio": "audio/ep04/004.fx4.mp3",
      "from": 752,
      "duration": 47,
      "pages": [
@@ -405,7 +406,7 @@
      "who": "aarav",
      "name": "Aarav",
      "color": "#F2C14E",
-     "audio": "audio/ep04/005.fx3.mp3",
+     "audio": "audio/ep04/005.fx4.mp3",
      "from": 835,
      "duration": 389,
      "pages": [
@@ -577,6 +578,7 @@
    },
    "aspect": 1.7918,
    "amb": "room",
+   "depth": "img/depth/p01_04.png",
    "from": 1244,
    "duration": 362,
    "lines": [
@@ -711,6 +713,7 @@
    "minSec": 4,
    "aspect": 1.7886,
    "amb": "room",
+   "depth": "img/depth/p01_08.png",
    "from": 1605,
    "duration": 498,
    "lines": [

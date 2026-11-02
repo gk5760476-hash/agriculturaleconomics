@@ -3,7 +3,7 @@
  "title": "Thirteen Months In",
  "subtitle": "Manipulation",
  "fps": 30,
- "durationInFrames": 2091,
+ "durationInFrames": 2119,
  "shots": [
   {
    "img": "panels/p07_01",
@@ -182,15 +182,15 @@
    "aspect": 1.7902,
    "amb": "room",
    "from": 408,
-   "duration": 320,
+   "duration": 333,
    "lines": [
     {
      "who": "sharma",
      "name": "Sharma",
      "color": "#9FC3D9",
-     "audio": "audio/ep06/002.fx3.mp3",
+     "audio": "audio/ep06/002.fx4.mp3",
      "from": 423,
-     "duration": 285,
+     "duration": 298,
      "pages": [
       [
        {
@@ -200,95 +200,95 @@
        },
        {
         "text": "know,",
-        "start": 436,
-        "end": 445
+        "start": 437,
+        "end": 446
        },
        {
         "text": "these",
-        "start": 453,
-        "end": 462
+        "start": 454,
+        "end": 464
        },
        {
         "text": "engineers",
-        "start": 464,
-        "end": 487
+        "start": 466,
+        "end": 490
        },
        {
         "text": "think",
-        "start": 489,
-        "end": 498
+        "start": 492,
+        "end": 502
        },
        {
         "text": "they're",
-        "start": 502,
-        "end": 513
+        "start": 505,
+        "end": 517
        },
        {
         "text": "above",
-        "start": 515,
-        "end": 527
+        "start": 519,
+        "end": 532
        },
        {
         "text": "us.",
-        "start": 528,
-        "end": 538
+        "start": 532,
+        "end": 544
        }
       ],
       [
        {
         "text": "But",
-        "start": 567,
-        "end": 577
-       },
-       {
-        "text": "who",
-        "start": 577,
+        "start": 574,
         "end": 584
        },
        {
+        "text": "who",
+        "start": 584,
+        "end": 591
+       },
+       {
         "text": "do",
-        "start": 585,
-        "end": 589
+        "start": 593,
+        "end": 597
        },
        {
         "text": "they",
-        "start": 591,
-        "end": 596
+        "start": 599,
+        "end": 603
        },
        {
         "text": "come",
-        "start": 598,
-        "end": 605
+        "start": 606,
+        "end": 613
        },
        {
         "text": "to",
-        "start": 607,
-        "end": 611
+        "start": 615,
+        "end": 620
        },
        {
         "text": "when",
-        "start": 612,
-        "end": 621
+        "start": 621,
+        "end": 630
        },
        {
         "text": "their",
-        "start": 622,
-        "end": 629
+        "start": 632,
+        "end": 638
        },
        {
         "text": "laptops",
-        "start": 629,
-        "end": 649
+        "start": 639,
+        "end": 659
        },
        {
         "text": "break?",
-        "start": 651,
-        "end": 661
+        "start": 661,
+        "end": 672
        },
        {
         "text": "Us.",
-        "start": 689,
-        "end": 699
+        "start": 701,
+        "end": 712
        }
       ]
      ]
@@ -312,27 +312,27 @@
    "minSec": 2.5,
    "aspect": 1.7902,
    "amb": "room",
-   "from": 728,
+   "from": 741,
    "duration": 75,
    "lines": [
     {
      "who": "aarav",
      "name": "Aarav",
      "color": "#F2C14E",
-     "audio": "audio/ep06/003.fx3.mp3",
-     "from": 743,
+     "audio": "audio/ep06/003.fx4.mp3",
+     "from": 756,
      "duration": 35,
      "pages": [
       [
        {
         "text": "That's",
-        "start": 746,
-        "end": 759
+        "start": 759,
+        "end": 771
        },
        {
         "text": "true.",
-        "start": 759,
-        "end": 769
+        "start": 771,
+        "end": 782
        }
       ]
      ]
@@ -355,94 +355,94 @@
    },
    "aspect": 1.7902,
    "amb": "room",
-   "from": 803,
-   "duration": 287,
+   "from": 816,
+   "duration": 303,
    "lines": [
     {
      "who": "sharma",
      "name": "Sharma",
      "color": "#9FC3D9",
-     "audio": "audio/ep06/004.fx3.mp3",
-     "from": 818,
-     "duration": 252,
+     "audio": "audio/ep06/004.fx4.mp3",
+     "from": 831,
+     "duration": 268,
      "pages": [
       [
        {
         "text": "College",
-        "start": 821,
-        "end": 835
+        "start": 834,
+        "end": 848
        },
        {
         "text": "boys",
-        "start": 837,
-        "end": 847
+        "start": 850,
+        "end": 861
        },
        {
         "text": "can't",
-        "start": 848,
-        "end": 857
+        "start": 868,
+        "end": 877
        },
        {
         "text": "hold",
-        "start": 858,
-        "end": 868
+        "start": 877,
+        "end": 888
        },
        {
         "text": "a",
-        "start": 870,
-        "end": 873
+        "start": 890,
+        "end": 893
        },
        {
         "text": "screwdriver.",
-        "start": 873,
-        "end": 898
+        "start": 894,
+        "end": 919
        }
       ],
       [
        {
         "text": "Stay",
-        "start": 927,
-        "end": 937
+        "start": 950,
+        "end": 960
        },
        {
         "text": "here.",
-        "start": 938,
-        "end": 948
+        "start": 961,
+        "end": 971
        },
        {
         "text": "Five",
-        "start": 976,
-        "end": 989
+        "start": 1001,
+        "end": 1015
        },
        {
         "text": "years,",
-        "start": 991,
-        "end": 1005
-       },
-       {
-        "text": "I'll",
-        "start": 1012,
-        "end": 1022
-       },
-       {
-        "text": "make",
-        "start": 1023,
+        "start": 1017,
         "end": 1032
        },
        {
+        "text": "I'll",
+        "start": 1038,
+        "end": 1049
+       },
+       {
+        "text": "make",
+        "start": 1049,
+        "end": 1059
+       },
+       {
         "text": "you",
-        "start": 1032,
-        "end": 1039
+        "start": 1059,
+        "end": 1067
        },
        {
         "text": "a",
-        "start": 1040,
-        "end": 1043
+        "start": 1068,
+        "end": 1070
        },
        {
         "text": "partner.",
-        "start": 1045,
-        "end": 1061
+        "start": 1073,
+        "end": 1090
        }
       ]
      ]
@@ -465,7 +465,8 @@
    },
    "aspect": 1.7886,
    "amb": "room",
-   "from": 1090,
+   "depth": "img/depth/p01_08.png",
+   "from": 1118,
    "duration": 312,
    "lines": [
     {
@@ -474,106 +475,106 @@
      "name": "Narrator",
      "color": "#E8D9B0",
      "audio": "audio/ep06/005.mp3",
-     "from": 1105,
+     "from": 1133,
      "duration": 277,
      "pages": [
       [
        {
         "text": "The",
-        "start": 1108,
-        "end": 1111
+        "start": 1136,
+        "end": 1139
        },
        {
         "text": "partnership",
-        "start": 1111,
-        "end": 1135
+        "start": 1139,
+        "end": 1163
        },
        {
         "text": "offer",
-        "start": 1137,
-        "end": 1149
+        "start": 1166,
+        "end": 1178
        },
        {
         "text": "is",
-        "start": 1152,
-        "end": 1159
+        "start": 1181,
+        "end": 1187
        },
        {
         "text": "real.",
-        "start": 1159,
-        "end": 1171
+        "start": 1187,
+        "end": 1199
        }
       ],
       [
        {
         "text": "But",
-        "start": 1198,
-        "end": 1205
+        "start": 1226,
+        "end": 1233
        },
        {
         "text": "Sharma",
-        "start": 1205,
-        "end": 1219
+        "start": 1233,
+        "end": 1247
        },
        {
         "text": "uncle's",
-        "start": 1220,
-        "end": 1237
+        "start": 1249,
+        "end": 1266
        },
        {
         "text": "motive",
-        "start": 1237,
-        "end": 1253
+        "start": 1266,
+        "end": 1281
        },
        {
         "text": "is",
-        "start": 1256,
-        "end": 1262
+        "start": 1285,
+        "end": 1290
        },
        {
         "text": "not",
-        "start": 1262,
-        "end": 1271
+        "start": 1290,
+        "end": 1300
        },
        {
         "text": "Aarav's",
-        "start": 1273,
-        "end": 1286
+        "start": 1302,
+        "end": 1315
        },
        {
         "text": "welfare",
-        "start": 1286,
-        "end": 1304
+        "start": 1315,
+        "end": 1333
        },
        {
         "text": "\u2014 it",
-        "start": 1313,
-        "end": 1317
-       },
-       {
-        "text": "is",
-        "start": 1320,
-        "end": 1325
-       },
-       {
-        "text": "keeping",
-        "start": 1326,
-        "end": 1340
-       },
-       {
-        "text": "a",
         "start": 1342,
         "end": 1345
        },
        {
+        "text": "is",
+        "start": 1348,
+        "end": 1354
+       },
+       {
+        "text": "keeping",
+        "start": 1355,
+        "end": 1368
+       },
+       {
+        "text": "a",
+        "start": 1370,
+        "end": 1373
+       },
+       {
         "text": "skilled",
-        "start": 1345,
-        "end": 1358
+        "start": 1373,
+        "end": 1387
        },
        {
         "text": "worker.",
-        "start": 1358,
-        "end": 1374
+        "start": 1387,
+        "end": 1402
        }
       ]
      ]
@@ -596,7 +597,8 @@
    },
    "aspect": 1.7886,
    "amb": "room",
-   "from": 1402,
+   "depth": "img/depth/p01_14.png",
+   "from": 1431,
    "duration": 310,
    "lines": [
     {
@@ -605,86 +607,86 @@
      "name": "Narrator",
      "color": "#E8D9B0",
      "audio": "audio/ep06/006.mp3",
-     "from": 1417,
+     "from": 1446,
      "duration": 275,
      "pages": [
       [
        {
         "text": "Elster",
-        "start": 1420,
-        "end": 1433
+        "start": 1449,
+        "end": 1462
        },
        {
         "text": "calls",
-        "start": 1433,
-        "end": 1446
+        "start": 1462,
+        "end": 1475
        },
        {
         "text": "this",
-        "start": 1446,
-        "end": 1455
+        "start": 1475,
+        "end": 1483
        },
        {
         "text": "manipulation:",
-        "start": 1455,
-        "end": 1481
+        "start": 1483,
+        "end": 1510
        }
       ],
       [
        {
         "text": "an",
-        "start": 1496,
-        "end": 1503
+        "start": 1525,
+        "end": 1531
        },
        {
         "text": "external",
-        "start": 1505,
-        "end": 1525
+        "start": 1533,
+        "end": 1553
        },
        {
         "text": "agent",
-        "start": 1527,
-        "end": 1539
+        "start": 1556,
+        "end": 1568
        },
        {
         "text": "deliberately",
-        "start": 1540,
-        "end": 1563
+        "start": 1568,
+        "end": 1591
        },
        {
         "text": "shaping",
-        "start": 1563,
-        "end": 1578
+        "start": 1591,
+        "end": 1606
        },
        {
         "text": "someone's",
-        "start": 1578,
-        "end": 1595
+        "start": 1606,
+        "end": 1624
        },
        {
         "text": "preferences",
-        "start": 1596,
-        "end": 1620
+        "start": 1624,
+        "end": 1648
        },
        {
         "text": "for",
-        "start": 1624,
-        "end": 1632
-       },
-       {
-        "text": "the",
-        "start": 1632,
-        "end": 1635
-       },
-       {
-        "text": "manipulator's",
-        "start": 1635,
+        "start": 1653,
         "end": 1660
        },
        {
+        "text": "the",
+        "start": 1660,
+        "end": 1664
+       },
+       {
+        "text": "manipulator's",
+        "start": 1664,
+        "end": 1689
+       },
+       {
         "text": "advantage.",
-        "start": 1662,
-        "end": 1684
+        "start": 1691,
+        "end": 1712
        }
       ]
      ]
@@ -708,7 +710,8 @@
    "minSec": 4,
    "aspect": 1.7886,
    "amb": "room",
-   "from": 1712,
+   "depth": "img/depth/p01_13.png",
+   "from": 1741,
    "duration": 379,
    "lines": [
     {
@@ -717,118 +720,118 @@
      "name": "Narrator",
      "color": "#E8D9B0",
      "audio": "audio/ep06/007.mp3",
-     "from": 1727,
+     "from": 1756,
      "duration": 344,
      "pages": [
       [
        {
         "text": "Unlike",
-        "start": 1730,
-        "end": 1745
+        "start": 1759,
+        "end": 1773
        },
        {
         "text": "sour",
-        "start": 1745,
-        "end": 1756
+        "start": 1773,
+        "end": 1785
        },
        {
         "text": "grapes,",
-        "start": 1756,
-        "end": 1772
+        "start": 1785,
+        "end": 1801
        },
        {
         "text": "which",
-        "start": 1780,
-        "end": 1789
+        "start": 1809,
+        "end": 1818
        },
        {
         "text": "happens",
-        "start": 1789,
-        "end": 1804
+        "start": 1818,
+        "end": 1833
        },
        {
         "text": "inside",
-        "start": 1807,
-        "end": 1823
+        "start": 1835,
+        "end": 1852
        },
        {
         "text": "a",
-        "start": 1825,
-        "end": 1828
-       },
-       {
-        "text": "person's",
-        "start": 1828,
-        "end": 1846
-       },
-       {
-        "text": "own",
-        "start": 1850,
+        "start": 1854,
         "end": 1856
        },
        {
-        "text": "mind,",
+        "text": "person's",
         "start": 1856,
-        "end": 1870
+        "end": 1875
+       },
+       {
+        "text": "own",
+        "start": 1878,
+        "end": 1884
+       },
+       {
+        "text": "mind,",
+        "start": 1884,
+        "end": 1899
        }
       ],
       [
        {
         "text": "manipulation",
-        "start": 1878,
-        "end": 1904
-       },
-       {
-        "text": "is",
-        "start": 1908,
-        "end": 1915
-       },
-       {
-        "text": "social",
-        "start": 1916,
+        "start": 1906,
         "end": 1933
        },
        {
+        "text": "is",
+        "start": 1936,
+        "end": 1943
+       },
+       {
+        "text": "social",
+        "start": 1944,
+        "end": 1962
+       },
+       {
         "text": "and",
-        "start": 1935,
-        "end": 1944
+        "start": 1964,
+        "end": 1972
        },
        {
         "text": "intentional.",
-        "start": 1946,
-        "end": 1969
+        "start": 1974,
+        "end": 1997
        }
       ],
       [
        {
         "text": "Someone",
-        "start": 1996,
-        "end": 2011
+        "start": 2024,
+        "end": 2039
        },
        {
         "text": "else",
-        "start": 2014,
-        "end": 2026
+        "start": 2042,
+        "end": 2054
        },
        {
         "text": "is",
-        "start": 2028,
-        "end": 2033
+        "start": 2056,
+        "end": 2062
        },
        {
         "text": "pulling",
-        "start": 2033,
-        "end": 2044
+        "start": 2062,
+        "end": 2072
        },
        {
         "text": "the",
-        "start": 2044,
-        "end": 2048
+        "start": 2072,
+        "end": 2077
        },
        {
         "text": "thread.",
-        "start": 2048,
-        "end": 2062
+        "start": 2077,
+        "end": 2091
        }
       ]
      ]
