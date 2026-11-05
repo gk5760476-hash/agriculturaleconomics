@@ -1,0 +1,8 @@
+# Streamlit Community Cloud reads this file (next to app.py) instead of the repo-root requirements.txt,
+# which also pins the research pipeline's packages. The app only needs these; versions match the
+# tested local environment (Python 3.12).
+streamlit==1.66.1
+altair==6.3.0
+pandas==3.1.0
+numpy==2.5.4
+scipy==1.18.1

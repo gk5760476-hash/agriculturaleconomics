@@ -549,7 +549,7 @@ function methodsPage(el) {
     h("div", { class: "card" }, h("h3", {}, "Limitations"), h("ul", { style: "margin:0;padding-left:18px;color:var(--ink-2);font-size:14px" },
       ["Credit is a stock: it mixes new lending, rollovers, restructuring and write-offs.", "Two states and ~20 years: state-level estimates have low power; an inconclusive result is not evidence of no effect.",
        "Crop prices are national WPI series; states differ only through crop mix.", "District units are current boundaries; Thane and Palghar are merged, Mumbai is excluded (metro-booked lending).",
-       "Yield and price shocks partly respond to farmer and policy behaviour; only rainfall is plausibly external.", "Policy-event dates were checked by hand; the two Maharashtra waivers still cite press reports rather than Government Resolutions."].map(t => h("li", {}, t)))));
+       "Yield and price shocks partly respond to farmer and policy behaviour; only rainfall is plausibly external.", "Policy events are coded by credit year, not month; every event cites an official source (Maharashtra waivers: their Government Resolutions)."].map(t => h("li", {}, t)))));
 }
 
 // ---------------------------------------------------------------- shell

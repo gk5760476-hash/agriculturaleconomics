@@ -13,3 +13,5 @@ shapely==2.2.0
 pyproj==3.8.0
 PyYAML==6.0.3
 pytest==9.1.1
+streamlit==1.66.1
+altair==6.3.0

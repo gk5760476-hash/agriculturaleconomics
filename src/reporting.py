@@ -88,9 +88,10 @@ def collect() -> dict:
         "summary": _records(pd.read_csv(REPORTS / "tables" / "cyclicality_summary.csv")),
         "state_coefs": _records(coefs[coefs.term != "const"],
                                 ["spec", "question", "robustness_of", "region", "outcome", "term", "coef", "ci90_low",
-                                 "ci90_high", "p_wild", "q_bh_headline", "classification", "n", "years"]),
-        "district": _records(pd.read_csv(REPORTS / "tables" / "district_coefficients.csv")),
-        "district_robust": _records(pd.read_csv(REPORTS / "tables" / "district_robustness.csv")),
+                                 "ci90_high", "p_wild", "q_bh_headline", "classification", "n", "years"], digits=6),
+        # per-point coefficients (~0.1) are multiplied by shocks of up to 60 points in the scenario tools: keep 6 decimals
+        "district": _records(pd.read_csv(REPORTS / "tables" / "district_coefficients.csv"), digits=6),
+        "district_robust": _records(pd.read_csv(REPORTS / "tables" / "district_robustness.csv"), digits=6),
         "fc_state": _records(pd.read_csv(REPORTS / "tables" / "forecast_state_scores.csv")),
         "fc_district": _records(pd.read_csv(REPORTS / "tables" / "forecast_district_ranking.csv")),
         "fc_holdout": _records(pd.read_csv(REPORTS / "tables" / "forecast_drought_holdout.csv")),

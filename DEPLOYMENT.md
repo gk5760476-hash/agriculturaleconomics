@@ -2,6 +2,10 @@
 
 **Phase 1 — local (current).** Python 3.12.10 in `.venv`, versions pinned in `requirements.txt`, Windows 11. Rebuild everything with `python src/run_pipeline.py` (add `--skip-ingestion` to reuse `data/interim`). The dashboard is one self-contained file, `app/dashboard.html`: open it in any browser, offline; nothing is re-estimated when you click.
 
+**Interactive web app (design plan Option B).** `streamlit_app/` serves the same six tabs with Streamlit: from the repo root, `.venv\Scripts\streamlit run streamlit_app/app.py --server.address 127.0.0.1`, then open http://127.0.0.1:8501 (this computer only; no usage statistics, `.streamlit/config.toml`). It reads the same saved outputs through `src/reporting.py`. After re-running the pipeline, press **R** in the app to reload the numbers.
+
+**Hosted web app (Streamlit Community Cloud).** Deploy from GitHub with main file `streamlit_app/app.py`, branch `main`, Python 3.12; Cloud installs the slim `streamlit_app/requirements.txt`. The hosted app serves the same aggregate tables that are already public in the repository, so it adds no new exposure; keep the "research prototype" labelling. Each push to `main` redeploys it — publish new numbers by committing the refreshed `data/processed/` and `reports/tables/` files.
+
 **Phase 2 — sharing.** Send `app/dashboard.html` as an attachment, or publish it as a private link. It embeds only aggregate, published data (no personal data), so it is safe to share.
 
 **Phase 3 — controlled hosting.** Any static host works (no server code). Before hosting: confirm the data licences of RBI, IMD, OEA and DES allow redistribution of the derived tables, and keep the "research prototype" labelling.
